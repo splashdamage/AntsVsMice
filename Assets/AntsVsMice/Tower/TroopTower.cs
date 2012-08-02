@@ -11,6 +11,6 @@ public class TroopTower : Tower {
 	
 	// Update is called once per frame
 	void Update () {
-	
+		Collider [] inRange = Physics.OverlapSphere (transform.position, range); 
 	}
 }
