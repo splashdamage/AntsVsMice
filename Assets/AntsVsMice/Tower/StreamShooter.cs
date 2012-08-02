@@ -2,6 +2,8 @@ using UnityEngine;
 using System.Collections;
 
 public class StreamShooter : Shooter {
+	
+	public float damageFalloff;
 
 	// Use this for initialization
 	void Start () {

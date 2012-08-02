@@ -2,6 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class TroopTower : Tower {
+	
 
 	// Use this for initialization
 	void Start () {
