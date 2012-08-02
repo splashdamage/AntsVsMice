@@ -18,5 +18,6 @@ public class TroopTower : Tower {
 				return e;
 			}
 		}
+		return null;
 	}
 }
