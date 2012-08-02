@@ -2,7 +2,7 @@ using UnityEngine;
 using System.Collections;
 
 public class BulletShooter : Shooter {
-	public float rateoffire;
+	public float rateOfFire;
 	// Use this for initialization
 	void Start () {
 	
