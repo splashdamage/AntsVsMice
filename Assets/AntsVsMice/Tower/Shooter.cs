@@ -17,5 +17,6 @@ public class Shooter : Tower {
 				return e;
 			}
 		}
+		return null;
 	}
 }
