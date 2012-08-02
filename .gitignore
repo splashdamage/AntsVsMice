@@ -3,5 +3,6 @@
 /Temp
 /Library
 *.csproj
+*.unityproj
 *.pidb
 *.userprefs
