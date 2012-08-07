@@ -14,7 +14,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
   m_Layer: 0
-  m_Name: Arrows
+  m_Name: ArrowsLv2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,12 +82,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a33b001d6903463abe8fcaa22cb5e40, type: 1}
   m_Name: 
   size: 0
-  range: .550000012
-  cost: 0
+  range: .5
+  cost: 5
   attack:
     type: 1
     amount: 1
-  rateOfFire: 1
+  rateOfFire: 1.5
   target: {fileID: 0}
 --- !u!114 &11400002
 MonoBehaviour:

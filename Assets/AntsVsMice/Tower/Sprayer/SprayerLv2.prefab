@@ -8,14 +8,13 @@ GameObject:
   serializedVersion: 3
   m_Component:
   - 4: {fileID: 400000}
-  - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
-  - 114: {fileID: 11400004}
+  - 33: {fileID: 3300000}
   - 114: {fileID: 11400002}
-  - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
+  - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: CannonlLv1
+  m_Name: SprayerLv2
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -28,8 +27,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: .438560665, y: .100000001, z: .00204516575}
-  m_LocalScale: {x: .379146934, y: .370536625, z: 1}
+  m_LocalPosition: {x: 0, y: .100000031, z: -.28739056}
+  m_LocalScale: {x: .529999971, y: .462500006, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
 --- !u!23 &2300000
@@ -44,7 +43,7 @@ Renderer:
   m_LightmapIndex: 255
   m_LightmapTilingOffset: {x: 1, y: 1, z: 0, w: 0}
   m_Materials:
-  - {fileID: 2100000, guid: 3d3b431ad195c49af8e45e105c9ea7e1, type: 2}
+  - {fileID: 2100000, guid: 8c16054533f8749b29547afcb77595a7, type: 2}
   m_SubsetIndices: 
   m_StaticBatchRoot: {fileID: 0}
   m_UseLightProbes: 0
@@ -80,30 +79,20 @@ MonoBehaviour:
   m_GameObject: {fileID: 100000}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc0b77309d364feb8c44bdab041c500, type: 1}
+  m_Script: {fileID: 11500000, guid: ec340369c84db407a9144feb9fc5abde, type: 1}
   m_Name: 
---- !u!114 &11400002
-MonoBehaviour:
-  m_ObjectHideFlags: 1
-  m_PrefabParentObject: {fileID: 0}
-  m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 069f9ac2e15114becb56c4e18dc1399e, type: 1}
-  m_Name: 
-  size: 4
-  range: .25
-  cost: 2
+  size: 0
+  range: .400000006
+  cost: 15
   attack:
-    type: 2
-    amount: 1.5
+    type: 3
+    amount: 2
   rateOfFire: 1
-  explosiveBullet: 1
-  explosiveRange: 0
-  explosionEffect: {fileID: 100000, guid: e38546ce45bbf4d558d50866a5447bf4, type: 2}
+  gasBullet: 1
+  gasRange: .200000003
+  gasEffect: {fileID: 0}
   target: {fileID: 0}
---- !u!114 &11400004
+--- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
@@ -113,10 +102,10 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 3fac570381f34f647b768dc5a5aa1364, type: 1}
   m_Name: 
-  collection: {fileID: 11400000, guid: 7a1fc862a89ca440fb899eb3bda90e52, type: 2}
-  _color: {r: 0, g: 1, b: .916083813, a: 1}
+  collection: {fileID: 11400000, guid: b818c7b71f00248c49db1a476f30ac55, type: 2}
+  _color: {r: .828358173, g: .786512256, b: .0803630874, a: 1}
   _scale: {x: 1, y: 1, z: 1}
-  _spriteId: 1
+  _spriteId: 0
   pixelPerfect: 0
   boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}

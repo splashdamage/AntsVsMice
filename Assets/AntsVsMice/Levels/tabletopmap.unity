@@ -192,7 +192,7 @@ GameObject:
   - 114: {fileID: 149666016}
   - 54: {fileID: 149666017}
   m_Layer: 0
-  m_Name: Arrows
+  m_Name: ArrowsLv1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -268,7 +268,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3a33b001d6903463abe8fcaa22cb5e40, type: 1}
   m_Name: 
   size: 0
-  range: .550000012
+  range: .200000003
   cost: 0
   attack:
     type: 1
@@ -437,7 +437,7 @@ GameObject:
   - 54: {fileID: 360758868}
   - 114: {fileID: 360758869}
   m_Layer: 0
-  m_Name: Sprayer
+  m_Name: SprayerLv1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -530,13 +530,13 @@ MonoBehaviour:
   m_Name: 
   size: 0
   range: .300000012
-  cost: 0
+  cost: 10
   attack:
     type: 3
-    amount: 2
+    amount: 1.5
   rateOfFire: 1
   gasBullet: 1
-  gasRange: .200000003
+  gasRange: 0
   gasEffect: {fileID: 0}
   target: {fileID: 0}
 --- !u!1 &367709257
@@ -733,11 +733,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 069f9ac2e15114becb56c4e18dc1399e, type: 1}
   m_Name: 
   size: 4
-  range: .5
-  cost: 0
+  range: .25
+  cost: 2
   attack:
     type: 2
-    amount: 2
+    amount: 1.5
   rateOfFire: 1
   explosiveBullet: 1
   explosiveRange: 0

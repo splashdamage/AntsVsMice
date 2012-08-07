@@ -14,7 +14,7 @@ GameObject:
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400000}
   m_Layer: 0
-  m_Name: Sprayer
+  m_Name: SprayerLv3
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -82,12 +82,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ec340369c84db407a9144feb9fc5abde, type: 1}
   m_Name: 
   size: 0
-  range: .300000012
-  cost: 0
+  range: .5
+  cost: 30
   attack:
     type: 3
     amount: 2
-  rateOfFire: 1
+  rateOfFire: 2
   gasBullet: 1
   gasRange: .200000003
   gasEffect: {fileID: 0}
