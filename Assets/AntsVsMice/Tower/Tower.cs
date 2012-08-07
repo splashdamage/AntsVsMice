@@ -7,7 +7,7 @@ public abstract class Tower : MonoBehaviour {
 	public int size;
 	public float range;
 	public float cost;
-	
+	public Damage attack;
 	public abstract Enemy FindTarget();
 	
 
