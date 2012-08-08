@@ -20,6 +20,7 @@ function Update ()
 if(next==null)
 {
 next = points[1];
+transform.LookAt(next.transform);
 }
 var distance=(next.transform.position - transform.position).magnitude;
 if(distance>0.01)

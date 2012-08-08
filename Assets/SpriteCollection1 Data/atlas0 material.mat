@@ -6,8 +6,8 @@ Material:
   m_ObjectHideFlags: 0
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 0}
-  m_Name: BoardCountertopPlaceholder
-  m_Shader: {fileID: 7, guid: 0000000000000000e000000000000000, type: 0}
+  m_Name: atlas0 material
+  m_Shader: {fileID: 4800000, guid: 88907f689cb94014980290b8ee139c22, type: 1}
   m_SavedProperties:
     serializedVersion: 2
     m_TexEnvs:
@@ -15,12 +15,8 @@ Material:
         first:
           name: _MainTex
         second:
-          m_Texture: {fileID: 2800000, guid: 765c20a6b8337401abdcb3e858d11cdc, type: 1}
+          m_Texture: {fileID: 2800000, guid: effa52ae956f941768217bb2833a8b18, type: 1}
           m_Scale: {x: 1, y: 1}
           m_Offset: {x: 0, y: 0}
     m_Floats: {}
-    m_Colors:
-      data:
-        first:
-          name: _Color
-        second: {r: .836990416, g: .862008452, b: .99253732, a: 1}
+    m_Colors: {}

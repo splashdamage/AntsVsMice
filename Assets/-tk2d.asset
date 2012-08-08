@@ -264,3 +264,11 @@ MonoBehaviour:
     spriteTextureGUIDs:
     - e6795f7f0f5bb4767bc805c36e8ea0d5
     version: 3
+  - name: UserInterface
+    spriteCollectionGUID: 5e72b78f4b28441d286fab668911589b
+    spriteCollectionDataGUID: 1fc93db28e246400085a7fa76123d5bb
+    spriteNames:
+    - UI
+    spriteTextureGUIDs:
+    - 1d3535d5e771940a4a2c99998663a1d0
+    version: 3
