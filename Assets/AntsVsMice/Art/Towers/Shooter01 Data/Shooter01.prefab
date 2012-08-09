@@ -125,7 +125,7 @@ MonoBehaviour:
   spriteCollectionName: Shooter01
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 236290121
+  buildKey: 549250891
   dataGuid: 7a1fc862a89ca440fb899eb3bda90e52
 --- !u!1001 &100100000
 Prefab:

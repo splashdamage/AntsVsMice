@@ -88,7 +88,7 @@ MonoBehaviour:
   spriteCollectionName: UserInterface
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 740789010
+  buildKey: 599238658
   dataGuid: 1fc93db28e246400085a7fa76123d5bb
 --- !u!1001 &100100000
 Prefab:

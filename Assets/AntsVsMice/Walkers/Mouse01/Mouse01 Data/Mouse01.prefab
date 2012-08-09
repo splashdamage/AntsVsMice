@@ -88,7 +88,7 @@ MonoBehaviour:
   spriteCollectionName: Mouse01
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 691845208
+  buildKey: 494115713
   dataGuid: 2f17f1b1d891949ebafd1cf0dbf5aba4
 --- !u!1001 &100100000
 Prefab:

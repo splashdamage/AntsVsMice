@@ -88,7 +88,7 @@ MonoBehaviour:
   spriteCollectionName: Sprayer
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 442358682
+  buildKey: 1144995658
   dataGuid: b818c7b71f00248c49db1a476f30ac55
 --- !u!1001 &100100000
 Prefab:

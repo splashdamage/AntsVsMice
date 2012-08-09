@@ -1,0 +1,1177 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: ArmoredMouse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 1}
+  m_Name: 
+  version: 3
+  materialIdsValid: 1
+  spriteDefinitions:
+  - name: ArmoredMouseMov0021
+    boundsData:
+    - {x: .0140625015, y: .00156250596, z: 0}
+    - {x: .359375, y: .771875024, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.165624991, y: -.384375006, z: 0}
+    - {x: .193749994, y: -.384375006, z: 0}
+    - {x: -.165624991, y: .387500018, z: 0}
+    - {x: .193749994, y: .387500018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .707032204, y: .483399421}
+    - {x: .819334984, y: .483399421}
+    - {x: .707032204, y: .724608421}
+    - {x: .819334984, y: .724608421}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 44ae8c509e1f14290ad413708aee67fd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0020
+    boundsData:
+    - {x: .0156250149, y: 1.49011612e-08, z: 0}
+    - {x: .362500012, y: .774999976, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.165624991, y: -.387499988, z: 0}
+    - {x: .196875021, y: -.387499988, z: 0}
+    - {x: -.165624991, y: .387500018, z: 0}
+    - {x: .196875021, y: .387500018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .356446296, y: .496094733}
+    - {x: .469725579, y: .496094733}
+    - {x: .356446296, y: .738280296}
+    - {x: .469725579, y: .738280296}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6d866b1fe77154320a1a199076fd240c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0027
+    boundsData:
+    - {x: .0124999955, y: .00156250596, z: 0}
+    - {x: .362500012, y: .784375012, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.168750003, y: -.390625, z: 0}
+    - {x: .193749994, y: -.390625, z: 0}
+    - {x: -.168750003, y: .393750012, z: 0}
+    - {x: .193749994, y: .393750012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .237305671, y: .251954108}
+    - {x: .350584954, y: .251954108}
+    - {x: .237305671, y: .497069329}
+    - {x: .350584954, y: .497069329}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7c9ffb94ae40b4ff7840930fcc5b679f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0026
+    boundsData:
+    - {x: .0124999955, y: 1.49011612e-08, z: 0}
+    - {x: .362500012, y: .78125, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.168750003, y: -.390625, z: 0}
+    - {x: .193749994, y: -.390625, z: 0}
+    - {x: -.168750003, y: .39062503, z: 0}
+    - {x: .193749994, y: .39062503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .250977546, y: .747071266}
+    - {x: .364256829, y: .747071266}
+    - {x: .250977546, y: .991209984}
+    - {x: .364256829, y: .991209984}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: a239b17294b1a4b80a7bfa324d8db224
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0029
+    boundsData:
+    - {x: .0124999955, y: -.00156249106, z: 0}
+    - {x: .362500012, y: .790624976, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.168750003, y: -.396874994, z: 0}
+    - {x: .193749994, y: -.396874994, z: 0}
+    - {x: -.168750003, y: .393750012, z: 0}
+    - {x: .193749994, y: .393750012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .120118164, y: .00195410149}
+    - {x: .233397454, y: .00195410149}
+    - {x: .120118164, y: .249022454}
+    - {x: .233397454, y: .249022454}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 57fa35391cce942f098b27664258e27b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0028
+    boundsData:
+    - {x: .0124999955, y: 0, z: 0}
+    - {x: .362500012, y: .787500024, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.168750003, y: -.393750012, z: 0}
+    - {x: .193749994, y: -.393750012, z: 0}
+    - {x: -.168750003, y: .393750012, z: 0}
+    - {x: .193749994, y: .393750012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .237305671, y: .00195410149}
+    - {x: .350584954, y: .00195410149}
+    - {x: .237305671, y: .248045892}
+    - {x: .350584954, y: .248045892}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 19c1b4e0062924050a207c441f94ce1c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0012
+    boundsData:
+    - {x: .0156250149, y: -.00312498212, z: 0}
+    - {x: .362500012, y: .775000036, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.165624991, y: -.390625, z: 0}
+    - {x: .196875021, y: -.390625, z: 0}
+    - {x: -.165624991, y: .384375036, z: 0}
+    - {x: .196875021, y: .384375036, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .368165046, y: .742188454}
+    - {x: .481444329, y: .742188454}
+    - {x: .368165046, y: .984374046}
+    - {x: .481444329, y: .984374046}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: c947b8ad8e9bd4fdab64b5f8d8f5409d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0015
+    boundsData:
+    - {x: .0171875134, y: -.0078124851, z: 0}
+    - {x: .359375, y: .778125048, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.162499994, y: -.396874994, z: 0}
+    - {x: .196875021, y: -.396874994, z: 0}
+    - {x: -.162499994, y: .381250024, z: 0}
+    - {x: .196875021, y: .381250024, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .705079079, y: .118165039}
+    - {x: .817381859, y: .118165039}
+    - {x: .705079079, y: .361327142}
+    - {x: .817381859, y: .361327142}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3f672d058d9a943c4984fb8b1ccdbbff
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0014
+    boundsData:
+    - {x: .0171875134, y: -.00624997914, z: 0}
+    - {x: .359375, y: .78125, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.162499994, y: -.396874994, z: 0}
+    - {x: .196875021, y: -.396874994, z: 0}
+    - {x: -.162499994, y: .384375036, z: 0}
+    - {x: .196875021, y: .384375036, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .588868141, y: .00195410149}
+    - {x: .588868141, y: .114256836}
+    - {x: .833006859, y: .00195410149}
+    - {x: .833006859, y: .114256836}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 05f2f8f8c08174b60b6ef98885e78291
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0011
+    boundsData:
+    - {x: .0156250149, y: 1.49011612e-08, z: 0}
+    - {x: .362500012, y: .774999976, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.165624991, y: -.387499988, z: 0}
+    - {x: .196875021, y: -.387499988, z: 0}
+    - {x: -.165624991, y: .387500018, z: 0}
+    - {x: .196875021, y: .387500018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .471680671, y: .00195410149}
+    - {x: .584959984, y: .00195410149}
+    - {x: .471680671, y: .244139642}
+    - {x: .584959984, y: .244139642}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 455aa6d42902e45dba511c08d7c5c1af
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0010
+    boundsData:
+    - {x: .0156250149, y: 1.49011612e-08, z: 0}
+    - {x: .362500012, y: .774999976, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.165624991, y: -.387499988, z: 0}
+    - {x: .196875021, y: -.387499988, z: 0}
+    - {x: -.165624991, y: .387500018, z: 0}
+    - {x: .196875021, y: .387500018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .471680671, y: .248047858}
+    - {x: .584959984, y: .248047858}
+    - {x: .471680671, y: .490233392}
+    - {x: .584959984, y: .490233392}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 234611efd13f8427c8f0ad8ca95196b6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0002
+    boundsData:
+    - {x: .0124999955, y: -.00156249106, z: 0}
+    - {x: .362500012, y: .790624976, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.168750003, y: -.396874994, z: 0}
+    - {x: .193749994, y: -.396874994, z: 0}
+    - {x: -.168750003, y: .393750012, z: 0}
+    - {x: .193749994, y: .393750012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .120118164, y: .252930671}
+    - {x: .233397454, y: .252930671}
+    - {x: .120118164, y: .499999017}
+    - {x: .233397454, y: .499999017}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2c7af536745254443a95df2ed1356d17
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0005
+    boundsData:
+    - {x: .0140625089, y: .00156250596, z: 0}
+    - {x: .365625024, y: .784375012, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.168750003, y: -.390625, z: 0}
+    - {x: .196875021, y: -.390625, z: 0}
+    - {x: -.168750003, y: .393750012, z: 0}
+    - {x: .196875021, y: .393750012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .753907204}
+    - {x: .00195410149, y: .868163109}
+    - {x: .247069329, y: .753907204}
+    - {x: .247069329, y: .868163109}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 66785c08e65d44e8792bfb6d413c3add
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0030
+    boundsData:
+    - {x: .010937497, y: -.00156249106, z: 0}
+    - {x: .365624994, y: .790624976, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.171875, y: -.396874994, z: 0}
+    - {x: .193749994, y: -.396874994, z: 0}
+    - {x: -.171875, y: .393750012, z: 0}
+    - {x: .193749994, y: .393750012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .00195410149}
+    - {x: .116209961, y: .00195410149}
+    - {x: .00195410149, y: .249022454}
+    - {x: .116209961, y: .249022454}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 3f762fdcd10774569ac36e7361141372
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0009
+    boundsData:
+    - {x: .0156250149, y: .00312501192, z: 0}
+    - {x: .362500012, y: .775000036, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.165624991, y: -.384375006, z: 0}
+    - {x: .196875021, y: -.384375006, z: 0}
+    - {x: -.165624991, y: .39062503, z: 0}
+    - {x: .196875021, y: .39062503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .473633796, y: .494141608}
+    - {x: .586913109, y: .494141608}
+    - {x: .473633796, y: .736327171}
+    - {x: .586913109, y: .736327171}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: ec76ee64103e644b782fb2ca851a1fc1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0008
+    boundsData:
+    - {x: .0156250149, y: .00468751788, z: 0}
+    - {x: .362500012, y: .771875024, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.165624991, y: -.381249994, z: 0}
+    - {x: .196875021, y: -.381249994, z: 0}
+    - {x: -.165624991, y: .39062503, z: 0}
+    - {x: .196875021, y: .39062503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .588868141, y: .366211921}
+    - {x: .588868141, y: .479491204}
+    - {x: .830077171, y: .366211921}
+    - {x: .830077171, y: .479491204}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4a6d75c9929434a468c5557f6c4aa9c0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0013
+    boundsData:
+    - {x: .0156250149, y: -.00468748808, z: 0}
+    - {x: .362500012, y: .778125048, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.165624991, y: -.393750012, z: 0}
+    - {x: .196875021, y: -.393750012, z: 0}
+    - {x: -.165624991, y: .384375036, z: 0}
+    - {x: .196875021, y: .384375036, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .354493171, y: .00195410149}
+    - {x: .467772454, y: .00195410149}
+    - {x: .354493171, y: .245116204}
+    - {x: .467772454, y: .245116204}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0108c93a91da446fc9443982fe81deb1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0001
+    boundsData:
+    - {x: .010937497, y: -.00156249106, z: 0}
+    - {x: .365624994, y: .790624976, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.171875, y: -.396874994, z: 0}
+    - {x: .193749994, y: -.396874994, z: 0}
+    - {x: -.171875, y: .393750012, z: 0}
+    - {x: .193749994, y: .393750012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .252930671}
+    - {x: .116209961, y: .252930671}
+    - {x: .00195410149, y: .499999017}
+    - {x: .116209961, y: .499999017}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: a26abe710887d493eacedfc062f840f4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0004
+    boundsData:
+    - {x: .0140625089, y: .00156250596, z: 0}
+    - {x: .365625024, y: .784375012, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.168750003, y: -.390625, z: 0}
+    - {x: .196875021, y: -.390625, z: 0}
+    - {x: -.168750003, y: .393750012, z: 0}
+    - {x: .196875021, y: .393750012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .872071266}
+    - {x: .00195410149, y: .986327171}
+    - {x: .247069329, y: .872071266}
+    - {x: .247069329, y: .986327171}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 2295e1e1812494dfd9363bbc19df191b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0007
+    boundsData:
+    - {x: .0140625089, y: .00312501192, z: 0}
+    - {x: .365625024, y: .775000036, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.168750003, y: -.384375006, z: 0}
+    - {x: .196875021, y: -.384375006, z: 0}
+    - {x: -.168750003, y: .39062503, z: 0}
+    - {x: .196875021, y: .39062503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .238282233, y: .500977516}
+    - {x: .352538079, y: .500977516}
+    - {x: .238282233, y: .743163109}
+    - {x: .352538079, y: .743163109}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: e234d4fe3409448e9ac4a884e4369693
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0006
+    boundsData:
+    - {x: .0140625089, y: .00312501192, z: 0}
+    - {x: .365625024, y: .78125, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.168750003, y: -.387499988, z: 0}
+    - {x: .196875021, y: -.387499988, z: 0}
+    - {x: -.168750003, y: .393750012, z: 0}
+    - {x: .196875021, y: .393750012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .120118164, y: .503907204}
+    - {x: .234374017, y: .503907204}
+    - {x: .120118164, y: .748045921}
+    - {x: .234374017, y: .748045921}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8e7f85ede6b8344cfac2af34b6967840
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0003
+    boundsData:
+    - {x: .0140625089, y: 0, z: 0}
+    - {x: .365625024, y: .787500024, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.168750003, y: -.393750012, z: 0}
+    - {x: .196875021, y: -.393750012, z: 0}
+    - {x: -.168750003, y: .393750012, z: 0}
+    - {x: .196875021, y: .393750012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .503907204}
+    - {x: .116209961, y: .503907204}
+    - {x: .00195410149, y: .749999046}
+    - {x: .116209961, y: .749999046}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: a0c859ec1575c41e5b6e6c642265c640
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0017
+    boundsData:
+    - {x: .015625, y: -.00468748808, z: 0}
+    - {x: .356249988, y: .778125048, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.162499994, y: -.393750012, z: 0}
+    - {x: .193749994, y: -.393750012, z: 0}
+    - {x: -.162499994, y: .384375036, z: 0}
+    - {x: .193749994, y: .384375036, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .707032204, y: .728516579}
+    - {x: .818358421, y: .728516579}
+    - {x: .707032204, y: .971678734}
+    - {x: .818358421, y: .971678734}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 24de1afe88fa54fe58c3ecb24e34fb79
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0016
+    boundsData:
+    - {x: .0171875134, y: -.00624997914, z: 0}
+    - {x: .359375, y: .78125, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.162499994, y: -.396874994, z: 0}
+    - {x: .196875021, y: -.396874994, z: 0}
+    - {x: -.162499994, y: .384375036, z: 0}
+    - {x: .196875021, y: .384375036, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .588868141, y: .118165039}
+    - {x: .701170921, y: .118165039}
+    - {x: .588868141, y: .362303704}
+    - {x: .701170921, y: .362303704}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9caa99bf816264901bd6ea8e22cffb9d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0019
+    boundsData:
+    - {x: .0140625015, y: -.00312498212, z: 0}
+    - {x: .359375, y: .775000036, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.165624991, y: -.390625, z: 0}
+    - {x: .193749994, y: -.390625, z: 0}
+    - {x: -.165624991, y: .384375036, z: 0}
+    - {x: .193749994, y: .384375036, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .821290016, y: .118165039}
+    - {x: .933592796, y: .118165039}
+    - {x: .821290016, y: .360350579}
+    - {x: .933592796, y: .360350579}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 55fe1b4a994814291ba6d2e62693a8be
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0018
+    boundsData:
+    - {x: .0140625015, y: -.00312498212, z: 0}
+    - {x: .359375, y: .775000036, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.165624991, y: -.390625, z: 0}
+    - {x: .193749994, y: -.390625, z: 0}
+    - {x: -.165624991, y: .384375036, z: 0}
+    - {x: .193749994, y: .384375036, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .590821266, y: .483399421}
+    - {x: .703124046, y: .483399421}
+    - {x: .590821266, y: .725584984}
+    - {x: .703124046, y: .725584984}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 186732abd855140069d3d3801a9307cc
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0023
+    boundsData:
+    - {x: .0140625015, y: .00312501192, z: 0}
+    - {x: .359375, y: .775000036, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.165624991, y: -.384375006, z: 0}
+    - {x: .193749994, y: -.384375006, z: 0}
+    - {x: -.165624991, y: .39062503, z: 0}
+    - {x: .193749994, y: .39062503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .833985329, y: .364258796}
+    - {x: .946288109, y: .364258796}
+    - {x: .833985329, y: .606444359}
+    - {x: .946288109, y: .606444359}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4cfb52e01af8e402f98035799df9f7fa
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0022
+    boundsData:
+    - {x: .0140625015, y: .00156250596, z: 0}
+    - {x: .359375, y: .771875024, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.165624991, y: -.384375006, z: 0}
+    - {x: .193749994, y: -.384375006, z: 0}
+    - {x: -.165624991, y: .387500018, z: 0}
+    - {x: .193749994, y: .387500018, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .823243141, y: .610352516}
+    - {x: .935545921, y: .610352516}
+    - {x: .823243141, y: .851561546}
+    - {x: .935545921, y: .851561546}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: cfbab2c5fb49148a4ae6df385bc467be
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0024
+    boundsData:
+    - {x: .0124999955, y: .00312501192, z: 0}
+    - {x: .362500012, y: .775000036, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.168750003, y: -.384375006, z: 0}
+    - {x: .193749994, y: -.384375006, z: 0}
+    - {x: -.168750003, y: .39062503, z: 0}
+    - {x: .193749994, y: .39062503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .485352546, y: .740235329}
+    - {x: .598631859, y: .740235329}
+    - {x: .485352546, y: .982420921}
+    - {x: .598631859, y: .982420921}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 47009bde3727b4b4caca9cbce6adcf42
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: ArmoredMouseMov0025
+    boundsData:
+    - {x: .0124999955, y: .00156252086, z: 0}
+    - {x: .362500012, y: .778125048, z: 0}
+    untrimmedBoundsData:
+    - {x: .00156250596, y: 0, z: 0}
+    - {x: .671875, y: .9375, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.168750003, y: -.387499988, z: 0}
+    - {x: .193749994, y: -.387499988, z: 0}
+    - {x: -.168750003, y: .39062503, z: 0}
+    - {x: .193749994, y: .39062503, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .354493171, y: .249024421}
+    - {x: .467772454, y: .249024421}
+    - {x: .354493171, y: .492186517}
+    - {x: .467772454, y: .492186517}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+    materialId: 0
+    sourceTextureGUID: 920cd77eaafde4893b3e3359c71f5f32
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 863d78e9cc3034b7d9e0865370d44325, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 6f6ef313b31bb4647998594de82c3b45, type: 1}
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 876f8401497334da7bcdc54d5f5a8c05
+  spriteCollectionName: ArmoredMouse
+  invOrthoSize: 1
+  halfTargetHeight: 320
+  buildKey: 1515613115
+  dataGuid: c45b96478a4764fb8a0c392330734bd7
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

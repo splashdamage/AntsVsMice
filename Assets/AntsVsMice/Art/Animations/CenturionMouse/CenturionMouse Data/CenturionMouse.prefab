@@ -1,0 +1,1362 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: CenturionMouse
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 1}
+  m_Name: 
+  version: 3
+  materialIdsValid: 1
+  spriteDefinitions:
+  - name: CenturionFrames0034
+    boundsData:
+    - {x: -.0156249851, y: .0296875089, z: 0}
+    - {x: .418750018, y: .884374976, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.224999994, y: -.412499994, z: 0}
+    - {x: .193750024, y: -.412499994, z: 0}
+    - {x: -.224999994, y: .471875012, z: 0}
+    - {x: .193750024, y: .471875012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .836915016, y: .000977050746}
+    - {x: .967772484, y: .000977050746}
+    - {x: .836915016, y: .139159665}
+    - {x: .967772484, y: .139159665}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 66301c5fca4e94cfc8f4d773a7848a28
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0021
+    boundsData:
+    - {x: -.00781249255, y: .028125003, z: 0}
+    - {x: .415625036, y: .868749976, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.40625, z: 0}
+    - {x: .200000018, y: -.40625, z: 0}
+    - {x: -.215625003, y: .462500006, z: 0}
+    - {x: .200000018, y: .462500006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .134766608, y: .540527821}
+    - {x: .264647454, y: .540527821}
+    - {x: .134766608, y: .676269054}
+    - {x: .264647454, y: .676269054}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: ccbebbeb327ba4702b20c90df565c423
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0022
+    boundsData:
+    - {x: -.00781249255, y: .029687494, z: 0}
+    - {x: .415625036, y: .871874988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.40625, z: 0}
+    - {x: .200000018, y: -.40625, z: 0}
+    - {x: -.215625003, y: .465624988, z: 0}
+    - {x: .200000018, y: .465624988, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .414063483, y: .406738758}
+    - {x: .543944359, y: .406738758}
+    - {x: .414063483, y: .542968273}
+    - {x: .543944359, y: .542968273}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9e96448f35a014a15af87dd943e7850c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0025
+    boundsData:
+    - {x: -.00937499106, y: .0343750119, z: 0}
+    - {x: .412500024, y: .868749976, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.399999976, z: 0}
+    - {x: .196875021, y: -.399999976, z: 0}
+    - {x: -.215625003, y: .46875, z: 0}
+    - {x: .196875021, y: .46875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .547852516, y: .472656727}
+    - {x: .547852516, y: .537108898}
+    - {x: .819334984, y: .472656727}
+    - {x: .819334984, y: .537108898}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 064f5788840c44dbebb7f2a134a7b5b6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0028
+    boundsData:
+    - {x: -.00937499106, y: .0359374881, z: 0}
+    - {x: .412500024, y: .878125012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.403125018, z: 0}
+    - {x: .196875021, y: -.403125018, z: 0}
+    - {x: -.215625003, y: .474999994, z: 0}
+    - {x: .196875021, y: .474999994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .540527821}
+    - {x: .130858392, y: .540527821}
+    - {x: .00195410149, y: .677733898}
+    - {x: .130858392, y: .677733898}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: b62bf90aa90bb498ab5ac6f09e8d3d7c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0011
+    boundsData:
+    - {x: -.00624999404, y: .0328124911, z: 0}
+    - {x: .418750018, y: .871875048, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.403125018, z: 0}
+    - {x: .203125015, y: -.403125018, z: 0}
+    - {x: -.215625003, y: .46875, z: 0}
+    - {x: .203125015, y: .46875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .137207523}
+    - {x: .00195410149, y: .202636227}
+    - {x: .274413079, y: .137207523}
+    - {x: .274413079, y: .202636227}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: c78d5adfecb624506849944a3f618521
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0002
+    boundsData:
+    - {x: -.0140624866, y: .026562497, z: 0}
+    - {x: .421875, y: .878124952, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.224999994, y: -.412499994, z: 0}
+    - {x: .196875021, y: -.412499994, z: 0}
+    - {x: -.224999994, y: .465624988, z: 0}
+    - {x: .196875021, y: .465624988, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .558594704, y: .000977050746}
+    - {x: .558594704, y: .0668940395}
+    - {x: .833006859, y: .000977050746}
+    - {x: .833006859, y: .0668940395}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 448c3ee451ed04bd89e9a958684bcf75
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0001
+    boundsData:
+    - {x: -.0156249851, y: .025000006, z: 0}
+    - {x: .425000012, y: .875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.228124991, y: -.412499994, z: 0}
+    - {x: .196875021, y: -.412499994, z: 0}
+    - {x: -.228124991, y: .462500006, z: 0}
+    - {x: .196875021, y: .462500006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .000977050746}
+    - {x: .00195410149, y: .0673823208}
+    - {x: .275389642, y: .000977050746}
+    - {x: .275389642, y: .0673823208}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4bd5d2e3db0c3440788e74c1648183b4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0018
+    boundsData:
+    - {x: -.00624999404, y: .0218750089, z: 0}
+    - {x: .418750018, y: .868749976, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.412499994, z: 0}
+    - {x: .203125015, y: -.412499994, z: 0}
+    - {x: -.215625003, y: .456250012, z: 0}
+    - {x: .203125015, y: .456250012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .833008766, y: .280273914}
+    - {x: .963866234, y: .280273914}
+    - {x: .833008766, y: .416015148}
+    - {x: .963866234, y: .416015148}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: d262b26225da74d3dadb24ca3e8d0087
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0003
+    boundsData:
+    - {x: -.0140624866, y: .0281249881, z: 0}
+    - {x: .421875, y: .875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.224999994, y: -.409375012, z: 0}
+    - {x: .196875021, y: -.409375012, z: 0}
+    - {x: -.224999994, y: .465624988, z: 0}
+    - {x: .196875021, y: .465624988, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .279297858, y: .068848148}
+    - {x: .279297858, y: .134765133}
+    - {x: .552733421, y: .068848148}
+    - {x: .552733421, y: .134765133}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 41f776a29f7db4fbea16e04e68c53758
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0020
+    boundsData:
+    - {x: -.00624999404, y: .025000006, z: 0}
+    - {x: .418750018, y: .868750036, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.409375012, z: 0}
+    - {x: .203125015, y: -.409375012, z: 0}
+    - {x: -.215625003, y: .459375024, z: 0}
+    - {x: .203125015, y: .459375024, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .271973133}
+    - {x: .00195410149, y: .337401867}
+    - {x: .273436517, y: .271973133}
+    - {x: .273436517, y: .337401867}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 90442be03cc0c4eb2ad21607035e248c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0023
+    boundsData:
+    - {x: -.00781249255, y: .0312499851, z: 0}
+    - {x: .415625036, y: .868749976, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.403125018, z: 0}
+    - {x: .200000018, y: -.403125018, z: 0}
+    - {x: -.215625003, y: .465624988, z: 0}
+    - {x: .200000018, y: .465624988, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .268555671, y: .543945789}
+    - {x: .398436517, y: .543945789}
+    - {x: .268555671, y: .679687023}
+    - {x: .398436517, y: .679687023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9c58d91c967cf4df3993a2120608a148
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0031
+    boundsData:
+    - {x: -.0124999881, y: .032812506, z: 0}
+    - {x: .418750018, y: .878125012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.221874997, y: -.40625, z: 0}
+    - {x: .196875021, y: -.40625, z: 0}
+    - {x: -.221874997, y: .471875012, z: 0}
+    - {x: .196875021, y: .471875012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .835938454, y: .141113773}
+    - {x: .966795921, y: .141113773}
+    - {x: .835938454, y: .278319836}
+    - {x: .966795921, y: .278319836}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: ae73108ae496e417fa8cd30d7f0c760c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0024
+    boundsData:
+    - {x: -.00937499106, y: .0343750119, z: 0}
+    - {x: .412500024, y: .868749976, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.399999976, z: 0}
+    - {x: .196875021, y: -.399999976, z: 0}
+    - {x: -.215625003, y: .46875, z: 0}
+    - {x: .196875021, y: .46875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .547852516, y: .539062977}
+    - {x: .547852516, y: .603515148}
+    - {x: .819334984, y: .539062977}
+    - {x: .819334984, y: .603515148}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0650f33476890412094ac0e42759bd61
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0027
+    boundsData:
+    - {x: -.00937499106, y: .0375000089, z: 0}
+    - {x: .412500024, y: .875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.399999976, z: 0}
+    - {x: .196875021, y: -.399999976, z: 0}
+    - {x: -.215625003, y: .474999994, z: 0}
+    - {x: .196875021, y: .474999994, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .679687977}
+    - {x: .130858392, y: .679687977}
+    - {x: .00195410149, y: .816405773}
+    - {x: .130858392, y: .816405773}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: df20ee124ceb24c31ab6e839848ae1c9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0008
+    boundsData:
+    - {x: -.00781249255, y: .0359375179, z: 0}
+    - {x: .415625036, y: .871874988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.399999976, z: 0}
+    - {x: .200000018, y: -.399999976, z: 0}
+    - {x: -.215625003, y: .471875012, z: 0}
+    - {x: .200000018, y: .471875012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .473633289}
+    - {x: .00195410149, y: .538573742}
+    - {x: .274413079, y: .473633289}
+    - {x: .274413079, y: .538573742}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 92f36e6c5c8a54a2cb291826ed9750cd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0006
+    boundsData:
+    - {x: -.00937499106, y: .0328124911, z: 0}
+    - {x: .418750018, y: .871875048, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.21875, y: -.403125018, z: 0}
+    - {x: .200000018, y: -.403125018, z: 0}
+    - {x: -.21875, y: .46875, z: 0}
+    - {x: .200000018, y: .46875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .204590335}
+    - {x: .00195410149, y: .270019054}
+    - {x: .274413079, y: .204590335}
+    - {x: .274413079, y: .270019054}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6f11f909b89f242a5bc447211b660564
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0009
+    boundsData:
+    - {x: -.00781249255, y: .0375000089, z: 0}
+    - {x: .415625036, y: .868749976, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.396874994, z: 0}
+    - {x: .200000018, y: -.396874994, z: 0}
+    - {x: -.215625003, y: .471875012, z: 0}
+    - {x: .200000018, y: .471875012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .134766608, y: .678223133}
+    - {x: .264647454, y: .678223133}
+    - {x: .134766608, y: .813964367}
+    - {x: .264647454, y: .813964367}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8d1f7b98d24944295a33d1a49a18da50
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0015
+    boundsData:
+    - {x: -.00624999404, y: .025000006, z: 0}
+    - {x: .418750018, y: .868750036, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.409375012, z: 0}
+    - {x: .203125015, y: -.409375012, z: 0}
+    - {x: -.215625003, y: .459375024, z: 0}
+    - {x: .203125015, y: .459375024, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .277344733, y: .271973133}
+    - {x: .277344733, y: .337401867}
+    - {x: .548827171, y: .271973133}
+    - {x: .548827171, y: .337401867}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: f9bf0c0e4476745d58b257e29055111a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0014
+    boundsData:
+    - {x: -.00624999404, y: .028125003, z: 0}
+    - {x: .418750018, y: .868749976, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.40625, z: 0}
+    - {x: .203125015, y: -.40625, z: 0}
+    - {x: -.215625003, y: .462500006, z: 0}
+    - {x: .203125015, y: .462500006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .552735329, y: .337891102}
+    - {x: .552735329, y: .403319836}
+    - {x: .824217796, y: .337891102}
+    - {x: .824217796, y: .403319836}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7a471a4ef98104da6b92757796f8f61b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0030
+    boundsData:
+    - {x: -.0109374896, y: .032812506, z: 0}
+    - {x: .415625036, y: .878125012, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.21875, y: -.40625, z: 0}
+    - {x: .196875021, y: -.40625, z: 0}
+    - {x: -.21875, y: .471875012, z: 0}
+    - {x: .196875021, y: .471875012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .554688454, y: .270996571}
+    - {x: .554688454, y: .335937023}
+    - {x: .829100609, y: .270996571}
+    - {x: .829100609, y: .335937023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: f51a875c9e0ef47698a44361d2deb203
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0033
+    boundsData:
+    - {x: -.0156249851, y: .03125, z: 0}
+    - {x: .418750018, y: .881250024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.224999994, y: -.409375012, z: 0}
+    - {x: .193750024, y: -.409375012, z: 0}
+    - {x: -.224999994, y: .471875012, z: 0}
+    - {x: .193750024, y: .471875012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .556641579, y: .068848148}
+    - {x: .556641579, y: .134276852}
+    - {x: .832030296, y: .068848148}
+    - {x: .832030296, y: .134276852}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 73e2da4b5c3a544aeae641ed5fe8b7d1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0032
+    boundsData:
+    - {x: -.0156249851, y: .03125, z: 0}
+    - {x: .418750018, y: .881250024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.224999994, y: -.409375012, z: 0}
+    - {x: .193750024, y: -.409375012, z: 0}
+    - {x: -.224999994, y: .471875012, z: 0}
+    - {x: .193750024, y: .471875012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .556641579, y: .13623096}
+    - {x: .556641579, y: .201659665}
+    - {x: .832030296, y: .13623096}
+    - {x: .832030296, y: .201659665}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 73d70a346d0e84711b385c5d01e17b04
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0035
+    boundsData:
+    - {x: -.0171874836, y: .028125003, z: 0}
+    - {x: .421875, y: .881250024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.228124991, y: -.412499994, z: 0}
+    - {x: .193750024, y: -.412499994, z: 0}
+    - {x: -.228124991, y: .46875, z: 0}
+    - {x: .193750024, y: .46875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .279297858, y: .000977050746}
+    - {x: .279297858, y: .0668940395}
+    - {x: .554686546, y: .000977050746}
+    - {x: .554686546, y: .0668940395}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6eeb73660bf3c458db4734d2b3efa051
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0010
+    boundsData:
+    - {x: -.00624999404, y: .0359375179, z: 0}
+    - {x: .418750018, y: .871874988, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.399999976, z: 0}
+    - {x: .203125015, y: -.399999976, z: 0}
+    - {x: -.215625003, y: .471875012, z: 0}
+    - {x: .203125015, y: .471875012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .278321296, y: .204590335}
+    - {x: .278321296, y: .270019054}
+    - {x: .550780296, y: .204590335}
+    - {x: .550780296, y: .270019054}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: e061e5cc0e3eb405cb41d2777442169b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0013
+    boundsData:
+    - {x: -.00624999404, y: .028125003, z: 0}
+    - {x: .418750018, y: .868749976, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.40625, z: 0}
+    - {x: .203125015, y: -.40625, z: 0}
+    - {x: -.215625003, y: .462500006, z: 0}
+    - {x: .203125015, y: .462500006, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .339355946}
+    - {x: .00195410149, y: .404784679}
+    - {x: .273436517, y: .339355946}
+    - {x: .273436517, y: .404784679}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6a16bb83a53ab45e58b6eb1298df5095
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0012
+    boundsData:
+    - {x: -.00624999404, y: .0312499851, z: 0}
+    - {x: .418750018, y: .868749976, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.403125018, z: 0}
+    - {x: .203125015, y: -.403125018, z: 0}
+    - {x: -.215625003, y: .465624988, z: 0}
+    - {x: .203125015, y: .465624988, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .277344733, y: .339355946}
+    - {x: .277344733, y: .404784679}
+    - {x: .548827171, y: .339355946}
+    - {x: .548827171, y: .404784679}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 02a0f61f1f0d44ae7b4d5e9ac9ef7949
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0017
+    boundsData:
+    - {x: -.00624999404, y: .020312503, z: 0}
+    - {x: .418750018, y: .865625024, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.412499994, z: 0}
+    - {x: .203125015, y: -.412499994, z: 0}
+    - {x: -.215625003, y: .453125, z: 0}
+    - {x: .203125015, y: .453125, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .279297858, y: .406738758}
+    - {x: .410155267, y: .406738758}
+    - {x: .279297858, y: .541991711}
+    - {x: .410155267, y: .541991711}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1574418a1821f4349b866dfa7c1865ed
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0016
+    boundsData:
+    - {x: -.00468749553, y: .0218750089, z: 0}
+    - {x: .421875, y: .868749976, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.412499994, z: 0}
+    - {x: .206250012, y: -.412499994, z: 0}
+    - {x: -.215625003, y: .456250012, z: 0}
+    - {x: .206250012, y: .456250012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .279297858, y: .136719242}
+    - {x: .279297858, y: .202636227}
+    - {x: .550780296, y: .136719242}
+    - {x: .550780296, y: .202636227}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1d923b80e0d224826b36a7c1e83e45f6
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0019
+    boundsData:
+    - {x: -.00624999404, y: .025000006, z: 0}
+    - {x: .418750018, y: .868750036, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.409375012, z: 0}
+    - {x: .203125015, y: -.409375012, z: 0}
+    - {x: -.215625003, y: .459375024, z: 0}
+    - {x: .203125015, y: .459375024, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .552735329, y: .405273914}
+    - {x: .552735329, y: .470702648}
+    - {x: .824217796, y: .405273914}
+    - {x: .824217796, y: .470702648}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6ab139fe0871045bcadcacc808fb6b38
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0005
+    boundsData:
+    - {x: -.0109374896, y: .03125, z: 0}
+    - {x: .421875, y: .875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.221874997, y: -.40625, z: 0}
+    - {x: .200000018, y: -.40625, z: 0}
+    - {x: -.221874997, y: .46875, z: 0}
+    - {x: .200000018, y: .46875, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .0693364292}
+    - {x: .00195410149, y: .135253415}
+    - {x: .275389642, y: .0693364292}
+    - {x: .275389642, y: .135253415}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 10de99a4463764d96ad2e6f59500f214
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0004
+    boundsData:
+    - {x: -.0124999881, y: .0281249881, z: 0}
+    - {x: .418750018, y: .875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.221874997, y: -.409375012, z: 0}
+    - {x: .196875021, y: -.409375012, z: 0}
+    - {x: -.221874997, y: .465624988, z: 0}
+    - {x: .196875021, y: .465624988, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .554688454, y: .203613773}
+    - {x: .554688454, y: .269042492}
+    - {x: .828124046, y: .203613773}
+    - {x: .828124046, y: .269042492}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9a2c2d8048d224579a9ec9fd050e167f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0007
+    boundsData:
+    - {x: -.00781249255, y: .034374997, z: 0}
+    - {x: .415625036, y: .875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.403125018, z: 0}
+    - {x: .200000018, y: -.403125018, z: 0}
+    - {x: -.215625003, y: .471875012, z: 0}
+    - {x: .200000018, y: .471875012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .828125954, y: .417969227}
+    - {x: .958006859, y: .417969227}
+    - {x: .828125954, y: .554687023}
+    - {x: .958006859, y: .554687023}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7dc2aa93625e942bc99225ce02a3951b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0026
+    boundsData:
+    - {x: -.00937499106, y: .0375000089, z: 0}
+    - {x: .412500024, y: .868749976, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.215625003, y: -.396874994, z: 0}
+    - {x: .196875021, y: -.396874994, z: 0}
+    - {x: -.215625003, y: .471875012, z: 0}
+    - {x: .196875021, y: .471875012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .402344733, y: .544922352}
+    - {x: .531249046, y: .544922352}
+    - {x: .402344733, y: .680663586}
+    - {x: .531249046, y: .680663586}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6e53f80aabcf44ee59e2a5923b7cb780
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: CenturionFrames0029
+    boundsData:
+    - {x: -.0109374896, y: .034374997, z: 0}
+    - {x: .415625036, y: .875, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 0, z: 0}
+    - {x: 1.71875, y: 1.25, z: 0}
+    texelSize: {x: .00312500005, y: .00312500005}
+    positions:
+    - {x: -.21875, y: -.403125018, z: 0}
+    - {x: .196875021, y: -.403125018, z: 0}
+    - {x: -.21875, y: .471875012, z: 0}
+    - {x: .196875021, y: .471875012, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .406738758}
+    - {x: .00195410149, y: .471679211}
+    - {x: .275389642, y: .406738758}
+    - {x: .275389642, y: .471679211}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+    materialId: 0
+    sourceTextureGUID: 001cacea421d144b59c84920330d9741
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 1
+    colliderVertices: []
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: 262abee71b4d841f5825a8a7829e6946, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 19af7b6ec0a114dfbbc55e01576107cb, type: 1}
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: b561ec3798f7246639aba6716573d962
+  spriteCollectionName: CenturionMouse
+  invOrthoSize: 1
+  halfTargetHeight: 320
+  buildKey: 1494736308
+  dataGuid: 36c9d73187d8e47698e3ecbf0558141a
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1
