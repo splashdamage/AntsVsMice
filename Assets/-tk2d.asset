@@ -259,14 +259,6 @@ MonoBehaviour:
     spriteTextureGUIDs:
     - 7347f406757cb48d7adf37364d2d61ec
     version: 3
-  - name: Mouse01
-    spriteCollectionGUID: 7a5555989ad4d46389f63bac3ada6660
-    spriteCollectionDataGUID: 2f17f1b1d891949ebafd1cf0dbf5aba4
-    spriteNames:
-    - Mouse01Placeholder
-    spriteTextureGUIDs:
-    - 785f875b39a604d3b8f00fb3ae2d6593
-    version: 3
   - name: Shooter01
     spriteCollectionGUID: 5a1451e16054649f8a337fec273ce5d0
     spriteCollectionDataGUID: 7a1fc862a89ca440fb899eb3bda90e52
