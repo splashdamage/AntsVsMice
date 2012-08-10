@@ -42,17 +42,17 @@ MonoBehaviour:
   spriteDefinitions:
   - name: ArmoredMouseMov0021
     boundsData:
-    - {x: .0140625015, y: .00156250596, z: 0}
+    - {x: .0140625015, y: .470312536, z: 0}
     - {x: .359375, y: .771875024, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.165624991, y: -.384375006, z: 0}
-    - {x: .193749994, y: -.384375006, z: 0}
-    - {x: -.165624991, y: .387500018, z: 0}
-    - {x: .193749994, y: .387500018, z: 0}
+    - {x: -.165624991, y: .0843750015, z: 0}
+    - {x: .193749994, y: .0843750015, z: 0}
+    - {x: -.165624991, y: .856250048, z: 0}
+    - {x: .193749994, y: .856250048, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -71,25 +71,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0140625015, y: .470312536, z: 0}
+    - {x: .1796875, y: .385937512, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0020
     boundsData:
-    - {x: .0156250149, y: 1.49011612e-08, z: 0}
-    - {x: .362500012, y: .774999976, z: 0}
+    - {x: .0156250149, y: .46875003, z: 0}
+    - {x: .362500012, y: .775000036, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.165624991, y: -.387499988, z: 0}
-    - {x: .196875021, y: -.387499988, z: 0}
-    - {x: -.165624991, y: .387500018, z: 0}
-    - {x: .196875021, y: .387500018, z: 0}
+    - {x: -.165624991, y: .081249997, z: 0}
+    - {x: .196875021, y: .081249997, z: 0}
+    - {x: -.165624991, y: .856250048, z: 0}
+    - {x: .196875021, y: .856250048, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -108,25 +110,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0156250149, y: .46875003, z: 0}
+    - {x: .181250006, y: .387500018, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0027
     boundsData:
-    - {x: .0124999955, y: .00156250596, z: 0}
+    - {x: .0124999955, y: .470312506, z: 0}
     - {x: .362500012, y: .784375012, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.168750003, y: -.390625, z: 0}
-    - {x: .193749994, y: -.390625, z: 0}
-    - {x: -.168750003, y: .393750012, z: 0}
-    - {x: .193749994, y: .393750012, z: 0}
+    - {x: -.168750003, y: .078125, z: 0}
+    - {x: .193749994, y: .078125, z: 0}
+    - {x: -.168750003, y: .862500012, z: 0}
+    - {x: .193749994, y: .862500012, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -145,25 +149,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0124999955, y: .470312506, z: 0}
+    - {x: .181250006, y: .392187506, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0026
     boundsData:
-    - {x: .0124999955, y: 1.49011612e-08, z: 0}
+    - {x: .0124999955, y: .46875, z: 0}
     - {x: .362500012, y: .78125, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.168750003, y: -.390625, z: 0}
-    - {x: .193749994, y: -.390625, z: 0}
-    - {x: -.168750003, y: .39062503, z: 0}
-    - {x: .193749994, y: .39062503, z: 0}
+    - {x: -.168750003, y: .078125, z: 0}
+    - {x: .193749994, y: .078125, z: 0}
+    - {x: -.168750003, y: .859375, z: 0}
+    - {x: .193749994, y: .859375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -182,25 +188,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0124999955, y: .46875, z: 0}
+    - {x: .181250006, y: .390625, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0029
     boundsData:
-    - {x: .0124999955, y: -.00156249106, z: 0}
-    - {x: .362500012, y: .790624976, z: 0}
+    - {x: .0124999955, y: .467187494, z: 0}
+    - {x: .362500012, y: .790625036, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.168750003, y: -.396874994, z: 0}
-    - {x: .193749994, y: -.396874994, z: 0}
-    - {x: -.168750003, y: .393750012, z: 0}
-    - {x: .193749994, y: .393750012, z: 0}
+    - {x: -.168750003, y: .0718749985, z: 0}
+    - {x: .193749994, y: .0718749985, z: 0}
+    - {x: -.168750003, y: .862500012, z: 0}
+    - {x: .193749994, y: .862500012, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -219,25 +227,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0124999955, y: .467187494, z: 0}
+    - {x: .181250006, y: .395312518, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0028
     boundsData:
-    - {x: .0124999955, y: 0, z: 0}
+    - {x: .0124999955, y: .46875, z: 0}
     - {x: .362500012, y: .787500024, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.168750003, y: -.393750012, z: 0}
-    - {x: .193749994, y: -.393750012, z: 0}
-    - {x: -.168750003, y: .393750012, z: 0}
-    - {x: .193749994, y: .393750012, z: 0}
+    - {x: -.168750003, y: .0749999955, z: 0}
+    - {x: .193749994, y: .0749999955, z: 0}
+    - {x: -.168750003, y: .862500012, z: 0}
+    - {x: .193749994, y: .862500012, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -256,25 +266,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0124999955, y: .46875, z: 0}
+    - {x: .181250006, y: .393750012, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0012
     boundsData:
-    - {x: .0156250149, y: -.00312498212, z: 0}
+    - {x: .0156250149, y: .465625018, z: 0}
     - {x: .362500012, y: .775000036, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.165624991, y: -.390625, z: 0}
-    - {x: .196875021, y: -.390625, z: 0}
-    - {x: -.165624991, y: .384375036, z: 0}
-    - {x: .196875021, y: .384375036, z: 0}
+    - {x: -.165624991, y: .078125, z: 0}
+    - {x: .196875021, y: .078125, z: 0}
+    - {x: -.165624991, y: .853125036, z: 0}
+    - {x: .196875021, y: .853125036, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -293,25 +305,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0156250149, y: .465625018, z: 0}
+    - {x: .181250006, y: .387500018, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0015
     boundsData:
-    - {x: .0171875134, y: -.0078124851, z: 0}
+    - {x: .0171875134, y: .4609375, z: 0}
     - {x: .359375, y: .778125048, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.162499994, y: -.396874994, z: 0}
-    - {x: .196875021, y: -.396874994, z: 0}
-    - {x: -.162499994, y: .381250024, z: 0}
-    - {x: .196875021, y: .381250024, z: 0}
+    - {x: -.162499994, y: .0718749985, z: 0}
+    - {x: .196875021, y: .0718749985, z: 0}
+    - {x: -.162499994, y: .850000024, z: 0}
+    - {x: .196875021, y: .850000024, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -330,25 +344,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0171875134, y: .4609375, z: 0}
+    - {x: .1796875, y: .389062524, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0014
     boundsData:
-    - {x: .0171875134, y: -.00624997914, z: 0}
-    - {x: .359375, y: .78125, z: 0}
+    - {x: .0171875134, y: .462500006, z: 0}
+    - {x: .359375, y: .78125006, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.162499994, y: -.396874994, z: 0}
-    - {x: .196875021, y: -.396874994, z: 0}
-    - {x: -.162499994, y: .384375036, z: 0}
-    - {x: .196875021, y: .384375036, z: 0}
+    - {x: -.162499994, y: .0718749985, z: 0}
+    - {x: .196875021, y: .0718749985, z: 0}
+    - {x: -.162499994, y: .853125036, z: 0}
+    - {x: .196875021, y: .853125036, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -367,25 +383,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0171875134, y: .462500006, z: 0}
+    - {x: .1796875, y: .39062503, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0011
     boundsData:
-    - {x: .0156250149, y: 1.49011612e-08, z: 0}
-    - {x: .362500012, y: .774999976, z: 0}
+    - {x: .0156250149, y: .46875003, z: 0}
+    - {x: .362500012, y: .775000036, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.165624991, y: -.387499988, z: 0}
-    - {x: .196875021, y: -.387499988, z: 0}
-    - {x: -.165624991, y: .387500018, z: 0}
-    - {x: .196875021, y: .387500018, z: 0}
+    - {x: -.165624991, y: .081249997, z: 0}
+    - {x: .196875021, y: .081249997, z: 0}
+    - {x: -.165624991, y: .856250048, z: 0}
+    - {x: .196875021, y: .856250048, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -404,25 +422,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0156250149, y: .46875003, z: 0}
+    - {x: .181250006, y: .387500018, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0010
     boundsData:
-    - {x: .0156250149, y: 1.49011612e-08, z: 0}
-    - {x: .362500012, y: .774999976, z: 0}
+    - {x: .0156250149, y: .46875003, z: 0}
+    - {x: .362500012, y: .775000036, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.165624991, y: -.387499988, z: 0}
-    - {x: .196875021, y: -.387499988, z: 0}
-    - {x: -.165624991, y: .387500018, z: 0}
-    - {x: .196875021, y: .387500018, z: 0}
+    - {x: -.165624991, y: .081249997, z: 0}
+    - {x: .196875021, y: .081249997, z: 0}
+    - {x: -.165624991, y: .856250048, z: 0}
+    - {x: .196875021, y: .856250048, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -441,25 +461,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0156250149, y: .46875003, z: 0}
+    - {x: .181250006, y: .387500018, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0002
     boundsData:
-    - {x: .0124999955, y: -.00156249106, z: 0}
-    - {x: .362500012, y: .790624976, z: 0}
+    - {x: .0124999955, y: .467187494, z: 0}
+    - {x: .362500012, y: .790625036, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.168750003, y: -.396874994, z: 0}
-    - {x: .193749994, y: -.396874994, z: 0}
-    - {x: -.168750003, y: .393750012, z: 0}
-    - {x: .193749994, y: .393750012, z: 0}
+    - {x: -.168750003, y: .0718749985, z: 0}
+    - {x: .193749994, y: .0718749985, z: 0}
+    - {x: -.168750003, y: .862500012, z: 0}
+    - {x: .193749994, y: .862500012, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -478,25 +500,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0124999955, y: .467187494, z: 0}
+    - {x: .181250006, y: .395312518, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0005
     boundsData:
-    - {x: .0140625089, y: .00156250596, z: 0}
+    - {x: .0140625089, y: .470312506, z: 0}
     - {x: .365625024, y: .784375012, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.168750003, y: -.390625, z: 0}
-    - {x: .196875021, y: -.390625, z: 0}
-    - {x: -.168750003, y: .393750012, z: 0}
-    - {x: .196875021, y: .393750012, z: 0}
+    - {x: -.168750003, y: .078125, z: 0}
+    - {x: .196875021, y: .078125, z: 0}
+    - {x: -.168750003, y: .862500012, z: 0}
+    - {x: .196875021, y: .862500012, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -515,25 +539,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0140625089, y: .470312506, z: 0}
+    - {x: .182812512, y: .392187506, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0030
     boundsData:
-    - {x: .010937497, y: -.00156249106, z: 0}
-    - {x: .365624994, y: .790624976, z: 0}
+    - {x: .010937497, y: .467187494, z: 0}
+    - {x: .365624994, y: .790625036, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.171875, y: -.396874994, z: 0}
-    - {x: .193749994, y: -.396874994, z: 0}
-    - {x: -.171875, y: .393750012, z: 0}
-    - {x: .193749994, y: .393750012, z: 0}
+    - {x: -.171875, y: .0718749985, z: 0}
+    - {x: .193749994, y: .0718749985, z: 0}
+    - {x: -.171875, y: .862500012, z: 0}
+    - {x: .193749994, y: .862500012, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -552,25 +578,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .010937497, y: .467187494, z: 0}
+    - {x: .182812497, y: .395312518, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0009
     boundsData:
-    - {x: .0156250149, y: .00312501192, z: 0}
-    - {x: .362500012, y: .775000036, z: 0}
+    - {x: .0156250149, y: .471875012, z: 0}
+    - {x: .362500012, y: .774999976, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.165624991, y: -.384375006, z: 0}
-    - {x: .196875021, y: -.384375006, z: 0}
-    - {x: -.165624991, y: .39062503, z: 0}
-    - {x: .196875021, y: .39062503, z: 0}
+    - {x: -.165624991, y: .0843750015, z: 0}
+    - {x: .196875021, y: .0843750015, z: 0}
+    - {x: -.165624991, y: .859375, z: 0}
+    - {x: .196875021, y: .859375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -589,25 +617,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0156250149, y: .471875012, z: 0}
+    - {x: .181250006, y: .387499988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0008
     boundsData:
-    - {x: .0156250149, y: .00468751788, z: 0}
+    - {x: .0156250149, y: .473437488, z: 0}
     - {x: .362500012, y: .771875024, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.165624991, y: -.381249994, z: 0}
-    - {x: .196875021, y: -.381249994, z: 0}
-    - {x: -.165624991, y: .39062503, z: 0}
-    - {x: .196875021, y: .39062503, z: 0}
+    - {x: -.165624991, y: .0874999985, z: 0}
+    - {x: .196875021, y: .0874999985, z: 0}
+    - {x: -.165624991, y: .859375, z: 0}
+    - {x: .196875021, y: .859375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -626,25 +656,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0156250149, y: .473437488, z: 0}
+    - {x: .181250006, y: .385937512, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0013
     boundsData:
-    - {x: .0156250149, y: -.00468748808, z: 0}
+    - {x: .0156250149, y: .464062512, z: 0}
     - {x: .362500012, y: .778125048, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.165624991, y: -.393750012, z: 0}
-    - {x: .196875021, y: -.393750012, z: 0}
-    - {x: -.165624991, y: .384375036, z: 0}
-    - {x: .196875021, y: .384375036, z: 0}
+    - {x: -.165624991, y: .0749999955, z: 0}
+    - {x: .196875021, y: .0749999955, z: 0}
+    - {x: -.165624991, y: .853125036, z: 0}
+    - {x: .196875021, y: .853125036, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -663,25 +695,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0156250149, y: .464062512, z: 0}
+    - {x: .181250006, y: .389062524, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0001
     boundsData:
-    - {x: .010937497, y: -.00156249106, z: 0}
-    - {x: .365624994, y: .790624976, z: 0}
+    - {x: .010937497, y: .467187494, z: 0}
+    - {x: .365624994, y: .790625036, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.171875, y: -.396874994, z: 0}
-    - {x: .193749994, y: -.396874994, z: 0}
-    - {x: -.171875, y: .393750012, z: 0}
-    - {x: .193749994, y: .393750012, z: 0}
+    - {x: -.171875, y: .0718749985, z: 0}
+    - {x: .193749994, y: .0718749985, z: 0}
+    - {x: -.171875, y: .862500012, z: 0}
+    - {x: .193749994, y: .862500012, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -700,25 +734,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .010937497, y: .467187494, z: 0}
+    - {x: .182812497, y: .395312518, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0004
     boundsData:
-    - {x: .0140625089, y: .00156250596, z: 0}
+    - {x: .0140625089, y: .470312506, z: 0}
     - {x: .365625024, y: .784375012, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.168750003, y: -.390625, z: 0}
-    - {x: .196875021, y: -.390625, z: 0}
-    - {x: -.168750003, y: .393750012, z: 0}
-    - {x: .196875021, y: .393750012, z: 0}
+    - {x: -.168750003, y: .078125, z: 0}
+    - {x: .196875021, y: .078125, z: 0}
+    - {x: -.168750003, y: .862500012, z: 0}
+    - {x: .196875021, y: .862500012, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -737,25 +773,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0140625089, y: .470312506, z: 0}
+    - {x: .182812512, y: .392187506, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0007
     boundsData:
-    - {x: .0140625089, y: .00312501192, z: 0}
-    - {x: .365625024, y: .775000036, z: 0}
+    - {x: .0140625089, y: .471875012, z: 0}
+    - {x: .365625024, y: .774999976, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.168750003, y: -.384375006, z: 0}
-    - {x: .196875021, y: -.384375006, z: 0}
-    - {x: -.168750003, y: .39062503, z: 0}
-    - {x: .196875021, y: .39062503, z: 0}
+    - {x: -.168750003, y: .0843750015, z: 0}
+    - {x: .196875021, y: .0843750015, z: 0}
+    - {x: -.168750003, y: .859375, z: 0}
+    - {x: .196875021, y: .859375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -774,25 +812,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0140625089, y: .471875012, z: 0}
+    - {x: .182812512, y: .387499988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0006
     boundsData:
-    - {x: .0140625089, y: .00312501192, z: 0}
+    - {x: .0140625089, y: .471875012, z: 0}
     - {x: .365625024, y: .78125, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.168750003, y: -.387499988, z: 0}
-    - {x: .196875021, y: -.387499988, z: 0}
-    - {x: -.168750003, y: .393750012, z: 0}
-    - {x: .196875021, y: .393750012, z: 0}
+    - {x: -.168750003, y: .081249997, z: 0}
+    - {x: .196875021, y: .081249997, z: 0}
+    - {x: -.168750003, y: .862500012, z: 0}
+    - {x: .196875021, y: .862500012, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -811,25 +851,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0140625089, y: .471875012, z: 0}
+    - {x: .182812512, y: .390625, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0003
     boundsData:
-    - {x: .0140625089, y: 0, z: 0}
+    - {x: .0140625089, y: .46875, z: 0}
     - {x: .365625024, y: .787500024, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.168750003, y: -.393750012, z: 0}
-    - {x: .196875021, y: -.393750012, z: 0}
-    - {x: -.168750003, y: .393750012, z: 0}
-    - {x: .196875021, y: .393750012, z: 0}
+    - {x: -.168750003, y: .0749999955, z: 0}
+    - {x: .196875021, y: .0749999955, z: 0}
+    - {x: -.168750003, y: .862500012, z: 0}
+    - {x: .196875021, y: .862500012, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -848,25 +890,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0140625089, y: .46875, z: 0}
+    - {x: .182812512, y: .393750012, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0017
     boundsData:
-    - {x: .015625, y: -.00468748808, z: 0}
+    - {x: .015625, y: .464062512, z: 0}
     - {x: .356249988, y: .778125048, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.162499994, y: -.393750012, z: 0}
-    - {x: .193749994, y: -.393750012, z: 0}
-    - {x: -.162499994, y: .384375036, z: 0}
-    - {x: .193749994, y: .384375036, z: 0}
+    - {x: -.162499994, y: .0749999955, z: 0}
+    - {x: .193749994, y: .0749999955, z: 0}
+    - {x: -.162499994, y: .853125036, z: 0}
+    - {x: .193749994, y: .853125036, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -885,25 +929,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .015625, y: .464062512, z: 0}
+    - {x: .178124994, y: .389062524, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0016
     boundsData:
-    - {x: .0171875134, y: -.00624997914, z: 0}
-    - {x: .359375, y: .78125, z: 0}
+    - {x: .0171875134, y: .462500006, z: 0}
+    - {x: .359375, y: .78125006, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.162499994, y: -.396874994, z: 0}
-    - {x: .196875021, y: -.396874994, z: 0}
-    - {x: -.162499994, y: .384375036, z: 0}
-    - {x: .196875021, y: .384375036, z: 0}
+    - {x: -.162499994, y: .0718749985, z: 0}
+    - {x: .196875021, y: .0718749985, z: 0}
+    - {x: -.162499994, y: .853125036, z: 0}
+    - {x: .196875021, y: .853125036, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -922,25 +968,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0171875134, y: .462500006, z: 0}
+    - {x: .1796875, y: .39062503, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0019
     boundsData:
-    - {x: .0140625015, y: -.00312498212, z: 0}
+    - {x: .0140625015, y: .465625018, z: 0}
     - {x: .359375, y: .775000036, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.165624991, y: -.390625, z: 0}
-    - {x: .193749994, y: -.390625, z: 0}
-    - {x: -.165624991, y: .384375036, z: 0}
-    - {x: .193749994, y: .384375036, z: 0}
+    - {x: -.165624991, y: .078125, z: 0}
+    - {x: .193749994, y: .078125, z: 0}
+    - {x: -.165624991, y: .853125036, z: 0}
+    - {x: .193749994, y: .853125036, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -959,25 +1007,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0140625015, y: .465625018, z: 0}
+    - {x: .1796875, y: .387500018, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0018
     boundsData:
-    - {x: .0140625015, y: -.00312498212, z: 0}
+    - {x: .0140625015, y: .465625018, z: 0}
     - {x: .359375, y: .775000036, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.165624991, y: -.390625, z: 0}
-    - {x: .193749994, y: -.390625, z: 0}
-    - {x: -.165624991, y: .384375036, z: 0}
-    - {x: .193749994, y: .384375036, z: 0}
+    - {x: -.165624991, y: .078125, z: 0}
+    - {x: .193749994, y: .078125, z: 0}
+    - {x: -.165624991, y: .853125036, z: 0}
+    - {x: .193749994, y: .853125036, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -996,25 +1046,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0140625015, y: .465625018, z: 0}
+    - {x: .1796875, y: .387500018, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0023
     boundsData:
-    - {x: .0140625015, y: .00312501192, z: 0}
-    - {x: .359375, y: .775000036, z: 0}
+    - {x: .0140625015, y: .471875012, z: 0}
+    - {x: .359375, y: .774999976, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.165624991, y: -.384375006, z: 0}
-    - {x: .193749994, y: -.384375006, z: 0}
-    - {x: -.165624991, y: .39062503, z: 0}
-    - {x: .193749994, y: .39062503, z: 0}
+    - {x: -.165624991, y: .0843750015, z: 0}
+    - {x: .193749994, y: .0843750015, z: 0}
+    - {x: -.165624991, y: .859375, z: 0}
+    - {x: .193749994, y: .859375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1033,25 +1085,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0140625015, y: .471875012, z: 0}
+    - {x: .1796875, y: .387499988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0022
     boundsData:
-    - {x: .0140625015, y: .00156250596, z: 0}
+    - {x: .0140625015, y: .470312536, z: 0}
     - {x: .359375, y: .771875024, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.165624991, y: -.384375006, z: 0}
-    - {x: .193749994, y: -.384375006, z: 0}
-    - {x: -.165624991, y: .387500018, z: 0}
-    - {x: .193749994, y: .387500018, z: 0}
+    - {x: -.165624991, y: .0843750015, z: 0}
+    - {x: .193749994, y: .0843750015, z: 0}
+    - {x: -.165624991, y: .856250048, z: 0}
+    - {x: .193749994, y: .856250048, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1070,25 +1124,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0140625015, y: .470312536, z: 0}
+    - {x: .1796875, y: .385937512, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0024
     boundsData:
-    - {x: .0124999955, y: .00312501192, z: 0}
-    - {x: .362500012, y: .775000036, z: 0}
+    - {x: .0124999955, y: .471875012, z: 0}
+    - {x: .362500012, y: .774999976, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.168750003, y: -.384375006, z: 0}
-    - {x: .193749994, y: -.384375006, z: 0}
-    - {x: -.168750003, y: .39062503, z: 0}
-    - {x: .193749994, y: .39062503, z: 0}
+    - {x: -.168750003, y: .0843750015, z: 0}
+    - {x: .193749994, y: .0843750015, z: 0}
+    - {x: -.168750003, y: .859375, z: 0}
+    - {x: .193749994, y: .859375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1107,25 +1163,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0124999955, y: .471875012, z: 0}
+    - {x: .181250006, y: .387499988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0025
     boundsData:
-    - {x: .0124999955, y: .00156252086, z: 0}
-    - {x: .362500012, y: .778125048, z: 0}
+    - {x: .0124999955, y: .470312506, z: 0}
+    - {x: .362500012, y: .778124988, z: 0}
     untrimmedBoundsData:
-    - {x: .00156250596, y: 0, z: 0}
+    - {x: .00156250596, y: .46875, z: 0}
     - {x: .671875, y: .9375, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.168750003, y: -.387499988, z: 0}
-    - {x: .193749994, y: -.387499988, z: 0}
-    - {x: -.168750003, y: .39062503, z: 0}
-    - {x: .193749994, y: .39062503, z: 0}
+    - {x: -.168750003, y: .081249997, z: 0}
+    - {x: .193749994, y: .081249997, z: 0}
+    - {x: -.168750003, y: .859375, z: 0}
+    - {x: .193749994, y: .859375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1144,8 +1202,10 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: .0124999955, y: .470312506, z: 0}
+    - {x: .181250006, y: .389062494, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -1158,10 +1218,10 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 6f6ef313b31bb4647998594de82c3b45, type: 1}
   allowMultipleAtlases: 0
   spriteCollectionGUID: 876f8401497334da7bcdc54d5f5a8c05
-  spriteCollectionName: ArmoredMouse
+  spriteCollectionName: ArmoredMouseSprites
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 1515613115
+  buildKey: 1390875045
   dataGuid: c45b96478a4764fb8a0c392330734bd7
 --- !u!1001 &100100000
 Prefab:

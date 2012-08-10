@@ -2,14 +2,14 @@ using UnityEngine;
 using System.Collections;
 using System.Collections.Generic;
 
-public class Walker : MonoBehaviour {
+public class Enemy : MonoBehaviour {
+	public float reward;
 	public float health;
 	public float damageReceived;
-	public bool flying = false;	
-	public Damage attackDamage;
-	public float attackInterval = 1;
-	public Walker target;
-	
+	public bool flying = false;
+	public iTweenPath myPath;
+	int pathIdx = 1;
+	float lastMove = 0;
 	public virtual void Stop() {}
 	
 	public float lifeLeft {
@@ -30,13 +30,29 @@ public class Walker : MonoBehaviour {
 	}
 	
 	public List<Resistance> resistances = new List<Resistance>();
-	
-	public virtual bool Attack() {
-		if (target == null) return false;
-		target.TakeDamage(attackDamage);
-		return true;
+	public void March(iTweenPath myPath) {
+		this.myPath = myPath;
 	}
-	
+	public void Update() {
+		if (myPath == null) return;
+		if (health == 0) {
+			Destroy (gameObject);
+			return;
+		}
+		if (Vector3.Distance(transform.position, myPath.nodes[pathIdx]) > lastMove) {
+			Vector3 move = (myPath.nodes[pathIdx] - transform.position).normalized * speedCurrent * Time.deltaTime;
+			transform.Translate(move);
+			lastMove = move.magnitude;
+		} else if (pathIdx < myPath.nodes.Count -1) {
+			pathIdx++;
+		} else {
+			MarchOver ();
+			Destroy (gameObject);
+		}
+	}
+	public void MarchOver() {
+		Debug.Log ("Eat cheese");
+	}
 	public float TakeDamage(Damage damage) {
 		float damageTaken = 0;
 		bool didResist = false;
@@ -52,15 +68,5 @@ public class Walker : MonoBehaviour {
 		}
 		damageReceived += damageTaken;
 		return damageTaken;
-	}
-	public virtual void StartAttack(Walker newTarget) {
-		target = newTarget;
-		StartCoroutine(DoAttack(target));
-	}
-	public IEnumerator DoAttack(Walker currentTarget) {
-		while (currentTarget != null && currentTarget == target) {
-			Attack();
-			yield return new WaitForSeconds(attackInterval);
-		}
 	}
 }

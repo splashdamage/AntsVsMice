@@ -936,10 +936,10 @@ MonoBehaviour:
   - {fileID: 2800000, guid: c17bc3dbafae045059b1dcad41db389b, type: 1}
   allowMultipleAtlases: 0
   spriteCollectionGUID: 66aa66f1853914378a727b59b3618538
-  spriteCollectionName: BatMouse
+  spriteCollectionName: BatMouseSprites
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 1180147840
+  buildKey: 308144943
   dataGuid: c7a55d1db9cc546b8b4a8464243be52f
 --- !u!1001 &100100000
 Prefab:

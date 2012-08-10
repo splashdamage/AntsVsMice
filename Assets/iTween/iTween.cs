@@ -3620,7 +3620,7 @@ public class iTween : MonoBehaviour{
 		//need for speed?
 		if(tweenArguments.Contains("speed")){
 			float distance = Math.Abs(Vector3.Distance(vector3s[0],vector3s[1]));
-			time = distance/(float)tweenArguments["speed"];
+			time = distance / (float)tweenArguments["speed"];
 		}
 	}
 	

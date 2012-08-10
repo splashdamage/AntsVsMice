@@ -3378,10 +3378,10 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 00ecaa98b5c2b4e1e9df33d62a121a7c, type: 1}
   allowMultipleAtlases: 0
   spriteCollectionGUID: f8ee819a395e7454fa77d0d8f87abe63
-  spriteCollectionName: BigMouse
+  spriteCollectionName: BigMouseSprites
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 1535761011
+  buildKey: 1471941158
   dataGuid: f5c6dc8a791ed4acdaf9963e22c6dd49
 --- !u!1001 &100100000
 Prefab:

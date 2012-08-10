@@ -343,7 +343,7 @@ MonoBehaviour:
     - 2141f2a2339cc4f70bb93a8c4555422b
     - ddabcc23747bb4967824d8fb5e113371
     version: 3
-  - name: CenturionMouse
+  - name: CenturionMouseSprites
     spriteCollectionGUID: b561ec3798f7246639aba6716573d962
     spriteCollectionDataGUID: 36c9d73187d8e47698e3ecbf0558141a
     spriteNames:
@@ -419,7 +419,7 @@ MonoBehaviour:
     - 6e53f80aabcf44ee59e2a5923b7cb780
     - 001cacea421d144b59c84920330d9741
     version: 3
-  - name: BigMouse
+  - name: BigMouseSprites
     spriteCollectionGUID: f8ee819a395e7454fa77d0d8f87abe63
     spriteCollectionDataGUID: f5c6dc8a791ed4acdaf9963e22c6dd49
     spriteNames:
@@ -605,7 +605,7 @@ MonoBehaviour:
     - 9375d211862c845558f49a502ac056b0
     - 06cfa1b0303b744b69ba3ffa79de221f
     version: 3
-  - name: BatMouse
+  - name: BatMouseSprites
     spriteCollectionGUID: 66aa66f1853914378a727b59b3618538
     spriteCollectionDataGUID: c7a55d1db9cc546b8b4a8464243be52f
     spriteNames:
@@ -659,7 +659,7 @@ MonoBehaviour:
     - f666e516d598f4f2bb5b953451c9814f
     - df409317a6c96467e8c2cb81e1d9ec43
     version: 3
-  - name: ArmoredMouse
+  - name: ArmoredMouseSprites
     spriteCollectionGUID: 876f8401497334da7bcdc54d5f5a8c05
     spriteCollectionDataGUID: c45b96478a4764fb8a0c392330734bd7
     spriteNames:

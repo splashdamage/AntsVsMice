@@ -1343,10 +1343,10 @@ MonoBehaviour:
   - {fileID: 2800000, guid: 19af7b6ec0a114dfbbc55e01576107cb, type: 1}
   allowMultipleAtlases: 0
   spriteCollectionGUID: b561ec3798f7246639aba6716573d962
-  spriteCollectionName: CenturionMouse
+  spriteCollectionName: CenturionMouseSprites
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 1494736308
+  buildKey: 685834774
   dataGuid: 36c9d73187d8e47698e3ecbf0558141a
 --- !u!1001 &100100000
 Prefab:
