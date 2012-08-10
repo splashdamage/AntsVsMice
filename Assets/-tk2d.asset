@@ -269,7 +269,7 @@ MonoBehaviour:
     - 57980280e89fa4abb8e8d7fd7029224c
     - e0ddea386d0a44534aa42516a003a303
     version: 3
-  - name: MiniMouse
+  - name: MiniMouseSprites
     spriteCollectionGUID: ce259dd3de5e946728f1aca65446b59e
     spriteCollectionDataGUID: cedc23c4868114e788b9ed9c53c8def9
     spriteNames:

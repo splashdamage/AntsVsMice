@@ -42,17 +42,17 @@ MonoBehaviour:
   spriteDefinitions:
   - name: CenturionFrames0034
     boundsData:
-    - {x: -.0156249851, y: .0296875089, z: 0}
+    - {x: -.0156249851, y: .654687464, z: 0}
     - {x: .418750018, y: .884374976, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.224999994, y: -.412499994, z: 0}
-    - {x: .193750024, y: -.412499994, z: 0}
-    - {x: -.224999994, y: .471875012, z: 0}
-    - {x: .193750024, y: .471875012, z: 0}
+    - {x: -.224999994, y: .212500006, z: 0}
+    - {x: .193750024, y: .212500006, z: 0}
+    - {x: -.224999994, y: 1.09687495, z: 0}
+    - {x: .193750024, y: 1.09687495, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -71,25 +71,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.0156249851, y: .654687464, z: 0}
+    - {x: .209375009, y: .442187488, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0021
     boundsData:
-    - {x: -.00781249255, y: .028125003, z: 0}
+    - {x: -.00781249255, y: .653124988, z: 0}
     - {x: .415625036, y: .868749976, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.40625, z: 0}
-    - {x: .200000018, y: -.40625, z: 0}
-    - {x: -.215625003, y: .462500006, z: 0}
-    - {x: .200000018, y: .462500006, z: 0}
+    - {x: -.215625003, y: .21875, z: 0}
+    - {x: .200000018, y: .21875, z: 0}
+    - {x: -.215625003, y: 1.08749998, z: 0}
+    - {x: .200000018, y: 1.08749998, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -108,25 +110,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00781249255, y: .653124988, z: 0}
+    - {x: .207812518, y: .434374988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0022
     boundsData:
-    - {x: -.00781249255, y: .029687494, z: 0}
-    - {x: .415625036, y: .871874988, z: 0}
+    - {x: -.00781249255, y: .654687524, z: 0}
+    - {x: .415625036, y: .871875048, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.40625, z: 0}
-    - {x: .200000018, y: -.40625, z: 0}
-    - {x: -.215625003, y: .465624988, z: 0}
-    - {x: .200000018, y: .465624988, z: 0}
+    - {x: -.215625003, y: .21875, z: 0}
+    - {x: .200000018, y: .21875, z: 0}
+    - {x: -.215625003, y: 1.09062505, z: 0}
+    - {x: .200000018, y: 1.09062505, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -145,25 +149,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00781249255, y: .654687524, z: 0}
+    - {x: .207812518, y: .435937524, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0025
     boundsData:
-    - {x: -.00937499106, y: .0343750119, z: 0}
+    - {x: -.00937499106, y: .659375012, z: 0}
     - {x: .412500024, y: .868749976, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.399999976, z: 0}
-    - {x: .196875021, y: -.399999976, z: 0}
-    - {x: -.215625003, y: .46875, z: 0}
-    - {x: .196875021, y: .46875, z: 0}
+    - {x: -.215625003, y: .225000009, z: 0}
+    - {x: .196875021, y: .225000009, z: 0}
+    - {x: -.215625003, y: 1.09375, z: 0}
+    - {x: .196875021, y: 1.09375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -182,25 +188,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00937499106, y: .659375012, z: 0}
+    - {x: .206250012, y: .434374988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0028
     boundsData:
-    - {x: -.00937499106, y: .0359374881, z: 0}
+    - {x: -.00937499106, y: .660937488, z: 0}
     - {x: .412500024, y: .878125012, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.403125018, z: 0}
-    - {x: .196875021, y: -.403125018, z: 0}
-    - {x: -.215625003, y: .474999994, z: 0}
-    - {x: .196875021, y: .474999994, z: 0}
+    - {x: -.215625003, y: .221874997, z: 0}
+    - {x: .196875021, y: .221874997, z: 0}
+    - {x: -.215625003, y: 1.10000002, z: 0}
+    - {x: .196875021, y: 1.10000002, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -219,25 +227,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00937499106, y: .660937488, z: 0}
+    - {x: .206250012, y: .439062506, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0011
     boundsData:
-    - {x: -.00624999404, y: .0328124911, z: 0}
-    - {x: .418750018, y: .871875048, z: 0}
+    - {x: -.00624999404, y: .657812476, z: 0}
+    - {x: .418750018, y: .871874988, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.403125018, z: 0}
-    - {x: .203125015, y: -.403125018, z: 0}
-    - {x: -.215625003, y: .46875, z: 0}
-    - {x: .203125015, y: .46875, z: 0}
+    - {x: -.215625003, y: .221874997, z: 0}
+    - {x: .203125015, y: .221874997, z: 0}
+    - {x: -.215625003, y: 1.09375, z: 0}
+    - {x: .203125015, y: 1.09375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -256,25 +266,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00624999404, y: .657812476, z: 0}
+    - {x: .209375009, y: .435937494, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0002
     boundsData:
-    - {x: -.0140624866, y: .026562497, z: 0}
-    - {x: .421875, y: .878124952, z: 0}
+    - {x: -.0140624866, y: .651562512, z: 0}
+    - {x: .421875, y: .878125072, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.224999994, y: -.412499994, z: 0}
-    - {x: .196875021, y: -.412499994, z: 0}
-    - {x: -.224999994, y: .465624988, z: 0}
-    - {x: .196875021, y: .465624988, z: 0}
+    - {x: -.224999994, y: .212500006, z: 0}
+    - {x: .196875021, y: .212500006, z: 0}
+    - {x: -.224999994, y: 1.09062505, z: 0}
+    - {x: .196875021, y: 1.09062505, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -293,25 +305,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.0140624866, y: .651562512, z: 0}
+    - {x: .2109375, y: .439062536, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0001
     boundsData:
-    - {x: -.0156249851, y: .025000006, z: 0}
+    - {x: -.0156249851, y: .649999976, z: 0}
     - {x: .425000012, y: .875, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.228124991, y: -.412499994, z: 0}
-    - {x: .196875021, y: -.412499994, z: 0}
-    - {x: -.228124991, y: .462500006, z: 0}
-    - {x: .196875021, y: .462500006, z: 0}
+    - {x: -.228124991, y: .212500006, z: 0}
+    - {x: .196875021, y: .212500006, z: 0}
+    - {x: -.228124991, y: 1.08749998, z: 0}
+    - {x: .196875021, y: 1.08749998, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -330,25 +344,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.0156249851, y: .649999976, z: 0}
+    - {x: .212500006, y: .4375, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0018
     boundsData:
-    - {x: -.00624999404, y: .0218750089, z: 0}
+    - {x: -.00624999404, y: .646874964, z: 0}
     - {x: .418750018, y: .868749976, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.412499994, z: 0}
-    - {x: .203125015, y: -.412499994, z: 0}
-    - {x: -.215625003, y: .456250012, z: 0}
-    - {x: .203125015, y: .456250012, z: 0}
+    - {x: -.215625003, y: .212500006, z: 0}
+    - {x: .203125015, y: .212500006, z: 0}
+    - {x: -.215625003, y: 1.08124995, z: 0}
+    - {x: .203125015, y: 1.08124995, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -367,25 +383,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00624999404, y: .646874964, z: 0}
+    - {x: .209375009, y: .434374988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0003
     boundsData:
-    - {x: -.0140624866, y: .0281249881, z: 0}
-    - {x: .421875, y: .875, z: 0}
+    - {x: -.0140624866, y: .653125048, z: 0}
+    - {x: .421875, y: .87500006, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.224999994, y: -.409375012, z: 0}
-    - {x: .196875021, y: -.409375012, z: 0}
-    - {x: -.224999994, y: .465624988, z: 0}
-    - {x: .196875021, y: .465624988, z: 0}
+    - {x: -.224999994, y: .215625003, z: 0}
+    - {x: .196875021, y: .215625003, z: 0}
+    - {x: -.224999994, y: 1.09062505, z: 0}
+    - {x: .196875021, y: 1.09062505, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -404,25 +422,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.0140624866, y: .653125048, z: 0}
+    - {x: .2109375, y: .43750003, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0020
     boundsData:
-    - {x: -.00624999404, y: .025000006, z: 0}
+    - {x: -.00624999404, y: .650000036, z: 0}
     - {x: .418750018, y: .868750036, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.409375012, z: 0}
-    - {x: .203125015, y: -.409375012, z: 0}
-    - {x: -.215625003, y: .459375024, z: 0}
-    - {x: .203125015, y: .459375024, z: 0}
+    - {x: -.215625003, y: .215625003, z: 0}
+    - {x: .203125015, y: .215625003, z: 0}
+    - {x: -.215625003, y: 1.08437502, z: 0}
+    - {x: .203125015, y: 1.08437502, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -441,25 +461,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00624999404, y: .650000036, z: 0}
+    - {x: .209375009, y: .434375018, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0023
     boundsData:
-    - {x: -.00781249255, y: .0312499851, z: 0}
-    - {x: .415625036, y: .868749976, z: 0}
+    - {x: -.00781249255, y: .65625, z: 0}
+    - {x: .415625036, y: .868750036, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.403125018, z: 0}
-    - {x: .200000018, y: -.403125018, z: 0}
-    - {x: -.215625003, y: .465624988, z: 0}
-    - {x: .200000018, y: .465624988, z: 0}
+    - {x: -.215625003, y: .221874997, z: 0}
+    - {x: .200000018, y: .221874997, z: 0}
+    - {x: -.215625003, y: 1.09062505, z: 0}
+    - {x: .200000018, y: 1.09062505, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -478,25 +500,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00781249255, y: .65625, z: 0}
+    - {x: .207812518, y: .434375018, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0031
     boundsData:
-    - {x: -.0124999881, y: .032812506, z: 0}
-    - {x: .418750018, y: .878125012, z: 0}
+    - {x: -.0124999881, y: .657812476, z: 0}
+    - {x: .418750018, y: .878124952, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.221874997, y: -.40625, z: 0}
-    - {x: .196875021, y: -.40625, z: 0}
-    - {x: -.221874997, y: .471875012, z: 0}
-    - {x: .196875021, y: .471875012, z: 0}
+    - {x: -.221874997, y: .21875, z: 0}
+    - {x: .196875021, y: .21875, z: 0}
+    - {x: -.221874997, y: 1.09687495, z: 0}
+    - {x: .196875021, y: 1.09687495, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -515,25 +539,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.0124999881, y: .657812476, z: 0}
+    - {x: .209375009, y: .439062476, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0024
     boundsData:
-    - {x: -.00937499106, y: .0343750119, z: 0}
+    - {x: -.00937499106, y: .659375012, z: 0}
     - {x: .412500024, y: .868749976, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.399999976, z: 0}
-    - {x: .196875021, y: -.399999976, z: 0}
-    - {x: -.215625003, y: .46875, z: 0}
-    - {x: .196875021, y: .46875, z: 0}
+    - {x: -.215625003, y: .225000009, z: 0}
+    - {x: .196875021, y: .225000009, z: 0}
+    - {x: -.215625003, y: 1.09375, z: 0}
+    - {x: .196875021, y: 1.09375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -552,25 +578,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00937499106, y: .659375012, z: 0}
+    - {x: .206250012, y: .434374988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0027
     boundsData:
-    - {x: -.00937499106, y: .0375000089, z: 0}
+    - {x: -.00937499106, y: .662500024, z: 0}
     - {x: .412500024, y: .875, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.399999976, z: 0}
-    - {x: .196875021, y: -.399999976, z: 0}
-    - {x: -.215625003, y: .474999994, z: 0}
-    - {x: .196875021, y: .474999994, z: 0}
+    - {x: -.215625003, y: .225000009, z: 0}
+    - {x: .196875021, y: .225000009, z: 0}
+    - {x: -.215625003, y: 1.10000002, z: 0}
+    - {x: .196875021, y: 1.10000002, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -589,25 +617,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00937499106, y: .662500024, z: 0}
+    - {x: .206250012, y: .4375, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0008
     boundsData:
-    - {x: -.00781249255, y: .0359375179, z: 0}
-    - {x: .415625036, y: .871874988, z: 0}
+    - {x: -.00781249255, y: .660937488, z: 0}
+    - {x: .415625036, y: .871874928, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.399999976, z: 0}
-    - {x: .200000018, y: -.399999976, z: 0}
-    - {x: -.215625003, y: .471875012, z: 0}
-    - {x: .200000018, y: .471875012, z: 0}
+    - {x: -.215625003, y: .225000009, z: 0}
+    - {x: .200000018, y: .225000009, z: 0}
+    - {x: -.215625003, y: 1.09687495, z: 0}
+    - {x: .200000018, y: 1.09687495, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -626,25 +656,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00781249255, y: .660937488, z: 0}
+    - {x: .207812518, y: .435937464, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0006
     boundsData:
-    - {x: -.00937499106, y: .0328124911, z: 0}
-    - {x: .418750018, y: .871875048, z: 0}
+    - {x: -.00937499106, y: .657812476, z: 0}
+    - {x: .418750018, y: .871874988, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.21875, y: -.403125018, z: 0}
-    - {x: .200000018, y: -.403125018, z: 0}
-    - {x: -.21875, y: .46875, z: 0}
-    - {x: .200000018, y: .46875, z: 0}
+    - {x: -.21875, y: .221874997, z: 0}
+    - {x: .200000018, y: .221874997, z: 0}
+    - {x: -.21875, y: 1.09375, z: 0}
+    - {x: .200000018, y: 1.09375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -663,25 +695,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00937499106, y: .657812476, z: 0}
+    - {x: .209375009, y: .435937494, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0009
     boundsData:
-    - {x: -.00781249255, y: .0375000089, z: 0}
+    - {x: -.00781249255, y: .662499964, z: 0}
     - {x: .415625036, y: .868749976, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.396874994, z: 0}
-    - {x: .200000018, y: -.396874994, z: 0}
-    - {x: -.215625003, y: .471875012, z: 0}
-    - {x: .200000018, y: .471875012, z: 0}
+    - {x: -.215625003, y: .228125006, z: 0}
+    - {x: .200000018, y: .228125006, z: 0}
+    - {x: -.215625003, y: 1.09687495, z: 0}
+    - {x: .200000018, y: 1.09687495, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -700,25 +734,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00781249255, y: .662499964, z: 0}
+    - {x: .207812518, y: .434374988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0015
     boundsData:
-    - {x: -.00624999404, y: .025000006, z: 0}
+    - {x: -.00624999404, y: .650000036, z: 0}
     - {x: .418750018, y: .868750036, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.409375012, z: 0}
-    - {x: .203125015, y: -.409375012, z: 0}
-    - {x: -.215625003, y: .459375024, z: 0}
-    - {x: .203125015, y: .459375024, z: 0}
+    - {x: -.215625003, y: .215625003, z: 0}
+    - {x: .203125015, y: .215625003, z: 0}
+    - {x: -.215625003, y: 1.08437502, z: 0}
+    - {x: .203125015, y: 1.08437502, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -737,25 +773,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00624999404, y: .650000036, z: 0}
+    - {x: .209375009, y: .434375018, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0014
     boundsData:
-    - {x: -.00624999404, y: .028125003, z: 0}
+    - {x: -.00624999404, y: .653124988, z: 0}
     - {x: .418750018, y: .868749976, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.40625, z: 0}
-    - {x: .203125015, y: -.40625, z: 0}
-    - {x: -.215625003, y: .462500006, z: 0}
-    - {x: .203125015, y: .462500006, z: 0}
+    - {x: -.215625003, y: .21875, z: 0}
+    - {x: .203125015, y: .21875, z: 0}
+    - {x: -.215625003, y: 1.08749998, z: 0}
+    - {x: .203125015, y: 1.08749998, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -774,25 +812,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00624999404, y: .653124988, z: 0}
+    - {x: .209375009, y: .434374988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0030
     boundsData:
-    - {x: -.0109374896, y: .032812506, z: 0}
-    - {x: .415625036, y: .878125012, z: 0}
+    - {x: -.0109374896, y: .657812476, z: 0}
+    - {x: .415625036, y: .878124952, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.21875, y: -.40625, z: 0}
-    - {x: .196875021, y: -.40625, z: 0}
-    - {x: -.21875, y: .471875012, z: 0}
-    - {x: .196875021, y: .471875012, z: 0}
+    - {x: -.21875, y: .21875, z: 0}
+    - {x: .196875021, y: .21875, z: 0}
+    - {x: -.21875, y: 1.09687495, z: 0}
+    - {x: .196875021, y: 1.09687495, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -811,25 +851,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.0109374896, y: .657812476, z: 0}
+    - {x: .207812518, y: .439062476, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0033
     boundsData:
-    - {x: -.0156249851, y: .03125, z: 0}
-    - {x: .418750018, y: .881250024, z: 0}
+    - {x: -.0156249851, y: .65625, z: 0}
+    - {x: .418750018, y: .881249964, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.224999994, y: -.409375012, z: 0}
-    - {x: .193750024, y: -.409375012, z: 0}
-    - {x: -.224999994, y: .471875012, z: 0}
-    - {x: .193750024, y: .471875012, z: 0}
+    - {x: -.224999994, y: .215625003, z: 0}
+    - {x: .193750024, y: .215625003, z: 0}
+    - {x: -.224999994, y: 1.09687495, z: 0}
+    - {x: .193750024, y: 1.09687495, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -848,25 +890,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.0156249851, y: .65625, z: 0}
+    - {x: .209375009, y: .440624982, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0032
     boundsData:
-    - {x: -.0156249851, y: .03125, z: 0}
-    - {x: .418750018, y: .881250024, z: 0}
+    - {x: -.0156249851, y: .65625, z: 0}
+    - {x: .418750018, y: .881249964, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.224999994, y: -.409375012, z: 0}
-    - {x: .193750024, y: -.409375012, z: 0}
-    - {x: -.224999994, y: .471875012, z: 0}
-    - {x: .193750024, y: .471875012, z: 0}
+    - {x: -.224999994, y: .215625003, z: 0}
+    - {x: .193750024, y: .215625003, z: 0}
+    - {x: -.224999994, y: 1.09687495, z: 0}
+    - {x: .193750024, y: 1.09687495, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -885,25 +929,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.0156249851, y: .65625, z: 0}
+    - {x: .209375009, y: .440624982, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0035
     boundsData:
-    - {x: -.0171874836, y: .028125003, z: 0}
+    - {x: -.0171874836, y: .653124988, z: 0}
     - {x: .421875, y: .881250024, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.228124991, y: -.412499994, z: 0}
-    - {x: .193750024, y: -.412499994, z: 0}
-    - {x: -.228124991, y: .46875, z: 0}
-    - {x: .193750024, y: .46875, z: 0}
+    - {x: -.228124991, y: .212500006, z: 0}
+    - {x: .193750024, y: .212500006, z: 0}
+    - {x: -.228124991, y: 1.09375, z: 0}
+    - {x: .193750024, y: 1.09375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -922,25 +968,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.0171874836, y: .653124988, z: 0}
+    - {x: .2109375, y: .440625012, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0010
     boundsData:
-    - {x: -.00624999404, y: .0359375179, z: 0}
-    - {x: .418750018, y: .871874988, z: 0}
+    - {x: -.00624999404, y: .660937488, z: 0}
+    - {x: .418750018, y: .871874928, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.399999976, z: 0}
-    - {x: .203125015, y: -.399999976, z: 0}
-    - {x: -.215625003, y: .471875012, z: 0}
-    - {x: .203125015, y: .471875012, z: 0}
+    - {x: -.215625003, y: .225000009, z: 0}
+    - {x: .203125015, y: .225000009, z: 0}
+    - {x: -.215625003, y: 1.09687495, z: 0}
+    - {x: .203125015, y: 1.09687495, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -959,25 +1007,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00624999404, y: .660937488, z: 0}
+    - {x: .209375009, y: .435937464, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0013
     boundsData:
-    - {x: -.00624999404, y: .028125003, z: 0}
+    - {x: -.00624999404, y: .653124988, z: 0}
     - {x: .418750018, y: .868749976, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.40625, z: 0}
-    - {x: .203125015, y: -.40625, z: 0}
-    - {x: -.215625003, y: .462500006, z: 0}
-    - {x: .203125015, y: .462500006, z: 0}
+    - {x: -.215625003, y: .21875, z: 0}
+    - {x: .203125015, y: .21875, z: 0}
+    - {x: -.215625003, y: 1.08749998, z: 0}
+    - {x: .203125015, y: 1.08749998, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -996,25 +1046,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00624999404, y: .653124988, z: 0}
+    - {x: .209375009, y: .434374988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0012
     boundsData:
-    - {x: -.00624999404, y: .0312499851, z: 0}
-    - {x: .418750018, y: .868749976, z: 0}
+    - {x: -.00624999404, y: .65625, z: 0}
+    - {x: .418750018, y: .868750036, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.403125018, z: 0}
-    - {x: .203125015, y: -.403125018, z: 0}
-    - {x: -.215625003, y: .465624988, z: 0}
-    - {x: .203125015, y: .465624988, z: 0}
+    - {x: -.215625003, y: .221874997, z: 0}
+    - {x: .203125015, y: .221874997, z: 0}
+    - {x: -.215625003, y: 1.09062505, z: 0}
+    - {x: .203125015, y: 1.09062505, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1033,25 +1085,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00624999404, y: .65625, z: 0}
+    - {x: .209375009, y: .434375018, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0017
     boundsData:
-    - {x: -.00624999404, y: .020312503, z: 0}
+    - {x: -.00624999404, y: .645312488, z: 0}
     - {x: .418750018, y: .865625024, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.412499994, z: 0}
-    - {x: .203125015, y: -.412499994, z: 0}
-    - {x: -.215625003, y: .453125, z: 0}
-    - {x: .203125015, y: .453125, z: 0}
+    - {x: -.215625003, y: .212500006, z: 0}
+    - {x: .203125015, y: .212500006, z: 0}
+    - {x: -.215625003, y: 1.078125, z: 0}
+    - {x: .203125015, y: 1.078125, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1070,25 +1124,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00624999404, y: .645312488, z: 0}
+    - {x: .209375009, y: .432812512, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0016
     boundsData:
-    - {x: -.00468749553, y: .0218750089, z: 0}
+    - {x: -.00468749553, y: .646874964, z: 0}
     - {x: .421875, y: .868749976, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.412499994, z: 0}
-    - {x: .206250012, y: -.412499994, z: 0}
-    - {x: -.215625003, y: .456250012, z: 0}
-    - {x: .206250012, y: .456250012, z: 0}
+    - {x: -.215625003, y: .212500006, z: 0}
+    - {x: .206250012, y: .212500006, z: 0}
+    - {x: -.215625003, y: 1.08124995, z: 0}
+    - {x: .206250012, y: 1.08124995, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1107,25 +1163,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00468749553, y: .646874964, z: 0}
+    - {x: .2109375, y: .434374988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0019
     boundsData:
-    - {x: -.00624999404, y: .025000006, z: 0}
+    - {x: -.00624999404, y: .650000036, z: 0}
     - {x: .418750018, y: .868750036, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.409375012, z: 0}
-    - {x: .203125015, y: -.409375012, z: 0}
-    - {x: -.215625003, y: .459375024, z: 0}
-    - {x: .203125015, y: .459375024, z: 0}
+    - {x: -.215625003, y: .215625003, z: 0}
+    - {x: .203125015, y: .215625003, z: 0}
+    - {x: -.215625003, y: 1.08437502, z: 0}
+    - {x: .203125015, y: 1.08437502, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1144,25 +1202,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00624999404, y: .650000036, z: 0}
+    - {x: .209375009, y: .434375018, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0005
     boundsData:
-    - {x: -.0109374896, y: .03125, z: 0}
+    - {x: -.0109374896, y: .65625, z: 0}
     - {x: .421875, y: .875, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.221874997, y: -.40625, z: 0}
-    - {x: .200000018, y: -.40625, z: 0}
-    - {x: -.221874997, y: .46875, z: 0}
-    - {x: .200000018, y: .46875, z: 0}
+    - {x: -.221874997, y: .21875, z: 0}
+    - {x: .200000018, y: .21875, z: 0}
+    - {x: -.221874997, y: 1.09375, z: 0}
+    - {x: .200000018, y: 1.09375, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1181,25 +1241,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.0109374896, y: .65625, z: 0}
+    - {x: .2109375, y: .4375, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0004
     boundsData:
-    - {x: -.0124999881, y: .0281249881, z: 0}
-    - {x: .418750018, y: .875, z: 0}
+    - {x: -.0124999881, y: .653125048, z: 0}
+    - {x: .418750018, y: .87500006, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.221874997, y: -.409375012, z: 0}
-    - {x: .196875021, y: -.409375012, z: 0}
-    - {x: -.221874997, y: .465624988, z: 0}
-    - {x: .196875021, y: .465624988, z: 0}
+    - {x: -.221874997, y: .215625003, z: 0}
+    - {x: .196875021, y: .215625003, z: 0}
+    - {x: -.221874997, y: 1.09062505, z: 0}
+    - {x: .196875021, y: 1.09062505, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1218,25 +1280,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.0124999881, y: .653125048, z: 0}
+    - {x: .209375009, y: .43750003, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0007
     boundsData:
-    - {x: -.00781249255, y: .034374997, z: 0}
-    - {x: .415625036, y: .875, z: 0}
+    - {x: -.00781249255, y: .659374952, z: 0}
+    - {x: .415625036, y: .87499994, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.403125018, z: 0}
-    - {x: .200000018, y: -.403125018, z: 0}
-    - {x: -.215625003, y: .471875012, z: 0}
-    - {x: .200000018, y: .471875012, z: 0}
+    - {x: -.215625003, y: .221874997, z: 0}
+    - {x: .200000018, y: .221874997, z: 0}
+    - {x: -.215625003, y: 1.09687495, z: 0}
+    - {x: .200000018, y: 1.09687495, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1255,25 +1319,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00781249255, y: .659374952, z: 0}
+    - {x: .207812518, y: .43749997, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0026
     boundsData:
-    - {x: -.00937499106, y: .0375000089, z: 0}
+    - {x: -.00937499106, y: .662499964, z: 0}
     - {x: .412500024, y: .868749976, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.215625003, y: -.396874994, z: 0}
-    - {x: .196875021, y: -.396874994, z: 0}
-    - {x: -.215625003, y: .471875012, z: 0}
-    - {x: .196875021, y: .471875012, z: 0}
+    - {x: -.215625003, y: .228125006, z: 0}
+    - {x: .196875021, y: .228125006, z: 0}
+    - {x: -.215625003, y: 1.09687495, z: 0}
+    - {x: .196875021, y: 1.09687495, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1292,25 +1358,27 @@ MonoBehaviour:
     regionH: 0
     flipped: 0
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.00937499106, y: .662499964, z: 0}
+    - {x: .206250012, y: .434374988, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: CenturionFrames0029
     boundsData:
-    - {x: -.0109374896, y: .034374997, z: 0}
-    - {x: .415625036, y: .875, z: 0}
+    - {x: -.0109374896, y: .659374952, z: 0}
+    - {x: .415625036, y: .87499994, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: 0, y: .625, z: 0}
     - {x: 1.71875, y: 1.25, z: 0}
     texelSize: {x: .00312500005, y: .00312500005}
     positions:
-    - {x: -.21875, y: -.403125018, z: 0}
-    - {x: .196875021, y: -.403125018, z: 0}
-    - {x: -.21875, y: .471875012, z: 0}
-    - {x: .196875021, y: .471875012, z: 0}
+    - {x: -.21875, y: .221874997, z: 0}
+    - {x: .196875021, y: .221874997, z: 0}
+    - {x: -.21875, y: 1.09687495, z: 0}
+    - {x: .196875021, y: 1.09687495, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1329,8 +1397,10 @@ MonoBehaviour:
     regionH: 0
     flipped: 1
     complexGeometry: 0
-    colliderType: 1
-    colliderVertices: []
+    colliderType: 2
+    colliderVertices:
+    - {x: -.0109374896, y: .659374952, z: 0}
+    - {x: .207812518, y: .43749997, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -1346,7 +1416,7 @@ MonoBehaviour:
   spriteCollectionName: CenturionMouseSprites
   invOrthoSize: 1
   halfTargetHeight: 320
-  buildKey: 685834774
+  buildKey: 102021781
   dataGuid: 36c9d73187d8e47698e3ecbf0558141a
 --- !u!1001 &100100000
 Prefab:
