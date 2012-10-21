@@ -1,0 +1,1159 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: BowTowerSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 1}
+  m_Name: 
+  version: 3
+  materialIdsValid: 1
+  spriteDefinitions:
+  - name: BowTowerMov0015
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .000977050746}
+    - {x: .00195410149, y: .081542477}
+    - {x: .336913079, y: .000977050746}
+    - {x: .336913079, y: .081542477}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9343d943d0f3d4089b164b469d99b33e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0012
+    boundsData:
+    - {x: -10.5, y: 205, z: 0}
+    - {x: 165, y: 342, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 376, z: 0}
+    - {x: 72, y: 376, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .340821296, y: .661133289}
+    - {x: .340821296, y: .741698742}
+    - {x: .674803734, y: .661133289}
+    - {x: .674803734, y: .741698742}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9bb04a191fbda428eb7f06e15c52a023
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205, z: 0}
+    - {x: 82.5, y: 171, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0013
+    boundsData:
+    - {x: -10.5, y: 205, z: 0}
+    - {x: 165, y: 342, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 376, z: 0}
+    - {x: 72, y: 376, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .678711891, y: .678711414}
+    - {x: .839842796, y: .678711414}
+    - {x: .678711891, y: .845702648}
+    - {x: .839842796, y: .845702648}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: f0dbdd826f9e14557a24a4f23fdf00d9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205, z: 0}
+    - {x: 82.5, y: 171, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0027
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .340821296, y: .000977050746}
+    - {x: .340821296, y: .081542477}
+    - {x: .675780296, y: .000977050746}
+    - {x: .675780296, y: .081542477}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 18b0738f11c484d0088dbae938f6500c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0020
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .679688454, y: .000977050746}
+    - {x: .840819359, y: .000977050746}
+    - {x: .679688454, y: .16845654}
+    - {x: .840819359, y: .16845654}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 427f933e462d846a2a5d157ba5dd7561
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0021
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .0834965855}
+    - {x: .00195410149, y: .164062008}
+    - {x: .336913079, y: .0834965855}
+    - {x: .336913079, y: .164062008}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: e8201926a9e794927bdfae53e8c7a3d1
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0024
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .340821296, y: .0834965855}
+    - {x: .340821296, y: .164062008}
+    - {x: .675780296, y: .0834965855}
+    - {x: .675780296, y: .164062008}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: bb84f8aa9cc294265a299a71b56f4a6d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0006
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .166016117}
+    - {x: .00195410149, y: .24658154}
+    - {x: .336913079, y: .166016117}
+    - {x: .336913079, y: .24658154}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: da37c611f45c64a67999d781ea3b3671
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0007
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .340821296, y: .166016117}
+    - {x: .340821296, y: .24658154}
+    - {x: .675780296, y: .166016117}
+    - {x: .675780296, y: .24658154}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 1f146b6217b0648648e5e8239c6a792d
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0009
+    boundsData:
+    - {x: -10.5, y: 204.5, z: 0}
+    - {x: 165, y: 341, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 375, z: 0}
+    - {x: 72, y: 375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .339844733, y: .743652821}
+    - {x: .339844733, y: .824218273}
+    - {x: .672850609, y: .743652821}
+    - {x: .672850609, y: .824218273}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: a964172c16f3b495c8bf8e1ca604d4c9
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 204.5, z: 0}
+    - {x: 82.5, y: 170.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0008
+    boundsData:
+    - {x: -10.5, y: 204.5, z: 0}
+    - {x: 165, y: 341, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 375, z: 0}
+    - {x: 72, y: 375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .339844733, y: .826172352}
+    - {x: .339844733, y: .906737804}
+    - {x: .672850609, y: .826172352}
+    - {x: .672850609, y: .906737804}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 426d13c756be4468196d27b98284033c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 204.5, z: 0}
+    - {x: 82.5, y: 170.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0001
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .679688454, y: .170410648}
+    - {x: .840819359, y: .170410648}
+    - {x: .679688454, y: .337890148}
+    - {x: .840819359, y: .337890148}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: dbebed64066f94150b9b9a4e5d9615ae
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0004
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .248535648}
+    - {x: .00195410149, y: .329101086}
+    - {x: .336913079, y: .248535648}
+    - {x: .336913079, y: .329101086}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 6e5e84ed0a43e4c8aad72e5b2d2d0d5a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0005
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .340821296, y: .248535648}
+    - {x: .340821296, y: .329101086}
+    - {x: .675780296, y: .248535648}
+    - {x: .675780296, y: .329101086}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: e0e31393dab57452d857fcd7159835ca
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0010
+    boundsData:
+    - {x: -10.5, y: 204.5, z: 0}
+    - {x: 165, y: 341, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 375, z: 0}
+    - {x: 72, y: 375, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .339844733, y: .908691883}
+    - {x: .339844733, y: .989257336}
+    - {x: .672850609, y: .908691883}
+    - {x: .672850609, y: .989257336}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4250fe99e6efc4a1c97c767f65e56f11
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 204.5, z: 0}
+    - {x: 82.5, y: 170.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0011
+    boundsData:
+    - {x: -10.5, y: 205, z: 0}
+    - {x: 165, y: 342, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 376, z: 0}
+    - {x: 72, y: 376, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .847656727}
+    - {x: .00195410149, y: .928222179}
+    - {x: .335936517, y: .847656727}
+    - {x: .335936517, y: .928222179}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: c4edcb3c802a54ac3ba768864bf17bc8
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205, z: 0}
+    - {x: 82.5, y: 171, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0014
+    boundsData:
+    - {x: -10.5, y: 205, z: 0}
+    - {x: 165, y: 342, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 376, z: 0}
+    - {x: 72, y: 376, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .743652821}
+    - {x: .00195410149, y: .824218273}
+    - {x: .335936517, y: .743652821}
+    - {x: .335936517, y: .824218273}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: c6dc98cd9ca5844178db7ec4274a1bdd
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205, z: 0}
+    - {x: 82.5, y: 171, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0025
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .331055164}
+    - {x: .00195410149, y: .411620617}
+    - {x: .336913079, y: .331055164}
+    - {x: .336913079, y: .411620617}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: d4df6bcc25ba14d398338e87e13a1f6b
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0022
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .340821296, y: .331055164}
+    - {x: .340821296, y: .411620617}
+    - {x: .675780296, y: .331055164}
+    - {x: .675780296, y: .411620617}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0cc8934ff5be0477dad8d55d98e29893
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0023
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .679688454, y: .339844227}
+    - {x: .840819359, y: .339844227}
+    - {x: .679688454, y: .507323742}
+    - {x: .840819359, y: .507323742}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: e6153bdc1147e48b4ba905b016fa2022
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0028
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .413574696}
+    - {x: .00195410149, y: .494140148}
+    - {x: .336913079, y: .413574696}
+    - {x: .336913079, y: .494140148}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8dd21858d2e214774ae74f1211593603
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0026
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .340821296, y: .413574696}
+    - {x: .340821296, y: .494140148}
+    - {x: .675780296, y: .413574696}
+    - {x: .675780296, y: .494140148}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 4ac31388326f748df9da14dda00a171a
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0002
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .496094227}
+    - {x: .00195410149, y: .576659679}
+    - {x: .336913079, y: .496094227}
+    - {x: .336913079, y: .576659679}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 63c72bb480a2f46a0a251bbc72bab7ce
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0003
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .340821296, y: .496094227}
+    - {x: .340821296, y: .576659679}
+    - {x: .675780296, y: .496094227}
+    - {x: .675780296, y: .576659679}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8433c11b0d38d4443b73d07df136b4a3
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0018
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .679688454, y: .509277821}
+    - {x: .840819359, y: .509277821}
+    - {x: .679688454, y: .676757336}
+    - {x: .840819359, y: .676757336}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: a22c50aa25d684356abcbfd52e210ea4
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0019
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .578613758}
+    - {x: .00195410149, y: .659179211}
+    - {x: .336913079, y: .578613758}
+    - {x: .336913079, y: .659179211}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: 684546566bf81442baef85480eb3259f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0016
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .340821296, y: .578613758}
+    - {x: .340821296, y: .659179211}
+    - {x: .675780296, y: .578613758}
+    - {x: .675780296, y: .659179211}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: cdd42dadd847c4dbfbf917f6e7aaf392
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: BowTowerMov0017
+    boundsData:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 165, y: 343, z: 0}
+    untrimmedBoundsData:
+    - {x: 0, y: 202, z: 0}
+    - {x: 600, y: 404, z: 0}
+    texelSize: {x: 1, y: 1}
+    positions:
+    - {x: -93, y: 34, z: 0}
+    - {x: 72, y: 34, z: 0}
+    - {x: -93, y: 377, z: 0}
+    - {x: 72, y: 377, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00195410149, y: .661133289}
+    - {x: .00195410149, y: .741698742}
+    - {x: .336913079, y: .661133289}
+    - {x: .336913079, y: .741698742}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+    materialId: 0
+    sourceTextureGUID: af7ce3c82b0cb4f61a36829743fced41
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -10.5, y: 205.5, z: 0}
+    - {x: 82.5, y: 171.5, z: .100000001}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: f09f24ed33abf44af9649a919eadcc6c, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 7ae948e3350414a959baedd0451211dc, type: 1}
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: fc92f6a38bff24230a167c846e5a02b2
+  spriteCollectionName: BowTowerSpriteCollection
+  invOrthoSize: .00185185182
+  halfTargetHeight: 540
+  buildKey: 1895731874
+  dataGuid: 2405c4812489a4a84ae423c79c4427f6
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

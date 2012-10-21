@@ -17,4 +17,8 @@ public class Damage {
 		this.type = d.type;
 		this.amount = d.amount;
 	}
+	public Damage(Damage.Type type, float amount) {
+		this.type = type;
+		this.amount = amount;
+	}
 }

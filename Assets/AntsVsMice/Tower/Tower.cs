@@ -9,7 +9,7 @@ public abstract class Tower : MonoBehaviour {
 	public float cost;
 	public Damage attack;
 	public abstract Enemy FindTarget();
-	
+	public tk2dAnimatedSprite anim;
 
 	// Use this for initialization
 	void Start () {

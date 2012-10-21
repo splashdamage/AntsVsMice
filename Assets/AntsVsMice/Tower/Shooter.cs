@@ -3,6 +3,7 @@ using System.Collections;
 
 public class Shooter : Tower {
 
+	public 
 	// Use this for initialization
 	void Start () {
 	
