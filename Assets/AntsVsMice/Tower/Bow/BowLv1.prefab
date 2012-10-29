@@ -13,6 +13,7 @@ GameObject:
   - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400002}
+  - 114: {fileID: 11400004}
   - 65: {fileID: 6500000}
   m_Layer: 0
   m_Name: BowLv1
@@ -55,7 +56,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: -17.84021, y: 314.60321, z: -2.6059537e-05}
+  m_LocalPosition: {x: -2.69128418, y: 198.565872, z: 0}
   m_LocalScale: {x: 3.17673016, y: 1, z: 3.48299217}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -109,8 +110,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 165, y: 342, z: .200000003}
-  m_Center: {x: -10.5, y: 205, z: 0}
+  m_Size: {x: 190, y: 190, z: .200000003}
+  m_Center: {x: 5, y: 10, z: 0}
 --- !u!114 &11400000
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -127,12 +128,13 @@ MonoBehaviour:
   attack:
     type: 1
     amount: 1
-  anim: {fileID: 0}
+  anim: {fileID: 11400002}
   rateOfFire: 1
   arrowPrefab: {fileID: 100000, guid: 8b2a7376deb4d476f8bdb6e69db24d9b, type: 2}
   arrowLoc: {fileID: 400002}
   currentArrow: {fileID: 0}
   target: {fileID: 0}
+  shooting: 1
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -156,6 +158,17 @@ MonoBehaviour:
   clipId: 1
   playAutomatically: 0
   createCollider: 1
+--- !u!114 &11400004
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2da3f6208b8bf4aa78a16b24435b48d8, type: 1}
+  m_Name: 
+  target: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

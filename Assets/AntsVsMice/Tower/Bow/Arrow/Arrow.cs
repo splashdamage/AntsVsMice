@@ -1,11 +1,9 @@
 using UnityEngine;
 using System.Collections;
 
-public class Arrow : MonoBehaviour {
+public class Arrow : Ammo {
 	public float flightTime = 1;
 	public float fadeTime = 0;
-	public float damage = 10;
-	public tk2dSprite sprite;
 	float flightLeft;
 	float fadeLeft;
 	public Bow bow;
@@ -20,10 +18,7 @@ public class Arrow : MonoBehaviour {
 		bow.currentArrow = null;
 		enabled = true;
 	}
-	Vector3 Bezier2(Vector3 start, Vector3 end, Vector3 control, float t)
-	{
-	    return (((1-t)*(1-t)) * start) + (2 * t * (1 - t) * control) + ((t * t) * end);
-	}
+	
 
 	public void Update() {
 		if (target == null) {

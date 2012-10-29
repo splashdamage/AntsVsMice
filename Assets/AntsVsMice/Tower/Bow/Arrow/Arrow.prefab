@@ -107,12 +107,14 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10ca7d2eb07584d379ba23aa257c8f61, type: 1}
   m_Name: 
-  flightTime: 1
+  sprite: {fileID: 11400000}
   damage: 10
+  flightTime: 1
+  fadeTime: 1
   bow: {fileID: 0}
 --- !u!1001 &100100000
 Prefab:

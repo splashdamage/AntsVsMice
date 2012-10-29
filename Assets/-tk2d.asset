@@ -21,6 +21,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 81d9dbfb581ed4ea2ba1b216faba9175, type: 2}
   - {fileID: 11400000, guid: f38c1a9649c9949b18f901d9547e6448, type: 2}
   - {fileID: 11400000, guid: bcff9064839cc46ff8a746fca4c6ee96, type: 2}
+  - {fileID: 11400000, guid: 5bc5134f0926240af91a60ef54152e92, type: 2}
   fonts:
   - {fileID: 11400000, guid: 063b15d80dbb4604d890600a64c79cf8, type: 2}
   - {fileID: 11400000, guid: 5b9fac241be038041b70ac7e84cd6151, type: 2}
@@ -791,4 +792,78 @@ MonoBehaviour:
     - cfbab2c5fb49148a4ae6df385bc467be
     - 47009bde3727b4b4caca9cbce6adcf42
     - 920cd77eaafde4893b3e3359c71f5f32
+    version: 3
+  - name: CannonSpriteCollection
+    spriteCollectionGUID: 13cd4cd9830a845cc939a35b5e83f80c
+    spriteCollectionDataGUID: deca2ccc157a441e8b2fe3a99d84b9ad
+    spriteNames:
+    - CannonTowerMov0012
+    - CannonTowerMov0014
+    - CannonTowerMov0002
+    - CannonTowerMov0008
+    - CannonTowerMov0007
+    - CannonTowerMov0031
+    - CannonTowerMov0018
+    - CannonTowerMov0016
+    - CannonTowerMov0028
+    - CannonTowerMov0033
+    - CannonTowerMov0027
+    - CannonTowerMov0003
+    - CannonTowerMov0024
+    - CannonTowerMov0015
+    - CannonTowerMov0019
+    - CannonTowerMov0009
+    - CannonTowerMov0006
+    - CannonTowerMov0005
+    - CannonTowerMov0004
+    - CannonTowerMov0001
+    - CannonTowerMov0026
+    - CannonTowerMov0022
+    - CannonTowerMov0023
+    - CannonTowerMov0020
+    - CannonTowerMov0021
+    - CannonTowerMov0013
+    - CannonTowerMov0025
+    - CannonTowerMov0011
+    - CannonTowerMov0010
+    - CannonTowerMov0030
+    - CannonTowerMov0029
+    - CannonTowerMov0034
+    - CannonTowerMov0032
+    - CannonTowerMov0017
+    spriteTextureGUIDs:
+    - 6e6f09af500c04fed917c9a195ca31e5
+    - 9677d38835af5492e81e932461f89bd2
+    - c6880c82ca331481abfe12062cc32391
+    - 4d057d597bca84a149fb62e4494c2ed5
+    - 07cdf3ac3fd344a52bfbe018a45aee45
+    - bcd8c8bd56e7a4747ae7aa7489a113b2
+    - e4dd4668abd6c48e38a89dd4715de12f
+    - cb51d3097664141b9bd158b00bee6155
+    - daa91d1030d6047bd9c5e7d275681d66
+    - 31660eb12912b4e48b54824d9df083b9
+    - b3f15ba837136443b96fe50f394829b8
+    - 01f632ee460d146b0b5ac955f28e9a08
+    - 46b6e6ed9dc0744b29cca8138ae1f1f6
+    - 6a875d0bd507040c3841555ab0e0a92d
+    - 828881e741a0748bd85083b03ba3bff3
+    - 8584770c789b54d35a493dfab5e6f5d6
+    - f5edefaeaaf8d4503a469b92719df1bd
+    - 70d2a066bb0284b60bf37bb9486c8b58
+    - c06f006e105a74161a1cdeb7b49a48ed
+    - b62d3498cc3cc4d608fabf22efe7ce90
+    - 50cc7fe042a864be6aa87729757635aa
+    - e23d1471a0b454ee5a572060402be3e7
+    - effc356c67e234de0bdf36db8da22e1b
+    - c8619100b749e412a9ab3aeeed8f33fc
+    - 464d480c50df94dbbab6e23186724004
+    - f93e6e356320f457580d8a21323bd00d
+    - 804bf27d6a1c1406a83cd9486ee5f546
+    - 5ce23b3b6c440496991f1217033dd58f
+    - 08a12eda8b38d429fb5ab6b44cec49fc
+    - 8c3f7c3c584474f0eb514d3ce3854e1c
+    - f6939cdd7b21f4a4fae11539eaadb8d2
+    - 9c2117a356b7e4cb6abccadbbb51d27d
+    - 7d85a316121af4ddaa67f46f6b84d5fe
+    - ac901ba9206c24282be214bc2edc3864
     version: 3
