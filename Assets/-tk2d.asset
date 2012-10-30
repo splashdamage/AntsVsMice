@@ -22,6 +22,7 @@ MonoBehaviour:
   - {fileID: 11400000, guid: f38c1a9649c9949b18f901d9547e6448, type: 2}
   - {fileID: 11400000, guid: bcff9064839cc46ff8a746fca4c6ee96, type: 2}
   - {fileID: 11400000, guid: 5bc5134f0926240af91a60ef54152e92, type: 2}
+  - {fileID: 11400000, guid: ce243451ec3be495b8b0dbaad7e0f457, type: 2}
   fonts:
   - {fileID: 11400000, guid: 063b15d80dbb4604d890600a64c79cf8, type: 2}
   - {fileID: 11400000, guid: 5b9fac241be038041b70ac7e84cd6151, type: 2}
@@ -330,10 +331,12 @@ MonoBehaviour:
     - Arrow
     - Spray
     - CannonBall
+    - Explosion
     spriteTextureGUIDs:
     - 17c193f8c123d4744b256141c6d3d374
     - fa004c8cd8dd6445fb5727fdb7a500bf
     - 22e93f653613d4fee983ef3b50ee7755
+    - 15952cb36bb7647898b89dfd82f0dd1b
     version: 3
   - name: Shooter01
     spriteCollectionGUID: 5a1451e16054649f8a337fec273ce5d0
