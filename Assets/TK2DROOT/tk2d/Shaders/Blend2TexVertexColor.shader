@@ -37,9 +37,8 @@ Shader "tk2d/Blend2TexVertexColor"
 			struct v2f_vctt
 			{
 				float4 vertex : POSITION;
-				float4 color : COLOR;
-				float2 texcoord : TEXCOORD0;
-				float2 texcoord1 : TEXCOORD1;
+				fixed4 color : COLOR;
+				half4 texcoord01 : TEXCOORD0;
 			};
 
 			v2f_vctt vert_vctt(vin_vctt v)
@@ -47,14 +46,14 @@ Shader "tk2d/Blend2TexVertexColor"
 				v2f_vctt o;
 				o.vertex = mul(UNITY_MATRIX_MVP, v.vertex);
 				o.color = v.color;
-				o.texcoord = v.texcoord;
-				o.texcoord1 = v.texcoord1;
+				o.texcoord01.xy = v.texcoord;
+				o.texcoord01.zw = v.texcoord1;
 				return o;
 			}
 
 			fixed4 frag(v2f_vctt i) : COLOR
 			{
-				fixed4 col = tex2D(_MainTex, i.texcoord) * tex2D(_GradientTex, i.texcoord1) * i.color;
+				fixed4 col = tex2D(_MainTex, i.texcoord01.xy) * tex2D(_GradientTex, i.texcoord01.zw) * i.color;
 				return col;
 			}
 			

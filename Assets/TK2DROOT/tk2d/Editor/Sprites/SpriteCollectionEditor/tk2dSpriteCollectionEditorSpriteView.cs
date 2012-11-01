@@ -110,7 +110,7 @@ namespace tk2dEditor.SpriteCollectionEditor
 		{
 			var entry = entries[entries.Count - 1];
 			var param = SpriteCollection.textureParams[entry.index];
-			var spriteTexture = param.extractRegion?host.GetTextureForSprite(entry.index):SpriteCollection.textureRefs[entry.index];
+			var spriteTexture = param.extractRegion?host.GetTextureForSprite(entry.index):SpriteCollection.textureParams[entry.index].texture;
 
 			// Inspector
 			EditorGUILayout.BeginVertical();
@@ -144,7 +144,7 @@ namespace tk2dEditor.SpriteCollectionEditor
 				if (param.extractRegion)
 					EditorGUILayout.ObjectField("Texture", spriteTexture, typeof(Texture2D), false);
 				else
-					SpriteCollection.textureRefs[entry.index] = EditorGUILayout.ObjectField("Texture", spriteTexture, typeof(Texture2D), false) as Texture2D;
+					SpriteCollection.textureParams[entry.index].texture = EditorGUILayout.ObjectField("Texture", spriteTexture, typeof(Texture2D), false) as Texture2D;
 				GUILayout.FlexibleSpace();
 				GUILayout.BeginVertical();
 				if (editingSpriteSheet && GUILayout.Button("Edit...", EditorStyles.miniButton, GUILayout.Width(miniButtonWidth))) doSelect = true;
@@ -396,7 +396,6 @@ namespace tk2dEditor.SpriteCollectionEditor
 			{
 				foreach (var e in entries)
 				{
-					SpriteCollection.textureRefs[e.index] = null;
 					SpriteCollection.textureParams[e.index] = new tk2dSpriteCollectionDefinition();
 				}
 				SpriteCollection.Trim();
@@ -440,7 +439,7 @@ namespace tk2dEditor.SpriteCollectionEditor
 				return;
 			var entry = entries[entries.Count - 1];
 			var param = SpriteCollection.textureParams[entry.index];
-			var spriteTexture = param.extractRegion?host.GetTextureForSprite(entry.index):SpriteCollection.textureRefs[entry.index];
+			var spriteTexture = param.extractRegion?host.GetTextureForSprite(entry.index):SpriteCollection.textureParams[entry.index].texture;
 			EditorGUILayout.BeginHorizontal();
 	
 			// Cache texture or draw it

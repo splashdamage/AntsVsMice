@@ -71,6 +71,10 @@ public class tk2dSpriteDefinition
 	/// true when multi-atlas spanning is enabled.
 	/// </summary>
 	public Material material;
+
+	[System.NonSerialized]
+	public Material materialInst;
+
 	/// <summary>
 	/// The material id used by this sprite. This is an index into the materials array and corresponds to the 
 	/// material flag above.
@@ -124,11 +128,11 @@ public class tk2dSpriteCollectionData : MonoBehaviour
 {
 	public const int CURRENT_VERSION = 3;
 	
-	[HideInInspector]
 	public int version;
 	public bool materialIdsValid = false;
-	
-    [HideInInspector]
+	public bool needMaterialInstance = false;
+	public bool Transient { get; set; } // this should not get serialized
+
 	/// <summary>
 	/// An array of sprite definitions.
 	/// </summary>
@@ -142,19 +146,21 @@ public class tk2dSpriteCollectionData : MonoBehaviour
 	/// <summary>
 	/// Whether premultiplied alpha is enabled on this sprite collection. This affects how tint colors are computed.
 	/// </summary>
-    [HideInInspector]
     public bool premultipliedAlpha;
 	
 	/// <summary>
 	/// Only exists for backwards compatibility. Do not use or rely on this.
 	/// </summary>
-    [HideInInspector]
 	public Material material;	
 	
 	/// <summary>
 	/// An array of all materials used by this sprite collection.
 	/// </summary>
 	public Material[] materials;
+
+	[System.NonSerialized]
+	public Material[] materialInsts;
+
 	
 	/// <summary>
 	/// An array of all textures used by this sprite collection.
@@ -164,37 +170,35 @@ public class tk2dSpriteCollectionData : MonoBehaviour
 	/// <summary>
 	/// Specifies if sprites span multiple atlases.
 	/// </summary>
-	[HideInInspector]
 	public bool allowMultipleAtlases;
 	
 	/// <summary>
 	/// The sprite collection GUI.
 	/// </summary>
-	[HideInInspector]
 	public string spriteCollectionGUID;
 	
-	[HideInInspector]
 	/// <summary>
 	/// The name of the sprite collection.
 	/// </summary>
 	public string spriteCollectionName;
-	
-	[HideInInspector]
+
+	/// <summary>
+	/// Asset Name, used to load the asset
+	/// </summary>
+	public string assetName = "";	
+
 	/// <summary>
 	/// The size of the inv ortho size used to generate the sprite collection.
 	/// </summary>
 	public float invOrthoSize = 1.0f;
 	
-	[HideInInspector]
 	/// <summary>
 	/// Target height used to generate the sprite collection.
 	/// </summary>
 	public float halfTargetHeight = 1.0f;
 	
-	[HideInInspector]
 	public int buildKey = 0;
 	
-	[HideInInspector]
 	/// <summary>
 	/// GUID of this object, used with <see cref="tk2dIndex"/>
 	/// </summary>
@@ -203,7 +207,29 @@ public class tk2dSpriteCollectionData : MonoBehaviour
 	/// <summary>
 	/// Returns the number of sprite definitions in this sprite collection.
 	/// </summary>
-    public int Count { get { return spriteDefinitions.Length; } }
+    public int Count { get { return inst.spriteDefinitions.Length; } }
+
+	/// <summary>
+	/// When true, sprite collection will not be directly selectable
+	/// </summary>
+    public bool managedSpriteCollection = false;
+
+	/// <summary>
+	/// When true, spriteCollectionPlatforms & PlatformGUIDs are expected to have
+	/// sensible data.
+	/// </summary>
+	public bool hasPlatformData = false;
+
+	/// <summary>
+	/// Returns an array of platform names.
+	/// </summary>
+    public string[] spriteCollectionPlatforms = null;
+
+	/// <summary>
+	/// Returns an array of GUIDs, each referring to an actual tk2dSpriteCollectionData object
+	/// This object contains the actual sprite collection for the platform.
+	/// </summary>
+    public string[] spriteCollectionPlatformGUIDs = null;
 
 	/// <summary>
 	/// Resolves a sprite name and returns a unique id for the sprite.
@@ -214,9 +240,9 @@ public class tk2dSpriteCollectionData : MonoBehaviour
 	/// <param name='name'>Case sensitive sprite name, as defined in the sprite collection. This is usually the source filename excluding the extension</param>
 	public int GetSpriteIdByName(string name)
 	{
-		InitDictionary();
+		inst.InitDictionary();
 		int returnValue = 0;
-		spriteNameLookupDict.TryGetValue(name, out returnValue);
+		inst.spriteNameLookupDict.TryGetValue(name, out returnValue);
 		return returnValue; // default to first sprite
 	}
 	
@@ -242,7 +268,7 @@ public class tk2dSpriteCollectionData : MonoBehaviour
 	{
 		get 
 		{
-			foreach (var v in spriteDefinitions)
+			foreach (var v in inst.spriteDefinitions)
 			{
 				if (v.Valid)
 					return v;
@@ -258,8 +284,10 @@ public class tk2dSpriteCollectionData : MonoBehaviour
 	{
 		get 
 		{
-			for (int i = 0; i < spriteDefinitions.Length; ++i)
-				if (spriteDefinitions[i].Valid)
+			tk2dSpriteCollectionData data = inst;
+
+			for (int i = 0; i < data.spriteDefinitions.Length; ++i)
+				if (data.spriteDefinitions[i].Valid)
 					return i;
 			return -1;
 		}
@@ -270,14 +298,14 @@ public class tk2dSpriteCollectionData : MonoBehaviour
 	/// </summary>
 	public void InitMaterialIds()
 	{
-		if (materialIdsValid)
+		if (inst.materialIdsValid)
 			return;
 		
 		int firstValidIndex = -1;
 		Dictionary<Material, int> materialLookupDict = new Dictionary<Material, int>();
-		for (int i = 0; i < materials.Length; ++i)
+		for (int i = 0; i < inst.materials.Length; ++i)
 		{
-			if (firstValidIndex == -1 && materials[i] != null)
+			if (firstValidIndex == -1 && inst.materials[i] != null)
 				firstValidIndex = i;
 			materialLookupDict[materials[i]] = i;
 		}
@@ -287,12 +315,122 @@ public class tk2dSpriteCollectionData : MonoBehaviour
 		}
 		else
 		{
-			foreach (var v in spriteDefinitions)			
+			foreach (var v in inst.spriteDefinitions)			
 			{
 				if (!materialLookupDict.TryGetValue(v.material, out v.materialId))
 					v.materialId = firstValidIndex;
 			}
-			materialIdsValid = true;
+			inst.materialIdsValid = true;
 		}
+	}
+
+	tk2dSpriteCollectionData platformSpecificData = null;
+
+	// Returns the active instance
+	public tk2dSpriteCollectionData inst
+	{
+		get 
+		{
+			if (platformSpecificData == null)
+			{
+				if (hasPlatformData)
+				{
+					string systemPlatform = tk2dSystem.CurrentPlatform;
+					string guid = "";
+
+					for (int i = 0; i < spriteCollectionPlatforms.Length; ++i)
+					{
+						if (spriteCollectionPlatforms[i] == systemPlatform)
+						{
+							guid = spriteCollectionPlatformGUIDs[i];
+							break;							
+						}
+					}
+					if (guid.Length == 0)
+						guid = spriteCollectionPlatformGUIDs[0]; // failed to find platform, pick the first one
+
+					platformSpecificData = tk2dSystem.LoadResourceByGUID<tk2dSpriteCollectionData>(guid);
+				}
+				else
+				{
+					platformSpecificData = this;
+				}
+			}
+			platformSpecificData.Init(); // awake is never called, so we initialize explicitly
+			return platformSpecificData;
+		}
+	}
+	
+	void Init()
+	{
+		// check if already initialized
+		if (materialInsts != null)
+			return;
+
+		if (spriteDefinitions == null) spriteDefinitions = new tk2dSpriteDefinition[0];
+		if (materials == null) materials = new Material[0];
+
+		materialInsts = new Material[materials.Length];
+		if (needMaterialInstance)
+		{
+			for (int i = 0; i < materials.Length; ++i)
+			{
+				materialInsts[i] = Instantiate(materials[i]) as Material;
+				materialInsts[i].hideFlags = HideFlags.DontSave;
+			}
+			for (int i = 0; i < spriteDefinitions.Length; ++i)
+			{
+				tk2dSpriteDefinition def = spriteDefinitions[i];
+				def.materialInst = materialInsts[def.materialId];
+			}
+		}
+		else
+		{
+			for (int i = 0; i < spriteDefinitions.Length; ++i)
+			{
+				tk2dSpriteDefinition def = spriteDefinitions[i];
+				def.materialInst = def.material;
+			}
+		}
+	}
+
+	/// <summary>
+	/// Create a sprite collection at runtime from a texture and user specified regions.
+	/// Please ensure that names, regions & anchor arrays have same dimension.
+	/// Use <see cref="tk2dBaseSprite.CreateFromTexture"/> if you need to create only one sprite from a texture.
+	/// </summary>
+	public static tk2dSpriteCollectionData CreateFromTexture(Texture2D texture, tk2dRuntime.SpriteCollectionSize size, string[] names, Rect[] regions, Vector2[] anchors)
+	{
+		return tk2dRuntime.SpriteCollectionGenerator.CreateFromTexture(texture, size, names, regions, anchors);
+	}
+
+	public void ResetPlatformData()
+	{
+		if (hasPlatformData && platformSpecificData)
+		{
+			platformSpecificData = null;
+		}
+		
+		materialInsts = null;
+	}
+
+	void OnDestroy()
+	{
+		if (Transient)
+		{
+			foreach (Material material in materials)
+			{
+				DestroyImmediate(material);
+			}
+		}
+		else if (needMaterialInstance) // exclusive
+		{
+			foreach (Material material in materialInsts)
+			{
+				DestroyImmediate(material);
+			}
+		}
+
+		ResetPlatformData();
 	}
 }

@@ -19,6 +19,8 @@ namespace tk2dEditor.SpriteCollectionEditor
 		
 		public void CopyFromSource()
 		{
+			this.obj.Upgrade(); // make sure its up to date
+
 			textureParams = new List<tk2dSpriteCollectionDefinition>(obj.textureParams.Length);
 			foreach (var v in obj.textureParams)
 			{
@@ -31,10 +33,6 @@ namespace tk2dEditor.SpriteCollectionEditor
 					textureParams.Add(t);
 				}
 			}
-			
-			textureRefs = new List<Texture2D>(obj.textureRefs.Length);
-			foreach (var v in obj.textureRefs)
-				textureRefs.Add(v);
 			
 			spriteSheets = new List<tk2dSpriteSheetSource>();
 			if (obj.spriteSheets != null)
@@ -73,6 +71,15 @@ namespace tk2dEditor.SpriteCollectionEditor
 			var target = this;
 			var source = obj;
 			
+			target.platforms = new List<tk2dSpriteCollectionPlatform>(source.platforms);
+			if (target.platforms.Count == 0)
+			{
+				tk2dSpriteCollectionPlatform plat = new tk2dSpriteCollectionPlatform(); // add a null platform
+				target.platforms.Add(plat);
+			}
+
+			target.assetName = source.assetName;
+
 			target.maxTextureSize = source.maxTextureSize;
 			target.forceTextureSize = source.forceTextureSize;
 			target.forcedTextureWidth = source.forcedTextureWidth;
@@ -95,13 +102,20 @@ namespace tk2dEditor.SpriteCollectionEditor
 			target.useTk2dCamera = source.useTk2dCamera;
 			target.targetHeight = source.targetHeight;
 			target.targetOrthoSize = source.targetOrthoSize;
-			target.pixelPerfectPointSampled = source.pixelPerfectPointSampled;
+			target.globalScale = source.globalScale;
 			target.physicsDepth = source.physicsDepth;
 			target.disableTrimming = source.disableTrimming;
 			target.normalGenerationMode = source.normalGenerationMode;
 			target.padAmount = source.padAmount;
 			target.autoUpdate = source.autoUpdate;
 			target.editorDisplayScale = source.editorDisplayScale;
+
+			// Texture settings
+			target.filterMode = source.filterMode;
+			target.wrapMode = source.wrapMode;
+			target.userDefinedTextureSettings = source.userDefinedTextureSettings;
+			target.mipmapEnabled = source.mipmapEnabled;
+			target.anisoLevel = source.anisoLevel;
 		}
 		
 		void CopyArray<T>(ref T[] dest, T[] source)
@@ -140,7 +154,7 @@ namespace tk2dEditor.SpriteCollectionEditor
 							for (int j = 0; j < textureParams.Count; ++j)
 							{
 								var param = textureParams[j];
-								if (param.fromSpriteSheet && textureRefs[j] == spriteSheet.texture)
+								if (param.fromSpriteSheet && param.texture == spriteSheet.texture)
 								{
 									param.fromSpriteSheet = false;
 									param.hasSpriteSheetId = true;
@@ -157,16 +171,21 @@ namespace tk2dEditor.SpriteCollectionEditor
 				}				
 			}
 		}
-		
+
 		public void CopyToTarget()
 		{
-			obj.textureParams = textureParams.ToArray();
-			obj.textureRefs = textureRefs.ToArray();
-			obj.spriteSheets = spriteSheets.ToArray();
-			obj.fonts = fonts.ToArray();
+			CopyToTarget(obj);
+		}
+		
+		public void CopyToTarget(tk2dSpriteCollection target)
+		{
+			target.textureParams = textureParams.ToArray();
+			target.spriteSheets = spriteSheets.ToArray();
+			target.fonts = fonts.ToArray();
 
-			var target = obj;
 			var source = this;
+			target.platforms = new List<tk2dSpriteCollectionPlatform>(source.platforms);
+			target.assetName = source.assetName;
 			
 			target.maxTextureSize = source.maxTextureSize;
 			target.forceTextureSize = source.forceTextureSize;
@@ -190,13 +209,20 @@ namespace tk2dEditor.SpriteCollectionEditor
 			target.useTk2dCamera = source.useTk2dCamera;
 			target.targetHeight = source.targetHeight;
 			target.targetOrthoSize = source.targetOrthoSize;
-			target.pixelPerfectPointSampled = source.pixelPerfectPointSampled;
+			target.globalScale = source.globalScale;
 			target.physicsDepth = source.physicsDepth;
 			target.disableTrimming = source.disableTrimming;
 			target.normalGenerationMode = source.normalGenerationMode;
 			target.padAmount = source.padAmount; 
 			target.autoUpdate = source.autoUpdate;
 			target.editorDisplayScale = source.editorDisplayScale;
+
+			// Texture settings
+			target.filterMode = source.filterMode;
+			target.wrapMode = source.wrapMode;
+			target.userDefinedTextureSettings = source.userDefinedTextureSettings;
+			target.mipmapEnabled = source.mipmapEnabled;
+			target.anisoLevel = source.anisoLevel;
 		}
 		
 		public bool AllowAltMaterials
@@ -209,14 +235,13 @@ namespace tk2dEditor.SpriteCollectionEditor
 		
 		public int FindOrCreateEmptySpriteSlot()
 		{
-			for (int index = 0; index < textureRefs.Count; ++index)
+			for (int index = 0; index < textureParams.Count; ++index)
 			{
-				if (textureRefs[index] == null)
+				if (textureParams[index].texture == null)
 					return index;
 			}
-			textureRefs.Add(null);
 			textureParams.Add(new tk2dSpriteCollectionDefinition());
-			return textureRefs.Count - 1;
+			return textureParams.Count - 1;
 		}
 		
 		public int FindOrCreateEmptyFontSlot()
@@ -273,22 +298,21 @@ namespace tk2dEditor.SpriteCollectionEditor
 			return name; // failed to find a name
 		}
 		
-		public bool Empty { get { return textureRefs.Count == 0 && fonts.Count == 0 && spriteSheets.Count == 0; } }
+		public bool Empty { get { return textureParams.Count == 0 && fonts.Count == 0 && spriteSheets.Count == 0; } }
 		
 		// Call after deleting anything
 		public void Trim()
 		{
-			int lastIndex = textureRefs.Count - 1;
+			int lastIndex = textureParams.Count - 1;
 			while (lastIndex >= 0)
 			{
-				if (textureRefs[lastIndex] != null)
+				if (textureParams[lastIndex].texture != null)
 					break;
 				lastIndex--;
 			}
-			int count = textureRefs.Count - 1 - lastIndex;
+			int count = textureParams.Count - 1 - lastIndex;
 			if (count > 0)
 			{
-				textureRefs.RemoveRange( lastIndex + 1, count );
 				textureParams.RemoveRange( lastIndex + 1, count );
 			}
 			
@@ -340,7 +364,6 @@ namespace tk2dEditor.SpriteCollectionEditor
 			{
 				if (textureParams[i].hasSpriteSheetId && textureParams[i].spriteSheetId == index)
 				{
-					textureRefs[i] = null;
 					textureParams[i] = new tk2dSpriteCollectionDefinition();
 				}
 			}
@@ -354,17 +377,22 @@ namespace tk2dEditor.SpriteCollectionEditor
 			return AssetDatabase.GetAssetPath(obj);
 		}
 
+		public string GetOrCreateDataPath()
+		{
+			return tk2dSpriteCollectionBuilder.GetOrCreateDataPath(obj);
+		}
+
 		public bool Ready { get { return obj != null; } }
 		tk2dSpriteCollection obj;
 		
 
 		// Mirrored data objects
-		public List<Texture2D> textureRefs = new List<Texture2D>();
 		public List<tk2dSpriteCollectionDefinition> textureParams = new List<tk2dSpriteCollectionDefinition>();
 		public List<tk2dSpriteSheetSource> spriteSheets = new List<tk2dSpriteSheetSource>();
 		public List<tk2dSpriteCollectionFont> fonts = new List<tk2dSpriteCollectionFont>();
 		
 		// Mirrored from sprite collection
+		public string assetName;
 		public int maxTextureSize;
 		public tk2dSpriteCollection.TextureCompression textureCompression;
 		public int atlasWidth, atlasHeight;
@@ -373,6 +401,8 @@ namespace tk2dEditor.SpriteCollectionEditor
 		public bool allowMultipleAtlases;
 		public tk2dSpriteCollectionData spriteCollection;
 	    public bool premultipliedAlpha;
+
+	    public List<tk2dSpriteCollectionPlatform> platforms = new List<tk2dSpriteCollectionPlatform>();
 		
 		public Material[] altMaterials;
 		public Material[] atlasMaterials;
@@ -381,7 +411,15 @@ namespace tk2dEditor.SpriteCollectionEditor
 		public bool useTk2dCamera;
 		public int targetHeight;
 		public float targetOrthoSize;
-		public bool pixelPerfectPointSampled;
+		public float globalScale;
+
+		// Texture settings
+		public FilterMode filterMode;
+		public TextureWrapMode wrapMode;
+		public bool userDefinedTextureSettings;
+		public bool mipmapEnabled = true;
+		public int anisoLevel = 1;
+
 		public float physicsDepth;
 		public bool disableTrimming;
 		

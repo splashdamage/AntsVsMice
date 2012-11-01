@@ -32,6 +32,8 @@ public class tk2dStaticSpriteBatcher : MonoBehaviour, tk2dRuntime.ISpriteCollect
 	public int version;
 	public tk2dBatchedSprite[] batchedSprites = null;
 	public tk2dSpriteCollectionData spriteCollection = null;
+	tk2dSpriteCollectionData spriteCollectionInst = null;
+
 	Mesh mesh = null;
 	Mesh colliderMesh = null;
 	
@@ -54,10 +56,6 @@ public class tk2dStaticSpriteBatcher : MonoBehaviour, tk2dRuntime.ISpriteCollect
 	
 	void Awake()
 	{
-		// Create mesh, independently to everything else
-		mesh = new Mesh();
-		GetComponent<MeshFilter>().mesh = mesh;
-
 		Build();
 	}
 	
@@ -82,12 +80,43 @@ public class tk2dStaticSpriteBatcher : MonoBehaviour, tk2dRuntime.ISpriteCollect
 		return true;
 	}
 	
+	protected void OnDestroy()
+	{
+		if (mesh)
+		{
+#if UNITY_EDITOR
+			DestroyImmediate(mesh);
+#else
+			Destroy(mesh);
+#endif
+		}
+		
+		if (colliderMesh)
+		{
+#if UNITY_EDITOR
+			DestroyImmediate(colliderMesh);
+#else
+			Destroy(colliderMesh);
+#endif
+		}
+	}
+
 	public void Build()
 	{
 		UpgradeData();
-		
-		if (mesh)
+	
+		if (spriteCollection != null)
+			spriteCollectionInst = spriteCollection.inst;
+
+		if (mesh == null)
 		{
+			mesh = new Mesh();
+			mesh.hideFlags = HideFlags.DontSave;
+			GetComponent<MeshFilter>().mesh = mesh;
+		}
+		else
+		{
+			// this happens when the sprite rebuilds
 			mesh.Clear();
 		}
 		
@@ -101,7 +130,7 @@ public class tk2dStaticSpriteBatcher : MonoBehaviour, tk2dRuntime.ISpriteCollect
 			colliderMesh = null;
 		}
 		
-		if (!spriteCollection || batchedSprites == null || batchedSprites.Length == 0)
+		if (!spriteCollectionInst || batchedSprites == null || batchedSprites.Length == 0)
 		{
 		}
 		else
@@ -125,7 +154,7 @@ public class tk2dStaticSpriteBatcher : MonoBehaviour, tk2dRuntime.ISpriteCollect
 				continue;				
 			}
 			
-			var spriteData = spriteCollection.spriteDefinitions[sprite.spriteId];
+			var spriteData = spriteCollectionInst.spriteDefinitions[sprite.spriteId];
 			if (spriteData.material.renderQueue == 2000)
 				solidBatches.Add(sprite);
 			else
@@ -162,7 +191,7 @@ public class tk2dStaticSpriteBatcher : MonoBehaviour, tk2dRuntime.ISpriteCollect
 		bool needTangents = false;
 		if (batchedSprites.Length > 0)
 		{
-			var v = spriteCollection.FirstValidDefinition;
+			var v = spriteCollectionInst.FirstValidDefinition;
 			needNormals = v.normals != null && v.normals.Length > 0;
 			needTangents = v.tangents != null && v.tangents.Length > 0;
 		}
@@ -173,7 +202,7 @@ public class tk2dStaticSpriteBatcher : MonoBehaviour, tk2dRuntime.ISpriteCollect
 			if (!sprite.IsDrawn) // when the first non-drawn child is found, it signals the end of the drawn list
 				break;
 			
-			var spriteData = spriteCollection.spriteDefinitions[sprite.spriteId];
+			var spriteData = spriteCollectionInst.spriteDefinitions[sprite.spriteId];
 			numVertices += spriteData.positions.Length;
 		}
 		
@@ -194,7 +223,7 @@ public class tk2dStaticSpriteBatcher : MonoBehaviour, tk2dRuntime.ISpriteCollect
 			if (!sprite.IsDrawn) // when the first non-drawn child is found, it signals the end of the drawn list
 				break;
 			
-			var spriteData = spriteCollection.spriteDefinitions[sprite.spriteId];
+			var spriteData = spriteCollectionInst.spriteDefinitions[sprite.spriteId];
 			
 			if (spriteData.material != currentMaterial)
 			{
@@ -209,7 +238,7 @@ public class tk2dStaticSpriteBatcher : MonoBehaviour, tk2dRuntime.ISpriteCollect
 			}
 			
 			Color color = sprite.color;
-	        if (spriteCollection.premultipliedAlpha) { color.r *= color.a; color.g *= color.a; color.b *= color.a; }
+	        if (spriteCollectionInst.premultipliedAlpha) { color.r *= color.a; color.g *= color.a; color.b *= color.a; }
 			
 			for (int i = 0; i < spriteData.indices.Length; ++i)
 				currentIndices.Add(currVertex + spriteData.indices[i]);
@@ -289,7 +318,7 @@ public class tk2dStaticSpriteBatcher : MonoBehaviour, tk2dRuntime.ISpriteCollect
 			if (!sprite.IsDrawn) // when the first non-drawn child is found, it signals the end of the drawn list
 				break;
 			
-			var spriteData = spriteCollection.spriteDefinitions[sprite.spriteId];
+			var spriteData = spriteCollectionInst.spriteDefinitions[sprite.spriteId];
 			if (spriteData.colliderType == tk2dSpriteDefinition.ColliderType.Box)
 			{
 				numIndices += 6 * 4;
@@ -317,10 +346,19 @@ public class tk2dStaticSpriteBatcher : MonoBehaviour, tk2dRuntime.ISpriteCollect
 		}
 		
 		if (meshCollider == null)
+		{
 			meshCollider = gameObject.AddComponent<MeshCollider>();
+		}
+	
 		if (colliderMesh == null)
+		{
 			colliderMesh = new Mesh();
-		colliderMesh.Clear();
+			colliderMesh.hideFlags = HideFlags.DontSave;
+		}
+		else
+		{
+			colliderMesh.Clear();
+		}
 		
 		// second pass, build composite mesh
 		int currVertex = 0;
@@ -333,7 +371,7 @@ public class tk2dStaticSpriteBatcher : MonoBehaviour, tk2dRuntime.ISpriteCollect
 			if (!sprite.IsDrawn) // when the first non-drawn child is found, it signals the end of the drawn list
 				break;
 			
-			var spriteData = spriteCollection.spriteDefinitions[sprite.spriteId];
+			var spriteData = spriteCollectionInst.spriteDefinitions[sprite.spriteId];
 			if (spriteData.colliderType == tk2dSpriteDefinition.ColliderType.Box)
 			{
 				Vector3 origin = new Vector3(spriteData.colliderVertices[0].x * sprite.localScale.x, spriteData.colliderVertices[0].y * sprite.localScale.y, spriteData.colliderVertices[0].z * sprite.localScale.z);

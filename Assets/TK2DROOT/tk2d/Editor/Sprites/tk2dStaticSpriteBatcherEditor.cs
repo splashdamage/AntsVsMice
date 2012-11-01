@@ -22,8 +22,8 @@ class tk2dStaticSpriteBatcherEditor : Editor
 				tk2dSprite s = t.GetComponent<tk2dSprite>();
 				if (s)
 				{
-					if (scd == null) scd = s.collection;
-					if (scd != s.collection)
+					if (scd == null) scd = s.Collection;
+					if (scd != s.Collection)
 					{
 						EditorUtility.DisplayDialog("StaticSpriteBatcher", "Error: Multiple sprite collections found", "Ok");
 						return;
@@ -118,12 +118,7 @@ class tk2dStaticSpriteBatcherEditor : Editor
 
 				if (v.spriteId != -1)
 				{
-					tk2dSprite s = go.AddComponent<tk2dSprite>();
-					s.collection = batcher.spriteCollection;
-					s.Build();
-	
-					s.spriteId = v.spriteId;
-					s.EditMode__CreateCollider(); // needed to recreate the collider after setting spriteId
+					tk2dSprite s = tk2dSprite.AddComponent<tk2dSprite>(go, batcher.spriteCollection, v.spriteId);
 	
 					s.scale = v.localScale;
 					s.pixelPerfect = v.alwaysPixelPerfect;

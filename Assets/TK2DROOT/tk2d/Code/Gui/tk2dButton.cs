@@ -213,7 +213,7 @@ public class tk2dButton : MonoBehaviour
 		}
 	}
 	
-	IEnumerator coHandleButtonPress()
+	IEnumerator coHandleButtonPress(int fingerId)
 	{
 		buttonDown = true; // inhibit processing in Update()
 		bool buttonPressed = true; // the button is currently being pressed
@@ -233,9 +233,44 @@ public class tk2dButton : MonoBehaviour
 		if (ButtonDownEvent != null)
 			ButtonDownEvent(this);
 		
-		while (Input.GetMouseButton(0))
+		while (true)
 		{
-            Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
+			Vector3 cursorPosition = Vector3.zero;
+			bool cursorActive = true;
+
+			// slightly akward arrangement to keep exact backwards compatibility
+#if !UNITY_FLASH
+			if (Input.multiTouchEnabled)
+			{
+				bool found = false;
+				for (int i = 0; i < Input.touchCount; ++i)
+				{
+					Touch touch = Input.GetTouch(i);
+					if (touch.fingerId == fingerId)
+					{
+						if (touch.phase == TouchPhase.Ended || touch.phase == TouchPhase.Canceled)
+							break; // treat as not found
+						cursorPosition = touch.position;
+						found = true;
+					}
+				}
+
+				if (!found) cursorActive = false;
+			} 			
+			else
+#endif
+			{
+				if (!Input.GetMouseButton(0))
+					cursorActive = false;
+				cursorPosition = Input.mousePosition;
+			}
+
+			// user is no longer pressing mouse or no longer touching button
+			if (!cursorActive) 
+				break; 
+
+            Ray ray = viewCamera.ScreenPointToRay(cursorPosition);
+
             RaycastHit hitInfo;
 			bool colliderHit = collider.Raycast(ray, out hitInfo, 1.0e8f);
             if (buttonPressed && !colliderHit)
@@ -303,7 +338,11 @@ public class tk2dButton : MonoBehaviour
 			
 			// Button may have been deactivated in ButtonPressed / Up event
 			// Don't wait in that case
+#if UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4 || UNITY_3_5 || UNITY_3_6 || UNITY_3_7 || UNITY_3_8 || UNITY_3_9
 			if (gameObject.active)
+#else
+			if (gameObject.activeInHierarchy)
+#endif
 			{
 				yield return StartCoroutine(LocalWaitForSeconds(pressedWaitTime));
 			}
@@ -314,19 +353,46 @@ public class tk2dButton : MonoBehaviour
 		
 		buttonDown = false;
 	}
+
 	
 	// Update is called once per frame
 	void Update ()
 	{
-		if (!buttonDown && Input.GetMouseButtonDown(0))
-        {
-            Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
-            RaycastHit hitInfo;
-            if (collider.Raycast(ray, out hitInfo, 1.0e8f))
-            {
-				if (!Physics.Raycast(ray, hitInfo.distance - 0.01f))
-					StartCoroutine(coHandleButtonPress());
-            }
-        }
+		if (buttonDown) // only need to process if button isn't down
+			return;
+
+#if !UNITY_FLASH
+		if (Input.multiTouchEnabled)
+		{
+			for (int i = 0; i < Input.touchCount; ++i)
+			{
+				Touch touch = Input.GetTouch(i);
+				if (touch.phase != TouchPhase.Began) continue;
+	            Ray ray = viewCamera.ScreenPointToRay(touch.position);
+	            RaycastHit hitInfo;
+	            if (collider.Raycast(ray, out hitInfo, 1.0e8f))
+	            {
+					if (!Physics.Raycast(ray, hitInfo.distance - 0.01f))
+					{
+						StartCoroutine(coHandleButtonPress(touch.fingerId));
+						break; // only one finger on a buton, please.
+					}
+	            }	            
+			}
+		}
+		else
+#endif
+		{
+			if (Input.GetMouseButtonDown(0))
+	        {
+	            Ray ray = viewCamera.ScreenPointToRay(Input.mousePosition);
+	            RaycastHit hitInfo;
+	            if (collider.Raycast(ray, out hitInfo, 1.0e8f))
+	            {
+					if (!Physics.Raycast(ray, hitInfo.distance - 0.01f))
+						StartCoroutine(coHandleButtonPress(-1));
+	            }
+	        }
+		}
 	}
 }

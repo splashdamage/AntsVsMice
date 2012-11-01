@@ -14,6 +14,7 @@ namespace tk2dEditor.SpriteCollectionEditor
 			this.host = host;
 		}
 	
+		Vector2 fontTextureScrollBar;
 		Vector2 fontEditorScrollBar;
 		public bool Draw(List<SpriteCollectionEditorEntry> selectedEntries)
 		{
@@ -28,11 +29,13 @@ namespace tk2dEditor.SpriteCollectionEditor
 			
 			// Body
 			GUILayout.BeginVertical(tk2dEditorSkin.SC_BodyBackground, GUILayout.ExpandHeight(true), GUILayout.ExpandWidth(true));
+			fontTextureScrollBar = GUILayout.BeginScrollView(fontTextureScrollBar);
 			if (font.texture != null)
 			{
 				font.texture.filterMode = FilterMode.Point;
 				GUILayout.Label(font.texture);
 			}
+			GUILayout.EndScrollView();
 			GUILayout.EndVertical();
 			
 			// Inspector
@@ -44,9 +47,22 @@ namespace tk2dEditor.SpriteCollectionEditor
 			Object newBmFont = EditorGUILayout.ObjectField("BM Font", font.bmFont, typeof(Object), false);
 			if (newBmFont != font.bmFont)
 			{
+				font.texture = null;
+				entry.name = "Empty";
 				font.bmFont = newBmFont;
-				entry.name = font.Name;
-				host.OnSpriteCollectionSortChanged();
+				if (newBmFont != null)
+				{
+					string bmFontPath = AssetDatabase.GetAssetPath(newBmFont);
+					tk2dEditor.Font.Info fontInfo = tk2dEditor.Font.Builder.ParseBMFont(bmFontPath);
+					if (fontInfo != null && fontInfo.texturePaths.Length > 0)
+					{
+						string path = System.IO.Path.GetDirectoryName(bmFontPath).Replace('\\', '/') + "/" + System.IO.Path.GetFileName(fontInfo.texturePaths[0]);;
+						font.texture = AssetDatabase.LoadAssetAtPath(path, typeof(Texture2D)) as Texture2D;
+					}
+	
+					entry.name = font.Name;
+					host.OnSpriteCollectionSortChanged();
+				}
 			}
 			GUILayout.BeginHorizontal();
 			Texture2D newTexture = EditorGUILayout.ObjectField("Font Texture", font.texture, typeof(Texture2D), false) as Texture2D;
@@ -85,7 +101,21 @@ namespace tk2dEditor.SpriteCollectionEditor
 					}
 				}			
 			}
-			
+
+			if (SpriteCollection.AllowAltMaterials && SpriteCollection.altMaterials.Length > 1)
+			{
+				List<int> altMaterialIndices = new List<int>();
+				List<string> altMaterialNames = new List<string>();
+				for (int i = 0; i < SpriteCollection.altMaterials.Length; ++i)
+				{
+					var mat = SpriteCollection.altMaterials[i];
+					if (mat == null) continue;
+					altMaterialIndices.Add(i);
+					altMaterialNames.Add(mat.name);
+				}
+				font.materialId = EditorGUILayout.IntPopup("Material", font.materialId, altMaterialNames.ToArray(), altMaterialIndices.ToArray());
+			}
+
 			if (font.data == null || font.editorData == null)
 			{
 				if (tk2dGuiUtility.InfoBoxWithButtons(
@@ -94,19 +124,21 @@ namespace tk2dEditor.SpriteCollectionEditor
 					tk2dGuiUtility.WarningLevel.Info, 
 					"Create") != -1)
 				{
+					// make data folder
+					string root = SpriteCollection.GetOrCreateDataPath();
+
 					string name = font.bmFont?font.bmFont.name:"Unknown Font";
-					string editorDataPath = EditorUtility.SaveFilePanelInProject("Save Font Data", name, "prefab", "");
+					string editorDataPath = tk2dGuiUtility.SaveFileInProject("Save Font Data", root, name, "prefab");
 					if (editorDataPath.Length > 0)
 					{
 						int prefabOffset = editorDataPath.ToLower().IndexOf(".prefab");
-						string dataObjectPath = editorDataPath.Substring(0, prefabOffset) + "data.prefab";
-						
+						string dataObjectPath = editorDataPath.Substring(0, prefabOffset) + " data.prefab";
 						
 						// Create data object
 						{
 							GameObject go = new GameObject();
 							go.AddComponent<tk2dFontData>();
-							go.active = false;
+					        tk2dEditorUtility.SetGameObjectActive(go, false);
 	#if (UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4)
 							Object p = EditorUtility.CreateEmptyPrefab(dataObjectPath);
 							EditorUtility.ReplacePrefab(go, p);
@@ -125,7 +157,7 @@ namespace tk2dEditor.SpriteCollectionEditor
 							tk2dFont f = go.AddComponent<tk2dFont>();
 							f.proxyFont = true;
 							f.data = font.data;
-							go.active = false;
+					        tk2dEditorUtility.SetGameObjectActive(go, false);
 				
 				#if (UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4)
 							Object p = EditorUtility.CreateEmptyPrefab(editorDataPath);
@@ -136,7 +168,8 @@ namespace tk2dEditor.SpriteCollectionEditor
 				#endif
 							GameObject.DestroyImmediate(go);
 							
-							tk2dEditorUtility.GetOrCreateIndex().AddFont(AssetDatabase.LoadAssetAtPath(editorDataPath, typeof(tk2dFont)) as tk2dFont);
+							tk2dFont loadedFont = AssetDatabase.LoadAssetAtPath(editorDataPath, typeof(tk2dFont)) as tk2dFont;
+							tk2dEditorUtility.GetOrCreateIndex().AddOrUpdateFont(loadedFont);
 							tk2dEditorUtility.CommitIndex();
 							
 							font.editorData = AssetDatabase.LoadAssetAtPath(editorDataPath, typeof(tk2dFont)) as tk2dFont;
@@ -151,6 +184,46 @@ namespace tk2dEditor.SpriteCollectionEditor
 			{
 				font.editorData = EditorGUILayout.ObjectField("Editor Data", font.editorData, typeof(tk2dFont), false) as tk2dFont;
 				font.data = EditorGUILayout.ObjectField("Font Data", font.data, typeof(tk2dFontData), false) as tk2dFontData;
+			}
+
+			if (font.data && font.editorData)
+			{
+				font.useGradient = EditorGUILayout.Toggle("Use Gradient", font.useGradient);
+				if (font.useGradient)
+				{
+					EditorGUI.indentLevel++;
+					Texture2D tex = EditorGUILayout.ObjectField("Gradient Tex", font.gradientTexture, typeof(Texture2D), false) as Texture2D;
+					if (font.gradientTexture != tex)
+					{
+						font.gradientTexture = tex;
+
+						List<Material> materials = new List<Material>();
+						materials.Add( SpriteCollection.altMaterials[font.materialId] );
+
+						for (int j = 0; j < SpriteCollection.platforms.Count; ++j)
+						{
+							if (!SpriteCollection.platforms[j].Valid) continue;
+							tk2dSpriteCollection data = SpriteCollection.platforms[j].spriteCollection;
+							materials.Add( data.altMaterials[font.materialId] );
+						}
+
+						for (int j = 0; j < materials.Count; ++j)
+						{
+							if (!materials[j].HasProperty("_GradientTex"))
+							{
+								Debug.LogError(string.Format("Cant find parameter '_GradientTex' in material '{0}'", materials[j].name));
+							}
+							else if (materials[j].GetTexture("_GradientTex") != tex)
+							{
+								materials[j].SetTexture("_GradientTex", font.gradientTexture);
+								EditorUtility.SetDirty(materials[j]);
+							}
+						}
+					}
+	
+					font.gradientCount = EditorGUILayout.IntField("Gradient Count", font.gradientCount);
+					EditorGUI.indentLevel--;
+				}
 			}
 			
 			//font.dupeCaps = EditorGUILayout.Toggle("Dupe caps", font.dupeCaps);

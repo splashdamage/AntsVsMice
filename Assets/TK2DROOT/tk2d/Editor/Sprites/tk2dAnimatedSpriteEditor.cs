@@ -5,7 +5,7 @@ using System.Collections.Generic;
 [CustomEditor(typeof(tk2dAnimatedSprite))]
 class tk2dAnimatedSpriteEditor : tk2dSpriteEditor
 {
-	tk2dSpriteAnimation[] animLibs = null;
+	tk2dGenericIndexItem[] animLibs = null;
 	string[] animLibNames = null;
 	bool initialized = false;
 	
@@ -18,7 +18,9 @@ class tk2dAnimatedSpriteEditor : tk2dSpriteEditor
 			{
 				animLibNames = new string[animLibs.Length];
 				for (int i = 0; i < animLibs.Length; ++i)
-					animLibNames[i] = animLibs[i].name;
+				{
+					animLibNames[i] = animLibs[i].AssetName;
+				}
 			}
 			initialized = true;
 		}
@@ -55,15 +57,16 @@ class tk2dAnimatedSpriteEditor : tk2dSpriteEditor
 
 			if (sprite.anim == null)
 			{
-				sprite.anim = animLibs[0];
+				sprite.anim = animLibs[0].GetAsset<tk2dSpriteAnimation>();
 				GUI.changed = true;
 			}
 			
 			// Display animation library
 			int selAnimLib = 0;
+			string selectedGUID = AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(sprite.anim));
 			for (int i = 0; i < animLibs.Length; ++i)
 			{
-				if (animLibs[i] == sprite.anim)
+				if (animLibs[i].assetGUID == selectedGUID)
 				{
 					selAnimLib = i;
 					break;
@@ -73,7 +76,7 @@ class tk2dAnimatedSpriteEditor : tk2dSpriteEditor
 			int newAnimLib = EditorGUILayout.Popup("Anim Lib", selAnimLib, animLibNames);
 			if (newAnimLib != selAnimLib)
 			{
-				sprite.anim = animLibs[newAnimLib];
+				sprite.anim = animLibs[newAnimLib].GetAsset<tk2dSpriteAnimation>();
 				sprite.clipId = 0;
 				
 				if (sprite.anim.clips.Length > 0)
@@ -151,7 +154,7 @@ class tk2dAnimatedSpriteEditor : tk2dSpriteEditor
 			tk2dSprite spr = GameObject.FindObjectOfType(typeof(tk2dSprite)) as tk2dSprite;
 			if (spr)
 			{
-				sprColl = spr.collection;
+				sprColl = spr.Collection;
 			}
 		}
 		
@@ -176,10 +179,11 @@ class tk2dAnimatedSpriteEditor : tk2dSpriteEditor
 			}
 		}		
 		
-		tk2dSpriteAnimation[] anims = tk2dEditorUtility.GetOrCreateIndex().GetSpriteAnimations();
+		tk2dGenericIndexItem[] animIndex = tk2dEditorUtility.GetOrCreateIndex().GetSpriteAnimations();
 		tk2dSpriteAnimation anim = null;
-		foreach (var a in anims)
+		foreach (var animIndexItem in animIndex)
 		{
+			tk2dSpriteAnimation a = animIndexItem.GetAsset<tk2dSpriteAnimation>();
 			if (a != null && a.clips != null && a.clips.Length > 0)
 			{
 				anim = a;
@@ -201,11 +205,9 @@ class tk2dAnimatedSpriteEditor : tk2dSpriteEditor
 
 		GameObject go = tk2dEditorUtility.CreateGameObjectInScene("AnimatedSprite");
 		tk2dAnimatedSprite sprite = go.AddComponent<tk2dAnimatedSprite>();
-		sprite.collection = anim.clips[0].frames[0].spriteCollection;
-		sprite.Build();
-		
-		sprite.spriteId = anim.clips[0].frames[0].spriteId;
+		sprite.SwitchCollectionAndSprite(anim.clips[0].frames[0].spriteCollection, anim.clips[0].frames[0].spriteId);
 		sprite.anim = anim;
+		sprite.Build();
 		
 		Selection.activeGameObject = go;
 		Undo.RegisterCreatedObjectUndo(go, "Create AnimatedSprite");

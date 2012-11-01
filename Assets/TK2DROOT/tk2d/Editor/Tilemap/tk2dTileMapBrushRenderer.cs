@@ -10,6 +10,7 @@ namespace tk2dEditor
 		public tk2dTileMapEditorBrush brush;
 		public int brushHash;
 		public Mesh mesh;
+		public Material[] materials;
 		public Rect rect;
 	}
 	
@@ -22,7 +23,7 @@ namespace tk2dEditor
 		public BrushRenderer(tk2dTileMap tileMap)
 		{
 			this.tileMap = tileMap;
-			this.spriteCollection = tileMap.spriteCollection;
+			this.spriteCollection = tileMap.SpriteCollectionInst;
 		}
 		
 		public void Destroy()
@@ -39,7 +40,7 @@ namespace tk2dEditor
 		{
 			List<Vector3> vertices = new List<Vector3>();
 			List<Vector2> uvs = new List<Vector2>();
-			List<int> triangles = new List<int>();
+			Dictionary<Material, List<int>> triangles = new Dictionary<Material, List<int>>();
 			
 			// bounds of tile
 			Vector3 spriteBounds = spriteCollection.FirstValidDefinition.untrimmedBoundsData[1];
@@ -76,8 +77,8 @@ namespace tk2dEditor
 					{
 						int indexRoot = vertices.Count;
 						int spriteId = Mathf.Clamp(uncheckedSpriteId, 0, spriteCollection.Count - 1);
-						var sprite = spriteCollection.spriteDefinitions[spriteId];
-			
+						tk2dSpriteDefinition sprite = spriteCollection.spriteDefinitions[spriteId];
+
 						for (int j = 0; j < sprite.positions.Length; ++j)
 						{
 							// Sprite vertex, centered around origin
@@ -93,9 +94,12 @@ namespace tk2dEditor
 							uvs.Add(sprite.uvs[j]);
 						}
 						
+						if (!triangles.ContainsKey(sprite.material))
+							triangles.Add(sprite.material, new List<int>());
+
 						for (int j = 0; j < sprite.indices.Length; ++j)
 						{
-							triangles.Add(indexRoot + sprite.indices[j]);
+							triangles[sprite.material].Add(indexRoot + sprite.indices[j]);
 						}
 					}
 					
@@ -146,9 +150,12 @@ namespace tk2dEditor
 						uvs.Add(sprite.uvs[j]);
 					}
 					
+					if (!triangles.ContainsKey(sprite.material))
+						triangles.Add(sprite.material, new List<int>());
+
 					for (int j = 0; j < sprite.indices.Length; ++j)
 					{
-						triangles.Add(indexRoot + sprite.indices[j]);
+						triangles[sprite.material].Add(indexRoot + sprite.indices[j]);
 					}
 				}
 			}
@@ -167,11 +174,19 @@ namespace tk2dEditor
 				colors[i] = Color.white;
 			mesh.colors = colors;
 			mesh.uv = uvs.ToArray();
-			mesh.triangles = triangles.ToArray();
+			mesh.subMeshCount = triangles.Keys.Count;
+
+			int subMeshId = 0;
+			foreach (Material mtl in triangles.Keys)
+			{
+				mesh.SetTriangles(triangles[mtl].ToArray(), subMeshId);
+				subMeshId++;
+			}
 			
 			dictData.brush = brush;
 			dictData.brushHash = brush.brushHash;
 			dictData.mesh = mesh;
+			dictData.materials = (new List<Material>(triangles.Keys)).ToArray();
 			dictData.rect = new Rect(boundsMin.x, boundsMin.y, boundsMax.x - boundsMin.x, boundsMax.y - boundsMin.y);
 		}
 		
@@ -220,12 +235,16 @@ namespace tk2dEditor
 			
 			if (Event.current.type == EventType.Repaint)
 			{
-				tileMap.spriteCollection.materials[0].SetPass(0);
 				Matrix4x4 mat = new Matrix4x4();
-				var spriteDef = tileMap.spriteCollection.spriteDefinitions[0];
+				var spriteDef = tileMap.SpriteCollectionInst.spriteDefinitions[0];
 				mat.SetTRS(new Vector3(rect.x, 
 									   rect.y + height, 0), Quaternion.identity, new Vector3(scale / spriteDef.texelSize.x, -scale / spriteDef.texelSize.y, 1));
-				Graphics.DrawMeshNow(atlasViewMesh, mat * GUI.matrix);
+					
+				for (int i = 0; i < dictData.materials.Length; ++i)
+				{
+					dictData.materials[i].SetPass(0);				
+					Graphics.DrawMeshNow(atlasViewMesh, mat * GUI.matrix, i);
+				}
 			}
 			
 			return rect;

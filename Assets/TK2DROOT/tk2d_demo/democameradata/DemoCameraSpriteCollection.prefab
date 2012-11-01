@@ -218,8 +218,7 @@ MonoBehaviour:
     colliderColor: 0
   spriteCollection: {fileID: 11400000, guid: 4864518b0693631458553f73aaa86021, type: 2}
   premultipliedAlpha: 1
-  altMaterials:
-  - {fileID: 2100000, guid: 45d35519481f70649a530df6dcddd423, type: 2}
+  altMaterials: []
   atlasMaterials:
   - {fileID: 2100000, guid: 45d35519481f70649a530df6dcddd423, type: 2}
   atlasTextures:
@@ -228,12 +227,18 @@ MonoBehaviour:
   targetHeight: 1
   targetOrthoSize: .5
   pixelPerfectPointSampled: 0
+  filterMode: 1
+  wrapMode: 1
+  userDefinedTextureSettings: 0
+  mipmapEnabled: 0
+  anisoLevel: 1
   physicsDepth: .100000001
   disableTrimming: 0
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
   editorDisplayScale: 1
+  version: 0
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6

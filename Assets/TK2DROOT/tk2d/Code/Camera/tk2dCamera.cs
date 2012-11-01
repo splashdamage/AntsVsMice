@@ -26,7 +26,7 @@ public class tk2dCameraResolutionOverride
 	/// Amount to scale the matched resolution by
 	/// 1.0 = pixel perfect, 0.5 = 50% of pixel perfect size
 	/// </summary>
-	public float scale;
+	public float scale = 1.0f;
 	
 	/// <summary>
 	/// Amount to offset from the bottom left, in number of pixels in target resolution. Example, if override resolution is
@@ -103,6 +103,17 @@ public class tk2dCamera : MonoBehaviour
 	/// </summary>
 	public Vector2 ScaledResolution { get { return _scaledResolution; } }
 
+	/// <summary>
+	/// Returns screen extents - top, bottom, left and right will be the extent of the screen
+	/// Regardless of resolution or override
+	/// </summary>
+	public Rect ScreenExtents { get { return _screenExtents; } }
+
+	/// <summary>
+	/// Offset in pixels used to center content
+	/// </summary>
+	public Vector2 ScreenOffset { get { return _screenOffset; } }
+
 	[System.Obsolete]
 	public Vector2 resolution { get { return ScaledResolution; } }
 
@@ -116,6 +127,7 @@ public class tk2dCamera : MonoBehaviour
 
 	Vector2 _targetResolution = Vector2.zero;
 	Vector2 _scaledResolution = Vector2.zero;
+	Vector2 _screenOffset = Vector2.zero;
 
 
 	[HideInInspector]
@@ -148,6 +160,8 @@ public class tk2dCamera : MonoBehaviour
 	{
 		UpdateCameraMatrix();
 	}
+
+	Rect _screenExtents;
 
 	/// <summary>
 	/// Updates the camera matrix to ensure 1:1 pixel mapping
@@ -232,15 +246,18 @@ public class tk2dCamera : MonoBehaviour
 			}
 		}
 		
-		float left = offset.x, top = offset.y;
-		float right = pixelWidth + offset.x, bottom = pixelHeight + offset.y;
-		
+		float left = offset.x, bottom = offset.y;
+		float right = pixelWidth + offset.x, top = pixelHeight + offset.y;
+
+		_screenExtents.Set(left / scale, top / scale, (right - left) / scale, (bottom - top) / scale);
+
 		float far = mainCamera.farClipPlane;
 		float near = mainCamera.near;
 		
 		// set up externally used variables
-		orthoSize = (bottom - top) / 2.0f;
-		_scaledResolution = new Vector2(right / scale, bottom / scale);
+		orthoSize = (top - bottom) / 2.0f;
+		_scaledResolution = new Vector2(right / scale, top / scale);
+		_screenOffset = offset;
 		
 		// Additional half texel offset
 		// Takes care of texture unit offset, if necessary.
@@ -255,11 +272,11 @@ public class tk2dCamera : MonoBehaviour
 		float halfTexelOffsetAmount = (halfTexelOffset)?1.0f:0.0f;
 		
 		float x =  (2.0f) / (right - left) * scale;
-		float y = (2.0f) / (bottom - top) * scale;
+		float y = (2.0f) / (top - bottom) * scale;
 		float z = -2.0f / (far - near);
 
 		float a = -(right + left + halfTexelOffsetAmount) / (right - left);
-		float b = -(top + bottom - halfTexelOffsetAmount) / (bottom - top);
+		float b = -(bottom + top - halfTexelOffsetAmount) / (top - bottom);
 		float c = -(2.0f * far * near) / (far - near);
 		
 		Matrix4x4 m = new Matrix4x4();

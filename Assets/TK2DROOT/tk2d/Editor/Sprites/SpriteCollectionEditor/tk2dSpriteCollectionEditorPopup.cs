@@ -21,6 +21,8 @@ namespace tk2dEditor.SpriteCollectionEditor
 		SpriteView SpriteView { get; }
 		void SelectSpritesFromList(int[] indices);
 		void SelectSpritesInSpriteSheet(int spriteSheetId, int[] spriteIds);
+
+		void Commit();
 	}
 	
 	public class SpriteCollectionEditorEntry
@@ -176,7 +178,7 @@ public class tk2dSpriteCollectionEditorPopup : EditorWindow, IEditorHost
 		for (int spriteIndex = 0; spriteIndex < spriteCollectionProxy.textureParams.Count; ++spriteIndex)
 		{
 			var sprite = spriteCollectionProxy.textureParams[spriteIndex];
-			var spriteSourceTexture = spriteCollectionProxy.textureRefs[spriteIndex];
+			var spriteSourceTexture = sprite.texture;
 			if (spriteSourceTexture == null) continue;
 			
 			var newEntry = new SpriteCollectionEditorEntry();
@@ -253,7 +255,7 @@ public class tk2dSpriteCollectionEditorPopup : EditorWindow, IEditorHost
 		{
 			if (cachedSpriteTexture == null)
 			{
-				var tex = spriteCollectionProxy.textureRefs[spriteId];
+				var tex = param.texture;
 				cachedSpriteTexture = new Texture2D(param.regionW, param.regionH);
 				for (int y = 0; y < param.regionH; ++y)
 				{
@@ -269,7 +271,7 @@ public class tk2dSpriteCollectionEditorPopup : EditorWindow, IEditorHost
 		}
 		else
 		{
-			return spriteCollectionProxy.textureRefs[spriteId];
+			return param.texture;
 		}
 	}
 	
@@ -301,6 +303,9 @@ public class tk2dSpriteCollectionEditorPopup : EditorWindow, IEditorHost
 	void OnDisable()
 	{
 		ClearTextureCache();
+
+		_spriteCollection = null;
+		tk2dEditorUtility.CollectAndUnloadUnusedAssets();
 	}
 	
 	string searchFilter = "";
@@ -413,14 +418,17 @@ public class tk2dSpriteCollectionEditorPopup : EditorWindow, IEditorHost
 		}
 		
 		if (GUILayout.Button("Commit", EditorStyles.toolbarButton) && spriteCollectionProxy != null)
-		{
-			spriteCollectionProxy.CopyToTarget();
-			tk2dSpriteCollectionBuilder.ResetCurrentBuild();
-			tk2dSpriteCollectionBuilder.Rebuild(_spriteCollection);
-			spriteCollectionProxy.CopyFromSource();
-		}
+			Commit();
 		
 		GUILayout.EndHorizontal();
+	}
+
+	public void Commit()
+	{
+		spriteCollectionProxy.CopyToTarget();
+		tk2dSpriteCollectionBuilder.ResetCurrentBuild();
+		tk2dSpriteCollectionBuilder.Rebuild(_spriteCollection);
+		spriteCollectionProxy.CopyFromSource();
 	}
 	
 	Vector2 spriteListScroll = Vector2.zero;
@@ -591,8 +599,8 @@ public class tk2dSpriteCollectionEditorPopup : EditorWindow, IEditorHost
 			string name = spriteCollectionProxy.FindUniqueTextureName(tex.name);
 			int slot = spriteCollectionProxy.FindOrCreateEmptySpriteSlot();
 			spriteCollectionProxy.textureParams[slot].name = name;
-			spriteCollectionProxy.textureParams[slot].colliderType = tk2dSpriteCollectionDefinition.ColliderType.None;
-			spriteCollectionProxy.textureRefs[slot] = (Texture2D)obj;
+			spriteCollectionProxy.textureParams[slot].colliderType = tk2dSpriteCollectionDefinition.ColliderType.ForceNone;
+			spriteCollectionProxy.textureParams[slot].texture = (Texture2D)obj;
 			addedIndices.Add(slot);
 		}
 		// And now select them

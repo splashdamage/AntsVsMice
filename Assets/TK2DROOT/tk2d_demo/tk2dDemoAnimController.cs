@@ -13,7 +13,11 @@ public class tk2dDemoAnimController : MonoBehaviour
 		animSprite = GetComponent<tk2dAnimatedSprite>();
 		animSprite.animationEventDelegate = AnimationEventDelegate;
 		
+#if UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4 || UNITY_3_5 || UNITY_3_6 || UNITY_3_7 || UNITY_3_8 || UNITY_3_9
 		popupTextMesh.gameObject.active = false;
+#else
+		popupTextMesh.gameObject.SetActive(false);
+#endif
 	}
 	
 	void AnimationEventDelegate(tk2dAnimatedSprite sprite, tk2dSpriteAnimationClip clip, tk2dSpriteAnimationFrame frame, int frameNum)
@@ -27,7 +31,11 @@ public class tk2dDemoAnimController : MonoBehaviour
 		popupTextMesh.text = text;
 		popupTextMesh.Commit();
 		
+#if UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4 || UNITY_3_5 || UNITY_3_6 || UNITY_3_7 || UNITY_3_8 || UNITY_3_9
 		popupTextMesh.gameObject.active = true;
+#else
+		popupTextMesh.gameObject.SetActive(true);
+#endif
 		
 		float fadeTime = 1.0f;
 		Color c1 = popupTextMesh.color, c2 = popupTextMesh.color2;
@@ -41,7 +49,12 @@ public class tk2dDemoAnimController : MonoBehaviour
 			popupTextMesh.Commit();
 			yield return 0;
 		}
+
+#if UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4 || UNITY_3_5 || UNITY_3_6 || UNITY_3_7 || UNITY_3_8 || UNITY_3_9
 		popupTextMesh.gameObject.active = false;
+#else
+		popupTextMesh.gameObject.SetActive(false);
+#endif
 	}
 
 	void OnGUI()

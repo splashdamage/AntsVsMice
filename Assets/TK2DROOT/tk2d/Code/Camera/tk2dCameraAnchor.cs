@@ -43,11 +43,13 @@ public class tk2dCameraAnchor : MonoBehaviour
 	public Vector2 offset = Vector2.zero;
 	
 	public tk2dCamera tk2dCamera;
-	Transform _transform;
 	
-	void Awake()
-	{
-		_transform = transform;
+	Transform __transform; // cache transform locally
+	Transform _transform {
+		get {
+			if (__transform == null) __transform = transform;
+			return __transform;
+		}
 	}
 	
 	void Start()
@@ -59,21 +61,30 @@ public class tk2dCameraAnchor : MonoBehaviour
 	{
 		if (tk2dCamera != null)
 		{
-			Vector2 scaledResolution = tk2dCamera.ScaledResolution;
+			Rect rect = tk2dCamera.ScreenExtents;
+
+			float y_top = rect.yMin;
+			float y_bot = rect.yMax;
+			float y_ctr = (y_bot + y_top) * 0.5f;
+
+			float x_lhs = rect.xMin;
+			float x_rhs = rect.xMax;
+			float x_ctr = (x_lhs + x_rhs) * 0.5f;
 
 			Vector3 position = _transform.localPosition;	
 			Vector3 anchoredPosition = Vector3.zero;
+
 			switch (anchor)
 			{
-			case Anchor.UpperLeft: 		anchoredPosition = new Vector3(0, scaledResolution.y, position.z); break;
-			case Anchor.UpperCenter: 	anchoredPosition = new Vector3(scaledResolution.x / 2.0f, scaledResolution.y, position.z); break;
-			case Anchor.UpperRight: 	anchoredPosition = new Vector3(scaledResolution.x, scaledResolution.y, position.z); break;
-			case Anchor.MiddleLeft: 	anchoredPosition = new Vector3(0, scaledResolution.y / 2.0f, position.z); break;
-			case Anchor.MiddleCenter: 	anchoredPosition = new Vector3(scaledResolution.x / 2.0f, scaledResolution.y / 2.0f, position.z); break;
-			case Anchor.MiddleRight: 	anchoredPosition = new Vector3(scaledResolution.x, scaledResolution.y / 2.0f, position.z); break;
-			case Anchor.LowerLeft: 		anchoredPosition = new Vector3(0, 0, position.z); break;
-			case Anchor.LowerCenter: 	anchoredPosition = new Vector3(scaledResolution.x / 2.0f, 0, position.z); break;
-			case Anchor.LowerRight: 	anchoredPosition = new Vector3(scaledResolution.x, 0, position.z); break;
+			case Anchor.UpperLeft: 		anchoredPosition = new Vector3(x_lhs, y_top, position.z); break;
+			case Anchor.UpperCenter: 	anchoredPosition = new Vector3(x_ctr, y_top, position.z); break;
+			case Anchor.UpperRight: 	anchoredPosition = new Vector3(x_rhs, y_top, position.z); break;
+			case Anchor.MiddleLeft: 	anchoredPosition = new Vector3(x_lhs, y_ctr, position.z); break;
+			case Anchor.MiddleCenter: 	anchoredPosition = new Vector3(x_ctr, y_ctr, position.z); break;
+			case Anchor.MiddleRight: 	anchoredPosition = new Vector3(x_rhs, y_ctr, position.z); break;
+			case Anchor.LowerLeft: 		anchoredPosition = new Vector3(x_lhs, y_bot, position.z); break;
+			case Anchor.LowerCenter: 	anchoredPosition = new Vector3(x_ctr, y_bot, position.z); break;
+			case Anchor.LowerRight: 	anchoredPosition = new Vector3(x_rhs, y_bot, position.z); break;
 			}
 			
 			var newPosition = anchoredPosition + new Vector3(offset.x, offset.y, 0);

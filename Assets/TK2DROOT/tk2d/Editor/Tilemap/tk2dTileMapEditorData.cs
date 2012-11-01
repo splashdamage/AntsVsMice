@@ -18,6 +18,15 @@ public class tk2dSparseTile
 		spriteId = -1;
 		blendAmount = 0.0f;
 	}
+
+	public tk2dSparseTile(tk2dSparseTile source)
+	{
+		this.x = source.x;
+		this.y = source.y;
+		this.layer = source.layer;
+		this.spriteId = source.spriteId;
+		this.blendAmount = source.blendAmount;
+	}
 	
 	public tk2dSparseTile(int x, int y, int layer, int spriteId)
 	{
@@ -86,6 +95,25 @@ public class tk2dTileMapEditorBrush
 			new tk2dSparseTile(0, 0, 0, 0)
 		};
 		UpdateBrushHash();
+	}
+
+	public tk2dTileMapEditorBrush(tk2dTileMapEditorBrush source)
+	{
+		this.name = source.name;
+		this.type = source.type;
+		this.paintMode = source.paintMode;
+		
+		tiles = new tk2dSparseTile[source.tiles.Length];		
+		for (int i = 0; i < source.tiles.Length; ++i)
+			tiles[i] = new tk2dSparseTile(source.tiles[i]);
+		
+		multiSelectTiles = new int[source.multiSelectTiles.Length];
+		for (int i = 0; i < source.multiSelectTiles.Length; ++i)
+			multiSelectTiles[i] = source.multiSelectTiles[i];
+	
+		edgeMode = source.edgeMode;
+		multiLayer = source.multiLayer;
+		overrideWithSpriteBounds = source.overrideWithSpriteBounds;
 	}
 	
 	public bool Empty

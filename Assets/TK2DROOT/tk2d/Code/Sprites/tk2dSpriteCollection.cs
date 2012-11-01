@@ -1,5 +1,6 @@
 using UnityEngine;
 using System.Collections;
+using System.Collections.Generic;
 
 [System.Serializable]
 public class tk2dSpriteColliderIsland
@@ -64,11 +65,11 @@ public class tk2dSpriteCollectionDefinition
 	
 	public enum ColliderType
 	{
-		Unset,		// don't try to create or destroy anything
-		None,		// nothing will be created, if something exists, it will be destroyed
-		BoxTrimmed, // box, trimmed to cover visible region
-		BoxCustom, 	// box, with custom values provided by user
-		Polygon, 	// polygon, can be concave
+		UserDefined,		// don't try to create or destroy anything
+		ForceNone,			// nothing will be created, if something exists, it will be destroyed
+		BoxTrimmed, 		// box, trimmed to cover visible region
+		BoxCustom, 			// box, with custom values provided by user
+		Polygon, 			// polygon, can be concave
 	}
 	
 	public enum PolygonColliderCap
@@ -100,10 +101,9 @@ public class tk2dSpriteCollectionDefinition
     public bool additive = false;
     public Vector3 scale = new Vector3(1,1,1);
     
-	[HideInInspector]
-    public Texture2D texture;
+    public Texture2D texture = null;
 	
-	[HideInInspector] [System.NonSerialized]
+	[System.NonSerialized]
 	public Texture2D thumbnailTexture;
 	
 	public int materialId = 0;
@@ -131,7 +131,7 @@ public class tk2dSpriteCollectionDefinition
 	public int regionX, regionY, regionW, regionH;
 	public int regionId;
 	
-	public ColliderType colliderType = ColliderType.Unset;
+	public ColliderType colliderType = ColliderType.UserDefined;
 	public Vector2 boxColliderMin, boxColliderMax;
 	public tk2dSpriteColliderIsland[] polyColliderIslands;
 	public PolygonColliderCap polyColliderCap = PolygonColliderCap.None;
@@ -291,7 +291,7 @@ public class tk2dSpriteCollectionDefault
 	public tk2dSpriteCollectionDefinition.Anchor anchor = tk2dSpriteCollectionDefinition.Anchor.MiddleCenter;
 	public tk2dSpriteCollectionDefinition.Pad pad = tk2dSpriteCollectionDefinition.Pad.Default;	
 	
-	public tk2dSpriteCollectionDefinition.ColliderType colliderType = tk2dSpriteCollectionDefinition.ColliderType.None;
+	public tk2dSpriteCollectionDefinition.ColliderType colliderType = tk2dSpriteCollectionDefinition.ColliderType.ForceNone;
 }
 
 [System.Serializable]
@@ -333,7 +333,7 @@ public class tk2dSpriteSheetSource
 	public int version = 0;
 	public const int CURRENT_VERSION = 1;
 
-	public tk2dSpriteCollectionDefinition.ColliderType colliderType = tk2dSpriteCollectionDefinition.ColliderType.None;
+	public tk2dSpriteCollectionDefinition.ColliderType colliderType = tk2dSpriteCollectionDefinition.ColliderType.ForceNone;
 	
 	public void CopyFrom(tk2dSpriteSheetSource src)
 	{
@@ -395,6 +395,11 @@ public class tk2dSpriteCollectionFont
 	public int charPadX = 0;
 	public tk2dFontData data;
 	public tk2dFont editorData;
+	public int materialId;
+
+	public bool useGradient = false;
+	public Texture2D gradientTexture = null;
+	public int gradientCount = 1;
 	
 	public void CopyFrom(tk2dSpriteCollectionFont src)
 	{
@@ -406,6 +411,10 @@ public class tk2dSpriteCollectionFont
 		charPadX = src.charPadX;
 		data = src.data;
 		editorData = src.editorData;
+		materialId = src.materialId;
+		gradientCount = src.gradientCount;
+		gradientTexture = src.gradientTexture;
+		useGradient = src.useGradient;
 	}
 	
 	public string Name
@@ -430,10 +439,19 @@ public class tk2dSpriteCollectionFont
 	}
 }
 
+[System.Serializable]
+public class tk2dSpriteCollectionPlatform
+{
+	public string name = "";
+	public tk2dSpriteCollection spriteCollection = null;
+	public bool Valid { get { return name.Length > 0 && spriteCollection != null; } }
+}
 
 [AddComponentMenu("2D Toolkit/Backend/tk2dSpriteCollection")]
 public class tk2dSpriteCollection : MonoBehaviour 
 {
+	public const int CURRENT_VERSION = 3;
+
 	public enum NormalGenerationMode
 	{
 		None,
@@ -441,19 +459,23 @@ public class tk2dSpriteCollection : MonoBehaviour
 		NormalsAndTangents,
 	};
 	
-    // legacy data
-    [HideInInspector]
-    public tk2dSpriteCollectionDefinition[] textures;
+    // Deprecated fields
+    [SerializeField] private tk2dSpriteCollectionDefinition[] textures; 
+    [SerializeField] private Texture2D[] textureRefs;
+
+    public Texture2D[] DoNotUse__TextureRefs { get { return textureRefs; } set { textureRefs = value; } } // Don't use this for anything. Except maybe in tk2dSpriteCollectionBuilderDeprecated...
 
     // new method
-    public Texture2D[] textureRefs;
 	public tk2dSpriteSheetSource[] spriteSheets;
 
 	public tk2dSpriteCollectionFont[] fonts;
-	
 	public tk2dSpriteCollectionDefault defaults;
+
+	// platforms
+	public List<tk2dSpriteCollectionPlatform> platforms = new List<tk2dSpriteCollectionPlatform>();
+	public bool managedSpriteCollection = false; // true when generated and managed by system, eg. platform specific data
+	public bool HasPlatformData { get { return platforms.Count > 1; } }
 	
-	[HideInInspector]
 	public int maxTextureSize = 1024;
 	
 	public bool forceTextureSize = false;
@@ -465,22 +487,17 @@ public class tk2dSpriteCollection : MonoBehaviour
 		Uncompressed,
 		Reduced16Bit,
 		Compressed,
-		Dithered16Bit_4444,
-		Dithered16Bit_565,
+		Dithered16Bit_Alpha,
+		Dithered16Bit_NoAlpha,
 	}
-	[HideInInspector]
+
 	public TextureCompression textureCompression = TextureCompression.Uncompressed;
 	
-	[HideInInspector]
 	public int atlasWidth, atlasHeight;
-	[HideInInspector]
 	public bool forceSquareAtlas = false;
-	[HideInInspector]
 	public float atlasWastage;
-	[HideInInspector]
 	public bool allowMultipleAtlases = false;
 	
-	[HideInInspector]
     public tk2dSpriteCollectionDefinition[] textureParams;
     
 	public tk2dSpriteCollectionData spriteCollection;
@@ -490,26 +507,71 @@ public class tk2dSpriteCollection : MonoBehaviour
 	public Material[] atlasMaterials;
 	public Texture2D[] atlasTextures;
 	
-	[HideInInspector]
 	public bool useTk2dCamera = false;
-	[HideInInspector]
 	public int targetHeight = 640;
-	[HideInInspector]
 	public float targetOrthoSize = 1.0f;
+	public float globalScale = 1.0f;
 	
-	public bool pixelPerfectPointSampled = false;
-	
+	// Texture settings
+	[SerializeField]
+	private bool pixelPerfectPointSampled = false; // obsolete
+	public FilterMode filterMode = FilterMode.Bilinear;
+	public TextureWrapMode wrapMode = TextureWrapMode.Clamp;
+	public bool userDefinedTextureSettings = false;
+	public bool mipmapEnabled = false;
+	public int anisoLevel = 1;
+
 	public float physicsDepth = 0.1f;
 	
 	public bool disableTrimming = false;
 	
 	public NormalGenerationMode normalGenerationMode = NormalGenerationMode.None;
 	
-	[HideInInspector]
 	public int padAmount = -1; // default
 	
-	[HideInInspector]
 	public bool autoUpdate = true;
 	
 	public float editorDisplayScale = 1.0f;
+
+	public int version = 0;
+
+	public string assetName = "";
+
+	// Fix up upgraded data structures
+	public void Upgrade()
+	{
+		if (version == CURRENT_VERSION)
+			return;
+
+		Debug.Log("SpriteCollection '" + this.name + "' - Upgraded from version " + version.ToString());
+
+		if (version == 0)
+		{
+			if (pixelPerfectPointSampled)
+				filterMode = FilterMode.Point;
+			else
+				filterMode = FilterMode.Bilinear;
+
+			// don't bother messing about with user settings
+			// on old atlases
+			userDefinedTextureSettings = true; 
+		}
+
+		if (version < 3)
+		{
+			if (textureRefs != null && textureParams != null && textureRefs.Length == textureParams.Length)
+			{
+				for (int i = 0; i < textureRefs.Length; ++i)
+					textureParams[i].texture = textureRefs[i];
+
+				textureRefs = null;
+			}
+		}
+
+		version = CURRENT_VERSION;
+
+#if UNITY_EDITOR
+		UnityEditor.EditorUtility.SetDirty(this);
+#endif
+	}
 }

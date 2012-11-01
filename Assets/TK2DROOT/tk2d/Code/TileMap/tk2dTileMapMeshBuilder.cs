@@ -16,7 +16,7 @@ namespace tk2dRuntime.TileMap
 			
 			int[] spriteIds = chunk.spriteIds;
 			Vector3 tileSize = tileMap.data.tileSize;
-			int spriteCount = tileMap.spriteCollection.spriteDefinitions.Length;
+			int spriteCount = tileMap.SpriteCollectionInst.spriteDefinitions.Length;
 			Object[] tilePrefabs = tileMap.data.tilePrefabs;
 			
 			Color32 clearColor = (useColor && tileMap.ColorChannel != null)?tileMap.ColorChannel.clearColor:Color.white;
@@ -35,7 +35,7 @@ namespace tk2dRuntime.TileMap
 			float xOffsetMult = 0.0f, yOffsetMult = 0.0f;
 			tileMap.data.GetTileOffset(out xOffsetMult, out yOffsetMult);
 			
-			List<int>[] meshIndices = new List<int>[tileMap.spriteCollection.materials.Length];
+			List<int>[] meshIndices = new List<int>[tileMap.SpriteCollectionInst.materials.Length];
 			for (int j = 0; j < meshIndices.Length; ++j)
 				meshIndices[j] = new List<int>();
 			
@@ -54,7 +54,7 @@ namespace tk2dRuntime.TileMap
 					if (skipPrefabs && tilePrefabs[tile])
 						continue;
 					
-					var sprite = tileMap.spriteCollection.spriteDefinitions[tile];
+					var sprite = tileMap.SpriteCollectionInst.spriteDefinitions[tile];
 					
 					int baseVertex = meshVertices.Count;
 					for (int v = 0; v < sprite.positions.Length; ++v)
@@ -107,7 +107,7 @@ namespace tk2dRuntime.TileMap
 			{
 				if (indices.Count > 0)
 				{
-					materials.Add(tileMap.spriteCollection.materials[materialId]);
+					materials.Add(tileMap.SpriteCollectionInst.materials[materialId]);
 					subMeshCount++;
 				}
 				materialId++;

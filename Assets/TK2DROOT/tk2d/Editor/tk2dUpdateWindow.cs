@@ -10,6 +10,7 @@ public class tk2dUpdateWindow : EditorWindow
 	{
 		public double version;
 		public int id;
+		public int sortId;
 		public string url;
 		public string changelog;
 	}
@@ -25,6 +26,15 @@ public class tk2dUpdateWindow : EditorWindow
 	string errorMessage = "Click refresh to check for updates.";
 	Vector2 scrollPosition = Vector2.zero;
 	
+	int GetSortId(int id)
+	{
+		int sortId = 0;
+		if (id >= 0) sortId = id + 20001; // final / patches
+		else if (id < -10000) sortId = -id - 10000; // alpha
+		else sortId = -id + 10000; // beta
+		return sortId;
+	}
+
 	void OnGUI()
 	{
 		if (validUpdateData)
@@ -52,6 +62,7 @@ public class tk2dUpdateWindow : EditorWindow
 					{
 						ReleaseInfo releaseInfo = new ReleaseInfo();
 						releaseInfo.id = int.Parse(node.Attributes["id"].Value, System.Globalization.NumberFormatInfo.InvariantInfo);
+						releaseInfo.sortId = GetSortId(releaseInfo.id);
 						releaseInfo.version = double.Parse(node.Attributes["version"].Value, System.Globalization.NumberFormatInfo.InvariantInfo);
 						releaseInfo.url = node.Attributes["url"].Value;
 						releaseInfo.changelog = node.Attributes["changelog"].Value;
@@ -66,10 +77,7 @@ public class tk2dUpdateWindow : EditorWindow
 					{
 						if (a.version == b.version)
 						{
-							int av = (a.id >= 0)?(a.id + 16384):(-a.id);
-							int bv = (b.id >= 0)?(b.id + 16384):(-b.id);
-							
-							return bv.CompareTo(av);
+							return a.sortId.CompareTo(b.sortId);
 						}
 						else
 						{ 
@@ -84,7 +92,7 @@ public class tk2dUpdateWindow : EditorWindow
 					releases = null;
 				}
 			}
-			
+
 			if (errorMessage != "")
 			{
 				GUILayout.Label(errorMessage);
@@ -105,7 +113,7 @@ public class tk2dUpdateWindow : EditorWindow
 				showOlderVersions = EditorGUILayout.Toggle("Older versions", showOlderVersions);
 				EditorGUILayout.Separator();
 				
-				int installedReleaseId = (tk2dEditorUtility.releaseId > 0)?(tk2dEditorUtility.releaseId + 16384):(-tk2dEditorUtility.releaseId);
+				int installedSortId = GetSortId(tk2dEditorUtility.releaseId);
 				if (releases != null && releases.Length > 0)
 				{
 					scrollPosition = EditorGUILayout.BeginScrollView(scrollPosition);
@@ -113,11 +121,9 @@ public class tk2dUpdateWindow : EditorWindow
 				
 					foreach (ReleaseInfo release in releases)
 					{
-						int releaseId = (release.id > 0)?(release.id + 16384):(-release.id);
-						
 						if (showOlderVersions == false && 
 							(release.version < tk2dEditorUtility.version ||
-							(release.version == tk2dEditorUtility.version && releaseId < installedReleaseId)) )
+							(release.version == tk2dEditorUtility.version && release.sortId < installedSortId)) )
 						{
 							// stop displaying releases
 							break;

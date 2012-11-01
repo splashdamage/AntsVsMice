@@ -27,9 +27,9 @@ public class tk2dTileMapSceneGUI
 		this.tileMapData = tileMap.data;
 		
 		// create default brush
-		if (tileMap.spriteCollection && this.editorData)
+		if (tileMap.SpriteCollectionInst && this.editorData)
 		{
-			this.editorData.InitBrushes(tileMap.spriteCollection);
+			this.editorData.InitBrushes(tileMap.SpriteCollectionInst);
 			EditorUtility.SetDirty(this.editorData);
 		}
 	}
@@ -247,9 +247,9 @@ public class tk2dTileMapSceneGUI
 			tileMap.Layers != null &&
 			layer < tileMap.Layers.Length &&
 			tileMap.Layers[layer].gameObject != null &&
-			tileMap.Layers[layer].gameObject.active == false)
+			tk2dEditorUtility.IsGameObjectActive(tileMap.Layers[layer].gameObject) == false)
 		{
-			tileMap.Layers[layer].gameObject.SetActiveRecursively(true);
+			tk2dEditorUtility.SetGameObjectActive(tileMap.Layers[layer].gameObject, true);
 		}
 	}
 	

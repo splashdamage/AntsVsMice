@@ -5,39 +5,136 @@ using System.Collections.Generic;
 [CustomEditor(typeof(tk2dTextMesh))]
 class tk2dTextMeshEditor : Editor
 {
-	tk2dFont[] allBmFontImporters = null;	// all generators
+	tk2dGenericIndexItem[] allFonts = null;	// all generators
+	string[] allFontNames = null;
 	Vector2 gradientScroll;
 	
+	// Word wrap on text area - almost impossible to use otherwise
+	GUIStyle _textAreaStyle = null;
+	GUIStyle textAreaStyle
+	{
+		get {
+			if (_textAreaStyle == null)
+			{
+				_textAreaStyle = new GUIStyle(EditorStyles.textField);
+				_textAreaStyle.wordWrap = true;
+			}
+			return _textAreaStyle;
+		}
+	}
+
+	// Draws the word wrap GUI
+	void DrawWordWrapSceneGUI(tk2dTextMesh textMesh)
+	{
+		tk2dFontData font = textMesh.font;
+		Transform transform = textMesh.transform;
+
+		int px = textMesh.wordWrapWidth;
+
+		Vector3 p0 = transform.position;
+		float width = font.texelSize.x * px * transform.localScale.x;
+		bool drawRightHandle = true;
+		bool drawLeftHandle = false;
+		switch (textMesh.anchor)
+		{
+			case TextAnchor.LowerCenter: case TextAnchor.MiddleCenter: case TextAnchor.UpperCenter:
+				drawLeftHandle = true;
+				p0 -= width * 0.5f * transform.right;
+				break;
+			case TextAnchor.LowerRight: case TextAnchor.MiddleRight: case TextAnchor.UpperRight:
+				drawLeftHandle = true;
+				drawRightHandle = false;
+				p0 -= width * transform.right;
+				break;
+		}
+		Vector3 p1 = p0 + width * transform.right;
+
+
+		Handles.color = new Color32(255, 255, 255, 24);
+		float subPin = font.texelSize.y * 2048;
+		Handles.DrawLine(p0, p1);
+		Handles.DrawLine(p0 - subPin * transform.up, p0 + subPin * transform.up);
+		Handles.DrawLine(p1 - subPin * transform.up, p1 + subPin * transform.up);
+
+		Handles.color = Color.white;
+		Vector3 pin = transform.up * font.texelSize.y * 10.0f;
+		Handles.DrawLine(p0 - pin, p0 + pin);
+		Handles.DrawLine(p1 - pin, p1 + pin);
+
+		if (drawRightHandle)
+		{
+			Vector3 newp1 = Handles.Slider(p1, transform.right, HandleUtility.GetHandleSize(p1), Handles.ArrowCap, 0.0f);
+			if (newp1 != p1)
+			{
+				int newPx = (int)Mathf.Round((newp1 - p0).magnitude / (font.texelSize.x * transform.localScale.x));
+				newPx = Mathf.Max(newPx, 0);
+				textMesh.wordWrapWidth = newPx;
+				textMesh.Commit();
+			}
+		}
+
+		if (drawLeftHandle)
+		{
+			Vector3 newp0 = Handles.Slider(p0, -transform.right, HandleUtility.GetHandleSize(p0), Handles.ArrowCap, 0.0f);
+			if (newp0 != p0)
+			{
+				int newPx = (int)Mathf.Round((p1 - newp0).magnitude / (font.texelSize.x * transform.localScale.x));
+				newPx = Mathf.Max(newPx, 0);
+				textMesh.wordWrapWidth = newPx;
+				textMesh.Commit();
+			}
+		}
+	}
+
+	public void OnSceneGUI()
+	{
+		tk2dTextMesh textMesh = (tk2dTextMesh)target;
+		if (textMesh.formatting && textMesh.wordWrapWidth > 0)
+		{
+			DrawWordWrapSceneGUI(textMesh);
+		}
+	}
+
     public override void OnInspectorGUI()
     {
         tk2dTextMesh textMesh = (tk2dTextMesh)target;
+        EditorGUIUtility.LookLikeControls(80, 50);
 		
 		// maybe cache this if its too slow later
-		if (allBmFontImporters == null) allBmFontImporters = tk2dEditorUtility.GetOrCreateIndex().GetFonts();
+		if (allFonts == null || allFontNames == null) 
+		{
+			tk2dGenericIndexItem[] indexFonts = tk2dEditorUtility.GetOrCreateIndex().GetFonts();
+			List<tk2dGenericIndexItem> filteredFonts = new List<tk2dGenericIndexItem>();
+			foreach (var f in indexFonts)
+				if (!f.managed) filteredFonts.Add(f);
+
+			allFonts = filteredFonts.ToArray();
+			allFontNames = new string[allFonts.Length];
+			for (int i = 0; i < allFonts.Length; ++i)
+				allFontNames[i] = allFonts[i].AssetName;
+		}
 		
-		if (allBmFontImporters != null)
+		if (allFonts != null)
         {
 			if (textMesh.font == null)
 			{
-				textMesh.font = allBmFontImporters[0].data;
+				textMesh.font = allFonts[0].GetAsset<tk2dFont>().data;
 			}
 			
 			int currId = -1;
-			string[] fontNames = new string[allBmFontImporters.Length];
-			for (int i = 0; i < allBmFontImporters.Length; ++i)
+			string guid = AssetDatabase.AssetPathToGUID(AssetDatabase.GetAssetPath(textMesh.font));
+			for (int i = 0; i < allFonts.Length; ++i)
 			{
-				fontNames[i] = allBmFontImporters[i].name;
-				if (allBmFontImporters[i].data == textMesh.font)
+				if (allFonts[i].dataGUID == guid)
 				{
 					currId = i;
 				}
 			}
 			
-			int newId = EditorGUILayout.Popup("Font", currId, fontNames);
+			int newId = EditorGUILayout.Popup("Font", currId, allFontNames);
 			if (newId != currId)
 			{
-				textMesh.font = allBmFontImporters[newId].data;
-				textMesh.renderer.material = textMesh.font.material;
+				textMesh.font = allFonts[newId].GetAsset<tk2dFont>().data;
 			}
 			
 			EditorGUILayout.BeginHorizontal();
@@ -50,10 +147,33 @@ class tk2dTextMeshEditor : Editor
 				GUI.changed = true;
 			}
 			EditorGUILayout.EndHorizontal();
+
+			textMesh.formatting = EditorGUILayout.BeginToggleGroup("Formatting", textMesh.formatting);
+			GUILayout.BeginHorizontal();
+			if (textMesh.wordWrapWidth == 0)
+			{
+				EditorGUILayout.PrefixLabel("Word Wrap");
+				if (GUILayout.Button("Enable", EditorStyles.miniButton, GUILayout.ExpandWidth(false)))
+				{
+					textMesh.wordWrapWidth = 500;
+					GUI.changed = true;
+				}
+			}
+			else
+			{
+				textMesh.wordWrapWidth = EditorGUILayout.IntField("Word Wrap", textMesh.wordWrapWidth);
+				if (GUILayout.Button("Disable", EditorStyles.miniButton, GUILayout.ExpandWidth(false)))
+				{
+					textMesh.wordWrapWidth = 0;
+					GUI.changed = true;
+				}
+			}
+			GUILayout.EndHorizontal();
+			EditorGUILayout.EndToggleGroup();
 			
 			GUILayout.BeginHorizontal();
 			EditorGUILayout.PrefixLabel("Text");
-			textMesh.text = EditorGUILayout.TextArea(textMesh.text, GUILayout.Height(64));
+			textMesh.text = EditorGUILayout.TextArea(textMesh.text, textAreaStyle, GUILayout.Height(64));
 			GUILayout.EndHorizontal();
 			
 			textMesh.anchor = (TextAnchor)EditorGUILayout.EnumPopup("Anchor", textMesh.anchor);
@@ -173,26 +293,24 @@ class tk2dTextMeshEditor : Editor
     static void DoCreateTextMesh()
     {
 		tk2dFontData fontData = null;
-		Material material = null;
 		
 		// Find reference in scene
         tk2dTextMesh dupeMesh = GameObject.FindObjectOfType(typeof(tk2dTextMesh)) as tk2dTextMesh;
 		if (dupeMesh) 
-		{
 			fontData = dupeMesh.font;
-			material = dupeMesh.GetComponent<MeshRenderer>().sharedMaterial;
-		}
 		
 		// Find in library
 		if (fontData == null)
 		{
-			tk2dFont[] allFontData = tk2dEditorUtility.GetOrCreateIndex().GetFonts();
-			foreach (var v in allFontData)
+			tk2dGenericIndexItem[] allFontEntries = tk2dEditorUtility.GetOrCreateIndex().GetFonts();
+			foreach (var v in allFontEntries)
 			{
-				if (v.data != null)
+				if (v.managed) continue;
+				tk2dFontData data = v.GetData<tk2dFontData>();
+				if (data != null)
 				{
-					fontData = v.data;
-					material = fontData.material;
+					fontData = data;
+					break;
 				}
 			}
 		}
@@ -208,7 +326,6 @@ class tk2dTextMeshEditor : Editor
 		textMesh.font = fontData;
 		textMesh.text = "New TextMesh";
 		textMesh.Commit();
-		textMesh.GetComponent<MeshRenderer>().material = material;
 		
 		Selection.activeGameObject = go;
 		Undo.RegisterCreatedObjectUndo(go, "Create TextMesh");

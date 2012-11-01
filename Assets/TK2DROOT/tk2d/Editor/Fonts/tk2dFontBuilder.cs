@@ -23,14 +23,16 @@ namespace tk2dEditor.Font
 	
 	public class Info
 	{
+		public string[] texturePaths = new string[0];
 		public int scaleW = 0, scaleH = 0;
 		public int lineHeight = 0;
+		public int numPages = 0;
 		
 		public List<Char> chars = new List<Char>();
 		public List<Kerning> kernings = new List<Kerning>();
 	};
 
-	public static class Builder
+	class BMFontXmlImporter
 	{
 		static int ReadIntAttribute(XmlNode node, string attribute)
 		{
@@ -40,13 +42,19 @@ namespace tk2dEditor.Font
 		{
 			return float.Parse(node.Attributes[attribute].Value, System.Globalization.NumberFormatInfo.InvariantInfo);
 		}
+		static string ReadStringAttribute(XmlNode node, string attribute)
+		{
+			return node.Attributes[attribute].Value;
+		}
 		static Vector2 ReadVector2Attributes(XmlNode node, string attributeX, string attributeY)
 		{
 			return new Vector2(ReadFloatAttribute(node, attributeX), ReadFloatAttribute(node, attributeY));
 		}
-		
-		static Info ParseBMFontXml(XmlDocument doc)
+
+		public static Info Parse(string path)
 		{
+			XmlDocument doc = new XmlDocument();
+			doc.Load(path);
 			Info fontInfo = new Info();
 			
 	        XmlNode nodeCommon = doc.SelectSingleNode("/font/common");
@@ -58,6 +66,15 @@ namespace tk2dEditor.Font
 			{
 				EditorUtility.DisplayDialog("Fatal error", "Only one page supported in font. Please change the setting and re-export.", "Ok");
 				return null;
+			}
+			fontInfo.numPages = pages;
+			fontInfo.texturePaths = new string[pages];
+			for (int i = 0; i < pages; ++i) fontInfo.texturePaths[i] = string.Empty;
+
+			foreach (XmlNode node in doc.SelectNodes("/font/pages/page"))
+			{
+				int id = ReadIntAttribute(node, "id");
+				fontInfo.texturePaths[id] = ReadStringAttribute(node, "file");
 			}
 	
 			foreach (XmlNode node in doc.SelectNodes(("/font/chars/char")))
@@ -89,7 +106,10 @@ namespace tk2dEditor.Font
 	
 			return fontInfo;
 		}
-		
+	}
+
+	class BMFontTextImporter
+	{
 		static string FindKeyValue(string[] tokens, string key)
 		{
 			string keyMatch = key + "=";
@@ -102,7 +122,7 @@ namespace tk2dEditor.Font
 			return "";
 		}
 		
-		static Info ParseBMFontText(string path)
+		public static Info Parse(string path)
 		{
 			Info fontInfo = new Info();
 			
@@ -124,6 +144,18 @@ namespace tk2dEditor.Font
 						EditorUtility.DisplayDialog("Fatal error", "Only one page supported in font. Please change the setting and re-export.", "Ok");
 						return null;
 					}
+					fontInfo.numPages = pages;
+					fontInfo.texturePaths = new string[pages];
+					for (int i = 0 ; i < pages; ++i)
+						fontInfo.texturePaths[i] = string.Empty;
+				}
+				else if (tokens[0] == "page")
+				{
+					int id = int.Parse(FindKeyValue(tokens, "id"));
+					string file = FindKeyValue(tokens, "file");
+					if (file[0] == '"' && file[file.Length - 1] == '"')
+						file = file.Substring(1, file.Length - 2);
+					fontInfo.texturePaths[id] = file;
 				}
 				else if (tokens[0] == "char")
 				{
@@ -150,25 +182,29 @@ namespace tk2dEditor.Font
 			reader.Close();
 			
 			return fontInfo;
-		}
-		
+		}		
+	}
+
+	public static class Builder
+	{
 		public static Info ParseBMFont(string path)
 		{
 			Info fontInfo = null;
 			
 			try
 			{
-				XmlDocument doc = new XmlDocument();
-				doc.Load(path);
-				fontInfo = ParseBMFontXml(doc);
+				fontInfo = BMFontXmlImporter.Parse(path);
 			}
 			catch
 			{
-				fontInfo = ParseBMFontText(path);
+				fontInfo = BMFontTextImporter.Parse(path);
 			}
 			
 			if (fontInfo == null || fontInfo.chars.Count == 0)
+			{
+				Debug.LogError("Font parsing returned 0 characters, check source bmfont file for errors");
 				return null;
+			}
 			
 			return fontInfo;
 		}

@@ -35,8 +35,8 @@ Shader "tk2d/SolidVertexColor"
 			struct v2f_vct
 			{
 				float4 vertex : POSITION;
-				float4 color : COLOR;
-				float2 texcoord : TEXCOORD0;
+				fixed4 color : COLOR;
+				half2 texcoord : TEXCOORD0;
 			};
 
 			v2f_vct vert_vct(vin_vct v)

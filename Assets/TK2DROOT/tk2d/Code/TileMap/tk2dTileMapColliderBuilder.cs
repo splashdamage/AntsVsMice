@@ -92,7 +92,7 @@ namespace tk2dRuntime.TileMap
 			List<Vector3> vertexList = new List<Vector3>();
 			List<int> indexList = new List<int>();
 			
-			int spriteCount = tileMap.spriteCollection.spriteDefinitions.Length;
+			int spriteCount = tileMap.SpriteCollectionInst.spriteDefinitions.Length;
 			Vector3 tileSize = tileMap.data.tileSize;
 			
 			var tilePrefabs = tileMap.data.tilePrefabs;
@@ -115,7 +115,7 @@ namespace tk2dRuntime.TileMap
 					if (tilePrefabs[tile])
 						continue;
 					
-					var spriteData = tileMap.spriteCollection.spriteDefinitions[tile];
+					var spriteData = tileMap.SpriteCollectionInst.spriteDefinitions[tile];
 					int baseVertexIndex = vertexList.Count;
 					
 					if (spriteData.colliderType == tk2dSpriteDefinition.ColliderType.Box)

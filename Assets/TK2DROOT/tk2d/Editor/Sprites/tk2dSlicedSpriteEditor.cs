@@ -10,7 +10,7 @@ class tk2dSlicedSpriteEditor : tk2dSpriteEditor
         tk2dSlicedSprite sprite = (tk2dSlicedSprite)target;
 		base.OnInspectorGUI();
 		
-		if (sprite.collection == null)
+		if (sprite.Collection == null)
 			return;
 
 		
@@ -98,7 +98,7 @@ class tk2dSlicedSpriteEditor : tk2dSpriteEditor
 			tk2dSprite spr = GameObject.FindObjectOfType(typeof(tk2dSprite)) as tk2dSprite;
 			if (spr)
 			{
-				sprColl = spr.collection;
+				sprColl = spr.Collection;
 			}
 		}
 
@@ -126,7 +126,7 @@ class tk2dSlicedSpriteEditor : tk2dSpriteEditor
 		GameObject go = tk2dEditorUtility.CreateGameObjectInScene("Sliced Sprite");
 		tk2dSlicedSprite sprite = go.AddComponent<tk2dSlicedSprite>();
 		sprite.legacyMode = false;
-		sprite.collection = sprColl;
+		sprite.Collection = sprColl;
 		sprite.renderer.material = sprColl.FirstValidDefinition.material;
 		sprite.Build();
 		Selection.activeGameObject = go;

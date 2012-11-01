@@ -14,13 +14,13 @@ Shader "tk2d/LitSolidVertexColor"
 		CGPROGRAM
 		#pragma surface surf Lambert
 		struct Input {
-			float2 uv_MainTex;
-			float4 color : COLOR;
+			half2 uv_MainTex;
+			fixed4 color : COLOR;
 		};
 		sampler2D _MainTex;
 		void surf(Input IN, inout SurfaceOutput o)
 		{
-			half4 mainColor = tex2D(_MainTex, IN.uv_MainTex) * IN.color;
+			fixed4 mainColor = tex2D(_MainTex, IN.uv_MainTex) * IN.color;
 			o.Albedo = mainColor.rgb;
 		}
 		ENDCG		

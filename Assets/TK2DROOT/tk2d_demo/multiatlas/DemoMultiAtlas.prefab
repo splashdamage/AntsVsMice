@@ -1771,12 +1771,18 @@ MonoBehaviour:
   targetHeight: 640
   targetOrthoSize: 1
   pixelPerfectPointSampled: 0
+  filterMode: 1
+  wrapMode: 1
+  userDefinedTextureSettings: 0
+  mipmapEnabled: 0
+  anisoLevel: 1
   physicsDepth: .100000001
   disableTrimming: 0
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
   editorDisplayScale: 1
+  version: 0
 --- !u!1002 &11400001
 EditorExtensionImpl:
   serializedVersion: 6

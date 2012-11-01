@@ -77,6 +77,106 @@ public class tk2dFontData : MonoBehaviour
 	List<tk2dFontChar> charDictValues;
 	
 	/// <summary>
+	/// Returns an array of platform names.
+	/// </summary>
+    public string[] fontPlatforms = null;
+
+	/// <summary>
+	/// Returns an array of GUIDs, each referring to an actual tk2dFontData object
+	/// This object contains the actual font for the platform.
+	/// </summary>
+    public string[] fontPlatformGUIDs = null;	
+
+	tk2dFontData platformSpecificData = null;
+	public bool hasPlatformData = false;
+    public bool managedFont = false;
+    public bool needMaterialInstance = false;
+
+    public tk2dSpriteCollectionData spriteCollection = null;
+
+	// Returns the active instance
+	public tk2dFontData inst
+	{
+		get 
+		{
+			if (platformSpecificData == null || platformSpecificData.materialInst == null)
+			{
+				if (hasPlatformData)
+				{
+					string systemPlatform = tk2dSystem.CurrentPlatform;
+					string guid = "";
+
+					for (int i = 0; i < fontPlatforms.Length; ++i)
+					{
+						if (fontPlatforms[i] == systemPlatform)
+						{
+							guid = fontPlatformGUIDs[i];
+							break;							
+						}
+					}
+					if (guid.Length == 0)
+						guid = fontPlatformGUIDs[0]; // failed to find platform, pick the first one
+
+					platformSpecificData = tk2dSystem.LoadResourceByGUID<tk2dFontData>(guid);
+				}
+				else
+				{
+					platformSpecificData = this;
+				}
+				platformSpecificData.Init(); // awake is never called, so we initialize explicitly
+			}
+			return platformSpecificData;
+		}
+	}
+
+	void Init()
+	{
+		if (needMaterialInstance)
+		{
+			if (spriteCollection)
+			{
+				tk2dSpriteCollectionData spriteCollectionInst = spriteCollection.inst;
+				for (int i = 0; i < spriteCollectionInst.materials.Length; ++i)
+				{
+					if (spriteCollectionInst.materials[i] == material)
+					{
+						materialInst = spriteCollectionInst.materialInsts[i];
+						break;
+					}
+				}
+				if (materialInst == null)
+					Debug.LogError("Fatal error - font from sprite collection is has an invalid material");
+			}
+			else
+			{
+				materialInst = Instantiate(material) as Material;
+				materialInst.hideFlags = HideFlags.DontSave;
+			}
+		}
+		else
+		{
+			materialInst = material;
+		}
+	}
+
+	public void ResetPlatformData()
+	{
+		if (hasPlatformData && platformSpecificData)
+		{
+			platformSpecificData = null;
+		}
+		
+		materialInst = null;		
+	}
+
+	void OnDestroy()
+	{
+		// if material is from a sprite collection
+		if (needMaterialInstance && spriteCollection == null)
+			DestroyImmediate(materialInst);
+	}
+
+	/// <summary>
 	/// Dictionary of characters. This is used when chars is null. Chars is preferred when number of characters is low (< 2048).
 	/// 
 	/// </summary>
@@ -101,6 +201,9 @@ public class tk2dFontData : MonoBehaviour
 	/// Material used by this font
 	/// </summary>
 	public Material material;
+
+	[System.NonSerialized]
+	public Material materialInst;
 	
 	// Gradients
 	

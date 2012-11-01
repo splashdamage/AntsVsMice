@@ -360,7 +360,7 @@ class tk2dSpriteAnimationEditor : Editor
 			// Sanitize frame data
 			for (int i = 0; i < clip.frames.Length; ++i)
 			{
-				if (clip.frames[i].spriteCollection == null || clip.frames[i].spriteCollection.spriteDefinitions.Length == 0)
+				if (clip.frames[i].spriteCollection == null || clip.frames[i].spriteCollection == null || clip.frames[i].spriteCollection.inst.spriteDefinitions.Length == 0)
 				{
 					EditorUtility.DisplayDialog("Warning", "Invalid sprite collection found.\nThis clip will now be deleted", "Ok");
 
@@ -370,7 +370,7 @@ class tk2dSpriteAnimationEditor : Editor
 					return;
 				}
 				
-				if (clip.frames[i].spriteId < 0 || clip.frames[i].spriteId >= clip.frames[i].spriteCollection.Count)
+				if (clip.frames[i].spriteId < 0 || clip.frames[i].spriteId >= clip.frames[i].spriteCollection.inst.Count)
 				{
 					EditorUtility.DisplayDialog("Warning", "Invalid frame found, resetting to frame 0", "Ok");
 					clip.frames[i].spriteId = 0;
@@ -381,10 +381,10 @@ class tk2dSpriteAnimationEditor : Editor
 			if (clipNumFrames > 0)
 			{
 				bool differentPolyCount = false;
-				int polyCount = clip.frames[0].spriteCollection.spriteDefinitions[clip.frames[0].spriteId].positions.Length;
+				int polyCount = clip.frames[0].spriteCollection.inst.spriteDefinitions[clip.frames[0].spriteId].positions.Length;
 				for (int i = 1; i < clipNumFrames; ++i)
 				{
-					int thisPolyCount = clip.frames[i].spriteCollection.spriteDefinitions[clip.frames[i].spriteId].positions.Length;
+					int thisPolyCount = clip.frames[i].spriteCollection.inst.spriteDefinitions[clip.frames[i].spriteId].positions.Length;
 					if (thisPolyCount != polyCount)
 					{
 						differentPolyCount = true;
@@ -417,7 +417,9 @@ class tk2dSpriteAnimationEditor : Editor
 		if (GUI.changed)
 		{
 			EditorUtility.SetDirty(anim);
-		}		
+		}
+
+		GUILayout.Space(64);
 	}
 	
 	delegate void EditorCommitDelegate(tk2dSpriteAnimationFrame dest, tk2dSpriteAnimationFrame src);
@@ -462,7 +464,7 @@ class tk2dSpriteAnimationEditor : Editor
 		if (tk2dPreferences.inst.groupAnimDisplay)
 		{
 			// make sure the spriteId is something different, so it ends up adding a new entry
-			var defs = newFrame.spriteCollection.spriteDefinitions;
+			var defs = newFrame.spriteCollection.inst.spriteDefinitions;
 			for (int j = 0; j < defs.Length; ++j)
 			{
 				int i = (j + newFrame.spriteId + 1) % defs.Length; // start one after current frame, and work from there looping back
@@ -504,7 +506,7 @@ class tk2dSpriteAnimationEditor : Editor
 		frame.spriteCollection = tk2dSpriteGuiUtility.SpriteCollectionPopup(frame.spriteCollection);
 		if (tk2dGuiUtility.EndChangeCheck())
 		{
-			frame.spriteId = tk2dSpriteGuiUtility.GetValidSpriteId(frame.spriteCollection, frame.spriteId);
+			frame.spriteId = tk2dSpriteGuiUtility.GetValidSpriteId(frame.spriteCollection.inst, frame.spriteId);
 			PropogateFrameChange(clip, frameId, frameCount, 
 			(dest, src) => { dest.spriteCollection = src.spriteCollection; dest.spriteId = src.spriteId; } );
 		}
@@ -708,9 +710,9 @@ class tk2dSpriteAnimationEditor : Editor
 	void AutoFill(tk2dSpriteAnimationClip clip)
 	{
 		int lastFrameId = clip.frames.Length - 1;
-		if (clip.frames[lastFrameId].spriteCollection != null && clip.frames[lastFrameId].spriteId >= 0 && clip.frames[lastFrameId].spriteId < clip.frames[lastFrameId].spriteCollection.Count)
+		if (clip.frames[lastFrameId].spriteCollection != null && clip.frames[lastFrameId].spriteId >= 0 && clip.frames[lastFrameId].spriteId < clip.frames[lastFrameId].spriteCollection.inst.Count)
 		{
-			string na = clip.frames[lastFrameId].spriteCollection.spriteDefinitions[clip.frames[lastFrameId].spriteId].name;
+			string na = clip.frames[lastFrameId].spriteCollection.inst.spriteDefinitions[clip.frames[lastFrameId].spriteId].name;
 			
 			int numStartA = na.Length - 1;
 			if (na[numStartA] >= '0' && na[numStartA] <= '9')
@@ -728,7 +730,7 @@ class tk2dSpriteAnimationEditor : Editor
 					List<int> pendingFrames = new List<int>();
 					for (int frameNo = baseNo + 1; ; ++frameNo)
 					{
-						int frameIdx = FindFrameIndex(clip.frames[lastFrameId].spriteCollection.spriteDefinitions, baseName, frameNo);
+						int frameIdx = FindFrameIndex(clip.frames[lastFrameId].spriteCollection.inst.spriteDefinitions, baseName, frameNo);
 						if (frameIdx == -1)
 						{
 							if (--allowedMissing <= 0)
@@ -797,14 +799,14 @@ class tk2dSpriteAnimationEditor : Editor
 	
 	
 	[MenuItem("Assets/Create/tk2d/Sprite Animation", false, 10001)]
-    static void DoCollectionCreate()
+    static void DoAnimationCreate()
     {
 		string path = tk2dEditorUtility.CreateNewPrefab("SpriteAnimation");
-        if (path != null)
+        if (path.Length != 0)
         {
             GameObject go = new GameObject();
             go.AddComponent<tk2dSpriteAnimation>();
-            go.active = false;
+	        tk2dEditorUtility.SetGameObjectActive(go, false);
 
 #if (UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4)
 			Object p = EditorUtility.CreateEmptyPrefab(path);
@@ -817,6 +819,9 @@ class tk2dSpriteAnimationEditor : Editor
 			
 			tk2dEditorUtility.GetOrCreateIndex().AddSpriteAnimation(AssetDatabase.LoadAssetAtPath(path, typeof(tk2dSpriteAnimation)) as tk2dSpriteAnimation);
 			tk2dEditorUtility.CommitIndex();
+
+			// Select object
+			Selection.activeObject = AssetDatabase.LoadAssetAtPath(path, typeof(UnityEngine.Object));
         }
     }	
 }

@@ -19,47 +19,47 @@ class tk2dSpriteEditor : Editor
 
 	protected void DrawSpriteEditorGUI(tk2dBaseSprite sprite)
 	{
-		var newCollection = tk2dSpriteGuiUtility.SpriteCollectionPopup("Collection", sprite.collection, true, sprite.spriteId);
-		if (sprite.collection != newCollection)
+		var newCollection = tk2dSpriteGuiUtility.SpriteCollectionPopup("Collection", sprite.Collection, true, sprite.spriteId);
+		if (sprite.Collection != newCollection)
 		{
-			if (sprite.collection == null)
-				sprite.collection = newCollection;
+			if (sprite.Collection == null)
+				sprite.Collection = newCollection;
 			
 			int spriteId = sprite.spriteId;
-			if (sprite.spriteId < 0 || sprite.spriteId >= sprite.collection.Count 
-				|| !sprite.collection.spriteDefinitions[sprite.spriteId].Valid)
-				spriteId = sprite.collection.FirstValidDefinitionIndex;
+			if (sprite.spriteId < 0 || sprite.spriteId >= sprite.Collection.Count 
+				|| !sprite.Collection.inst.spriteDefinitions[sprite.spriteId].Valid)
+				spriteId = sprite.Collection.FirstValidDefinitionIndex;
 			sprite.SwitchCollectionAndSprite(newCollection, spriteId);
 			sprite.ForceBuild();
 		}
 		
-        if (sprite.collection)
+        if (sprite.Collection)
         {
             int newSpriteId = sprite.spriteId;
 
 			// sanity check sprite id
-			if (sprite.spriteId < 0 || sprite.spriteId >= sprite.collection.Count 
-				|| !sprite.collection.spriteDefinitions[sprite.spriteId].Valid)
+			if (sprite.spriteId < 0 || sprite.spriteId >= sprite.Collection.Count 
+				|| !sprite.Collection.inst.spriteDefinitions[sprite.spriteId].Valid)
 			{
-				newSpriteId = sprite.collection.FirstValidDefinitionIndex;
+				newSpriteId = sprite.Collection.FirstValidDefinitionIndex;
 			}
 			
-			newSpriteId = tk2dSpriteGuiUtility.SpriteSelectorPopup("Sprite", sprite.spriteId, sprite.collection);
+			newSpriteId = tk2dSpriteGuiUtility.SpriteSelectorPopup("Sprite", sprite.spriteId, sprite.Collection);
 			if (tk2dPreferences.inst.displayTextureThumbs)
 			{
-				if (sprite.collection.version < 1 || sprite.collection.dataGuid == tk2dSpriteGuiUtility.TransientGUID)
+				if (sprite.Collection.version < 1 || sprite.Collection.dataGuid == tk2dSpriteGuiUtility.TransientGUID)
 				{
 					string message = "";
 					
 					message = "No thumbnail data.";
-					if (sprite.collection.version < 1 && sprite.collection.dataGuid != tk2dSpriteGuiUtility.TransientGUID)
+					if (sprite.Collection.version < 1 && sprite.Collection.dataGuid != tk2dSpriteGuiUtility.TransientGUID)
 						message += "\nPlease rebuild Sprite Collection.";
 					
 					tk2dGuiUtility.InfoBox(message, tk2dGuiUtility.WarningLevel.Info);
 				}
 				else
 				{
-					var tex = tk2dSpriteThumbnailCache.GetThumbnailTexture(sprite.collection, sprite.spriteId);
+					var tex = tk2dSpriteThumbnailCache.GetThumbnailTexture(sprite.Collection, sprite.spriteId);
 					if (tex) 
 					{
 						float w = tex.width;
@@ -188,7 +188,7 @@ class tk2dSpriteEditor : Editor
 			tk2dSprite spr = GameObject.FindObjectOfType(typeof(tk2dSprite)) as tk2dSprite;
 			if (spr)
 			{
-				sprColl = spr.collection;
+				sprColl = spr.Collection;
 			}
 		}
 
@@ -199,7 +199,7 @@ class tk2dSpriteEditor : Editor
 			{
 				GameObject scgo = AssetDatabase.LoadAssetAtPath(AssetDatabase.GUIDToAssetPath(v.spriteCollectionDataGUID), typeof(GameObject)) as GameObject;
 				var sc = scgo.GetComponent<tk2dSpriteCollectionData>();
-				if (sc != null && sc.spriteDefinitions != null && sc.spriteDefinitions.Length > 0)
+				if (sc != null && sc.spriteDefinitions != null && sc.spriteDefinitions.Length > 0 && !sc.managedSpriteCollection)
 				{
 					sprColl = sc;
 					break;
@@ -215,7 +215,7 @@ class tk2dSpriteEditor : Editor
 
 		GameObject go = tk2dEditorUtility.CreateGameObjectInScene("Sprite");
 		tk2dSprite sprite = go.AddComponent<tk2dSprite>();
-		sprite.collection = sprColl;
+		sprite.SwitchCollectionAndSprite(sprColl, sprColl.FirstValidDefinitionIndex);
 		sprite.renderer.material = sprColl.FirstValidDefinition.material;
 		sprite.Build();
 		

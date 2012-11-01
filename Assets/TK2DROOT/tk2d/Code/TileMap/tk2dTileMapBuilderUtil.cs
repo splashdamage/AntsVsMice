@@ -232,8 +232,13 @@ namespace tk2dRuntime.TileMap
 				
 				if (layer.gameObject != null)
 				{
+#if UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4 || UNITY_3_5 || UNITY_3_6 || UNITY_3_7 || UNITY_3_8 || UNITY_3_9
 					if (!editMode && layer.gameObject.active == false)
 						layer.gameObject.SetActiveRecursively(true);
+#else
+					if (!editMode && layer.gameObject.activeSelf == false)
+						layer.gameObject.SetActive(true);
+#endif
 					
 					layer.gameObject.name = tileMap.data.Layers[layerId].name;
 					layer.gameObject.transform.localPosition = new Vector3(0, 0, accumulatedLayerZ);

@@ -5,14 +5,15 @@ using System.IO;
 
 public static class tk2dEditorUtility
 {
-	public static double version = 1.76;
-	public static int releaseId = 1; // negative = beta release, 0 = final, positive = final patch
+	public static double version = 1.8;
+	public static int releaseId = 1; // < -10000 = alpha, other negative = beta release, 0 = final, positive = final patch
 	
 	public static string ReleaseStringIdentifier(double _version, int _releaseId)
 	{
 		string id = _version.ToString();
 		if (_releaseId == 0) id += " final";
 		else if (_releaseId > 0) id += " final + patch " + _releaseId.ToString();
+		else if (_releaseId < -10000) id += " alpha " + (-_releaseId - 10000).ToString();
 		else if (_releaseId < 0) id += " beta " + (-_releaseId).ToString();
 		return id;
 	}
@@ -25,6 +26,7 @@ public static class tk2dEditorUtility
 		string id = "2dtoolkit" + version.ToString();
 		if (releaseId == 0) id += "final";
 		else if (releaseId > 0) id += "final_patch" + releaseId.ToString();
+		else if (releaseId < -10000) id += " alpha " + (-releaseId - 10000).ToString();
 		else if (releaseId < 0) id += "beta" + (-releaseId).ToString();
 		return id;
 	}
@@ -55,6 +57,9 @@ public static class tk2dEditorUtility
 	{
 		AssetDatabase.DeleteAsset(indexPath);
 		CreateIndex();
+
+		// Now rebuild system object
+		tk2dSystemUtility.RebuildResources();
 	}
 	
 	[MenuItem(tk2dMenu.root + "Preferences...", false, 1)]
@@ -62,55 +67,23 @@ public static class tk2dEditorUtility
 	{
 		EditorWindow.GetWindow( typeof(tk2dPreferencesEditor), true, "2D Toolkit Preferences" );
 	}	
-	
+
 	public static string CreateNewPrefab(string name) // name is the filename of the prefab EXCLUDING .prefab
 	{
 		Object obj = Selection.activeObject;
 		string assetPath = AssetDatabase.GetAssetPath(obj);
-		string dirPrefix = "";
-		if (assetPath.Length > 0)
+		if (assetPath.Length == 0)
 		{
-			dirPrefix = Application.dataPath + "/" + assetPath.Substring(7);
-			dirPrefix = dirPrefix.Replace('\\', '/');
-			if ((File.GetAttributes(dirPrefix) & FileAttributes.Directory) != FileAttributes.Directory)
-			{
-				for (int i = dirPrefix.Length - 1; i > 0; --i)
-				{
-					if (dirPrefix[i] == '/')
-					{
-						dirPrefix = dirPrefix.Substring(0, i);
-						break;
-					}
-				}
-			}
-			dirPrefix += "/";
+			assetPath = tk2dGuiUtility.SaveFileInProject("Create...", "Assets/", name, "prefab");
 		}
 		else
 		{
-			dirPrefix = Application.dataPath + "/";
+			// is a directory
+			string path = System.IO.Directory.Exists(assetPath) ? assetPath : System.IO.Path.GetDirectoryName(assetPath);
+			assetPath = AssetDatabase.GenerateUniqueAssetPath(path + "/" + name + ".prefab");
 		}
 		
-		// find a unique filename
-		string fname = name + ".prefab";
-		if (File.Exists(dirPrefix + fname))
-		{
-			for (int i = 0; i < 100; ++i)
-			{
-				fname = name + i.ToString() + ".prefab";
-				if (!File.Exists(dirPrefix + fname))
-					break;
-			}
-		}
-		if (File.Exists(dirPrefix + fname))
-		{
-			EditorUtility.DisplayDialog("Fatal error", "Please rename sprite collections", "Ok");
-			return null;
-		}
-		
-        string path = dirPrefix + fname;
-		path = path.Substring(Application.dataPath.Length - 6);
-			
-		return path;
+		return assetPath;
 	}
 	
 	
@@ -135,7 +108,7 @@ public static class tk2dEditorUtility
 	public static tk2dIndex GetOrCreateIndex()
 	{
 		tk2dIndex thisIndex = GetExistingIndex();
-		if (thisIndex == null)
+		if (thisIndex == null || thisIndex.version != tk2dIndex.CURRENT_VERSION)
 		{
 			CreateIndex();
 			thisIndex = GetExistingIndex();
@@ -156,6 +129,7 @@ public static class tk2dEditorUtility
 	static void CreateIndex()
 	{
 		tk2dIndex newIndex = ScriptableObject.CreateInstance<tk2dIndex>();
+		newIndex.version = tk2dIndex.CURRENT_VERSION;
 		
 		List<string> rebuildSpriteCollectionPaths = new List<string>();
 		
@@ -184,11 +158,11 @@ public static class tk2dEditorUtility
 			
 			GameObject iterGo = AssetDatabase.LoadAssetAtPath( prefabPath, typeof(GameObject) ) as GameObject;
 			if (!iterGo) continue;
-			
+
 			tk2dSpriteCollection spriteCollection = iterGo.GetComponent<tk2dSpriteCollection>();
 			tk2dSpriteCollectionData spriteCollectionData = iterGo.GetComponent<tk2dSpriteCollectionData>();
 			tk2dFont font = iterGo.GetComponent<tk2dFont>();
-			tk2dSpriteAnimation anims = iterGo.GetComponent<tk2dSpriteAnimation>();
+			tk2dSpriteAnimation anim = iterGo.GetComponent<tk2dSpriteAnimation>();
 			
 			if (spriteCollection) 
 			{
@@ -217,8 +191,14 @@ public static class tk2dEditorUtility
 				if (!present && guid != "")
 					newIndex.AddSpriteCollectionData(spriteCollectionData);
 			}
-			else if (font) newIndex.AddFont(font);
-			else if (anims) newIndex.AddSpriteAnimation(anims);
+			else if (font) 
+			{
+				newIndex.AddOrUpdateFont(font); // unfortunate but necessary
+			}
+			else if (anim) 
+			{
+				newIndex.AddSpriteAnimation(anim);
+			}
 			else
 			{
 				iterGo = null;
@@ -351,6 +331,13 @@ public static class tk2dEditorUtility
 		Selection.objects = previousSelectedObjects;
 	}	
 
+	public static void CollectAndUnloadUnusedAssets()
+	{
+		System.GC.Collect();
+		System.GC.WaitForPendingFinalizers();
+		EditorUtility.UnloadUnusedAssets();
+	}
+
 	public static bool IsPrefab(Object obj)
 	{
 #if (UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4)
@@ -358,5 +345,23 @@ public static class tk2dEditorUtility
 #else
 		return (PrefabUtility.GetPrefabType(obj) == PrefabType.Prefab);
 #endif
+	}
+
+	public static void SetGameObjectActive(GameObject go, bool active)
+	{
+#if UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4 || UNITY_3_5 || UNITY_3_6 || UNITY_3_7 || UNITY_3_8 || UNITY_3_9
+		go.SetActiveRecursively(active);
+#else
+		go.SetActive(active);
+#endif		
+	}
+
+	public static bool IsGameObjectActive(GameObject go)
+	{
+#if UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4 || UNITY_3_5 || UNITY_3_6 || UNITY_3_7 || UNITY_3_8 || UNITY_3_9
+		return go.active;
+#else
+		return go.activeSelf;
+#endif		
 	}
 }

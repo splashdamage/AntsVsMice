@@ -115,15 +115,22 @@ public class tk2dSlicedSprite : tk2dBaseSprite
 	/// The anchor position for this sliced sprite
 	/// </summary>
 	
-	void Awake()
+	new void Awake()
 	{
+		base.Awake();
+		
+		// Create mesh, independently to everything else
+		mesh = new Mesh();
+		mesh.hideFlags = HideFlags.DontSave;
+		GetComponent<MeshFilter>().mesh = mesh;
+		
 		// This will not be set when instantiating in code
 		// In that case, Build will need to be called
-		if (collection)
+		if (Collection)
 		{
 			// reset spriteId if outside bounds
 			// this is when the sprite collection data is corrupt
-			if (_spriteId < 0 || _spriteId >= collection.Count)
+			if (_spriteId < 0 || _spriteId >= Collection.Count)
 				_spriteId = 0;
 			
 			Build();
@@ -148,7 +155,7 @@ public class tk2dSlicedSprite : tk2dBaseSprite
 	new protected void SetColors(Color[] dest)
 	{
 		Color c = _color;
-        if (collection.premultipliedAlpha) { c.r *= c.a; c.g *= c.a; c.b *= c.a; }
+        if (Collection.premultipliedAlpha) { c.r *= c.a; c.g *= c.a; c.b *= c.a; }
 		for (int i = 0; i < dest.Length; ++i)
 			dest[i] = c;
 	}
@@ -158,7 +165,7 @@ public class tk2dSlicedSprite : tk2dBaseSprite
 	
 	protected void SetGeometry(Vector3[] vertices, Vector2[] uvs)
 	{
-		var sprite = collection.spriteDefinitions[spriteId];
+		var sprite = Collection.spriteDefinitions[spriteId];
 		if (sprite.positions.Length == 4)
 		{
 			float colliderExtentZ = (sprite.colliderType == tk2dSpriteDefinition.ColliderType.Box)?(sprite.colliderVertices[1].z * _scale.z):0.1f;
@@ -328,6 +335,7 @@ public class tk2dSlicedSprite : tk2dBaseSprite
 		if (mesh == null)
 		{
 			mesh = new Mesh();
+			mesh.hideFlags = HideFlags.DontSave;
 		}
 		else
 		{
@@ -388,8 +396,8 @@ public class tk2dSlicedSprite : tk2dBaseSprite
 	
 	protected override void UpdateMaterial()
 	{
-		if (renderer.sharedMaterial != collection.spriteDefinitions[spriteId].material)
-			renderer.material = collection.spriteDefinitions[spriteId].material;
+		if (renderer.sharedMaterial != Collection.spriteDefinitions[spriteId].materialInst)
+			renderer.material = Collection.spriteDefinitions[spriteId].materialInst;
 	}
 	
 	protected override int GetCurrentVertexCount()

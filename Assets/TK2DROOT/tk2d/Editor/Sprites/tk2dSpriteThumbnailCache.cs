@@ -33,6 +33,8 @@ public class tk2dSpriteThumbnailCache
 	
 	public static Texture2D GetThumbnailTexture(tk2dSpriteCollectionData gen, int spriteId)
 	{
+		gen = gen.inst;
+		
 		// If we already have a cached texture which matches the requirements, use that
 		foreach (var thumb in thumbnailCache)
 		{

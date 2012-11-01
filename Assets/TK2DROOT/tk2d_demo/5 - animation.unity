@@ -640,6 +640,9 @@ MonoBehaviour:
   _kerning: 0
   _maxChars: 64
   _inlineStyling: 0
+  _formatting: 0
+  _formattedText: 
+  _wordWrapWidth: 0
   pixelPerfect: 0
   spacing: 0
   lineSpacing: 0
@@ -664,6 +667,9 @@ MonoBehaviour:
   _kerning: 0
   _maxChars: 35
   _inlineStyling: 0
+  _formatting: 0
+  _formattedText: 
+  _wordWrapWidth: 0
   pixelPerfect: 0
   spacing: 0
   lineSpacing: 0

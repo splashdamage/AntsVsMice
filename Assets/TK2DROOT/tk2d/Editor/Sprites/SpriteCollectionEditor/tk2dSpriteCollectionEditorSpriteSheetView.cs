@@ -61,8 +61,8 @@ namespace tk2dEditor.SpriteCollectionEditor
 					GetTileCoordinateForSpriteSheet(spriteSheet, idX, idY, out x, out y);
 					
 					int spriteSlot = GetSpriteSlotForSpriteSheetCell(spriteSheetId, idX, idY);
-					SpriteCollection.textureRefs[spriteSlot] = spriteSheet.texture;
 					var param = SpriteCollection.textureParams[spriteSlot];
+					param.texture = spriteSheet.texture;
 					param.hasSpriteSheetId = true;
 					param.spriteSheetId = spriteSheetId;
 					param.spriteSheetX = idX;
@@ -91,7 +91,6 @@ namespace tk2dEditor.SpriteCollectionEditor
 					int coordinateHash = GetSpriteCoordinateHash(p.spriteSheetX, p.spriteSheetY);
 					if (usedSpriteCoordinates.IndexOf(coordinateHash) == -1)
 					{
-						SpriteCollection.textureRefs[i] = null;
 						SpriteCollection.textureParams[i].Clear();
 					}
 				}

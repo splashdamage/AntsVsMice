@@ -29,7 +29,34 @@ public class tk2dTileMap : MonoBehaviour, tk2dRuntime.ISpriteCollectionForceBuil
 	/// <summary>
 	/// The sprite collection used by the tilemap
 	/// </summary>
-	public tk2dSpriteCollectionData spriteCollection;
+	[SerializeField]
+	private tk2dSpriteCollectionData spriteCollection = null;
+	public tk2dSpriteCollectionData Editor__SpriteCollection 
+	{ 
+		get 
+		{ 
+			return spriteCollection; 
+		} 
+		set
+		{
+			_spriteCollectionInst = null;
+			spriteCollection = value;
+			if (spriteCollection != null)
+				_spriteCollectionInst = spriteCollection.inst;
+		}
+	}
+	
+	tk2dSpriteCollectionData _spriteCollectionInst = null;
+	public tk2dSpriteCollectionData SpriteCollectionInst
+	{
+		get 
+		{
+			if (_spriteCollectionInst == null && spriteCollection != null)
+				_spriteCollectionInst = spriteCollection.inst;
+			return _spriteCollectionInst;
+		}
+	}
+	
 	[SerializeField]
 	int spriteCollectionKey;
 	
@@ -63,8 +90,11 @@ public class tk2dTileMap : MonoBehaviour, tk2dRuntime.ISpriteCollectionForceBuil
 	
 	void Awake()
 	{
+		if (spriteCollection != null)
+			_spriteCollectionInst = spriteCollection.inst;
+		
 		bool spriteCollectionKeyMatch = true;
-		if (spriteCollection && spriteCollection.buildKey != spriteCollectionKey) spriteCollectionKeyMatch = false;
+		if (SpriteCollectionInst && SpriteCollectionInst.buildKey != spriteCollectionKey) spriteCollectionKeyMatch = false;
 
 		if (Application.platform == RuntimePlatform.WindowsEditor ||
 			Application.platform == RuntimePlatform.OSXEditor)
@@ -85,8 +115,7 @@ public class tk2dTileMap : MonoBehaviour, tk2dRuntime.ISpriteCollectionForceBuil
 			}
 			else if (!spriteCollectionKeyMatch)
 			{
-				Debug.LogError("Tilemap  " + name + " has invalid sprite collection key." +
-				 	"Sprites may not match correctly.");
+				Build(BuildFlags.ForceBuild);
 			}
 		}
 	}
@@ -129,14 +158,18 @@ public class tk2dTileMap : MonoBehaviour, tk2dRuntime.ISpriteCollectionForceBuil
 	
 	public void Build(BuildFlags buildFlags)
 	{
+		if (spriteCollection != null)
+			_spriteCollectionInst = spriteCollection.inst;
+		
+		
 #if UNITY_EDITOR || !UNITY_FLASH
 		// Sanitize tilePrefabs input, to avoid branches later
 		if (data != null)
 		{
 			if (data.tilePrefabs == null)
-				data.tilePrefabs = new Object[spriteCollection.Count];
-			else if (data.tilePrefabs.Length != spriteCollection.Count)
-				System.Array.Resize(ref data.tilePrefabs, spriteCollection.Count);
+				data.tilePrefabs = new Object[SpriteCollectionInst.Count];
+			else if (data.tilePrefabs.Length != SpriteCollectionInst.Count)
+				System.Array.Resize(ref data.tilePrefabs, SpriteCollectionInst.Count);
 			
 			// Fix up data if necessary
 			BuilderUtil.InitDataStore(this);
@@ -147,15 +180,15 @@ public class tk2dTileMap : MonoBehaviour, tk2dRuntime.ISpriteCollectionForceBuil
 		}
 
 		// Sanitize sprite collection material ids
-		if (spriteCollection)
-			spriteCollection.InitMaterialIds();
+		if (SpriteCollectionInst)
+			SpriteCollectionInst.InitMaterialIds();
 			
 		
 		bool editMode = (buildFlags & BuildFlags.EditMode) != 0;
 		bool forceBuild = (buildFlags & BuildFlags.ForceBuild) != 0;
 
 		// When invalid, everything needs to be rebuilt
-		if (spriteCollection && spriteCollection.buildKey != spriteCollectionKey)
+		if (SpriteCollectionInst && SpriteCollectionInst.buildKey != spriteCollectionKey)
 			forceBuild = true;
 
 		if (forceBuild)
@@ -181,8 +214,8 @@ public class tk2dTileMap : MonoBehaviour, tk2dRuntime.ISpriteCollectionForceBuil
 		buildKey = Random.Range(0, int.MaxValue);
 		
 		// Update sprite collection key
-		if (spriteCollection)
-			spriteCollectionKey = spriteCollection.buildKey;
+		if (SpriteCollectionInst)
+			spriteCollectionKey = SpriteCollectionInst.buildKey;
 #endif
 	}
 	
@@ -351,7 +384,7 @@ public class tk2dTileMap : MonoBehaviour, tk2dRuntime.ISpriteCollectionForceBuil
 	// ISpriteCollectionBuilder
 	public bool UsesSpriteCollection(tk2dSpriteCollectionData spriteCollection)
 	{
-		return spriteCollection == this.spriteCollection;
+		return spriteCollection == this.spriteCollection || _spriteCollectionInst == spriteCollection;
 	}
 	
 #if UNITY_EDITOR

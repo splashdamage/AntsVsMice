@@ -231,4 +231,42 @@ public static class tk2dGuiUtility
 		GUI.changed |= backupGuiChangedValue;
 		return hasChanged;
 	}
+
+
+	public static string PlatformPopup(tk2dSystem system, string label, string platform)
+	{
+		if (system == null)
+			return label;
+
+		int selectedIndex = -1;
+		string[] platformNames = new string[system.assetPlatforms.Length];
+
+		for (int i = 0; i < system.assetPlatforms.Length; ++i)
+		{
+			platformNames[i] = system.assetPlatforms[i].name;
+			if (platformNames[i] == platform) selectedIndex = i;
+		}
+
+		selectedIndex = EditorGUILayout.Popup(label, selectedIndex, platformNames);
+		if (selectedIndex == -1) return "";
+		else return platformNames[selectedIndex];
+	}
+
+	public static string SaveFileInProject(string title, string directory, string filename, string ext)
+	{
+		string path = EditorUtility.SaveFilePanel(title, directory, filename, ext);
+		if (path.Length == 0) // cancelled
+			return "";
+		string cwd = System.IO.Directory.GetCurrentDirectory().Replace("\\","/") + "/assets/";
+		if (path.ToLower().IndexOf(cwd.ToLower()) != 0)
+		{
+			path = "";
+			EditorUtility.DisplayDialog(title, "Assets must be saved inside the Assets folder", "Ok");
+		}
+		else 
+		{
+			path = path.Substring(cwd.Length - "/assets".Length);
+		}
+		return path;
+	}
 }

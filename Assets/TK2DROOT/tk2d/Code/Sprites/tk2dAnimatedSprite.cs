@@ -108,7 +108,7 @@ public class tk2dAnimatedSprite : tk2dSprite
 	{
 		var clip = anim.clips[clipId];
 		tk2dAnimatedSprite animSprite = go.AddComponent<tk2dAnimatedSprite>();
-		animSprite.collection = clip.frames[0].spriteCollection;
+		animSprite.Collection = clip.frames[0].spriteCollection;
 		animSprite.spriteId = clip.frames[0].spriteId;
 		animSprite.anim = anim;
 		return animSprite;
@@ -324,7 +324,7 @@ public class tk2dAnimatedSprite : tk2dSprite
 			}
 			else if (currentClip.wrapMode == tk2dSpriteAnimationClip.WrapMode.RandomFrame || currentClip.wrapMode == tk2dSpriteAnimationClip.WrapMode.RandomLoop)
 			{
-				int rnd = Random.Range(0, currentClip.frames.Length - 1);
+				int rnd = Random.Range(0, currentClip.frames.Length);
 				WarpClipToLocalTime(currentClip, rnd);
 
 				if (currentClip.wrapMode == tk2dSpriteAnimationClip.WrapMode.RandomFrame)
@@ -527,8 +527,8 @@ public class tk2dAnimatedSprite : tk2dSprite
 				if (currFrame >= currentClip.frames.Length)
 				{
 					SetFrameInternal(currentClip.frames.Length - 1); // set to last frame
+					state &= ~State.Playing; // stop playing before calling event - the event could start a new animation playing here
 					ProcessEvents(_previousFrame, currentClip.frames.Length - 1, 1);
-					state &= ~State.Playing;
 					OnCompleteAnimation();
 				}
 				else

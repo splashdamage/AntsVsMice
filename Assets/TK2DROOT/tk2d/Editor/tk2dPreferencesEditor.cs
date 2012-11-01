@@ -25,11 +25,13 @@ public class tk2dPreferences
 	bool _showIds;
 	bool _isProSkin;
 	int _numGroupedAnimationFrames;
+	string _platform;
 
 	public const int default_spriteCollectionListWidth = 200;
 	int _spriteCollectionListWidth;
 	public const int default_spriteCollectionInspectorWidth = 260;
 	int _spriteCollectionInspectorWidth;
+	public const string default_platform = "";
 
 	public bool displayTextureThumbs { get { return _displayTextureThumbs; } set { if (_displayTextureThumbs != value) { _displayTextureThumbs = value; Write(); } } }
 	public bool horizontalAnimDisplay { get { return _horizontalAnimDisplay; } set { if (_horizontalAnimDisplay != value) { _horizontalAnimDisplay = value; Write(); } } }
@@ -40,7 +42,24 @@ public class tk2dPreferences
 	public int numGroupedAnimationFrames { get { return _numGroupedAnimationFrames; } set { if (_numGroupedAnimationFrames != value) { _numGroupedAnimationFrames = value; Write(); } } }
 	public int spriteCollectionInspectorWidth { get { return _spriteCollectionInspectorWidth; } set { if (_spriteCollectionInspectorWidth != value) { _spriteCollectionInspectorWidth = value; Write(); } } }
 	public int spriteCollectionListWidth { get { return _spriteCollectionListWidth; } set { if (_spriteCollectionListWidth != value) { _spriteCollectionListWidth = value; Write(); } } }
-	
+	public string platform { 
+		get { return _platform; } 
+		set 
+		{  
+			if (_platform != value) 
+			{ 
+				_platform = value; 
+				Write(); 
+
+				// mirror to where it matters
+				tk2dSystem.CurrentPlatform = _platform;
+
+				// tell the editor things have changed
+				tk2dSystemUtility.PlatformChanged();
+			} 
+		} 
+	}
+
 	const string prefix = "tk2d";
 
 	void Read()
@@ -55,6 +74,7 @@ public class tk2dPreferences
 		_numGroupedAnimationFrames = EditorPrefs.GetInt(prefix + "_numGroupedAnimationFrames", 30);
 		_spriteCollectionListWidth = EditorPrefs.GetInt(prefix + "_spriteCollectionListWidth", default_spriteCollectionListWidth);
 		_spriteCollectionInspectorWidth = EditorPrefs.GetInt(prefix + "_spriteCollectionInspectorWidth", default_spriteCollectionInspectorWidth);
+		_platform = EditorPrefs.GetString(prefix + "_platform", default_platform);
 	}
 	
 	public void Write()
@@ -73,6 +93,8 @@ public class tk2dPreferences
 		EditorPrefs.SetInt(prefix + "_numGroupedAnimationFrames", _numGroupedAnimationFrames);
 		EditorPrefs.SetInt(prefix + "_spriteCollectionListWidth", _spriteCollectionListWidth);
 		EditorPrefs.SetInt(prefix + "_spriteCollectionInspectorWidth", _spriteCollectionInspectorWidth);
+
+		EditorPrefs.SetString(prefix + "_platform", _platform);
 	}
 }
 
@@ -117,7 +139,17 @@ public class tk2dPreferencesEditor : EditorWindow
 			prefs.spriteCollectionListWidth = tk2dPreferences.default_spriteCollectionListWidth;
 			prefs.spriteCollectionInspectorWidth = tk2dPreferences.default_spriteCollectionInspectorWidth;
 		}
-		
+
+		if (tk2dSystem.inst_NoCreate != null)
+		{
+			string newPlatform = tk2dGuiUtility.PlatformPopup(tk2dSystem.inst_NoCreate, "Platform", prefs.platform);
+			if (newPlatform != prefs.platform)
+			{
+				prefs.platform = newPlatform;
+				tk2dEditorUtility.UnloadUnusedAssets();
+			}
+		}
+
 #if (UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4)
 		prefs.isProSkin = EditorGUILayout.Toggle(label_proSkin, prefs.isProSkin);
 #endif

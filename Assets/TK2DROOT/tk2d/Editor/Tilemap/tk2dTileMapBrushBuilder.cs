@@ -74,6 +74,7 @@ namespace tk2dEditor
 		
 		void BuildBrush(tk2dSpriteCollectionData spriteCollection, tk2dTileMapEditorBrush brush, int tilesPerRow)
 		{
+			brush.name = "";
 			brush.multiLayer = false;
 			
 			if (multiSelect)

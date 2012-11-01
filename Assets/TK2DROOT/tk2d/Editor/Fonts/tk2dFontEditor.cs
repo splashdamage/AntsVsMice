@@ -102,7 +102,7 @@ public class tk2dFontEditor : Editor
 				
 				GameObject go = new GameObject();
 				go.AddComponent<tk2dFontData>();
-				go.active = false;
+				tk2dEditorUtility.SetGameObjectActive(go, false);
 				
 #if (UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4)
 				Object p = EditorUtility.CreateEmptyPrefab(bmFontPath);
@@ -158,9 +158,15 @@ public class tk2dFontEditor : Editor
 			
 			EditorUtility.SetDirty(gen);
 			EditorUtility.SetDirty(gen.data);
+
+			// update index
+			tk2dEditorUtility.GetOrCreateIndex().AddOrUpdateFont(gen);
+			tk2dEditorUtility.CommitIndex();
         }
 
 		EditorGUILayout.EndVertical();
+
+		GUILayout.Space(64);
 	}
 	
 	bool IsTextureCompressed(Texture2D texture)
@@ -213,12 +219,12 @@ public class tk2dFontEditor : Editor
 	static void DoBMFontCreate()
 	{
 		string path = tk2dEditorUtility.CreateNewPrefab("Font");
-		if (path != null)
+		if (path.Length != 0)
 		{
 			GameObject go = new GameObject();
 			tk2dFont font = go.AddComponent<tk2dFont>();
 			font.manageMaterial = true;
-			go.active = false;
+			tk2dEditorUtility.SetGameObjectActive(go, false);
 
 #if (UNITY_3_0 || UNITY_3_1 || UNITY_3_2 || UNITY_3_3 || UNITY_3_4)
 			Object p = EditorUtility.CreateEmptyPrefab(path);
@@ -229,8 +235,8 @@ public class tk2dFontEditor : Editor
 #endif
 			GameObject.DestroyImmediate(go);
 			
-			tk2dEditorUtility.GetOrCreateIndex().AddFont(AssetDatabase.LoadAssetAtPath(path, typeof(tk2dFont)) as tk2dFont);
-			tk2dEditorUtility.CommitIndex();
+			// Select object
+			Selection.activeObject = AssetDatabase.LoadAssetAtPath(path, typeof(UnityEngine.Object));
 		}
 	}
 }
