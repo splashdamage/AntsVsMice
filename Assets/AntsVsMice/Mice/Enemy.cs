@@ -3,15 +3,16 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Enemy : MonoBehaviour {
-	public float reward;
-	public float health;
+	public int reward;
+	public int health;
+	public int cheeseEat = 1;
 	public float damageReceived;
 	public bool flying = false;
-	public iTweenPath myPath;
-	int pathIdx = 1;
+	public Stack<Vector3> myPath;
+	Vector3 next;
+	public Transform damageLocation;
 	float lastMove = 0;
 	public virtual void Stop() {}
-	
 	public float lifeLeft {
 		get {
 			if (damageReceived == 0) return health;
@@ -22,6 +23,7 @@ public class Enemy : MonoBehaviour {
 	
 	public float speed = 1;
 	public float speedModifier = 1;
+	protected float slowdownTimeLeft = 0;
 	
 	public float speedCurrent {
 		get {
@@ -30,41 +32,48 @@ public class Enemy : MonoBehaviour {
 	}
 	
 	public List<Resistance> resistances = new List<Resistance>();
-	public void March(iTweenPath myPath) {
-		this.myPath = myPath;
+	public void March(Vector3[] path) {
+		myPath = new Stack<Vector3>(path);
+	}
+	public void Die() {
+		enabled = false;
+		Destroy (gameObject);
 	}
 	public void Update() {
 		if (myPath == null) return;
-		if (health == 0) {
-			Destroy (gameObject);
-			return;
+		if (lifeLeft == 0) {
+			Score.instance.money += reward;
+			
 		}
-		if (Vector3.Distance(transform.position, myPath.nodes[pathIdx]) > lastMove) {
-			Vector3 move = (myPath.nodes[pathIdx] - transform.position).normalized * speedCurrent * Time.deltaTime;
+		if (Vector3.Distance(transform.position, next) > lastMove) {
+			Vector3 move = (next - transform.position).normalized * speedCurrent * Time.deltaTime;
 			transform.Translate(move);
 			lastMove = move.magnitude;
-		} else if (pathIdx < myPath.nodes.Count -1) {
-			pathIdx++;
+		} else if (myPath.Count > 0) {
+			next = myPath.Pop();
 		} else {
-			MarchOver ();
-			Destroy (gameObject);
+			MarchOver();
 		}
 	}
 	public void MarchOver() {
-		Debug.Log ("Eat cheese");
+		Score.instance.EatCheese(cheeseEat);
+		Die();
 	}
 	public float TakeDamage(Damage damage) {
-		float damageTaken = 0;
-		bool didResist = false;
+		if (damage.type == Damage.Type.slow) {
+			slowdownTimeLeft = damage.duration;
+			if (damage.amount < speedModifier) {
+				speedModifier = damage.amount;
+				return speedModifier;
+			}
+			return 0;
+		}
+		float damageTaken = damage.amount;
 		foreach (Resistance resist in resistances) {
 			if (resist.type == damage.type) {
-				damageTaken = damage.amount * resist.percent;
-				didResist = true;
+				damageTaken *= resist.percent;
 				break;
 			}
-		}
-		if (!didResist) {
-			damageTaken = damage.amount;
 		}
 		damageReceived += damageTaken;
 		return damageTaken;

@@ -50,7 +50,7 @@ MonoBehaviour:
     fps: 30
     loopStart: 0
     wrapMode: 6
-  - name: shoot
+  - name: fire
     frames:
     - spriteCollection: {fileID: 11400000, guid: deca2ccc157a441e8b2fe3a99d84b9ad,
         type: 2}

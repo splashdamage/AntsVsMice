@@ -13,6 +13,8 @@ public class Damage {
 	public Type type;
 	
 	public float amount;
+	public float duration;
+	
 	public Damage(Damage d) {
 		this.type = d.type;
 		this.amount = d.amount;
@@ -20,5 +22,8 @@ public class Damage {
 	public Damage(Damage.Type type, float amount) {
 		this.type = type;
 		this.amount = amount;
+	}
+	public Damage(Damage.Type type, float amount, float duration) : this(type, amount) {
+		this.duration = duration;
 	}
 }

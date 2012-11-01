@@ -2,31 +2,37 @@ using UnityEngine;
 using System.Collections;
 
 public class Ammo : MonoBehaviour {
+	public float flightTime = 1;
+	protected float flightLeft;
 	public tk2dSprite sprite;
-	public float damage = 10;
+	public Damage damage;
 	public Transform launchFrom;
+	protected Vector3 _launchPosAtFiring;
 	protected float altitude = 1000;
 	protected Enemy _target;
 	protected Vector3 _targetPosAtFiring;
+	protected Vector3 _targetLastPos;
 	public virtual Enemy target {
 		get {
 			return _target;
 		}
 		set {
-			_targetPosAtFiring = value.transform.position;
+			_targetPosAtFiring = value.damageLocation.position;
 			_target = value;
 		}
 	}
 	
-	
 	public virtual Vector3 end {
 		get {
-			return target.transform.position;
+			if (target != null) {
+				_targetLastPos = target.damageLocation.position;
+			}
+			return _targetLastPos;
 		}
 	}
 	public virtual Vector3 start {
 		get {
-			return launchFrom.transform.position;
+			return _launchPosAtFiring;
 		}
 	}
 
@@ -34,8 +40,15 @@ public class Ammo : MonoBehaviour {
 	protected virtual void Fly(float t) {
 		transform.position = GetPositionAt(t);
 	}
+	public virtual void LaunchAt(Enemy target) {
+		this.target = target;
+		_launchPosAtFiring = launchFrom.transform.position;
+		enabled = true;
+	}
+	
 	protected virtual bool ApplyDamage() {
-		return false;
+		if (target == null || target.lifeLeft == 0) return false;
+		return (target.TakeDamage(damage) > 0) ? true : false;
 	}
 	protected virtual void Die() {}
 	
@@ -52,10 +65,6 @@ public class Ammo : MonoBehaviour {
 	
 	
 	public void Update() {
-		if (target == null) {
-			enabled = false;
-			Destroy (gameObject);
-		}
 		flightLeft += Time.deltaTime;
 		float t = flightLeft / flightTime;
 		if (t <= 1) {

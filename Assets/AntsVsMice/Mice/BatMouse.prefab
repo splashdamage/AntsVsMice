@@ -42,8 +42,8 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: .00961343944, y: 0, z: -.053992331}
-  m_LocalScale: {x: .349999994, y: .349999994, z: .349999994}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400002}
 --- !u!4 &400002
@@ -107,9 +107,10 @@ MonoBehaviour:
   m_Name: 
   reward: 15
   health: 2
+  cheeseEat: 1
   damageReceived: 0
   flying: 1
-  myPath: {fileID: 0}
+  damageLocation: {fileID: 0}
   speed: .150000006
   speedModifier: 1
 --- !u!114 &11400002

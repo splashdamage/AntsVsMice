@@ -10,32 +10,55 @@ MonoBehaviour:
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 41cb500cf0f58e74f9a52a8af931edde, type: 1}
   m_Name: -tk2d
-  version: 0
-  spriteAnimations:
-  - {fileID: 11400000, guid: 18a39674a9b14f54b97497254e83b349, type: 2}
-  - {fileID: 11400000, guid: 68cc4da10d501f9439d1507a1a2c46c1, type: 2}
-  - {fileID: 11400000, guid: 3463fc24b67f849f1b4ef9d266cd35e3, type: 2}
-  - {fileID: 11400000, guid: 26b15f5b35d844fa897d29e161f78a00, type: 2}
-  - {fileID: 11400000, guid: 652bd0b8cf13d49b2b9a84804686ba91, type: 2}
-  - {fileID: 11400000, guid: 9453b35e0f3514a8eae0db1a2504b79b, type: 2}
-  - {fileID: 11400000, guid: 81d9dbfb581ed4ea2ba1b216faba9175, type: 2}
-  - {fileID: 11400000, guid: f38c1a9649c9949b18f901d9547e6448, type: 2}
-  - {fileID: 11400000, guid: bcff9064839cc46ff8a746fca4c6ee96, type: 2}
-  - {fileID: 11400000, guid: 5bc5134f0926240af91a60ef54152e92, type: 2}
-  - {fileID: 11400000, guid: ce243451ec3be495b8b0dbaad7e0f457, type: 2}
-  fonts:
-  - {fileID: 11400000, guid: 063b15d80dbb4604d890600a64c79cf8, type: 2}
-  - {fileID: 11400000, guid: 5b9fac241be038041b70ac7e84cd6151, type: 2}
-  - {fileID: 11400000, guid: db60ffa92fa16ea478fc7ad4f595a0e6, type: 2}
+  version: 2
+  spriteAnimationIndex:
+  - assetGUID: 18a39674a9b14f54b97497254e83b349
+    dataGUID: 
+    managed: 0
+  - assetGUID: 68cc4da10d501f9439d1507a1a2c46c1
+    dataGUID: 
+    managed: 0
+  - assetGUID: 5bc5134f0926240af91a60ef54152e92
+    dataGUID: 
+    managed: 0
+  - assetGUID: 3463fc24b67f849f1b4ef9d266cd35e3
+    dataGUID: 
+    managed: 0
+  - assetGUID: ce243451ec3be495b8b0dbaad7e0f457
+    dataGUID: 
+    managed: 0
+  - assetGUID: 26b15f5b35d844fa897d29e161f78a00
+    dataGUID: 
+    managed: 0
+  - assetGUID: 652bd0b8cf13d49b2b9a84804686ba91
+    dataGUID: 
+    managed: 0
+  - assetGUID: 9453b35e0f3514a8eae0db1a2504b79b
+    dataGUID: 
+    managed: 0
+  - assetGUID: 81d9dbfb581ed4ea2ba1b216faba9175
+    dataGUID: 
+    managed: 0
+  - assetGUID: f38c1a9649c9949b18f901d9547e6448
+    dataGUID: 
+    managed: 0
+  - assetGUID: e41fcc8d547fe436d8dff776ea2c26a0
+    dataGUID: 
+    managed: 0
+  - assetGUID: 18d9ecf41629348d5b76db6a5e7ca5eb
+    dataGUID: 
+    managed: 0
+  fontIndex:
+  - assetGUID: 063b15d80dbb4604d890600a64c79cf8
+    dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
+    managed: 0
+  - assetGUID: 5b9fac241be038041b70ac7e84cd6151
+    dataGUID: 3082bbcb45b417041963b6b8562266c1
+    managed: 0
+  - assetGUID: db60ffa92fa16ea478fc7ad4f595a0e6
+    dataGUID: 44e006873ca04f741b2ac3ba5dec92ad
+    managed: 0
   spriteCollectionIndex:
-  - name: Sprayer
-    spriteCollectionGUID: c595378d27e64485eb6f9292287b18ba
-    spriteCollectionDataGUID: b818c7b71f00248c49db1a476f30ac55
-    spriteNames:
-    - SprayTower
-    spriteTextureGUIDs:
-    - e6795f7f0f5bb4767bc805c36e8ea0d5
-    version: 3
   - name: DemoSpiderSpriteCollection
     spriteCollectionGUID: 1fe2f34d6bac2b440944f04ac87d9e8a
     spriteCollectionDataGUID: 822f1f9eedf119f4eaca33509ba7b549
@@ -49,6 +72,12 @@ MonoBehaviour:
     - 731aac236e6d1724fb48cd35227e8998
     - 871eb2b697bff4f4e832b95668b9b3cc
     - 75f62f68bfc69b04d876f87672036e09
+    spriteTextureTimeStamps:
+    - 1350937424
+    - 1350937444
+    - 1350937447
+    - 1350937444
+    managedSpriteCollection: 0
     version: 3
   - name: DemoMultiAtlas
     spriteCollectionGUID: 6abdf3241ce81204293a7d50f971e3d7
@@ -143,6 +172,52 @@ MonoBehaviour:
     - f38c1e9651d69654c87ea0956466e36d
     - f38c1e9651d69654c87ea0956466e36d
     - f38c1e9651d69654c87ea0956466e36d
+    spriteTextureTimeStamps:
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    - 1350937506
+    managedSpriteCollection: 0
     version: 3
   - name: DemoSpriteCollection
     spriteCollectionGUID: 71d75aef51c47034082eca27f2eb6e30
@@ -231,6 +306,49 @@ MonoBehaviour:
     - d87ec7b1d50a9164f85cac54c36371e8
     - 8eecf2da5d1c91845ac19745f5828760
     - e322d00650c45ff49ad06ce7a54418a6
+    spriteTextureTimeStamps:
+    - 1350937445
+    - 1350937475
+    - 1350937428
+    - 1350937430
+    - 1350937474
+    - 1350937485
+    - 1350937427
+    - 1350937425
+    - 1350937507
+    - 1350937487
+    - 1350937448
+    - 1350937430
+    - 1350937427
+    - 1350937423
+    - 1350937475
+    - 1350937486
+    - 1350937487
+    - 1350937428
+    - 1350937449
+    - 1350937449
+    - 1350937442
+    - 1350937425
+    - 1350937445
+    - 1350937508
+    - 1350937425
+    - 1350937427
+    - 1350937425
+    - 1350937485
+    - 1350937445
+    - 1350937485
+    - 1350937487
+    - 1350937504
+    - 1350937450
+    - 1350937450
+    - 1350937508
+    - 1350937484
+    - 1350937424
+    - 1350937486
+    - 1350937486
+    - 1350937448
+    - 1350937487
+    managedSpriteCollection: 0
     version: 3
   - name: DemoCameraSpriteCollection
     spriteCollectionGUID: ff338294f6bf0b345850bad080ef85dc
@@ -245,22 +363,122 @@ MonoBehaviour:
     - 5083dbb889212cf4082bbce0e506a093
     - 775e311b21d73a74c93ca74a71671b1e
     - 03fff0d1701d7e14399d5ee2209561dc
+    spriteTextureTimeStamps:
+    - 1350937484
+    - 1350937429
+    - 1350937444
+    - 1350937422
+    managedSpriteCollection: 0
     version: 3
-  - name: UserInterface
-    spriteCollectionGUID: 5e72b78f4b28441d286fab668911589b
-    spriteCollectionDataGUID: 1fc93db28e246400085a7fa76123d5bb
+  - name: CannonSpriteCollection
+    spriteCollectionGUID: 13cd4cd9830a845cc939a35b5e83f80c
+    spriteCollectionDataGUID: deca2ccc157a441e8b2fe3a99d84b9ad
     spriteNames:
-    - UI
+    - CannonTowerMov0012
+    - CannonTowerMov0014
+    - CannonTowerMov0002
+    - CannonTowerMov0008
+    - CannonTowerMov0007
+    - CannonTowerMov0031
+    - CannonTowerMov0018
+    - CannonTowerMov0016
+    - CannonTowerMov0028
+    - CannonTowerMov0033
+    - CannonTowerMov0027
+    - CannonTowerMov0003
+    - CannonTowerMov0024
+    - CannonTowerMov0015
+    - CannonTowerMov0019
+    - CannonTowerMov0009
+    - CannonTowerMov0006
+    - CannonTowerMov0005
+    - CannonTowerMov0004
+    - CannonTowerMov0001
+    - CannonTowerMov0026
+    - CannonTowerMov0022
+    - CannonTowerMov0023
+    - CannonTowerMov0020
+    - CannonTowerMov0021
+    - CannonTowerMov0013
+    - CannonTowerMov0025
+    - CannonTowerMov0011
+    - CannonTowerMov0010
+    - CannonTowerMov0030
+    - CannonTowerMov0029
+    - CannonTowerMov0034
+    - CannonTowerMov0032
+    - CannonTowerMov0017
     spriteTextureGUIDs:
-    - 1d3535d5e771940a4a2c99998663a1d0
-    version: 3
-  - name: Arrows
-    spriteCollectionGUID: 308631d787adc4cd4932a0c732fcc7eb
-    spriteCollectionDataGUID: 560f4959ec4624496b0071fcd418b1cc
-    spriteNames:
-    - ArrowTower
-    spriteTextureGUIDs:
-    - 7347f406757cb48d7adf37364d2d61ec
+    - 6e6f09af500c04fed917c9a195ca31e5
+    - 9677d38835af5492e81e932461f89bd2
+    - c6880c82ca331481abfe12062cc32391
+    - 4d057d597bca84a149fb62e4494c2ed5
+    - 07cdf3ac3fd344a52bfbe018a45aee45
+    - bcd8c8bd56e7a4747ae7aa7489a113b2
+    - e4dd4668abd6c48e38a89dd4715de12f
+    - cb51d3097664141b9bd158b00bee6155
+    - daa91d1030d6047bd9c5e7d275681d66
+    - 31660eb12912b4e48b54824d9df083b9
+    - b3f15ba837136443b96fe50f394829b8
+    - 01f632ee460d146b0b5ac955f28e9a08
+    - 46b6e6ed9dc0744b29cca8138ae1f1f6
+    - 6a875d0bd507040c3841555ab0e0a92d
+    - 828881e741a0748bd85083b03ba3bff3
+    - 8584770c789b54d35a493dfab5e6f5d6
+    - f5edefaeaaf8d4503a469b92719df1bd
+    - 70d2a066bb0284b60bf37bb9486c8b58
+    - c06f006e105a74161a1cdeb7b49a48ed
+    - b62d3498cc3cc4d608fabf22efe7ce90
+    - 50cc7fe042a864be6aa87729757635aa
+    - e23d1471a0b454ee5a572060402be3e7
+    - effc356c67e234de0bdf36db8da22e1b
+    - c8619100b749e412a9ab3aeeed8f33fc
+    - 464d480c50df94dbbab6e23186724004
+    - f93e6e356320f457580d8a21323bd00d
+    - 804bf27d6a1c1406a83cd9486ee5f546
+    - 5ce23b3b6c440496991f1217033dd58f
+    - 08a12eda8b38d429fb5ab6b44cec49fc
+    - 8c3f7c3c584474f0eb514d3ce3854e1c
+    - f6939cdd7b21f4a4fae11539eaadb8d2
+    - 9c2117a356b7e4cb6abccadbbb51d27d
+    - 7d85a316121af4ddaa67f46f6b84d5fe
+    - ac901ba9206c24282be214bc2edc3864
+    spriteTextureTimeStamps:
+    - 1344518646
+    - 1344518646
+    - 1344518644
+    - 1344518646
+    - 1344518644
+    - 1344518648
+    - 1344518646
+    - 1344518646
+    - 1344518648
+    - 1344518648
+    - 1344518648
+    - 1344518644
+    - 1344518648
+    - 1344518646
+    - 1344518646
+    - 1344518646
+    - 1344518644
+    - 1344518644
+    - 1344518644
+    - 1344518644
+    - 1344518648
+    - 1344518646
+    - 1344518648
+    - 1344518646
+    - 1344518646
+    - 1344518646
+    - 1344518648
+    - 1344518646
+    - 1344518646
+    - 1344518648
+    - 1344518648
+    - 1344518648
+    - 1344518648
+    - 1344518646
+    managedSpriteCollection: 0
     version: 3
   - name: BowTowerSpriteCollection
     spriteCollectionGUID: fc92f6a38bff24230a167c846e5a02b2
@@ -323,6 +541,36 @@ MonoBehaviour:
     - 684546566bf81442baef85480eb3259f
     - cdd42dadd847c4dbfbf917f6e7aaf392
     - af7ce3c82b0cb4f61a36829743fced41
+    spriteTextureTimeStamps:
+    - 1344512658
+    - 1344512656
+    - 1344512656
+    - 1344512658
+    - 1344512658
+    - 1344512658
+    - 1344512658
+    - 1344512656
+    - 1344512656
+    - 1344512656
+    - 1344512656
+    - 1344512656
+    - 1344512656
+    - 1344512656
+    - 1344512656
+    - 1344512656
+    - 1344512656
+    - 1344512658
+    - 1344512658
+    - 1344512658
+    - 1344512658
+    - 1344512658
+    - 1344512656
+    - 1344512656
+    - 1344512658
+    - 1344512658
+    - 1344512658
+    - 1344512658
+    managedSpriteCollection: 0
     version: 3
   - name: AmmoSpriteCollection
     spriteCollectionGUID: 881c6ea4e02184a2e9c9eb834b37d957
@@ -337,16 +585,12 @@ MonoBehaviour:
     - fa004c8cd8dd6445fb5727fdb7a500bf
     - 22e93f653613d4fee983ef3b50ee7755
     - 15952cb36bb7647898b89dfd82f0dd1b
-    version: 3
-  - name: Shooter01
-    spriteCollectionGUID: 5a1451e16054649f8a337fec273ce5d0
-    spriteCollectionDataGUID: 7a1fc862a89ca440fb899eb3bda90e52
-    spriteNames:
-    - Cannon01Placeholder
-    - CannonTower
-    spriteTextureGUIDs:
-    - 57980280e89fa4abb8e8d7fd7029224c
-    - e0ddea386d0a44534aa42516a003a303
+    spriteTextureTimeStamps:
+    - 1350846912
+    - 1344426254
+    - 1344351096
+    - 1351640818
+    managedSpriteCollection: 0
     version: 3
   - name: MiniMouseSprites
     spriteCollectionGUID: ce259dd3de5e946728f1aca65446b59e
@@ -413,8 +657,40 @@ MonoBehaviour:
     - c3c55669c8aa1400ab03d2b275cfdbb9
     - 2141f2a2339cc4f70bb93a8c4555422b
     - ddabcc23747bb4967824d8fb5e113371
+    spriteTextureTimeStamps:
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    managedSpriteCollection: 0
     version: 3
-  - name: CenturionMouseSprites
+  - name: CenturionMouseSprite
     spriteCollectionGUID: b561ec3798f7246639aba6716573d962
     spriteCollectionDataGUID: 36c9d73187d8e47698e3ecbf0558141a
     spriteNames:
@@ -489,6 +765,43 @@ MonoBehaviour:
     - 7dc2aa93625e942bc99225ce02a3951b
     - 6e53f80aabcf44ee59e2a5923b7cb780
     - 001cacea421d144b59c84920330d9741
+    spriteTextureTimeStamps:
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    managedSpriteCollection: 0
     version: 3
   - name: BigMouseSprites
     spriteCollectionGUID: f8ee819a395e7454fa77d0d8f87abe63
@@ -675,6 +988,98 @@ MonoBehaviour:
     - f5448f38770ee4197b1fa7192d4dc1f6
     - 9375d211862c845558f49a502ac056b0
     - 06cfa1b0303b744b69ba3ffa79de221f
+    spriteTextureTimeStamps:
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    managedSpriteCollection: 0
     version: 3
   - name: BatMouseSprites
     spriteCollectionGUID: 66aa66f1853914378a727b59b3618538
@@ -729,144 +1134,128 @@ MonoBehaviour:
     - a3ca8f7af49cf4ca49efd175dd01226c
     - f666e516d598f4f2bb5b953451c9814f
     - df409317a6c96467e8c2cb81e1d9ec43
+    spriteTextureTimeStamps:
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    managedSpriteCollection: 0
     version: 3
   - name: ArmoredMouseSprites
-    spriteCollectionGUID: 876f8401497334da7bcdc54d5f5a8c05
-    spriteCollectionDataGUID: c45b96478a4764fb8a0c392330734bd7
+    spriteCollectionGUID: d028068e206b24fed89fa66ffd7cae34
+    spriteCollectionDataGUID: 9a962d433573d4d1484bf3b45a7bf303
     spriteNames:
-    - ArmoredMouseMov0021
     - ArmoredMouseMov0020
-    - ArmoredMouseMov0027
-    - ArmoredMouseMov0026
     - ArmoredMouseMov0029
     - ArmoredMouseMov0028
-    - ArmoredMouseMov0012
-    - ArmoredMouseMov0015
-    - ArmoredMouseMov0014
-    - ArmoredMouseMov0011
-    - ArmoredMouseMov0010
+    - ArmoredMouseMov0026
     - ArmoredMouseMov0002
     - ArmoredMouseMov0005
-    - ArmoredMouseMov0030
     - ArmoredMouseMov0009
     - ArmoredMouseMov0008
     - ArmoredMouseMov0013
-    - ArmoredMouseMov0001
-    - ArmoredMouseMov0004
-    - ArmoredMouseMov0007
-    - ArmoredMouseMov0006
-    - ArmoredMouseMov0003
+    - ArmoredMouseMov0021
+    - ArmoredMouseMov0027
     - ArmoredMouseMov0017
     - ArmoredMouseMov0016
     - ArmoredMouseMov0019
     - ArmoredMouseMov0018
     - ArmoredMouseMov0023
+    - ArmoredMouseMov0001
+    - ArmoredMouseMov0004
+    - ArmoredMouseMov0007
+    - ArmoredMouseMov0006
+    - ArmoredMouseMov0003
+    - ArmoredMouseMov0030
     - ArmoredMouseMov0022
     - ArmoredMouseMov0024
     - ArmoredMouseMov0025
+    - ArmoredMouseMov0012
+    - ArmoredMouseMov0015
+    - ArmoredMouseMov0014
+    - ArmoredMouseMov0011
+    - ArmoredMouseMov0010
     spriteTextureGUIDs:
-    - 44ae8c509e1f14290ad413708aee67fd
     - 6d866b1fe77154320a1a199076fd240c
-    - 7c9ffb94ae40b4ff7840930fcc5b679f
-    - a239b17294b1a4b80a7bfa324d8db224
     - 57fa35391cce942f098b27664258e27b
     - 19c1b4e0062924050a207c441f94ce1c
-    - c947b8ad8e9bd4fdab64b5f8d8f5409d
-    - 3f672d058d9a943c4984fb8b1ccdbbff
-    - 05f2f8f8c08174b60b6ef98885e78291
-    - 455aa6d42902e45dba511c08d7c5c1af
-    - 234611efd13f8427c8f0ad8ca95196b6
+    - a239b17294b1a4b80a7bfa324d8db224
     - 2c7af536745254443a95df2ed1356d17
     - 66785c08e65d44e8792bfb6d413c3add
-    - 3f762fdcd10774569ac36e7361141372
     - ec76ee64103e644b782fb2ca851a1fc1
     - 4a6d75c9929434a468c5557f6c4aa9c0
     - 0108c93a91da446fc9443982fe81deb1
-    - a26abe710887d493eacedfc062f840f4
-    - 2295e1e1812494dfd9363bbc19df191b
-    - e234d4fe3409448e9ac4a884e4369693
-    - 8e7f85ede6b8344cfac2af34b6967840
-    - a0c859ec1575c41e5b6e6c642265c640
+    - 44ae8c509e1f14290ad413708aee67fd
+    - 7c9ffb94ae40b4ff7840930fcc5b679f
     - 24de1afe88fa54fe58c3ecb24e34fb79
     - 9caa99bf816264901bd6ea8e22cffb9d
     - 55fe1b4a994814291ba6d2e62693a8be
     - 186732abd855140069d3d3801a9307cc
     - 4cfb52e01af8e402f98035799df9f7fa
+    - a26abe710887d493eacedfc062f840f4
+    - 2295e1e1812494dfd9363bbc19df191b
+    - e234d4fe3409448e9ac4a884e4369693
+    - 8e7f85ede6b8344cfac2af34b6967840
+    - a0c859ec1575c41e5b6e6c642265c640
+    - 3f762fdcd10774569ac36e7361141372
     - cfbab2c5fb49148a4ae6df385bc467be
     - 47009bde3727b4b4caca9cbce6adcf42
     - 920cd77eaafde4893b3e3359c71f5f32
-    version: 3
-  - name: CannonSpriteCollection
-    spriteCollectionGUID: 13cd4cd9830a845cc939a35b5e83f80c
-    spriteCollectionDataGUID: deca2ccc157a441e8b2fe3a99d84b9ad
-    spriteNames:
-    - CannonTowerMov0012
-    - CannonTowerMov0014
-    - CannonTowerMov0002
-    - CannonTowerMov0008
-    - CannonTowerMov0007
-    - CannonTowerMov0031
-    - CannonTowerMov0018
-    - CannonTowerMov0016
-    - CannonTowerMov0028
-    - CannonTowerMov0033
-    - CannonTowerMov0027
-    - CannonTowerMov0003
-    - CannonTowerMov0024
-    - CannonTowerMov0015
-    - CannonTowerMov0019
-    - CannonTowerMov0009
-    - CannonTowerMov0006
-    - CannonTowerMov0005
-    - CannonTowerMov0004
-    - CannonTowerMov0001
-    - CannonTowerMov0026
-    - CannonTowerMov0022
-    - CannonTowerMov0023
-    - CannonTowerMov0020
-    - CannonTowerMov0021
-    - CannonTowerMov0013
-    - CannonTowerMov0025
-    - CannonTowerMov0011
-    - CannonTowerMov0010
-    - CannonTowerMov0030
-    - CannonTowerMov0029
-    - CannonTowerMov0034
-    - CannonTowerMov0032
-    - CannonTowerMov0017
-    spriteTextureGUIDs:
-    - 6e6f09af500c04fed917c9a195ca31e5
-    - 9677d38835af5492e81e932461f89bd2
-    - c6880c82ca331481abfe12062cc32391
-    - 4d057d597bca84a149fb62e4494c2ed5
-    - 07cdf3ac3fd344a52bfbe018a45aee45
-    - bcd8c8bd56e7a4747ae7aa7489a113b2
-    - e4dd4668abd6c48e38a89dd4715de12f
-    - cb51d3097664141b9bd158b00bee6155
-    - daa91d1030d6047bd9c5e7d275681d66
-    - 31660eb12912b4e48b54824d9df083b9
-    - b3f15ba837136443b96fe50f394829b8
-    - 01f632ee460d146b0b5ac955f28e9a08
-    - 46b6e6ed9dc0744b29cca8138ae1f1f6
-    - 6a875d0bd507040c3841555ab0e0a92d
-    - 828881e741a0748bd85083b03ba3bff3
-    - 8584770c789b54d35a493dfab5e6f5d6
-    - f5edefaeaaf8d4503a469b92719df1bd
-    - 70d2a066bb0284b60bf37bb9486c8b58
-    - c06f006e105a74161a1cdeb7b49a48ed
-    - b62d3498cc3cc4d608fabf22efe7ce90
-    - 50cc7fe042a864be6aa87729757635aa
-    - e23d1471a0b454ee5a572060402be3e7
-    - effc356c67e234de0bdf36db8da22e1b
-    - c8619100b749e412a9ab3aeeed8f33fc
-    - 464d480c50df94dbbab6e23186724004
-    - f93e6e356320f457580d8a21323bd00d
-    - 804bf27d6a1c1406a83cd9486ee5f546
-    - 5ce23b3b6c440496991f1217033dd58f
-    - 08a12eda8b38d429fb5ab6b44cec49fc
-    - 8c3f7c3c584474f0eb514d3ce3854e1c
-    - f6939cdd7b21f4a4fae11539eaadb8d2
-    - 9c2117a356b7e4cb6abccadbbb51d27d
-    - 7d85a316121af4ddaa67f46f6b84d5fe
-    - ac901ba9206c24282be214bc2edc3864
+    - c947b8ad8e9bd4fdab64b5f8d8f5409d
+    - 3f672d058d9a943c4984fb8b1ccdbbff
+    - 05f2f8f8c08174b60b6ef98885e78291
+    - 455aa6d42902e45dba511c08d7c5c1af
+    - 234611efd13f8427c8f0ad8ca95196b6
+    spriteTextureTimeStamps:
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    - 1350844922
+    managedSpriteCollection: 0
     version: 3

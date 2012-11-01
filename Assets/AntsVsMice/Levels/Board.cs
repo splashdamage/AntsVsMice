@@ -10,9 +10,4 @@ public class Board : MonoBehaviour {
 		transform.position = anchors.lowerLeft;
 		//UpdateMesh ();
 	}
-	
-	// Update is called once per frame
-	void Update () {
-	
-	}
 }

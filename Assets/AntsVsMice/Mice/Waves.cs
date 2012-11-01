@@ -9,7 +9,7 @@ public class Waves : MonoBehaviour {
 	public List<Wave> waves = new List<Wave>();
 	[System.Serializable]
 	public class Wave {
-		public iTweenPath path;
+		public MousePath path;
 		public List<WaveItem> mice = new List<WaveItem>();
 	}
 	[System.Serializable]
@@ -22,9 +22,9 @@ public class Waves : MonoBehaviour {
 			yield return new WaitForSeconds(timeBetweenWaves);
 			foreach (WaveItem item in wave.mice) {
 				while (item.quantity > 0) {
-					GameObject obj = (GameObject) Instantiate(item.mousePrefab, wave.path.nodes.First(), item.mousePrefab.transform.rotation);
+					GameObject obj = (GameObject) Instantiate(item.mousePrefab, wave.path.transform.position, item.mousePrefab.transform.rotation);
 					Enemy enemy = obj.GetComponent<Enemy>();
-					enemy.March(wave.path);
+					enemy.March(wave.path.points);
 					item.quantity--;
 					yield return new WaitForSeconds(timeFactorBetweenMice);
 				}

@@ -38,11 +38,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c7a4b4ee15890498f818262bca0312, type: 1}
   m_Name: 
   textures: []
-  textureRefs:
-  - {fileID: 2800000, guid: 17c193f8c123d4744b256141c6d3d374, type: 1}
-  - {fileID: 2800000, guid: fa004c8cd8dd6445fb5727fdb7a500bf, type: 1}
-  - {fileID: 2800000, guid: 22e93f653613d4fee983ef3b50ee7755, type: 1}
-  - {fileID: 2800000, guid: 15952cb36bb7647898b89dfd82f0dd1b, type: 1}
+  textureRefs: []
   spriteSheets: []
   fonts: []
   defaults:
@@ -51,6 +47,8 @@ MonoBehaviour:
     anchor: 4
     pad: 0
     colliderType: 1
+  platforms: []
+  managedSpriteCollection: 0
   maxTextureSize: 1024
   forceTextureSize: 0
   forcedTextureWidth: 1024
@@ -247,13 +245,21 @@ MonoBehaviour:
   useTk2dCamera: 0
   targetHeight: 1080
   targetOrthoSize: 540
+  globalScale: 1
   pixelPerfectPointSampled: 0
+  filterMode: 1
+  wrapMode: 1
+  userDefinedTextureSettings: 1
+  mipmapEnabled: 0
+  anisoLevel: 1
   physicsDepth: .100000001
   disableTrimming: 0
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
   editorDisplayScale: 1
+  version: 3
+  assetName: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
