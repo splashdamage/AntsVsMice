@@ -11,7 +11,6 @@ GameObject:
   - 33: {fileID: 3300000}
   - 23: {fileID: 2300000}
   - 114: {fileID: 11400002}
-  - 114: {fileID: 11400000}
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400004}
   - 65: {fileID: 6500000}
@@ -37,6 +36,22 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 0
+--- !u!1 &100004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 400004}
+  - 65: {fileID: 6500002}
+  m_Layer: 10
+  m_Name: DragHandle
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
 --- !u!4 &400000
 Transform:
   m_ObjectHideFlags: 1
@@ -44,9 +59,10 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: 883.063538, y: 1, z: 296.565033}
+  m_LocalPosition: {x: 973.930664, y: 9.5333519, z: 61.1152344}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
+  - {fileID: 400004}
   - {fileID: 400002}
   m_Father: {fileID: 0}
 --- !u!4 &400002
@@ -56,7 +72,18 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: -6.94781494, y: 65.9174423, z: .499992102}
+  m_LocalPosition: {x: -12.7139282, y: 57.2163353, z: .5}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 400000}
+--- !u!4 &400004
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100004}
+  m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -112,16 +139,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 190, y: 190, z: .200000003}
   m_Center: {x: -4, y: 26, z: 0}
---- !u!114 &11400000
-MonoBehaviour:
+--- !u!65 &6500002
+BoxCollider:
   m_ObjectHideFlags: 1
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
-  m_GameObject: {fileID: 100000}
+  m_GameObject: {fileID: 100004}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
   m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 7dc0b77309d364feb8c44bdab041c500, type: 1}
-  m_Name: 
+  serializedVersion: 2
+  m_Size: {x: 148.763916, y: 10, z: 279.998566}
+  m_Center: {x: -3.03771973, y: 0, z: 92.4922028}
 --- !u!114 &11400002
 MonoBehaviour:
   m_ObjectHideFlags: 1
@@ -136,7 +165,7 @@ MonoBehaviour:
   currentAmmo: {fileID: 0}
   launchFrom: {fileID: 400002}
   firing: 0
-  placed: 1
+  placed: 0
   target: {fileID: 0}
   levels:
   - rateOfFire: 1
