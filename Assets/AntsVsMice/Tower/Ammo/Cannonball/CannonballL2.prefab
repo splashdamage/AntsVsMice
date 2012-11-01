@@ -53,7 +53,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 861.326904, y: 10, z: 340.299316}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400000}
@@ -133,7 +133,7 @@ MonoBehaviour:
   meshColliderMesh: {fileID: 0}
   anim: {fileID: 11400000, guid: ce243451ec3be495b8b0dbaad7e0f457, type: 2}
   clipId: 0
-  playAutomatically: 0
+  playAutomatically: 1
   createCollider: 0
 --- !u!114 &11400002
 MonoBehaviour:
@@ -141,7 +141,7 @@ MonoBehaviour:
   m_PrefabParentObject: {fileID: 0}
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100004}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 44c0fcacb4d39405bb640bbfb88206b6, type: 1}
   m_Name: 

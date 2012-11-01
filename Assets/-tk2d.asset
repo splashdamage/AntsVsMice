@@ -42,9 +42,6 @@ MonoBehaviour:
   - assetGUID: f38c1a9649c9949b18f901d9547e6448
     dataGUID: 
     managed: 0
-  - assetGUID: e41fcc8d547fe436d8dff776ea2c26a0
-    dataGUID: 
-    managed: 0
   - assetGUID: 18d9ecf41629348d5b76db6a5e7ca5eb
     dataGUID: 
     managed: 0
@@ -579,17 +576,83 @@ MonoBehaviour:
     - Arrow
     - Spray
     - CannonBall
-    - Explosion
+    - Explosion0021
+    - Explosion0023
+    - Explosion0010
+    - Explosion0012
+    - Explosion0018
+    - Explosion0015
+    - Explosion0022
+    - Explosion0005
+    - Explosion0016
+    - Explosion0017
+    - Explosion0001
+    - Explosion0002
+    - Explosion0003
+    - Explosion0011
+    - Explosion0019
+    - Explosion0004
+    - Explosion0014
+    - Explosion0009
+    - Explosion0006
+    - Explosion0013
+    - Explosion0020
+    - Explosion0007
+    - Explosion0008
     spriteTextureGUIDs:
     - 17c193f8c123d4744b256141c6d3d374
     - fa004c8cd8dd6445fb5727fdb7a500bf
     - 22e93f653613d4fee983ef3b50ee7755
-    - 15952cb36bb7647898b89dfd82f0dd1b
+    - fee3c5a319eca49029774bfb3d097c03
+    - d71af314085c0457f9ff8e4f9016f5b9
+    - 763bcbcae0cf94273b6d27251d7fed73
+    - 23e61b3b99b86416691da2a39374cf66
+    - 1558b9dbe44254d18a7eb0b310f97c2b
+    - 5ceb866cc34c64df6885d161df4b3097
+    - 6e7cb4ee6c0af443191b9cdf87cf1516
+    - 5f0ce844561144f7aa480be60dcb5661
+    - 810314a9093894b57a5a51561dc7e6ac
+    - 7ed777aa211974ece9173d0d3cbfa814
+    - eb1e6cb083edf40499b88e6585b74a5f
+    - 8fe46a78c48554e5ea4947b8f113025f
+    - d4c369599b4d14f43bd4d69f8e4f4d27
+    - 2e7ac1f6fb2c6432b86e95fdb2588aa3
+    - 78020007d93dd4f6991f752ea3c3972e
+    - 88d67776204a4494cacd3357dc5cba28
+    - 8702f46770ebb4c1d8f3e3672e27a1be
+    - 5090c1d7f359146e2b3e022ebe6489ed
+    - 3737512f5df5d423a887905feb48b975
+    - 81c161dfe07d94935a593d50411897af
+    - aa8a321cd7cc04e9eb48f3b2f7323ccd
+    - 86cfcc4c8f2374ccbadf254f7d93c86e
+    - 6c5649e2cbab242e5b560feb321d88ab
     spriteTextureTimeStamps:
     - 1350846912
     - 1344426254
     - 1344351096
-    - 1351640818
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
+    - 1344434750
     managedSpriteCollection: 0
     version: 3
   - name: MiniMouseSprites

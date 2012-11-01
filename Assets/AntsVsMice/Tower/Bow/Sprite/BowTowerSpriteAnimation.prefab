@@ -55,8 +55,8 @@ MonoBehaviour:
     - spriteCollection: {fileID: 11400000, guid: 2405c4812489a4a84ae423c79c4427f6,
         type: 2}
       spriteId: 2
-      triggerEvent: 0
-      eventInfo: 
+      triggerEvent: 1
+      eventInfo: Launch
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: 2405c4812489a4a84ae423c79c4427f6,
@@ -257,7 +257,7 @@ MonoBehaviour:
       eventFloat: 0
     fps: 30
     loopStart: 0
-    wrapMode: 0
+    wrapMode: 2
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

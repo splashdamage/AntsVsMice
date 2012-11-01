@@ -3,13 +3,14 @@ using System.Collections;
 using System.Collections.Generic;
 
 public class Cannonball : Ammo {
-	float explodeTime = 0.3f;
-	float explodeElapsed = 0;
 	public float range = 250;
 	protected bool didDamage = false;
-	bool exploding = false;
+	
 	public override Vector3 end {
 		get { return _targetPosAtFiring; }
+	}
+	public void Awake() {
+		((tk2dAnimatedSprite)sprite).animationCompleteDelegate = DoneExploding;
 	}
 
 	public virtual List<Enemy> FindTargets () {
@@ -23,29 +24,24 @@ public class Cannonball : Ammo {
 		}
 		return enemies;
 	}
-	protected override void Die() {
-		enabled = false;
+	
+	public void DoneExploding(tk2dAnimatedSprite anim, int idx) {
 		Destroy(gameObject);
 	}
-	
-	protected override bool ApplyDamage() {
-		if (!exploding) {
-			sprite.transform.localScale = Vector3.zero;
-			((tk2dAnimatedSprite)sprite).Play("boom");
-			exploding = true;
-			return true;
-		} else if (explodeElapsed < explodeTime) {
-			explodeElapsed += Time.deltaTime;
-			float t = explodeTime / explodeElapsed;
-			if (!didDamage && t > 0.33f) {
-				foreach(Enemy e in FindTargets()) {
-					e.TakeDamage(damage);
-				}
-				didDamage = true;
-			}
-			sprite.transform.localScale = Vector3.one * t;
-			return true;
+	public override void Update() {
+		flightLeft += Time.deltaTime;
+		float t = flightLeft / flightTime;
+		if (t <= 1) {
+			Fly(t);
+			return;
 		}
-		return false;
+		Explode();
+		enabled = false;
+	}
+	public void Explode() {
+		((tk2dAnimatedSprite)sprite).Play("explosion");
+		foreach(Enemy e in FindTargets()) {
+			e.TakeDamage(damage);
+		}
 	}
 }

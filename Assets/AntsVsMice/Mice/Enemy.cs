@@ -78,4 +78,7 @@ public class Enemy : MonoBehaviour {
 		damageReceived += damageTaken;
 		return damageTaken;
 	}
+	public void Start() {
+		if (damageLocation == null) damageLocation = transform;
+	}
 }

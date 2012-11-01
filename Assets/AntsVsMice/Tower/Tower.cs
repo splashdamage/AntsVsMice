@@ -25,6 +25,9 @@ public abstract class Tower : MonoBehaviour {
 	
 	public void Awake() {
 		currentLevel = levels[0];
+		
+		anim.animationCompleteDelegate = FireCompleteDelegate;
+		anim.animationEventDelegate = Launch;
 	}
 	
 	public int Upgrade() {
@@ -58,17 +61,22 @@ public abstract class Tower : MonoBehaviour {
 		}
 	}
 	
+	public void Launch(tk2dAnimatedSprite sprite, tk2dSpriteAnimationClip clip, tk2dSpriteAnimationFrame frame, int frameNum) {
+		currentAmmo.LaunchAt(target);
+		currentAmmo = null;
+	}
+	
 	public virtual void Fire() {
 		if (firing) return;
 		Reload(null);
+		lastFired = Time.time;
 		anim.Play("fire");
-		anim.animationCompleteDelegate = FireCompleteDelegate;
 		firing = true;
-		currentAmmo.LaunchAt(target);
 	}
 	
 	public void FireCompleteDelegate(tk2dAnimatedSprite sprite, int clipId) {
 		firing = false;
+		Reload(null);
 	}
 	public void Update() {
 		if (placed) {

@@ -12,6 +12,7 @@ public class Ammo : MonoBehaviour {
 	protected Enemy _target;
 	protected Vector3 _targetPosAtFiring;
 	protected Vector3 _targetLastPos;
+	
 	public virtual Enemy target {
 		get {
 			return _target;
@@ -43,6 +44,7 @@ public class Ammo : MonoBehaviour {
 	public virtual void LaunchAt(Enemy target) {
 		this.target = target;
 		_launchPosAtFiring = launchFrom.transform.position;
+		transform.parent = null;
 		enabled = true;
 	}
 	
@@ -63,12 +65,12 @@ public class Ammo : MonoBehaviour {
 	    return (((1-t)*(1-t)) * start) + (2 * t * (1 - t) * control) + ((t * t) * end);
 	}
 	
-	
-	public void Update() {
+	public virtual void Update() {
 		flightLeft += Time.deltaTime;
 		float t = flightLeft / flightTime;
 		if (t <= 1) {
 			Fly(t);
+			return;
 		}
 		if (!ApplyDamage()) {
 			Die();

@@ -188,8 +188,8 @@ MonoBehaviour:
     - spriteCollection: {fileID: 11400000, guid: deca2ccc157a441e8b2fe3a99d84b9ad,
         type: 2}
       spriteId: 23
-      triggerEvent: 0
-      eventInfo: 
+      triggerEvent: 1
+      eventInfo: Launch
       eventInt: 0
       eventFloat: 0
     - spriteCollection: {fileID: 11400000, guid: deca2ccc157a441e8b2fe3a99d84b9ad,
