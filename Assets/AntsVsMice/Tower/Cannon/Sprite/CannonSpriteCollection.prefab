@@ -38,41 +38,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c7a4b4ee15890498f818262bca0312, type: 1}
   m_Name: 
   textures: []
-  textureRefs:
-  - {fileID: 2800000, guid: 6e6f09af500c04fed917c9a195ca31e5, type: 1}
-  - {fileID: 2800000, guid: 9677d38835af5492e81e932461f89bd2, type: 1}
-  - {fileID: 2800000, guid: c6880c82ca331481abfe12062cc32391, type: 1}
-  - {fileID: 2800000, guid: 4d057d597bca84a149fb62e4494c2ed5, type: 1}
-  - {fileID: 2800000, guid: 07cdf3ac3fd344a52bfbe018a45aee45, type: 1}
-  - {fileID: 2800000, guid: bcd8c8bd56e7a4747ae7aa7489a113b2, type: 1}
-  - {fileID: 2800000, guid: e4dd4668abd6c48e38a89dd4715de12f, type: 1}
-  - {fileID: 2800000, guid: cb51d3097664141b9bd158b00bee6155, type: 1}
-  - {fileID: 2800000, guid: daa91d1030d6047bd9c5e7d275681d66, type: 1}
-  - {fileID: 2800000, guid: 31660eb12912b4e48b54824d9df083b9, type: 1}
-  - {fileID: 2800000, guid: b3f15ba837136443b96fe50f394829b8, type: 1}
-  - {fileID: 2800000, guid: 01f632ee460d146b0b5ac955f28e9a08, type: 1}
-  - {fileID: 2800000, guid: 46b6e6ed9dc0744b29cca8138ae1f1f6, type: 1}
-  - {fileID: 2800000, guid: 6a875d0bd507040c3841555ab0e0a92d, type: 1}
-  - {fileID: 2800000, guid: 828881e741a0748bd85083b03ba3bff3, type: 1}
-  - {fileID: 2800000, guid: 8584770c789b54d35a493dfab5e6f5d6, type: 1}
-  - {fileID: 2800000, guid: f5edefaeaaf8d4503a469b92719df1bd, type: 1}
-  - {fileID: 2800000, guid: 70d2a066bb0284b60bf37bb9486c8b58, type: 1}
-  - {fileID: 2800000, guid: c06f006e105a74161a1cdeb7b49a48ed, type: 1}
-  - {fileID: 2800000, guid: b62d3498cc3cc4d608fabf22efe7ce90, type: 1}
-  - {fileID: 2800000, guid: 50cc7fe042a864be6aa87729757635aa, type: 1}
-  - {fileID: 2800000, guid: e23d1471a0b454ee5a572060402be3e7, type: 1}
-  - {fileID: 2800000, guid: effc356c67e234de0bdf36db8da22e1b, type: 1}
-  - {fileID: 2800000, guid: c8619100b749e412a9ab3aeeed8f33fc, type: 1}
-  - {fileID: 2800000, guid: 464d480c50df94dbbab6e23186724004, type: 1}
-  - {fileID: 2800000, guid: f93e6e356320f457580d8a21323bd00d, type: 1}
-  - {fileID: 2800000, guid: 804bf27d6a1c1406a83cd9486ee5f546, type: 1}
-  - {fileID: 2800000, guid: 5ce23b3b6c440496991f1217033dd58f, type: 1}
-  - {fileID: 2800000, guid: 08a12eda8b38d429fb5ab6b44cec49fc, type: 1}
-  - {fileID: 2800000, guid: 8c3f7c3c584474f0eb514d3ce3854e1c, type: 1}
-  - {fileID: 2800000, guid: f6939cdd7b21f4a4fae11539eaadb8d2, type: 1}
-  - {fileID: 2800000, guid: 9c2117a356b7e4cb6abccadbbb51d27d, type: 1}
-  - {fileID: 2800000, guid: 7d85a316121af4ddaa67f46f6b84d5fe, type: 1}
-  - {fileID: 2800000, guid: ac901ba9206c24282be214bc2edc3864, type: 1}
+  textureRefs: []
   spriteSheets: []
   fonts: []
   defaults:
@@ -81,6 +47,10 @@ MonoBehaviour:
     anchor: 4
     pad: 0
     colliderType: 1
+  platforms:
+  - name: 
+    spriteCollection: {fileID: 0}
+  managedSpriteCollection: 0
   maxTextureSize: 2048
   forceTextureSize: 0
   forcedTextureWidth: 1024
@@ -95,7 +65,7 @@ MonoBehaviour:
   - name: CannonTowerMov0012
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 6e6f09af500c04fed917c9a195ca31e5, type: 1}
     materialId: 0
     anchor: 9
@@ -132,7 +102,7 @@ MonoBehaviour:
   - name: CannonTowerMov0014
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 9677d38835af5492e81e932461f89bd2, type: 1}
     materialId: 0
     anchor: 9
@@ -169,7 +139,7 @@ MonoBehaviour:
   - name: CannonTowerMov0002
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: c6880c82ca331481abfe12062cc32391, type: 1}
     materialId: 0
     anchor: 9
@@ -206,7 +176,7 @@ MonoBehaviour:
   - name: CannonTowerMov0008
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 4d057d597bca84a149fb62e4494c2ed5, type: 1}
     materialId: 0
     anchor: 9
@@ -243,7 +213,7 @@ MonoBehaviour:
   - name: CannonTowerMov0007
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 07cdf3ac3fd344a52bfbe018a45aee45, type: 1}
     materialId: 0
     anchor: 9
@@ -280,7 +250,7 @@ MonoBehaviour:
   - name: CannonTowerMov0031
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: bcd8c8bd56e7a4747ae7aa7489a113b2, type: 1}
     materialId: 0
     anchor: 9
@@ -317,7 +287,7 @@ MonoBehaviour:
   - name: CannonTowerMov0018
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: e4dd4668abd6c48e38a89dd4715de12f, type: 1}
     materialId: 0
     anchor: 9
@@ -354,7 +324,7 @@ MonoBehaviour:
   - name: CannonTowerMov0016
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: cb51d3097664141b9bd158b00bee6155, type: 1}
     materialId: 0
     anchor: 9
@@ -391,7 +361,7 @@ MonoBehaviour:
   - name: CannonTowerMov0028
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: daa91d1030d6047bd9c5e7d275681d66, type: 1}
     materialId: 0
     anchor: 9
@@ -428,7 +398,7 @@ MonoBehaviour:
   - name: CannonTowerMov0033
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 31660eb12912b4e48b54824d9df083b9, type: 1}
     materialId: 0
     anchor: 9
@@ -465,7 +435,7 @@ MonoBehaviour:
   - name: CannonTowerMov0027
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: b3f15ba837136443b96fe50f394829b8, type: 1}
     materialId: 0
     anchor: 9
@@ -502,7 +472,7 @@ MonoBehaviour:
   - name: CannonTowerMov0003
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 01f632ee460d146b0b5ac955f28e9a08, type: 1}
     materialId: 0
     anchor: 9
@@ -539,7 +509,7 @@ MonoBehaviour:
   - name: CannonTowerMov0024
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 46b6e6ed9dc0744b29cca8138ae1f1f6, type: 1}
     materialId: 0
     anchor: 9
@@ -576,7 +546,7 @@ MonoBehaviour:
   - name: CannonTowerMov0015
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 6a875d0bd507040c3841555ab0e0a92d, type: 1}
     materialId: 0
     anchor: 9
@@ -613,7 +583,7 @@ MonoBehaviour:
   - name: CannonTowerMov0019
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 828881e741a0748bd85083b03ba3bff3, type: 1}
     materialId: 0
     anchor: 9
@@ -650,7 +620,7 @@ MonoBehaviour:
   - name: CannonTowerMov0009
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 8584770c789b54d35a493dfab5e6f5d6, type: 1}
     materialId: 0
     anchor: 9
@@ -687,7 +657,7 @@ MonoBehaviour:
   - name: CannonTowerMov0006
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: f5edefaeaaf8d4503a469b92719df1bd, type: 1}
     materialId: 0
     anchor: 9
@@ -724,7 +694,7 @@ MonoBehaviour:
   - name: CannonTowerMov0005
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 70d2a066bb0284b60bf37bb9486c8b58, type: 1}
     materialId: 0
     anchor: 9
@@ -761,7 +731,7 @@ MonoBehaviour:
   - name: CannonTowerMov0004
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: c06f006e105a74161a1cdeb7b49a48ed, type: 1}
     materialId: 0
     anchor: 9
@@ -798,7 +768,7 @@ MonoBehaviour:
   - name: CannonTowerMov0001
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: b62d3498cc3cc4d608fabf22efe7ce90, type: 1}
     materialId: 0
     anchor: 9
@@ -835,7 +805,7 @@ MonoBehaviour:
   - name: CannonTowerMov0026
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 50cc7fe042a864be6aa87729757635aa, type: 1}
     materialId: 0
     anchor: 9
@@ -872,7 +842,7 @@ MonoBehaviour:
   - name: CannonTowerMov0022
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: e23d1471a0b454ee5a572060402be3e7, type: 1}
     materialId: 0
     anchor: 9
@@ -909,7 +879,7 @@ MonoBehaviour:
   - name: CannonTowerMov0023
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: effc356c67e234de0bdf36db8da22e1b, type: 1}
     materialId: 0
     anchor: 9
@@ -946,7 +916,7 @@ MonoBehaviour:
   - name: CannonTowerMov0020
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: c8619100b749e412a9ab3aeeed8f33fc, type: 1}
     materialId: 0
     anchor: 9
@@ -983,7 +953,7 @@ MonoBehaviour:
   - name: CannonTowerMov0021
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 464d480c50df94dbbab6e23186724004, type: 1}
     materialId: 0
     anchor: 9
@@ -1020,7 +990,7 @@ MonoBehaviour:
   - name: CannonTowerMov0013
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: f93e6e356320f457580d8a21323bd00d, type: 1}
     materialId: 0
     anchor: 9
@@ -1057,7 +1027,7 @@ MonoBehaviour:
   - name: CannonTowerMov0025
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 804bf27d6a1c1406a83cd9486ee5f546, type: 1}
     materialId: 0
     anchor: 9
@@ -1094,7 +1064,7 @@ MonoBehaviour:
   - name: CannonTowerMov0011
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 5ce23b3b6c440496991f1217033dd58f, type: 1}
     materialId: 0
     anchor: 9
@@ -1131,7 +1101,7 @@ MonoBehaviour:
   - name: CannonTowerMov0010
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 08a12eda8b38d429fb5ab6b44cec49fc, type: 1}
     materialId: 0
     anchor: 9
@@ -1168,7 +1138,7 @@ MonoBehaviour:
   - name: CannonTowerMov0030
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 8c3f7c3c584474f0eb514d3ce3854e1c, type: 1}
     materialId: 0
     anchor: 9
@@ -1205,7 +1175,7 @@ MonoBehaviour:
   - name: CannonTowerMov0029
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: f6939cdd7b21f4a4fae11539eaadb8d2, type: 1}
     materialId: 0
     anchor: 9
@@ -1242,12 +1212,12 @@ MonoBehaviour:
   - name: CannonTowerMov0034
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 9c2117a356b7e4cb6abccadbbb51d27d, type: 1}
     materialId: 0
     anchor: 9
     anchorX: 269
-    anchorY: 291
+    anchorY: 274
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -1279,7 +1249,7 @@ MonoBehaviour:
   - name: CannonTowerMov0032
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 7d85a316121af4ddaa67f46f6b84d5fe, type: 1}
     materialId: 0
     anchor: 9
@@ -1316,7 +1286,7 @@ MonoBehaviour:
   - name: CannonTowerMov0017
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: ac901ba9206c24282be214bc2edc3864, type: 1}
     materialId: 0
     anchor: 9
@@ -1361,13 +1331,21 @@ MonoBehaviour:
   useTk2dCamera: 0
   targetHeight: 1080
   targetOrthoSize: 540
+  globalScale: 1
   pixelPerfectPointSampled: 0
+  filterMode: 1
+  wrapMode: 1
+  userDefinedTextureSettings: 1
+  mipmapEnabled: 0
+  anisoLevel: 1
   physicsDepth: .100000001
   disableTrimming: 0
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
   editorDisplayScale: 1.00300014
+  version: 3
+  assetName: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

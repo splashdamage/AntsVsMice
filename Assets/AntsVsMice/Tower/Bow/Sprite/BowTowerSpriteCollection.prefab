@@ -38,35 +38,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 84c7a4b4ee15890498f818262bca0312, type: 1}
   m_Name: 
   textures: []
-  textureRefs:
-  - {fileID: 2800000, guid: 9343d943d0f3d4089b164b469d99b33e, type: 1}
-  - {fileID: 2800000, guid: 9bb04a191fbda428eb7f06e15c52a023, type: 1}
-  - {fileID: 2800000, guid: f0dbdd826f9e14557a24a4f23fdf00d9, type: 1}
-  - {fileID: 2800000, guid: 18b0738f11c484d0088dbae938f6500c, type: 1}
-  - {fileID: 2800000, guid: 427f933e462d846a2a5d157ba5dd7561, type: 1}
-  - {fileID: 2800000, guid: e8201926a9e794927bdfae53e8c7a3d1, type: 1}
-  - {fileID: 2800000, guid: bb84f8aa9cc294265a299a71b56f4a6d, type: 1}
-  - {fileID: 2800000, guid: da37c611f45c64a67999d781ea3b3671, type: 1}
-  - {fileID: 2800000, guid: 1f146b6217b0648648e5e8239c6a792d, type: 1}
-  - {fileID: 2800000, guid: a964172c16f3b495c8bf8e1ca604d4c9, type: 1}
-  - {fileID: 2800000, guid: 426d13c756be4468196d27b98284033c, type: 1}
-  - {fileID: 2800000, guid: dbebed64066f94150b9b9a4e5d9615ae, type: 1}
-  - {fileID: 2800000, guid: 6e5e84ed0a43e4c8aad72e5b2d2d0d5a, type: 1}
-  - {fileID: 2800000, guid: e0e31393dab57452d857fcd7159835ca, type: 1}
-  - {fileID: 2800000, guid: 4250fe99e6efc4a1c97c767f65e56f11, type: 1}
-  - {fileID: 2800000, guid: c4edcb3c802a54ac3ba768864bf17bc8, type: 1}
-  - {fileID: 2800000, guid: c6dc98cd9ca5844178db7ec4274a1bdd, type: 1}
-  - {fileID: 2800000, guid: d4df6bcc25ba14d398338e87e13a1f6b, type: 1}
-  - {fileID: 2800000, guid: 0cc8934ff5be0477dad8d55d98e29893, type: 1}
-  - {fileID: 2800000, guid: e6153bdc1147e48b4ba905b016fa2022, type: 1}
-  - {fileID: 2800000, guid: 8dd21858d2e214774ae74f1211593603, type: 1}
-  - {fileID: 2800000, guid: 4ac31388326f748df9da14dda00a171a, type: 1}
-  - {fileID: 2800000, guid: 63c72bb480a2f46a0a251bbc72bab7ce, type: 1}
-  - {fileID: 2800000, guid: 8433c11b0d38d4443b73d07df136b4a3, type: 1}
-  - {fileID: 2800000, guid: a22c50aa25d684356abcbfd52e210ea4, type: 1}
-  - {fileID: 2800000, guid: 684546566bf81442baef85480eb3259f, type: 1}
-  - {fileID: 2800000, guid: cdd42dadd847c4dbfbf917f6e7aaf392, type: 1}
-  - {fileID: 2800000, guid: af7ce3c82b0cb4f61a36829743fced41, type: 1}
+  textureRefs: []
   spriteSheets: []
   fonts: []
   defaults:
@@ -75,6 +47,10 @@ MonoBehaviour:
     anchor: 4
     pad: 0
     colliderType: 1
+  platforms:
+  - name: 
+    spriteCollection: {fileID: 0}
+  managedSpriteCollection: 0
   maxTextureSize: 2048
   forceTextureSize: 0
   forcedTextureWidth: 1024
@@ -89,7 +65,7 @@ MonoBehaviour:
   - name: BowTowerMov0015
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 9343d943d0f3d4089b164b469d99b33e, type: 1}
     materialId: 0
     anchor: 9
@@ -126,7 +102,7 @@ MonoBehaviour:
   - name: BowTowerMov0012
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 9bb04a191fbda428eb7f06e15c52a023, type: 1}
     materialId: 0
     anchor: 9
@@ -163,7 +139,7 @@ MonoBehaviour:
   - name: BowTowerMov0013
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: f0dbdd826f9e14557a24a4f23fdf00d9, type: 1}
     materialId: 0
     anchor: 9
@@ -200,7 +176,7 @@ MonoBehaviour:
   - name: BowTowerMov0027
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 18b0738f11c484d0088dbae938f6500c, type: 1}
     materialId: 0
     anchor: 9
@@ -237,7 +213,7 @@ MonoBehaviour:
   - name: BowTowerMov0020
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 427f933e462d846a2a5d157ba5dd7561, type: 1}
     materialId: 0
     anchor: 9
@@ -274,7 +250,7 @@ MonoBehaviour:
   - name: BowTowerMov0021
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: e8201926a9e794927bdfae53e8c7a3d1, type: 1}
     materialId: 0
     anchor: 9
@@ -311,7 +287,7 @@ MonoBehaviour:
   - name: BowTowerMov0024
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: bb84f8aa9cc294265a299a71b56f4a6d, type: 1}
     materialId: 0
     anchor: 9
@@ -348,7 +324,7 @@ MonoBehaviour:
   - name: BowTowerMov0006
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: da37c611f45c64a67999d781ea3b3671, type: 1}
     materialId: 0
     anchor: 9
@@ -385,7 +361,7 @@ MonoBehaviour:
   - name: BowTowerMov0007
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 1f146b6217b0648648e5e8239c6a792d, type: 1}
     materialId: 0
     anchor: 9
@@ -422,7 +398,7 @@ MonoBehaviour:
   - name: BowTowerMov0009
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: a964172c16f3b495c8bf8e1ca604d4c9, type: 1}
     materialId: 0
     anchor: 9
@@ -459,7 +435,7 @@ MonoBehaviour:
   - name: BowTowerMov0008
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 426d13c756be4468196d27b98284033c, type: 1}
     materialId: 0
     anchor: 9
@@ -496,7 +472,7 @@ MonoBehaviour:
   - name: BowTowerMov0001
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: dbebed64066f94150b9b9a4e5d9615ae, type: 1}
     materialId: 0
     anchor: 9
@@ -533,7 +509,7 @@ MonoBehaviour:
   - name: BowTowerMov0004
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 6e5e84ed0a43e4c8aad72e5b2d2d0d5a, type: 1}
     materialId: 0
     anchor: 9
@@ -570,7 +546,7 @@ MonoBehaviour:
   - name: BowTowerMov0005
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: e0e31393dab57452d857fcd7159835ca, type: 1}
     materialId: 0
     anchor: 9
@@ -607,7 +583,7 @@ MonoBehaviour:
   - name: BowTowerMov0010
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 4250fe99e6efc4a1c97c767f65e56f11, type: 1}
     materialId: 0
     anchor: 9
@@ -644,7 +620,7 @@ MonoBehaviour:
   - name: BowTowerMov0011
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: c4edcb3c802a54ac3ba768864bf17bc8, type: 1}
     materialId: 0
     anchor: 9
@@ -681,7 +657,7 @@ MonoBehaviour:
   - name: BowTowerMov0014
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: c6dc98cd9ca5844178db7ec4274a1bdd, type: 1}
     materialId: 0
     anchor: 9
@@ -718,7 +694,7 @@ MonoBehaviour:
   - name: BowTowerMov0025
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: d4df6bcc25ba14d398338e87e13a1f6b, type: 1}
     materialId: 0
     anchor: 9
@@ -755,7 +731,7 @@ MonoBehaviour:
   - name: BowTowerMov0022
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 0cc8934ff5be0477dad8d55d98e29893, type: 1}
     materialId: 0
     anchor: 9
@@ -792,7 +768,7 @@ MonoBehaviour:
   - name: BowTowerMov0023
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: e6153bdc1147e48b4ba905b016fa2022, type: 1}
     materialId: 0
     anchor: 9
@@ -829,7 +805,7 @@ MonoBehaviour:
   - name: BowTowerMov0028
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 8dd21858d2e214774ae74f1211593603, type: 1}
     materialId: 0
     anchor: 9
@@ -866,7 +842,7 @@ MonoBehaviour:
   - name: BowTowerMov0026
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 4ac31388326f748df9da14dda00a171a, type: 1}
     materialId: 0
     anchor: 9
@@ -903,7 +879,7 @@ MonoBehaviour:
   - name: BowTowerMov0002
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 63c72bb480a2f46a0a251bbc72bab7ce, type: 1}
     materialId: 0
     anchor: 9
@@ -940,7 +916,7 @@ MonoBehaviour:
   - name: BowTowerMov0003
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 8433c11b0d38d4443b73d07df136b4a3, type: 1}
     materialId: 0
     anchor: 9
@@ -977,7 +953,7 @@ MonoBehaviour:
   - name: BowTowerMov0018
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: a22c50aa25d684356abcbfd52e210ea4, type: 1}
     materialId: 0
     anchor: 9
@@ -1014,7 +990,7 @@ MonoBehaviour:
   - name: BowTowerMov0019
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 684546566bf81442baef85480eb3259f, type: 1}
     materialId: 0
     anchor: 9
@@ -1051,7 +1027,7 @@ MonoBehaviour:
   - name: BowTowerMov0016
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: cdd42dadd847c4dbfbf917f6e7aaf392, type: 1}
     materialId: 0
     anchor: 9
@@ -1088,7 +1064,7 @@ MonoBehaviour:
   - name: BowTowerMov0017
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: af7ce3c82b0cb4f61a36829743fced41, type: 1}
     materialId: 0
     anchor: 9
@@ -1133,13 +1109,21 @@ MonoBehaviour:
   useTk2dCamera: 0
   targetHeight: 1080
   targetOrthoSize: 540
+  globalScale: 1
   pixelPerfectPointSampled: 0
+  filterMode: 1
+  wrapMode: 1
+  userDefinedTextureSettings: 1
+  mipmapEnabled: 0
+  anisoLevel: 1
   physicsDepth: .100000001
   disableTrimming: 0
   normalGenerationMode: 0
   padAmount: -1
   autoUpdate: 1
   editorDisplayScale: 1
+  version: 3
+  assetName: 
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1

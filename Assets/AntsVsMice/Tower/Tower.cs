@@ -3,7 +3,7 @@ using System.Collections;
 
 
 public abstract class Tower : MonoBehaviour {
-	
+	public static Tower inFocus;
 	public tk2dAnimatedSprite anim;
 	public Ammo currentAmmo;
 	public Transform launchFrom;
@@ -12,7 +12,6 @@ public abstract class Tower : MonoBehaviour {
 	public Enemy target;
 	public Level[] levels;
 	public Level currentLevel;
-	
 	float lastFired = 0;
 	
 	[System.Serializable]
@@ -22,18 +21,23 @@ public abstract class Tower : MonoBehaviour {
 		public int cost;
 		public float range;
 	}
+	public int curIdx {
+		get {
+			return System.Array.IndexOf(levels, currentLevel);
+		}
+	}
+	public Level next {
+		get {
+			if (curIdx == levels.Length -1) return null;
+			return levels[curIdx+1];
+		}
+	}
 	
 	public void Awake() {
 		currentLevel = levels[0];
 		
 		anim.animationCompleteDelegate = FireCompleteDelegate;
 		anim.animationEventDelegate = Launch;
-	}
-	
-	public int Upgrade() {
-		if (currentLevel == levels[2]) return 0;
-		currentLevel = levels[System.Array.IndexOf(levels,currentLevel) + 1];
-		return currentLevel.cost;
 	}
 	
 	
@@ -91,5 +95,25 @@ public abstract class Tower : MonoBehaviour {
 	}
 	public virtual void Dragging() {
 		
+	}
+	public virtual void OnGUI() {
+		Vector3 center = Camera.main.WorldToScreenPoint(transform.position);
+		GUI.skin = Info.mouseSkin;
+		if (curIdx > 0) {
+			Debug.Log ("here "+ curIdx);
+			string plus = (curIdx == 1) ? "+" : "++";
+			GUI.Label(new Rect(center.x, Screen.height - center.y, 20, 40), plus);
+		}
+		if (inFocus != this) return;
+		if (GUI.Button(new Rect(center.x - 90, Screen.height - center.y - 20, 80, 30), "Sell: $"+(currentLevel.cost * 0.8f))) {
+			Score.instance.money += (int) (currentLevel.cost * 0.8f);
+			Destroy(gameObject);
+		}
+		if (next != null && next.cost < Score.instance.money) {
+			if (GUI.Button(new Rect(center.x + 10, Screen.height - center.y - 20, 80, 30), "Up: $"+next.cost)) {
+				currentLevel = next;
+				Score.instance.money -= currentLevel.cost; 
+			}
+		}
 	}
 }

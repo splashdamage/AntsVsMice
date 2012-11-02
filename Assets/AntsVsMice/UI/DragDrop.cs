@@ -4,6 +4,7 @@ using System.Collections;
 public class DragDrop : MonoBehaviour {
 	public enum Phase { none=-1, began=0, moved=1, stationary=2, ended=3, cancelled=4 }
 	public Phase currentPhase = Phase.none;
+	Tower maybeClicked;
 	public Tower inDrag;
 	public Vector3 startScreenPos;
 	public Vector3 lastScreenPos;
@@ -11,44 +12,56 @@ public class DragDrop : MonoBehaviour {
 	public float towerDepth;
 	public float moveSlopSquared = 25;
 	public LayerMask layer;
+	Score score;
 	Camera cam;
 	void Start() {
 		cam = Camera.mainCamera;
+		score = GetComponent<Score>();
 	}
-	public void Click() {}
+	public void Click(Tower t) {
+		
+	}
 	public void Update() {
 		 HandleInput();
 	}
+	public Tower GetTowerHere() {
+		RaycastHit[] hits;
+		Ray ray = cam.ScreenPointToRay(Input.mousePosition);
+		hits = Physics.RaycastAll(ray, Mathf.Infinity, layer.value);
+		if (hits.Length > 0) {
+			towerDepth = cam.transform.position.y - hits[0].distance;
+			return hits[0].collider.transform.root.GetComponent<Tower>();
+		}
+		return null;
+	}
+	
 	public void HandleInput() {
 		if (OOB()) return;
 		if (Input.GetMouseButtonDown(0)) {
 			if (currentPhase != Phase.none) {
 				currentPhase = Phase.cancelled;
 			} else {
-				RaycastHit[] hits;
-				Ray ray = cam.ScreenPointToRay(Input.mousePosition);
-				hits = Physics.RaycastAll(ray, Mathf.Infinity, layer.value);
-				if (hits.Length > 0) {
-					inDrag = hits[0].collider.transform.root.GetComponent<Tower>();
-					// can't drag placed towers...
-					if (inDrag.placed) {
-						inDrag = null;
-						return;
+				Tower t = GetTowerHere();
+				if (t == null) return;
+				if (t.placed || t.currentLevel.cost > score.money) {
+					if (t.placed) {
+						maybeClicked = t;
 					}
-					towerDepth = cam.transform.position.y - hits[0].distance;
-					startDragPos = inDrag.transform.position;
-					startScreenPos = Input.mousePosition;
-					currentPhase = Phase.began;
+					return;
 				}
+				inDrag = t;
+				startDragPos = inDrag.transform.position;
+				startScreenPos = Input.mousePosition;
+				currentPhase = Phase.began;
 			}
 		} else if (Input.GetMouseButton(0)) {
 			switch (currentPhase) {
 				case Phase.none:
-				    // there was no hit.
-					return;
+					break;
 				case Phase.began:
 					if ((Input.mousePosition - startScreenPos).sqrMagnitude > moveSlopSquared ) {
 						currentPhase = Phase.moved;
+						inDrag = (Tower) ((GameObject)Instantiate(inDrag.gameObject, inDrag.transform.position, inDrag.transform.rotation)).GetComponent<Tower>();
 					}
 					break;
 				case Phase.moved:
@@ -69,8 +82,17 @@ public class DragDrop : MonoBehaviour {
 					break;
 			}
 		}
-		if (inDrag != null && Input.GetMouseButtonUp(0)) {
-			Drop();
+		if (Input.GetMouseButtonUp(0)) {
+			if (inDrag != null) {
+				Drop();
+			}
+			if (maybeClicked != null) {
+				Tower.inFocus = maybeClicked;
+				maybeClicked = null;
+			}
+			if (Tower.inFocus != null && GetTowerHere() != Tower.inFocus) {
+				Tower.inFocus = null;
+			} 
 		}
 		lastScreenPos = Input.mousePosition;
 		if (currentPhase == Phase.cancelled) {
@@ -79,6 +101,7 @@ public class DragDrop : MonoBehaviour {
 			currentPhase = Phase.none;
 		}
 	}
+	
 	bool OOB() {
 		if(Input.mousePosition.x < 0 || Input.mousePosition.y < 0 || Input.mousePosition.x > Screen.width || Input.mousePosition.y > Screen.height) {
 			CancelDrag();
@@ -91,15 +114,15 @@ public class DragDrop : MonoBehaviour {
 		// check for valid position...
 		inDrag.placed = true;
 		inDrag.enabled = true;
+		score.money -= inDrag.currentLevel.cost;
 		inDrag = null;
 		currentPhase = Phase.ended;
 	}
 	void CancelDrag() {
 		currentPhase = Phase.none;
 		if (inDrag != null) {
-			inDrag.transform.position = startDragPos;
-			inDrag.placed = false;
-			inDrag.enabled = false;
+			Destroy (inDrag);
+			inDrag = null;
 		}
 	}
 	bool Active() {

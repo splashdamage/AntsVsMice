@@ -3,7 +3,7 @@ using System.Collections;
 
 public class Score : MonoBehaviour {
 	public static Score instance;
-	int startMoney = 10;
+	int startMoney = 20;
 	public int money;
 	int startCheese = 20;
 	public int cheese;
