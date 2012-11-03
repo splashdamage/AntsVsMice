@@ -11,7 +11,7 @@ public class Arrow : Ammo {
 		base.Fly(t);
 		transform.LookAt(GetPositionAt(t1));
 	}
-	protected override void Die() {
+	protected void Die() {
 		Color currentC = sprite.color;
 		if (currentC.a > 0) {
 			fadeLeft += Time.deltaTime;
@@ -22,11 +22,22 @@ public class Arrow : Ammo {
 			Destroy (gameObject);
 		}
 	}
-	protected override bool ApplyDamage() {
-		if (transform.parent == target.transform) return false;
-		
-		transform.parent = target.transform;
-		target.TakeDamage(damage);
-		return true;
+	public virtual void Update() {
+		flightLeft += Time.deltaTime;
+		float t = flightLeft / flightTime;
+		if (t <= 1) {
+			Fly(t);
+			return;
+		}
+		if (target == null) {
+			Destroy (gameObject);
+			return;
+		}
+		if (target.transform != transform.parent) {
+			target.TakeDamage(damage);
+			transform.parent = target.transform;
+		} else {
+			Die();
+		}
 	}
 }

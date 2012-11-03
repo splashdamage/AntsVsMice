@@ -62,6 +62,7 @@ public class DragDrop : MonoBehaviour {
 					if ((Input.mousePosition - startScreenPos).sqrMagnitude > moveSlopSquared ) {
 						currentPhase = Phase.moved;
 						inDrag = (Tower) ((GameObject)Instantiate(inDrag.gameObject, inDrag.transform.position, inDrag.transform.rotation)).GetComponent<Tower>();
+						inDrag.radiusSprite.gameObject.active = true;
 					}
 					break;
 				case Phase.moved:
@@ -88,9 +89,11 @@ public class DragDrop : MonoBehaviour {
 			}
 			if (maybeClicked != null) {
 				Tower.inFocus = maybeClicked;
+				Tower.inFocus.radiusSprite.gameObject.active = true;
 				maybeClicked = null;
 			}
 			if (Tower.inFocus != null && GetTowerHere() != Tower.inFocus) {
+				Tower.inFocus.radiusSprite.gameObject.active = false;
 				Tower.inFocus = null;
 			} 
 		}
@@ -114,6 +117,7 @@ public class DragDrop : MonoBehaviour {
 		// check for valid position...
 		inDrag.placed = true;
 		inDrag.enabled = true;
+		inDrag.radiusSprite.gameObject.active = false;
 		score.money -= inDrag.currentLevel.cost;
 		inDrag = null;
 		currentPhase = Phase.ended;

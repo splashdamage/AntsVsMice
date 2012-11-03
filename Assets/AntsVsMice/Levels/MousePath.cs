@@ -13,7 +13,7 @@ public class MousePath : MonoBehaviour{
 			return _points.ToArray();
 		}
 	}
-	void Awake() {
+	void Start() {
 		_points = new List<Vector3>(transform.childCount);
 		foreach (Transform child in transform) {
 			_points.Add(child.position);

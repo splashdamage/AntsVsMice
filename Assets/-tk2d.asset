@@ -599,6 +599,7 @@ MonoBehaviour:
     - Explosion0020
     - Explosion0007
     - Explosion0008
+    - radius
     spriteTextureGUIDs:
     - 17c193f8c123d4744b256141c6d3d374
     - fa004c8cd8dd6445fb5727fdb7a500bf
@@ -626,6 +627,7 @@ MonoBehaviour:
     - aa8a321cd7cc04e9eb48f3b2f7323ccd
     - 86cfcc4c8f2374ccbadf254f7d93c86e
     - 6c5649e2cbab242e5b560feb321d88ab
+    - ed40153b15d264815a86b304473589ce
     spriteTextureTimeStamps:
     - 1350846912
     - 1344426254
@@ -653,6 +655,7 @@ MonoBehaviour:
     - 1344434750
     - 1344434750
     - 1344434750
+    - 1351958740
     managedSpriteCollection: 0
     version: 3
   - name: MiniMouseSprites

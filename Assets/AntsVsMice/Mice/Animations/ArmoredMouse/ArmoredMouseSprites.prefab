@@ -65,7 +65,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0020
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 6d866b1fe77154320a1a199076fd240c, type: 1}
     materialId: 0
     anchor: 9
@@ -102,7 +102,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0029
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 57fa35391cce942f098b27664258e27b, type: 1}
     materialId: 0
     anchor: 9
@@ -139,7 +139,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0028
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 19c1b4e0062924050a207c441f94ce1c, type: 1}
     materialId: 0
     anchor: 9
@@ -176,7 +176,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0026
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: a239b17294b1a4b80a7bfa324d8db224, type: 1}
     materialId: 0
     anchor: 9
@@ -213,7 +213,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0002
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 2c7af536745254443a95df2ed1356d17, type: 1}
     materialId: 0
     anchor: 9
@@ -250,7 +250,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0005
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 66785c08e65d44e8792bfb6d413c3add, type: 1}
     materialId: 0
     anchor: 9
@@ -287,7 +287,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0009
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: ec76ee64103e644b782fb2ca851a1fc1, type: 1}
     materialId: 0
     anchor: 9
@@ -324,7 +324,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0008
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 4a6d75c9929434a468c5557f6c4aa9c0, type: 1}
     materialId: 0
     anchor: 9
@@ -361,7 +361,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0013
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 0108c93a91da446fc9443982fe81deb1, type: 1}
     materialId: 0
     anchor: 9
@@ -398,7 +398,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0021
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 44ae8c509e1f14290ad413708aee67fd, type: 1}
     materialId: 0
     anchor: 9
@@ -435,7 +435,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0027
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 7c9ffb94ae40b4ff7840930fcc5b679f, type: 1}
     materialId: 0
     anchor: 9
@@ -472,7 +472,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0017
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 24de1afe88fa54fe58c3ecb24e34fb79, type: 1}
     materialId: 0
     anchor: 9
@@ -509,7 +509,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0016
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 9caa99bf816264901bd6ea8e22cffb9d, type: 1}
     materialId: 0
     anchor: 9
@@ -546,7 +546,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0019
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 55fe1b4a994814291ba6d2e62693a8be, type: 1}
     materialId: 0
     anchor: 9
@@ -583,7 +583,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0018
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 186732abd855140069d3d3801a9307cc, type: 1}
     materialId: 0
     anchor: 9
@@ -620,7 +620,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0023
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 4cfb52e01af8e402f98035799df9f7fa, type: 1}
     materialId: 0
     anchor: 9
@@ -657,7 +657,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0001
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: a26abe710887d493eacedfc062f840f4, type: 1}
     materialId: 0
     anchor: 9
@@ -694,7 +694,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0004
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 2295e1e1812494dfd9363bbc19df191b, type: 1}
     materialId: 0
     anchor: 9
@@ -731,7 +731,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0007
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: e234d4fe3409448e9ac4a884e4369693, type: 1}
     materialId: 0
     anchor: 9
@@ -768,7 +768,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0006
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 8e7f85ede6b8344cfac2af34b6967840, type: 1}
     materialId: 0
     anchor: 9
@@ -805,7 +805,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0003
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: a0c859ec1575c41e5b6e6c642265c640, type: 1}
     materialId: 0
     anchor: 9
@@ -842,7 +842,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0030
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 3f762fdcd10774569ac36e7361141372, type: 1}
     materialId: 0
     anchor: 9
@@ -879,7 +879,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0022
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: cfbab2c5fb49148a4ae6df385bc467be, type: 1}
     materialId: 0
     anchor: 9
@@ -916,7 +916,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0024
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 47009bde3727b4b4caca9cbce6adcf42, type: 1}
     materialId: 0
     anchor: 9
@@ -953,7 +953,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0025
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 920cd77eaafde4893b3e3359c71f5f32, type: 1}
     materialId: 0
     anchor: 9
@@ -990,7 +990,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0012
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: c947b8ad8e9bd4fdab64b5f8d8f5409d, type: 1}
     materialId: 0
     anchor: 9
@@ -1027,7 +1027,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0015
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 3f672d058d9a943c4984fb8b1ccdbbff, type: 1}
     materialId: 0
     anchor: 9
@@ -1064,7 +1064,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0014
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 05f2f8f8c08174b60b6ef98885e78291, type: 1}
     materialId: 0
     anchor: 9
@@ -1101,7 +1101,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0011
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 455aa6d42902e45dba511c08d7c5c1af, type: 1}
     materialId: 0
     anchor: 9
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   - name: ArmoredMouseMov0010
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 234611efd13f8427c8f0ad8ca95196b6, type: 1}
     materialId: 0
     anchor: 9

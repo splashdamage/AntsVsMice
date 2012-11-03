@@ -65,7 +65,7 @@ MonoBehaviour:
   - name: BatMov0004
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 2db96d78cf3ad440eb03f52712351d95, type: 1}
     materialId: 0
     anchor: 9
@@ -102,7 +102,7 @@ MonoBehaviour:
   - name: BatMov0005
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 2f6d708d67de3473c9c60afc15280558, type: 1}
     materialId: 0
     anchor: 9
@@ -139,7 +139,7 @@ MonoBehaviour:
   - name: BatMov0013
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: bf776e5725da7407b820e4399bab3c48, type: 1}
     materialId: 0
     anchor: 9
@@ -176,7 +176,7 @@ MonoBehaviour:
   - name: BatMov0012
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 7166f501401644f8dbea7c44f852f4c4, type: 1}
     materialId: 0
     anchor: 9
@@ -213,7 +213,7 @@ MonoBehaviour:
   - name: BatMov0011
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 3cc88edb9a2ff402fb57f5b0248a2c95, type: 1}
     materialId: 0
     anchor: 9
@@ -250,7 +250,7 @@ MonoBehaviour:
   - name: BatMov0010
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 13ae9851e0e804266a912dfb60b633bf, type: 1}
     materialId: 0
     anchor: 9
@@ -287,7 +287,7 @@ MonoBehaviour:
   - name: BatMov0019
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 33ff16dc11058435eb4eade00ef37f26, type: 1}
     materialId: 0
     anchor: 9
@@ -324,7 +324,7 @@ MonoBehaviour:
   - name: BatMov0018
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: eab152b0227c94130965a6bf380c590d, type: 1}
     materialId: 0
     anchor: 9
@@ -361,7 +361,7 @@ MonoBehaviour:
   - name: BatMov0017
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 341c6df64a55345e4a012c98ded77e77, type: 1}
     materialId: 0
     anchor: 9
@@ -398,7 +398,7 @@ MonoBehaviour:
   - name: BatMov0016
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 5d895022b57cd414fbe51d262118fc71, type: 1}
     materialId: 0
     anchor: 9
@@ -435,7 +435,7 @@ MonoBehaviour:
   - name: BatMov0024
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 4b3bac1a2e03a42549c540fe4a6b9370, type: 1}
     materialId: 0
     anchor: 9
@@ -472,7 +472,7 @@ MonoBehaviour:
   - name: BatMov0023
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: f34ee6bbf24264ad5b1512190495a679, type: 1}
     materialId: 0
     anchor: 9
@@ -509,7 +509,7 @@ MonoBehaviour:
   - name: BatMov0022
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 5a04b5dc0afa7478daf2bdbf1d5a359b, type: 1}
     materialId: 0
     anchor: 9
@@ -546,7 +546,7 @@ MonoBehaviour:
   - name: BatMov0021
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 17f3b186f86b34956afb8fa5768f3c9f, type: 1}
     materialId: 0
     anchor: 9
@@ -583,7 +583,7 @@ MonoBehaviour:
   - name: BatMov0020
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 3bc7db49b48c244598fea48bf53e237a, type: 1}
     materialId: 0
     anchor: 9
@@ -620,7 +620,7 @@ MonoBehaviour:
   - name: BatMov0003
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 9bb2afedd721041ffbae923d2a90285f, type: 1}
     materialId: 0
     anchor: 9
@@ -657,7 +657,7 @@ MonoBehaviour:
   - name: BatMov0002
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 68cc83bd60df741239ce75be3b11ea64, type: 1}
     materialId: 0
     anchor: 9
@@ -694,7 +694,7 @@ MonoBehaviour:
   - name: BatMov0009
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 9f94e1233f2fa430d8104bead4a82e7c, type: 1}
     materialId: 0
     anchor: 9
@@ -731,7 +731,7 @@ MonoBehaviour:
   - name: BatMov0008
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 1ae6e97c7dc474f08bf7138764ce81d7, type: 1}
     materialId: 0
     anchor: 9
@@ -768,7 +768,7 @@ MonoBehaviour:
   - name: BatMov0007
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 9b5de1092c3af4b49969a11ee1a451a8, type: 1}
     materialId: 0
     anchor: 9
@@ -805,7 +805,7 @@ MonoBehaviour:
   - name: BatMov0006
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 911ddd91ca4fc4e0fa946d49cb29acf1, type: 1}
     materialId: 0
     anchor: 9
@@ -842,7 +842,7 @@ MonoBehaviour:
   - name: BatMov0015
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: a3ca8f7af49cf4ca49efd175dd01226c, type: 1}
     materialId: 0
     anchor: 9
@@ -879,7 +879,7 @@ MonoBehaviour:
   - name: BatMov0014
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: f666e516d598f4f2bb5b953451c9814f, type: 1}
     materialId: 0
     anchor: 9
@@ -916,7 +916,7 @@ MonoBehaviour:
   - name: BatMov0001
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: df409317a6c96467e8c2cb81e1d9ec43, type: 1}
     materialId: 0
     anchor: 9

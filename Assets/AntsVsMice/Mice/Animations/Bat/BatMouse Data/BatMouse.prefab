@@ -43,17 +43,17 @@ MonoBehaviour:
   spriteDefinitions:
   - name: BatMov0004
     boundsData:
-    - {x: 4.5, y: 68.5, z: 0}
-    - {x: 353, y: 233, z: 0}
+    - {x: 3.15000153, y: 47.9499893, z: 0}
+    - {x: 247.099991, y: 163.099991, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -172, y: -48, z: 0}
-    - {x: 181, y: -48, z: 0}
-    - {x: -172, y: 185, z: 0}
-    - {x: 181, y: 185, z: 0}
+    - {x: -120.399994, y: -33.6000023, z: 0}
+    - {x: 126.699997, y: -33.6000023, z: 0}
+    - {x: -120.399994, y: 129.499985, z: 0}
+    - {x: 126.699997, y: 129.499985, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -74,25 +74,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0005
     boundsData:
-    - {x: 5.5, y: 70.5000076, z: 0}
-    - {x: 351, y: 233.000015, z: 0}
+    - {x: 3.85000229, y: 49.3500023, z: 0}
+    - {x: 245.699982, y: 163.100006, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -170, y: -46, z: 0}
-    - {x: 181, y: -46, z: 0}
-    - {x: -170, y: 187.000015, z: 0}
-    - {x: 181, y: 187.000015, z: 0}
+    - {x: -118.999992, y: -32.2000046, z: 0}
+    - {x: 126.699997, y: -32.2000046, z: 0}
+    - {x: -118.999992, y: 130.900009, z: 0}
+    - {x: 126.699997, y: 130.900009, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -113,25 +113,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0013
     boundsData:
-    - {x: 6.5, y: 71, z: 0}
-    - {x: 333, y: 246, z: 0}
+    - {x: 4.55000687, y: 49.7000008, z: 0}
+    - {x: 233.100006, y: 172.200012, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -160, y: -52, z: 0}
-    - {x: 173, y: -52, z: 0}
-    - {x: -160, y: 194, z: 0}
-    - {x: 173, y: 194, z: 0}
+    - {x: -111.999992, y: -36.4000015, z: 0}
+    - {x: 121.100006, y: -36.4000015, z: 0}
+    - {x: -111.999992, y: 135.800003, z: 0}
+    - {x: 121.100006, y: 135.800003, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -152,25 +152,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0012
     boundsData:
-    - {x: 6, y: 70, z: 0}
-    - {x: 330, y: 248, z: 0}
+    - {x: 4.20000458, y: 49, z: 0}
+    - {x: 231, y: 173.600006, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -159, y: -54, z: 0}
-    - {x: 171, y: -54, z: 0}
-    - {x: -159, y: 194, z: 0}
-    - {x: 171, y: 194, z: 0}
+    - {x: -111.299995, y: -37.8000031, z: 0}
+    - {x: 119.700005, y: -37.8000031, z: 0}
+    - {x: -111.299995, y: 135.800003, z: 0}
+    - {x: 119.700005, y: 135.800003, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -191,25 +191,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0011
     boundsData:
-    - {x: 7, y: 70.5, z: 0}
-    - {x: 334, y: 247, z: 0}
+    - {x: 4.90000534, y: 49.3499985, z: 0}
+    - {x: 233.799988, y: 172.900009, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -160, y: -53, z: 0}
-    - {x: 174, y: -53, z: 0}
-    - {x: -160, y: 194, z: 0}
-    - {x: 174, y: 194, z: 0}
+    - {x: -111.999992, y: -37.1000023, z: 0}
+    - {x: 121.800003, y: -37.1000023, z: 0}
+    - {x: -111.999992, y: 135.800003, z: 0}
+    - {x: 121.800003, y: 135.800003, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -230,25 +230,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0010
     boundsData:
-    - {x: 7.5, y: 71.5, z: 0}
-    - {x: 337, y: 243, z: 0}
+    - {x: 5.25000381, y: 50.0500031, z: 0}
+    - {x: 235.899994, y: 170.100006, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -161, y: -49.9999962, z: 0}
-    - {x: 176, y: -49.9999962, z: 0}
-    - {x: -161, y: 193, z: 0}
-    - {x: 176, y: 193, z: 0}
+    - {x: -112.699997, y: -35, z: 0}
+    - {x: 123.200005, y: -35, z: 0}
+    - {x: -112.699997, y: 135.100006, z: 0}
+    - {x: 123.200005, y: 135.100006, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -269,25 +269,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0019
     boundsData:
-    - {x: 6.5, y: 71.5, z: 0}
-    - {x: 349, y: 233, z: 0}
+    - {x: 4.55000305, y: 50.0500031, z: 0}
+    - {x: 244.299988, y: 163.100006, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -168, y: -45, z: 0}
-    - {x: 181, y: -45, z: 0}
-    - {x: -168, y: 188, z: 0}
-    - {x: 181, y: 188, z: 0}
+    - {x: -117.599991, y: -31.5000019, z: 0}
+    - {x: 126.699997, y: -31.5000019, z: 0}
+    - {x: -117.599991, y: 131.600006, z: 0}
+    - {x: 126.699997, y: 131.600006, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -308,25 +308,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0018
     boundsData:
-    - {x: 7.5, y: 73.5, z: 0}
-    - {x: 347, y: 233, z: 0}
+    - {x: 5.25000381, y: 51.4499969, z: 0}
+    - {x: 242.899994, y: 163.100006, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -166, y: -43, z: 0}
-    - {x: 181, y: -43, z: 0}
-    - {x: -166, y: 190, z: 0}
-    - {x: 181, y: 190, z: 0}
+    - {x: -116.199989, y: -30.1000023, z: 0}
+    - {x: 126.699997, y: -30.1000023, z: 0}
+    - {x: -116.199989, y: 133, z: 0}
+    - {x: 126.699997, y: 133, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -347,25 +347,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0017
     boundsData:
-    - {x: 8.5, y: 73.5, z: 0}
-    - {x: 343, y: 235, z: 0}
+    - {x: 5.95000076, y: 51.4499969, z: 0}
+    - {x: 240.100006, y: 164.5, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -163, y: -44, z: 0}
-    - {x: 180, y: -44, z: 0}
-    - {x: -163, y: 191, z: 0}
-    - {x: 180, y: 191, z: 0}
+    - {x: -114.099998, y: -30.8000031, z: 0}
+    - {x: 126, y: -30.8000031, z: 0}
+    - {x: -114.099998, y: 133.699997, z: 0}
+    - {x: 126, y: 133.699997, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -386,25 +386,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0016
     boundsData:
-    - {x: 9, y: 73, z: 0}
-    - {x: 340, y: 238, z: 0}
+    - {x: 6.30000305, y: 51.0999947, z: 0}
+    - {x: 238, y: 166.600006, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -161, y: -46, z: 0}
-    - {x: 179, y: -46, z: 0}
-    - {x: -161, y: 192, z: 0}
-    - {x: 179, y: 192, z: 0}
+    - {x: -112.699997, y: -32.2000046, z: 0}
+    - {x: 125.300003, y: -32.2000046, z: 0}
+    - {x: -112.699997, y: 134.399994, z: 0}
+    - {x: 125.300003, y: 134.399994, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -425,25 +425,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0024
     boundsData:
-    - {x: .5, y: 62.5, z: 0}
-    - {x: 353, y: 231, z: 0}
+    - {x: .350002289, y: 43.75, z: 0}
+    - {x: 247.100006, y: 161.699997, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -176, y: -53, z: 0}
-    - {x: 177, y: -53, z: 0}
-    - {x: -176, y: 178, z: 0}
-    - {x: 177, y: 178, z: 0}
+    - {x: -123.199997, y: -37.1000023, z: 0}
+    - {x: 123.900002, y: -37.1000023, z: 0}
+    - {x: -123.199997, y: 124.599998, z: 0}
+    - {x: 123.900002, y: 124.599998, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -464,25 +464,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0023
     boundsData:
-    - {x: 1.5, y: 64, z: 0}
-    - {x: 353, y: 232, z: 0}
+    - {x: 1.05000687, y: 44.7999954, z: 0}
+    - {x: 247.100006, y: 162.399994, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -175, y: -52, z: 0}
-    - {x: 178, y: -52, z: 0}
-    - {x: -175, y: 180, z: 0}
-    - {x: 178, y: 180, z: 0}
+    - {x: -122.499992, y: -36.4000015, z: 0}
+    - {x: 124.600006, y: -36.4000015, z: 0}
+    - {x: -122.499992, y: 125.999992, z: 0}
+    - {x: 124.600006, y: 125.999992, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -503,25 +503,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0022
     boundsData:
-    - {x: 2.5, y: 66.5, z: 0}
-    - {x: 353, y: 233, z: 0}
+    - {x: 1.75000381, y: 46.5499954, z: 0}
+    - {x: 247.100006, y: 163.099991, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -174, y: -49.9999962, z: 0}
-    - {x: 179, y: -49.9999962, z: 0}
-    - {x: -174, y: 183, z: 0}
-    - {x: 179, y: 183, z: 0}
+    - {x: -121.799995, y: -35, z: 0}
+    - {x: 125.300003, y: -35, z: 0}
+    - {x: -121.799995, y: 128.099991, z: 0}
+    - {x: 125.300003, y: 128.099991, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -542,25 +542,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0021
     boundsData:
-    - {x: 4.5, y: 68, z: 0}
-    - {x: 353, y: 232, z: 0}
+    - {x: 3.15000153, y: 47.5999908, z: 0}
+    - {x: 247.099991, y: 162.399994, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -172, y: -48, z: 0}
-    - {x: 181, y: -48, z: 0}
-    - {x: -172, y: 184, z: 0}
-    - {x: 181, y: 184, z: 0}
+    - {x: -120.399994, y: -33.6000023, z: 0}
+    - {x: 126.699997, y: -33.6000023, z: 0}
+    - {x: -120.399994, y: 128.799988, z: 0}
+    - {x: 126.699997, y: 128.799988, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -581,25 +581,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0020
     boundsData:
-    - {x: 5, y: 70.0000076, z: 0}
-    - {x: 352, y: 234.000015, z: 0}
+    - {x: 3.5, y: 49, z: 0}
+    - {x: 246.399994, y: 163.800018, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -171, y: -47, z: 0}
-    - {x: 181, y: -47, z: 0}
-    - {x: -171, y: 187.000015, z: 0}
-    - {x: 181, y: 187.000015, z: 0}
+    - {x: -119.699997, y: -32.9000053, z: 0}
+    - {x: 126.699997, y: -32.9000053, z: 0}
+    - {x: -119.699997, y: 130.900009, z: 0}
+    - {x: 126.699997, y: 130.900009, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -620,25 +620,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0003
     boundsData:
-    - {x: 3, y: 66, z: 0}
-    - {x: 354, y: 232, z: 0}
+    - {x: 2.10000229, y: 46.1999969, z: 0}
+    - {x: 247.799988, y: 162.399994, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -174, y: -49.9999962, z: 0}
-    - {x: 180, y: -49.9999962, z: 0}
-    - {x: -174, y: 182, z: 0}
-    - {x: 180, y: 182, z: 0}
+    - {x: -121.799995, y: -35, z: 0}
+    - {x: 126, y: -35, z: 0}
+    - {x: -121.799995, y: 127.399994, z: 0}
+    - {x: 126, y: 127.399994, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -659,25 +659,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0002
     boundsData:
-    - {x: 2, y: 64, z: 0}
-    - {x: 354, y: 232, z: 0}
+    - {x: 1.40000534, y: 44.7999954, z: 0}
+    - {x: 247.799988, y: 162.399994, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -175, y: -52, z: 0}
-    - {x: 179, y: -52, z: 0}
-    - {x: -175, y: 180, z: 0}
-    - {x: 179, y: 180, z: 0}
+    - {x: -122.499992, y: -36.4000015, z: 0}
+    - {x: 125.300003, y: -36.4000015, z: 0}
+    - {x: -122.499992, y: 125.999992, z: 0}
+    - {x: 125.300003, y: 125.999992, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -698,25 +698,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0009
     boundsData:
-    - {x: 8.5, y: 72, z: 0}
-    - {x: 339, y: 240, z: 0}
+    - {x: 5.95000458, y: 50.3999939, z: 0}
+    - {x: 237.300003, y: 168, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -161, y: -48, z: 0}
-    - {x: 178, y: -48, z: 0}
-    - {x: -161, y: 192, z: 0}
-    - {x: 178, y: 192, z: 0}
+    - {x: -112.699997, y: -33.6000023, z: 0}
+    - {x: 124.600006, y: -33.6000023, z: 0}
+    - {x: -112.699997, y: 134.399994, z: 0}
+    - {x: 124.600006, y: 134.399994, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -737,25 +737,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0008
     boundsData:
-    - {x: 9, y: 73, z: 0}
-    - {x: 342, y: 238, z: 0}
+    - {x: 6.30000305, y: 51.0999947, z: 0}
+    - {x: 239.399994, y: 166.600006, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -162, y: -46, z: 0}
-    - {x: 180, y: -46, z: 0}
-    - {x: -162, y: 192, z: 0}
-    - {x: 180, y: 192, z: 0}
+    - {x: -113.399994, y: -32.2000046, z: 0}
+    - {x: 126, y: -32.2000046, z: 0}
+    - {x: -113.399994, y: 134.399994, z: 0}
+    - {x: 126, y: 134.399994, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -776,25 +776,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0007
     boundsData:
-    - {x: 8, y: 73, z: 0}
-    - {x: 346, y: 234, z: 0}
+    - {x: 5.60000229, y: 51.0999985, z: 0}
+    - {x: 242.199982, y: 163.800003, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -165, y: -44, z: 0}
-    - {x: 181, y: -44, z: 0}
-    - {x: -165, y: 190, z: 0}
-    - {x: 181, y: 190, z: 0}
+    - {x: -115.499992, y: -30.8000031, z: 0}
+    - {x: 126.699997, y: -30.8000031, z: 0}
+    - {x: -115.499992, y: 133, z: 0}
+    - {x: 126.699997, y: 133, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -815,25 +815,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0006
     boundsData:
-    - {x: 6.5, y: 72, z: 0}
-    - {x: 349, y: 232, z: 0}
+    - {x: 4.55000305, y: 50.4000015, z: 0}
+    - {x: 244.299988, y: 162.400009, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -168, y: -44, z: 0}
-    - {x: 181, y: -44, z: 0}
-    - {x: -168, y: 188, z: 0}
-    - {x: 181, y: 188, z: 0}
+    - {x: -117.599991, y: -30.8000031, z: 0}
+    - {x: 126.699997, y: -30.8000031, z: 0}
+    - {x: -117.599991, y: 131.600006, z: 0}
+    - {x: 126.699997, y: 131.600006, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -854,25 +854,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0015
     boundsData:
-    - {x: 8, y: 71.5, z: 0}
-    - {x: 338, y: 241, z: 0}
+    - {x: 5.60000229, y: 50.0499954, z: 0}
+    - {x: 236.600006, y: 168.699997, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -161, y: -49, z: 0}
-    - {x: 177, y: -49, z: 0}
-    - {x: -161, y: 192, z: 0}
-    - {x: 177, y: 192, z: 0}
+    - {x: -112.699997, y: -34.3000031, z: 0}
+    - {x: 123.900002, y: -34.3000031, z: 0}
+    - {x: -112.699997, y: 134.399994, z: 0}
+    - {x: 123.900002, y: 134.399994, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -893,25 +893,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0014
     boundsData:
-    - {x: 8, y: 71, z: 0}
-    - {x: 336, y: 244, z: 0}
+    - {x: 5.6000061, y: 49.7000008, z: 0}
+    - {x: 235.199997, y: 170.800018, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -160, y: -51, z: 0}
-    - {x: 176, y: -51, z: 0}
-    - {x: -160, y: 193, z: 0}
-    - {x: 176, y: 193, z: 0}
+    - {x: -111.999992, y: -35.7000046, z: 0}
+    - {x: 123.200005, y: -35.7000046, z: 0}
+    - {x: -111.999992, y: 135.100006, z: 0}
+    - {x: 123.200005, y: 135.100006, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -932,25 +932,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BatMov0001
     boundsData:
-    - {x: .5, y: 62.5, z: 0}
-    - {x: 353, y: 231, z: 0}
+    - {x: .350002289, y: 43.75, z: 0}
+    - {x: 247.100006, y: 161.699997, z: 0}
     untrimmedBoundsData:
-    - {x: -2, y: 46, z: 0}
-    - {x: 400, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -1.3999939, y: 32.1999969, z: 0}
+    - {x: 280, y: 210, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -176, y: -53, z: 0}
-    - {x: 177, y: -53, z: 0}
-    - {x: -176, y: 178, z: 0}
-    - {x: 177, y: 178, z: 0}
+    - {x: -123.199997, y: -37.1000023, z: 0}
+    - {x: 123.900002, y: -37.1000023, z: 0}
+    - {x: -123.199997, y: 124.599998, z: 0}
+    - {x: 123.900002, y: 124.599998, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -971,8 +971,8 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -2, y: 61.5, z: 0}
-    - {x: 180, y: 121.5, z: .100000001}
+    - {x: -1.3999939, y: 43.0499954, z: 0}
+    - {x: 126, y: 85.0499954, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -989,7 +989,7 @@ MonoBehaviour:
   assetName: 
   invOrthoSize: .00185185182
   halfTargetHeight: 540
-  buildKey: 753380119
+  buildKey: 2008226454
   dataGuid: c7a55d1db9cc546b8b4a8464243be52f
   managedSpriteCollection: 0
   hasPlatformData: 0

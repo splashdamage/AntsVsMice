@@ -12,7 +12,6 @@ public class Ammo : MonoBehaviour {
 	protected Enemy _target;
 	protected Vector3 _targetPosAtFiring;
 	protected Vector3 _targetLastPos;
-	
 	public virtual Enemy target {
 		get {
 			return _target;
@@ -47,13 +46,6 @@ public class Ammo : MonoBehaviour {
 		transform.parent = null;
 		enabled = true;
 	}
-	
-	protected virtual bool ApplyDamage() {
-		if (target == null || target.lifeLeft == 0) return false;
-		return (target.TakeDamage(damage) > 0) ? true : false;
-	}
-	protected virtual void Die() {}
-	
 	protected Vector3 GetPositionAt(float t) {
 		Vector3 center = (end - start) * 0.5f;
 		Vector3 control = start + center + (Vector3.forward * altitude);
@@ -63,17 +55,5 @@ public class Ammo : MonoBehaviour {
 	public Vector3 Bezier2(Vector3 start, Vector3 end, Vector3 control, float t)
 	{
 	    return (((1-t)*(1-t)) * start) + (2 * t * (1 - t) * control) + ((t * t) * end);
-	}
-	
-	public virtual void Update() {
-		flightLeft += Time.deltaTime;
-		float t = flightLeft / flightTime;
-		if (t <= 1) {
-			Fly(t);
-			return;
-		}
-		if (!ApplyDamage()) {
-			Die();
-		}
 	}
 }

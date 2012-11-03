@@ -1244,7 +1244,7 @@ MonoBehaviour:
     m_TextClipping: 0
     m_ContentOffset: {x: 0, y: 0}
     m_ClipOffset: {x: 0, y: 0}
-    m_FixedWidth: 20
+    m_FixedWidth: 0
     m_FixedHeight: 5
     m_FontSize: 0
     m_FontStyle: 0

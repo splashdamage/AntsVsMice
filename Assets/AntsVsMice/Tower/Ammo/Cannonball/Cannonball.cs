@@ -28,7 +28,7 @@ public class Cannonball : Ammo {
 	public void DoneExploding(tk2dAnimatedSprite anim, int idx) {
 		Destroy(gameObject);
 	}
-	public override void Update() {
+	public void Update() {
 		flightLeft += Time.deltaTime;
 		float t = flightLeft / flightTime;
 		if (t <= 1) {

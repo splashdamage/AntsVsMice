@@ -65,7 +65,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0007
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 50b1a5decfc42417982ef15bef3f8070, type: 1}
     materialId: 0
     anchor: 9
@@ -102,7 +102,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0020
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 7df7be75b8b9a41e6be140d0d237d5cb, type: 1}
     materialId: 0
     anchor: 9
@@ -139,7 +139,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0022
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: ee7dd60e7350d41acaacfeb90afa7296, type: 1}
     materialId: 0
     anchor: 9
@@ -176,7 +176,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0025
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: b01701e849683460fa1611974bbed2a9, type: 1}
     materialId: 0
     anchor: 9
@@ -213,7 +213,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0016
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 9b645ae7fdf6447adb94957ecc42d4a0, type: 1}
     materialId: 0
     anchor: 9
@@ -250,7 +250,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0008
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 9d46e891354a5459784c66b744cc1589, type: 1}
     materialId: 0
     anchor: 9
@@ -287,7 +287,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0012
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: e6df7a9a040f045cebd462040f0ec571, type: 1}
     materialId: 0
     anchor: 9
@@ -324,7 +324,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0015
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 5b0144030eb1346cebc0418f414b5698, type: 1}
     materialId: 0
     anchor: 9
@@ -361,7 +361,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0014
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 908bcb226b7af48bebbf84ef88c98ff6, type: 1}
     materialId: 0
     anchor: 9
@@ -398,7 +398,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0011
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 84a45e1f0c67c41029e8cbe23721b191, type: 1}
     materialId: 0
     anchor: 9
@@ -435,7 +435,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0005
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 52b24d75c72a34825982fd74b718ec49, type: 1}
     materialId: 0
     anchor: 9
@@ -472,7 +472,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0019
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 4d1ec0fd600374d88ba96fa2e726b4a2, type: 1}
     materialId: 0
     anchor: 9
@@ -509,7 +509,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0018
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 7bdd7630923704c55a3a56523ed0c9b4, type: 1}
     materialId: 0
     anchor: 9
@@ -546,7 +546,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0003
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 8624cfd77087d45aba2f76460146dfd2, type: 1}
     materialId: 0
     anchor: 9
@@ -583,7 +583,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0010
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: d1f6f03e521b24a698a4a3b597aefeb1, type: 1}
     materialId: 0
     anchor: 9
@@ -620,7 +620,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0027
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 8bd2c5275c4aa4f42b573914c919d949, type: 1}
     materialId: 0
     anchor: 9
@@ -657,7 +657,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0028
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 82093114d2987461b8ae011ec4568f72, type: 1}
     materialId: 0
     anchor: 9
@@ -694,7 +694,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0023
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: b3bf3e84cf5ae46c58778bf98513cd50, type: 1}
     materialId: 0
     anchor: 9
@@ -731,7 +731,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0004
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 10563df9966eb433eb18325756e9b502, type: 1}
     materialId: 0
     anchor: 9
@@ -768,7 +768,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0013
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: e8e87414e5ca749c3854a073182a31d4, type: 1}
     materialId: 0
     anchor: 9
@@ -805,7 +805,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0026
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 17243a792788542428589c4705e76315, type: 1}
     materialId: 0
     anchor: 9
@@ -842,7 +842,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0029
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: ca52d7d033deb4c5cb95c1ef3df97a85, type: 1}
     materialId: 0
     anchor: 9
@@ -879,7 +879,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0009
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: acb559ba8ab7e4149bc6162fcfc2ab26, type: 1}
     materialId: 0
     anchor: 9
@@ -916,7 +916,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0002
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: f1d3c2020383e4f72832188964211e39, type: 1}
     materialId: 0
     anchor: 9
@@ -953,7 +953,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0006
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 68b137f262c7d4099a6da725ec441b8a, type: 1}
     materialId: 0
     anchor: 9
@@ -990,7 +990,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0001
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 2eafe742a6e65435cb856a2c082d0887, type: 1}
     materialId: 0
     anchor: 9
@@ -1027,7 +1027,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0017
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: d387b9a2f3c364f2aa35a2b69c2506c9, type: 1}
     materialId: 0
     anchor: 9
@@ -1064,7 +1064,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0030
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: c3c55669c8aa1400ab03d2b275cfdbb9, type: 1}
     materialId: 0
     anchor: 9
@@ -1101,7 +1101,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0024
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: 2141f2a2339cc4f70bb93a8c4555422b, type: 1}
     materialId: 0
     anchor: 9
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   - name: MiniMouseFrames0021
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: ddabcc23747bb4967824d8fb5e113371, type: 1}
     materialId: 0
     anchor: 9

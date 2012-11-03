@@ -5,7 +5,7 @@ public class Board : MonoBehaviour {
 	CamAnchors anchors;
 	public Vector3[] myVertices;
 	// Use this for initialization
-	void Start () {
+	void Awake () {
 		anchors = Camera.mainCamera.GetComponent<CamAnchors>();
 		transform.position = anchors.lowerLeft;
 		//UpdateMesh ();

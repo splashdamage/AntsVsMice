@@ -43,17 +43,17 @@ MonoBehaviour:
   spriteDefinitions:
   - name: ArmoredMouseMov0020
     boundsData:
-    - {x: -.999998093, y: 118, z: 0}
-    - {x: 116, y: 248, z: 0}
+    - {x: -.749998093, y: 88.5, z: 0}
+    - {x: 87, y: 186, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -59, y: -6, z: 0}
-    - {x: 57.0000038, y: -6, z: 0}
-    - {x: -59, y: 242, z: 0}
-    - {x: 57.0000038, y: 242, z: 0}
+    - {x: -44.25, y: -4.5, z: 0}
+    - {x: 42.7500038, y: -4.5, z: 0}
+    - {x: -44.25, y: 181.5, z: 0}
+    - {x: 42.7500038, y: 181.5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -74,25 +74,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0029
     boundsData:
-    - {x: -2, y: 117.5, z: 0}
-    - {x: 116, y: 253, z: 0}
+    - {x: -1.5, y: 88.125, z: 0}
+    - {x: 87, y: 189.75, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -60, y: -9, z: 0}
-    - {x: 56, y: -9, z: 0}
-    - {x: -60, y: 244, z: 0}
-    - {x: 56, y: 244, z: 0}
+    - {x: -45, y: -6.74999952, z: 0}
+    - {x: 42, y: -6.74999952, z: 0}
+    - {x: -45, y: 183, z: 0}
+    - {x: 42, y: 183, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -113,25 +113,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0028
     boundsData:
-    - {x: -2, y: 118, z: 0}
-    - {x: 116, y: 252, z: 0}
+    - {x: -1.5, y: 88.5, z: 0}
+    - {x: 87, y: 189, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -60, y: -8.00000095, z: 0}
-    - {x: 56, y: -8.00000095, z: 0}
-    - {x: -60, y: 244, z: 0}
-    - {x: 56, y: 244, z: 0}
+    - {x: -45, y: -6.00000048, z: 0}
+    - {x: 42, y: -6.00000048, z: 0}
+    - {x: -45, y: 183, z: 0}
+    - {x: 42, y: 183, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -152,25 +152,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0026
     boundsData:
-    - {x: -2, y: 118, z: 0}
-    - {x: 116, y: 250, z: 0}
+    - {x: -1.5, y: 88.5, z: 0}
+    - {x: 87, y: 187.5, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -60, y: -6.99999905, z: 0}
-    - {x: 56, y: -6.99999905, z: 0}
-    - {x: -60, y: 243, z: 0}
-    - {x: 56, y: 243, z: 0}
+    - {x: -45, y: -5.24999952, z: 0}
+    - {x: 42, y: -5.24999952, z: 0}
+    - {x: -45, y: 182.25, z: 0}
+    - {x: 42, y: 182.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -191,25 +191,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0002
     boundsData:
-    - {x: -2, y: 117.5, z: 0}
-    - {x: 116, y: 253, z: 0}
+    - {x: -1.5, y: 88.125, z: 0}
+    - {x: 87, y: 189.75, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -60, y: -9, z: 0}
-    - {x: 56, y: -9, z: 0}
-    - {x: -60, y: 244, z: 0}
-    - {x: 56, y: 244, z: 0}
+    - {x: -45, y: -6.74999952, z: 0}
+    - {x: 42, y: -6.74999952, z: 0}
+    - {x: -45, y: 183, z: 0}
+    - {x: 42, y: 183, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -230,25 +230,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0005
     boundsData:
-    - {x: -1.49999809, y: 118.5, z: 0}
-    - {x: 117, y: 251, z: 0}
+    - {x: -1.12499809, y: 88.875, z: 0}
+    - {x: 87.75, y: 188.25, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -60, y: -6.99999905, z: 0}
-    - {x: 57.0000038, y: -6.99999905, z: 0}
-    - {x: -60, y: 244, z: 0}
-    - {x: 57.0000038, y: 244, z: 0}
+    - {x: -45, y: -5.24999952, z: 0}
+    - {x: 42.7500038, y: -5.24999952, z: 0}
+    - {x: -45, y: 183, z: 0}
+    - {x: 42.7500038, y: 183, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -269,25 +269,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0009
     boundsData:
-    - {x: -.999998093, y: 119, z: 0}
-    - {x: 116, y: 248, z: 0}
+    - {x: -.749998093, y: 89.25, z: 0}
+    - {x: 87, y: 186, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -59, y: -4.99999905, z: 0}
-    - {x: 57.0000038, y: -4.99999905, z: 0}
-    - {x: -59, y: 243, z: 0}
-    - {x: 57.0000038, y: 243, z: 0}
+    - {x: -44.25, y: -3.74999928, z: 0}
+    - {x: 42.7500038, y: -3.74999928, z: 0}
+    - {x: -44.25, y: 182.25, z: 0}
+    - {x: 42.7500038, y: 182.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -308,25 +308,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0008
     boundsData:
-    - {x: -.999998093, y: 119.5, z: 0}
-    - {x: 116, y: 247, z: 0}
+    - {x: -.749998093, y: 89.625, z: 0}
+    - {x: 87, y: 185.25, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -59, y: -4, z: 0}
-    - {x: 57.0000038, y: -4, z: 0}
-    - {x: -59, y: 243, z: 0}
-    - {x: 57.0000038, y: 243, z: 0}
+    - {x: -44.25, y: -3, z: 0}
+    - {x: 42.7500038, y: -3, z: 0}
+    - {x: -44.25, y: 182.25, z: 0}
+    - {x: 42.7500038, y: 182.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -347,25 +347,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0013
     boundsData:
-    - {x: -.999998093, y: 116.500008, z: 0}
-    - {x: 116, y: 249.000015, z: 0}
+    - {x: -.749998093, y: 87.375, z: 0}
+    - {x: 87, y: 186.75, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -59, y: -8.00000095, z: 0}
-    - {x: 57.0000038, y: -8.00000095, z: 0}
-    - {x: -59, y: 241.000015, z: 0}
-    - {x: 57.0000038, y: 241.000015, z: 0}
+    - {x: -44.25, y: -6.00000048, z: 0}
+    - {x: 42.7500038, y: -6.00000048, z: 0}
+    - {x: -44.25, y: 180.75, z: 0}
+    - {x: 42.7500038, y: 180.75, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -386,25 +386,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0021
     boundsData:
-    - {x: -1.5, y: 118.5, z: 0}
-    - {x: 115, y: 247, z: 0}
+    - {x: -1.125, y: 88.875, z: 0}
+    - {x: 86.25, y: 185.25, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -59, y: -4.99999905, z: 0}
-    - {x: 56, y: -4.99999905, z: 0}
-    - {x: -59, y: 242, z: 0}
-    - {x: 56, y: 242, z: 0}
+    - {x: -44.25, y: -3.74999928, z: 0}
+    - {x: 42, y: -3.74999928, z: 0}
+    - {x: -44.25, y: 181.5, z: 0}
+    - {x: 42, y: 181.5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -425,25 +425,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0027
     boundsData:
-    - {x: -2, y: 118.5, z: 0}
-    - {x: 116, y: 251, z: 0}
+    - {x: -1.5, y: 88.875, z: 0}
+    - {x: 87, y: 188.25, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -60, y: -6.99999905, z: 0}
-    - {x: 56, y: -6.99999905, z: 0}
-    - {x: -60, y: 244, z: 0}
-    - {x: 56, y: 244, z: 0}
+    - {x: -45, y: -5.24999952, z: 0}
+    - {x: 42, y: -5.24999952, z: 0}
+    - {x: -45, y: 183, z: 0}
+    - {x: 42, y: 183, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -464,25 +464,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0017
     boundsData:
-    - {x: -1, y: 116.500008, z: 0}
-    - {x: 114, y: 249.000015, z: 0}
+    - {x: -.75, y: 87.375, z: 0}
+    - {x: 85.5, y: 186.75, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -58, y: -8.00000095, z: 0}
-    - {x: 56, y: -8.00000095, z: 0}
-    - {x: -58, y: 241.000015, z: 0}
-    - {x: 56, y: 241.000015, z: 0}
+    - {x: -43.5, y: -6.00000048, z: 0}
+    - {x: 42, y: -6.00000048, z: 0}
+    - {x: -43.5, y: 180.75, z: 0}
+    - {x: 42, y: 180.75, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -503,25 +503,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0016
     boundsData:
-    - {x: -.499998093, y: 116.000008, z: 0}
-    - {x: 115, y: 250.000015, z: 0}
+    - {x: -.374998093, y: 87, z: 0}
+    - {x: 86.25, y: 187.5, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -58, y: -9, z: 0}
-    - {x: 57.0000038, y: -9, z: 0}
-    - {x: -58, y: 241.000015, z: 0}
-    - {x: 57.0000038, y: 241.000015, z: 0}
+    - {x: -43.5, y: -6.74999952, z: 0}
+    - {x: 42.7500038, y: -6.74999952, z: 0}
+    - {x: -43.5, y: 180.75, z: 0}
+    - {x: 42.7500038, y: 180.75, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -542,25 +542,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0019
     boundsData:
-    - {x: -1.5, y: 117.000008, z: 0}
-    - {x: 115, y: 248.000015, z: 0}
+    - {x: -1.125, y: 87.75, z: 0}
+    - {x: 86.25, y: 186, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -59, y: -6.99999905, z: 0}
-    - {x: 56, y: -6.99999905, z: 0}
-    - {x: -59, y: 241.000015, z: 0}
-    - {x: 56, y: 241.000015, z: 0}
+    - {x: -44.25, y: -5.24999952, z: 0}
+    - {x: 42, y: -5.24999952, z: 0}
+    - {x: -44.25, y: 180.75, z: 0}
+    - {x: 42, y: 180.75, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -581,25 +581,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0018
     boundsData:
-    - {x: -1.5, y: 117.000008, z: 0}
-    - {x: 115, y: 248.000015, z: 0}
+    - {x: -1.125, y: 87.75, z: 0}
+    - {x: 86.25, y: 186, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -59, y: -6.99999905, z: 0}
-    - {x: 56, y: -6.99999905, z: 0}
-    - {x: -59, y: 241.000015, z: 0}
-    - {x: 56, y: 241.000015, z: 0}
+    - {x: -44.25, y: -5.24999952, z: 0}
+    - {x: 42, y: -5.24999952, z: 0}
+    - {x: -44.25, y: 180.75, z: 0}
+    - {x: 42, y: 180.75, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -620,25 +620,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0023
     boundsData:
-    - {x: -1.5, y: 119, z: 0}
-    - {x: 115, y: 248, z: 0}
+    - {x: -1.125, y: 89.25, z: 0}
+    - {x: 86.25, y: 186, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -59, y: -4.99999905, z: 0}
-    - {x: 56, y: -4.99999905, z: 0}
-    - {x: -59, y: 243, z: 0}
-    - {x: 56, y: 243, z: 0}
+    - {x: -44.25, y: -3.74999928, z: 0}
+    - {x: 42, y: -3.74999928, z: 0}
+    - {x: -44.25, y: 182.25, z: 0}
+    - {x: 42, y: 182.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -659,25 +659,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0001
     boundsData:
-    - {x: -2.5, y: 117.5, z: 0}
-    - {x: 117, y: 253, z: 0}
+    - {x: -1.875, y: 88.125, z: 0}
+    - {x: 87.75, y: 189.75, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -61, y: -9, z: 0}
-    - {x: 56, y: -9, z: 0}
-    - {x: -61, y: 244, z: 0}
-    - {x: 56, y: 244, z: 0}
+    - {x: -45.75, y: -6.74999952, z: 0}
+    - {x: 42, y: -6.74999952, z: 0}
+    - {x: -45.75, y: 183, z: 0}
+    - {x: 42, y: 183, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -698,25 +698,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0004
     boundsData:
-    - {x: -1.49999809, y: 118.5, z: 0}
-    - {x: 117, y: 251, z: 0}
+    - {x: -1.12499809, y: 88.875, z: 0}
+    - {x: 87.75, y: 188.25, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -60, y: -6.99999905, z: 0}
-    - {x: 57.0000038, y: -6.99999905, z: 0}
-    - {x: -60, y: 244, z: 0}
-    - {x: 57.0000038, y: 244, z: 0}
+    - {x: -45, y: -5.24999952, z: 0}
+    - {x: 42.7500038, y: -5.24999952, z: 0}
+    - {x: -45, y: 183, z: 0}
+    - {x: 42.7500038, y: 183, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -737,25 +737,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0007
     boundsData:
-    - {x: -1.49999809, y: 119, z: 0}
-    - {x: 117, y: 248, z: 0}
+    - {x: -1.12499809, y: 89.25, z: 0}
+    - {x: 87.75, y: 186, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -60, y: -4.99999905, z: 0}
-    - {x: 57.0000038, y: -4.99999905, z: 0}
-    - {x: -60, y: 243, z: 0}
-    - {x: 57.0000038, y: 243, z: 0}
+    - {x: -45, y: -3.74999928, z: 0}
+    - {x: 42.7500038, y: -3.74999928, z: 0}
+    - {x: -45, y: 182.25, z: 0}
+    - {x: 42.7500038, y: 182.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -776,25 +776,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0006
     boundsData:
-    - {x: -1.49999809, y: 119, z: 0}
-    - {x: 117, y: 250, z: 0}
+    - {x: -1.12499809, y: 89.25, z: 0}
+    - {x: 87.75, y: 187.5, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -60, y: -6, z: 0}
-    - {x: 57.0000038, y: -6, z: 0}
-    - {x: -60, y: 244, z: 0}
-    - {x: 57.0000038, y: 244, z: 0}
+    - {x: -45, y: -4.5, z: 0}
+    - {x: 42.7500038, y: -4.5, z: 0}
+    - {x: -45, y: 183, z: 0}
+    - {x: 42.7500038, y: 183, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -815,25 +815,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0003
     boundsData:
-    - {x: -1.49999809, y: 118, z: 0}
-    - {x: 117, y: 252, z: 0}
+    - {x: -1.12499809, y: 88.5, z: 0}
+    - {x: 87.75, y: 189, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -60, y: -8.00000095, z: 0}
-    - {x: 57.0000038, y: -8.00000095, z: 0}
-    - {x: -60, y: 244, z: 0}
-    - {x: 57.0000038, y: 244, z: 0}
+    - {x: -45, y: -6.00000048, z: 0}
+    - {x: 42.7500038, y: -6.00000048, z: 0}
+    - {x: -45, y: 183, z: 0}
+    - {x: 42.7500038, y: 183, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -854,25 +854,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0030
     boundsData:
-    - {x: -2.5, y: 118.5, z: 0}
-    - {x: 117, y: 253, z: 0}
+    - {x: -1.875, y: 88.875, z: 0}
+    - {x: 87.75, y: 189.75, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 119, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 89.25, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -61, y: -7.99999952, z: 0}
-    - {x: 56, y: -7.99999952, z: 0}
-    - {x: -61, y: 245, z: 0}
-    - {x: 56, y: 245, z: 0}
+    - {x: -45.75, y: -5.99999952, z: 0}
+    - {x: 42, y: -5.99999952, z: 0}
+    - {x: -45.75, y: 183.75, z: 0}
+    - {x: 42, y: 183.75, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -893,25 +893,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116, z: 0}
-    - {x: 62, y: 130, z: .100000001}
+    - {x: -3.75, y: 87, z: 0}
+    - {x: 46.5, y: 97.5, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0022
     boundsData:
-    - {x: -1.5, y: 118.5, z: 0}
-    - {x: 115, y: 247, z: 0}
+    - {x: -1.125, y: 88.875, z: 0}
+    - {x: 86.25, y: 185.25, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -59, y: -4.99999905, z: 0}
-    - {x: 56, y: -4.99999905, z: 0}
-    - {x: -59, y: 242, z: 0}
-    - {x: 56, y: 242, z: 0}
+    - {x: -44.25, y: -3.74999928, z: 0}
+    - {x: 42, y: -3.74999928, z: 0}
+    - {x: -44.25, y: 181.5, z: 0}
+    - {x: 42, y: 181.5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -932,25 +932,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0024
     boundsData:
-    - {x: -2, y: 119, z: 0}
-    - {x: 116, y: 248, z: 0}
+    - {x: -1.5, y: 89.25, z: 0}
+    - {x: 87, y: 186, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -60, y: -4.99999905, z: 0}
-    - {x: 56, y: -4.99999905, z: 0}
-    - {x: -60, y: 243, z: 0}
-    - {x: 56, y: 243, z: 0}
+    - {x: -45, y: -3.74999928, z: 0}
+    - {x: 42, y: -3.74999928, z: 0}
+    - {x: -45, y: 182.25, z: 0}
+    - {x: 42, y: 182.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -971,25 +971,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0025
     boundsData:
-    - {x: -2, y: 118.5, z: 0}
-    - {x: 116, y: 249, z: 0}
+    - {x: -1.5, y: 88.875, z: 0}
+    - {x: 87, y: 186.75, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -60, y: -6, z: 0}
-    - {x: 56, y: -6, z: 0}
-    - {x: -60, y: 243, z: 0}
-    - {x: 56, y: 243, z: 0}
+    - {x: -45, y: -4.5, z: 0}
+    - {x: 42, y: -4.5, z: 0}
+    - {x: -45, y: 182.25, z: 0}
+    - {x: 42, y: 182.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1010,25 +1010,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0012
     boundsData:
-    - {x: -.999998093, y: 117.000008, z: 0}
-    - {x: 116, y: 248.000015, z: 0}
+    - {x: -.749998093, y: 87.75, z: 0}
+    - {x: 87, y: 186, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -59, y: -6.99999905, z: 0}
-    - {x: 57.0000038, y: -6.99999905, z: 0}
-    - {x: -59, y: 241.000015, z: 0}
-    - {x: 57.0000038, y: 241.000015, z: 0}
+    - {x: -44.25, y: -5.24999952, z: 0}
+    - {x: 42.7500038, y: -5.24999952, z: 0}
+    - {x: -44.25, y: 180.75, z: 0}
+    - {x: 42.7500038, y: 180.75, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1049,25 +1049,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0015
     boundsData:
-    - {x: -.499998093, y: 115.500008, z: 0}
-    - {x: 115, y: 249.000015, z: 0}
+    - {x: -.374998093, y: 86.625, z: 0}
+    - {x: 86.25, y: 186.75, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -58, y: -9, z: 0}
-    - {x: 57.0000038, y: -9, z: 0}
-    - {x: -58, y: 240.000015, z: 0}
-    - {x: 57.0000038, y: 240.000015, z: 0}
+    - {x: -43.5, y: -6.74999952, z: 0}
+    - {x: 42.7500038, y: -6.74999952, z: 0}
+    - {x: -43.5, y: 180, z: 0}
+    - {x: 42.7500038, y: 180, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1088,25 +1088,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0014
     boundsData:
-    - {x: -.499998093, y: 116.000008, z: 0}
-    - {x: 115, y: 250.000015, z: 0}
+    - {x: -.374998093, y: 87, z: 0}
+    - {x: 86.25, y: 187.5, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -58, y: -9, z: 0}
-    - {x: 57.0000038, y: -9, z: 0}
-    - {x: -58, y: 241.000015, z: 0}
-    - {x: 57.0000038, y: 241.000015, z: 0}
+    - {x: -43.5, y: -6.74999952, z: 0}
+    - {x: 42.7500038, y: -6.74999952, z: 0}
+    - {x: -43.5, y: 180.75, z: 0}
+    - {x: 42.7500038, y: 180.75, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1127,25 +1127,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0011
     boundsData:
-    - {x: -.999998093, y: 118, z: 0}
-    - {x: 116, y: 248, z: 0}
+    - {x: -.749998093, y: 88.5, z: 0}
+    - {x: 87, y: 186, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -59, y: -6, z: 0}
-    - {x: 57.0000038, y: -6, z: 0}
-    - {x: -59, y: 242, z: 0}
-    - {x: 57.0000038, y: 242, z: 0}
+    - {x: -44.25, y: -4.5, z: 0}
+    - {x: 42.7500038, y: -4.5, z: 0}
+    - {x: -44.25, y: 181.5, z: 0}
+    - {x: 42.7500038, y: 181.5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1166,25 +1166,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: ArmoredMouseMov0010
     boundsData:
-    - {x: -.999998093, y: 118, z: 0}
-    - {x: 116, y: 248, z: 0}
+    - {x: -.749998093, y: 88.5, z: 0}
+    - {x: 87, y: 186, z: 0}
     untrimmedBoundsData:
-    - {x: -5.5, y: 118, z: 0}
-    - {x: 215, y: 300, z: 0}
-    texelSize: {x: 1, y: 1}
+    - {x: -4.125, y: 88.5, z: 0}
+    - {x: 161.25, y: 225, z: 0}
+    texelSize: {x: .75, y: .75}
     positions:
-    - {x: -59, y: -6, z: 0}
-    - {x: 57.0000038, y: -6, z: 0}
-    - {x: -59, y: 242, z: 0}
-    - {x: 57.0000038, y: 242, z: 0}
+    - {x: -44.25, y: -4.5, z: 0}
+    - {x: 42.7500038, y: -4.5, z: 0}
+    - {x: -44.25, y: 181.5, z: 0}
+    - {x: 42.7500038, y: 181.5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1205,8 +1205,8 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: -5, y: 116.5, z: 0}
-    - {x: 62, y: 130.5, z: .100000001}
+    - {x: -3.75, y: 87.375, z: 0}
+    - {x: 46.5, y: 97.875, z: .100000001}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -1223,7 +1223,7 @@ MonoBehaviour:
   assetName: 
   invOrthoSize: .00185185182
   halfTargetHeight: 540
-  buildKey: 935073294
+  buildKey: 226172584
   dataGuid: 9a962d433573d4d1484bf3b45a7bf303
   managedSpriteCollection: 0
   hasPlatformData: 0

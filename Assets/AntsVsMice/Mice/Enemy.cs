@@ -5,22 +5,24 @@ using System.Collections.Generic;
 public class Enemy : MonoBehaviour {
 	public int reward;
 	public int health;
+	
 	public int cheeseEat = 1;
 	public float damageReceived;
 	public bool flying = false;
-	public Stack<Vector3> myPath;
-	Vector3 next;
+	public Vector3[] myPath;
+	public int pathIdx = 0;
+	public Transform healthLocation;
 	public Transform damageLocation;
-	float lastMove = 0;
+	public int healthWidth = 40;
 	public virtual void Stop() {}
 	public float lifeLeft {
 		get {
 			if (damageReceived == 0) return health;
 			if (damageReceived > health) return 0;
-			return damageReceived / health;
+			return health - damageReceived;
 		}
 	}
-	
+	float baseSpeed = 40;
 	public float speed = 1;
 	public float speedModifier = 1;
 	protected float slowdownTimeLeft = 0;
@@ -33,7 +35,7 @@ public class Enemy : MonoBehaviour {
 	
 	public List<Resistance> resistances = new List<Resistance>();
 	public void March(Vector3[] path) {
-		myPath = new Stack<Vector3>(path);
+		myPath = path;
 	}
 	public void Die() {
 		enabled = false;
@@ -43,14 +45,13 @@ public class Enemy : MonoBehaviour {
 		if (myPath == null) return;
 		if (lifeLeft == 0) {
 			Score.instance.money += reward;
-			
+			Die ();
 		}
-		if (Vector3.Distance(transform.position, next) > lastMove) {
-			Vector3 move = (next - transform.position).normalized * speedCurrent * Time.deltaTime;
+		if (Vector3.Distance(transform.position, myPath[pathIdx]) > 1) {
+			Vector3 move = (myPath[pathIdx] - transform.position).normalized * baseSpeed * speedCurrent * Time.deltaTime;
 			transform.Translate(move);
-			lastMove = move.magnitude;
-		} else if (myPath.Count > 0) {
-			next = myPath.Pop();
+		} else if (pathIdx < myPath.Length -1) {
+			pathIdx++;
 		} else {
 			MarchOver();
 		}
@@ -78,7 +79,13 @@ public class Enemy : MonoBehaviour {
 		damageReceived += damageTaken;
 		return damageTaken;
 	}
-	public void Start() {
-		if (damageLocation == null) damageLocation = transform;
+	public void OnGUI() {
+		GUI.skin = Info.mouseSkin;
+		if (damageReceived > 0 && lifeLeft > 0) {
+			float healthPct = 1 / (health / lifeLeft);
+			Vector3 screenPos = Camera.mainCamera.WorldToScreenPoint(healthLocation.position);
+			//Debug.Log ("width: "+healthWidth*healthPct);
+			GUI.Box (new Rect(screenPos.x - (healthWidth/2), Screen.height - screenPos.y, healthWidth * healthPct, 5), "", "health");
+		}
 	}
 }

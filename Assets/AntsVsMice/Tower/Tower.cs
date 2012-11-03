@@ -1,6 +1,6 @@
 using UnityEngine;
 using System.Collections;
-
+using System.Collections.Generic;
 
 public abstract class Tower : MonoBehaviour {
 	public static Tower inFocus;
@@ -9,10 +9,12 @@ public abstract class Tower : MonoBehaviour {
 	public Transform launchFrom;
 	public bool firing = true;
 	public bool placed = false;
+	public LayerMask targetLayer;
 	public Enemy target;
 	public Level[] levels;
 	public Level currentLevel;
 	float lastFired = 0;
+	public tk2dSprite radiusSprite;
 	
 	[System.Serializable]
 	public class Level {
@@ -43,10 +45,13 @@ public abstract class Tower : MonoBehaviour {
 	
 	// Update is called once per frame
 	public virtual Enemy FindTarget () {
-		Collider[] inRange=Physics.OverlapSphere(transform.position,currentLevel.range);
+		Vector3 fireCenter = transform.position;
+		Collider[] inRange=Physics.OverlapSphere(fireCenter, currentLevel.range, targetLayer.value);
+		System.Array.Sort (inRange, (x, y) => (x.transform.position - transform.position).sqrMagnitude.CompareTo((y.transform.position - transform.position).sqrMagnitude) );
+		//Debug.Log ("Colliders: "+inRange.Length);
 		foreach(Collider c in inRange){
-			Enemy e = c.GetComponent<Enemy>();
-			if (e !=null && e.health > 0){
+			Enemy e = c.transform.root.GetComponent<Enemy>();
+			if (e !=null && e.lifeLeft > 0){
 				return e;
 			}
 		}
@@ -57,6 +62,7 @@ public abstract class Tower : MonoBehaviour {
 			if (newAmmo == null) {
 				newAmmo = ((GameObject) GameObject.Instantiate(currentLevel.ammoPrefab, launchFrom.position, currentLevel.ammoPrefab.transform.rotation)).GetComponent<Ammo>();
 			}
+			newAmmo.flightTime = currentLevel.rateOfFire;
 			newAmmo.launchFrom = launchFrom;
 			newAmmo.transform.parent = launchFrom;
 			newAmmo.transform.localPosition = Vector3.zero;
@@ -84,8 +90,10 @@ public abstract class Tower : MonoBehaviour {
 	}
 	public void Update() {
 		if (placed) {
-			if (target == null) {
+			if (target == null || target.lifeLeft == 0) {
 				target = FindTarget();
+			} else if (Vector3.Distance(transform.position, target.transform.position) > currentLevel.range) {
+				target = null;
 			} else if (lastFired + currentLevel.rateOfFire <= Time.time) {
 				Fire();
 			}
@@ -114,6 +122,11 @@ public abstract class Tower : MonoBehaviour {
 				currentLevel = next;
 				Score.instance.money -= currentLevel.cost; 
 			}
+		}
+	}
+	public virtual void OnDrawGizmos() {
+		if (placed) {
+			Gizmos.DrawWireSphere(transform.position, currentLevel.range);
 		}
 	}
 }

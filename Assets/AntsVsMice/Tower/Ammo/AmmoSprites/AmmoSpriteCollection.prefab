@@ -56,16 +56,16 @@ MonoBehaviour:
   forcedTextureWidth: 1024
   forcedTextureHeight: 1024
   textureCompression: 0
-  atlasWidth: 1024
+  atlasWidth: 2048
   atlasHeight: 2048
   forceSquareAtlas: 0
-  atlasWastage: 27.1198273
+  atlasWastage: 38.3642197
   allowMultipleAtlases: 0
   textureParams:
   - name: Arrow
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 17c193f8c123d4744b256141c6d3d374, type: 1}
     materialId: 0
     anchor: 4
@@ -102,7 +102,7 @@ MonoBehaviour:
   - name: Spray
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: fa004c8cd8dd6445fb5727fdb7a500bf, type: 1}
     materialId: 0
     anchor: 7
@@ -139,7 +139,7 @@ MonoBehaviour:
   - name: CannonBall
     disableTrimming: 0
     additive: 0
-    scale: {x: .600000024, y: .600000024, z: .600000024}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 22e93f653613d4fee983ef3b50ee7755, type: 1}
     materialId: 0
     anchor: 9
@@ -186,7 +186,7 @@ MonoBehaviour:
   - name: Explosion0021
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: fee3c5a319eca49029774bfb3d097c03, type: 1}
     materialId: 0
     anchor: 9
@@ -223,7 +223,7 @@ MonoBehaviour:
   - name: Explosion0023
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: d71af314085c0457f9ff8e4f9016f5b9, type: 1}
     materialId: 0
     anchor: 9
@@ -260,7 +260,7 @@ MonoBehaviour:
   - name: Explosion0010
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 763bcbcae0cf94273b6d27251d7fed73, type: 1}
     materialId: 0
     anchor: 9
@@ -297,7 +297,7 @@ MonoBehaviour:
   - name: Explosion0012
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 23e61b3b99b86416691da2a39374cf66, type: 1}
     materialId: 0
     anchor: 9
@@ -334,7 +334,7 @@ MonoBehaviour:
   - name: Explosion0018
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 1558b9dbe44254d18a7eb0b310f97c2b, type: 1}
     materialId: 0
     anchor: 9
@@ -371,7 +371,7 @@ MonoBehaviour:
   - name: Explosion0015
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 5ceb866cc34c64df6885d161df4b3097, type: 1}
     materialId: 0
     anchor: 9
@@ -408,7 +408,7 @@ MonoBehaviour:
   - name: Explosion0022
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 6e7cb4ee6c0af443191b9cdf87cf1516, type: 1}
     materialId: 0
     anchor: 9
@@ -445,7 +445,7 @@ MonoBehaviour:
   - name: Explosion0005
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 5f0ce844561144f7aa480be60dcb5661, type: 1}
     materialId: 0
     anchor: 9
@@ -482,7 +482,7 @@ MonoBehaviour:
   - name: Explosion0016
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 810314a9093894b57a5a51561dc7e6ac, type: 1}
     materialId: 0
     anchor: 9
@@ -519,7 +519,7 @@ MonoBehaviour:
   - name: Explosion0017
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 7ed777aa211974ece9173d0d3cbfa814, type: 1}
     materialId: 0
     anchor: 9
@@ -556,7 +556,7 @@ MonoBehaviour:
   - name: Explosion0001
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: eb1e6cb083edf40499b88e6585b74a5f, type: 1}
     materialId: 0
     anchor: 9
@@ -593,7 +593,7 @@ MonoBehaviour:
   - name: Explosion0002
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 8fe46a78c48554e5ea4947b8f113025f, type: 1}
     materialId: 0
     anchor: 9
@@ -630,7 +630,7 @@ MonoBehaviour:
   - name: Explosion0003
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: d4c369599b4d14f43bd4d69f8e4f4d27, type: 1}
     materialId: 0
     anchor: 9
@@ -667,7 +667,7 @@ MonoBehaviour:
   - name: Explosion0011
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 2e7ac1f6fb2c6432b86e95fdb2588aa3, type: 1}
     materialId: 0
     anchor: 9
@@ -704,7 +704,7 @@ MonoBehaviour:
   - name: Explosion0019
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 78020007d93dd4f6991f752ea3c3972e, type: 1}
     materialId: 0
     anchor: 9
@@ -741,7 +741,7 @@ MonoBehaviour:
   - name: Explosion0004
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 88d67776204a4494cacd3357dc5cba28, type: 1}
     materialId: 0
     anchor: 9
@@ -778,7 +778,7 @@ MonoBehaviour:
   - name: Explosion0014
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 8702f46770ebb4c1d8f3e3672e27a1be, type: 1}
     materialId: 0
     anchor: 9
@@ -815,7 +815,7 @@ MonoBehaviour:
   - name: Explosion0009
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 5090c1d7f359146e2b3e022ebe6489ed, type: 1}
     materialId: 0
     anchor: 9
@@ -852,7 +852,7 @@ MonoBehaviour:
   - name: Explosion0006
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 3737512f5df5d423a887905feb48b975, type: 1}
     materialId: 0
     anchor: 9
@@ -889,7 +889,7 @@ MonoBehaviour:
   - name: Explosion0013
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 81c161dfe07d94935a593d50411897af, type: 1}
     materialId: 0
     anchor: 9
@@ -926,7 +926,7 @@ MonoBehaviour:
   - name: Explosion0020
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: aa8a321cd7cc04e9eb48f3b2f7323ccd, type: 1}
     materialId: 0
     anchor: 9
@@ -963,7 +963,7 @@ MonoBehaviour:
   - name: Explosion0007
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 86cfcc4c8f2374ccbadf254f7d93c86e, type: 1}
     materialId: 0
     anchor: 9
@@ -1000,12 +1000,49 @@ MonoBehaviour:
   - name: Explosion0008
     disableTrimming: 0
     additive: 0
-    scale: {x: 1, y: 1, z: 1}
+    scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 6c5649e2cbab242e5b560feb321d88ab, type: 1}
     materialId: 0
     anchor: 9
     anchorX: 262
     anchorY: 337
+    overrideMesh: {fileID: 0}
+    customSpriteGeometry: 0
+    geometryIslands: []
+    dice: 0
+    diceUnitX: 64
+    diceUnitY: 0
+    pad: 0
+    extraPadding: 0
+    source: 0
+    fromSpriteSheet: 0
+    hasSpriteSheetId: 0
+    spriteSheetId: 0
+    spriteSheetX: 0
+    spriteSheetY: 0
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    regionId: 0
+    colliderType: 1
+    boxColliderMin: {x: 0, y: 0}
+    boxColliderMax: {x: 0, y: 0}
+    polyColliderIslands: []
+    polyColliderCap: 0
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+    colliderColor: 0
+  - name: radius
+    disableTrimming: 0
+    additive: 0
+    scale: {x: 1, y: 1, z: 1}
+    texture: {fileID: 2800000, guid: ed40153b15d264815a86b304473589ce, type: 1}
+    materialId: 0
+    anchor: 4
+    anchorX: 512
+    anchorY: 512
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
