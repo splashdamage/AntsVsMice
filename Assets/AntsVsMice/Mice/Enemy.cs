@@ -42,7 +42,7 @@ public class Enemy : MonoBehaviour {
 		Destroy (gameObject);
 	}
 	public void Update() {
-		if (myPath == null) return;
+		if (myPath == null || myPath.Length == 0) return;
 		if (lifeLeft == 0) {
 			Score.instance.money += reward;
 			Die ();

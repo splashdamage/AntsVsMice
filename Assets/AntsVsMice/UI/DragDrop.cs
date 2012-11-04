@@ -72,7 +72,6 @@ public class DragDrop : MonoBehaviour {
 					Vector3 newPos = cam.ScreenToWorldPoint(Input.mousePosition);
 					newPos.y = towerDepth;
 				    inDrag.transform.position = newPos;
-					Debug.Log (newPos);
 					break;
 				case Phase.stationary:
 					if ((Input.mousePosition - lastScreenPos).sqrMagnitude > 0) {
@@ -114,9 +113,13 @@ public class DragDrop : MonoBehaviour {
 	}
 	void StartDrag() {}
 	void Drop() {
-		// check for valid position...
+		if (inDrag.collisions.Count > 0) {
+			currentPhase = Phase.cancelled;
+			return;
+		}
 		inDrag.placed = true;
 		inDrag.enabled = true;
+		inDrag.collider.isTrigger = true;
 		inDrag.radiusSprite.gameObject.active = false;
 		score.money -= inDrag.currentLevel.cost;
 		inDrag = null;
@@ -125,7 +128,7 @@ public class DragDrop : MonoBehaviour {
 	void CancelDrag() {
 		currentPhase = Phase.none;
 		if (inDrag != null) {
-			Destroy (inDrag);
+			Destroy (inDrag.gameObject);
 			inDrag = null;
 		}
 	}

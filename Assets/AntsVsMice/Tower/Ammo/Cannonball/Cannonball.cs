@@ -5,7 +5,11 @@ using System.Collections.Generic;
 public class Cannonball : Ammo {
 	public float range = 250;
 	protected bool didDamage = false;
-	
+	protected override float altitude {
+		get {
+			return 1024;
+		}
+	}
 	public override Vector3 end {
 		get { return _targetPosAtFiring; }
 	}

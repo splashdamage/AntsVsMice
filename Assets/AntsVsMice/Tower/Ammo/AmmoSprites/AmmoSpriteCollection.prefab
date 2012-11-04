@@ -68,9 +68,9 @@ MonoBehaviour:
     scale: {x: .75, y: .75, z: .75}
     texture: {fileID: 2800000, guid: 17c193f8c123d4744b256141c6d3d374, type: 1}
     materialId: 0
-    anchor: 4
-    anchorX: 11
-    anchorY: 84
+    anchor: 9
+    anchorX: 10
+    anchorY: 29
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -102,12 +102,12 @@ MonoBehaviour:
   - name: Spray
     disableTrimming: 0
     additive: 0
-    scale: {x: .75, y: .75, z: .75}
+    scale: {x: .600000024, y: .600000024, z: .600000024}
     texture: {fileID: 2800000, guid: fa004c8cd8dd6445fb5727fdb7a500bf, type: 1}
     materialId: 0
-    anchor: 7
+    anchor: 9
     anchorX: 120
-    anchorY: 327
+    anchorY: 193
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -139,7 +139,7 @@ MonoBehaviour:
   - name: CannonBall
     disableTrimming: 0
     additive: 0
-    scale: {x: .75, y: .75, z: .75}
+    scale: {x: .699999988, y: .699999988, z: .699999988}
     texture: {fileID: 2800000, guid: 22e93f653613d4fee983ef3b50ee7755, type: 1}
     materialId: 0
     anchor: 9

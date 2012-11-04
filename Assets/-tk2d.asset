@@ -45,6 +45,9 @@ MonoBehaviour:
   - assetGUID: 18d9ecf41629348d5b76db6a5e7ca5eb
     dataGUID: 
     managed: 0
+  - assetGUID: 6c318e1cccc8149f0b5315e465ef1787
+    dataGUID: 
+    managed: 0
   fontIndex:
   - assetGUID: 063b15d80dbb4604d890600a64c79cf8
     dataGUID: e7a6b09a73c6b2b4f8060096ddbd3b5e
@@ -1323,5 +1326,52 @@ MonoBehaviour:
     - 1350844922
     - 1350844922
     - 1350844922
+    managedSpriteCollection: 0
+    version: 3
+  - name: SprayerSpriteCollection
+    spriteCollectionGUID: 00439f41c143c45b0afe1f600bedff21
+    spriteCollectionDataGUID: cdd50f75b96264bb28d466f29dfc2df2
+    spriteNames:
+    - SprayerMov0012
+    - SprayerMov0013
+    - SprayerMov0001
+    - SprayerMov0008
+    - SprayerMov0002
+    - SprayerMov0004
+    - SprayerMov0006
+    - SprayerMov0011
+    - SprayerMov0010
+    - SprayerMov0007
+    - SprayerMov0009
+    - SprayerMov0003
+    - SprayerMov0005
+    spriteTextureGUIDs:
+    - 14ea9dac993fb4d389edbe06a5304c15
+    - 0b6486342824c42fcb04783c67666760
+    - 7d380ebed0ae74df489068b247968f83
+    - 8c7b92571357d4dc7b7e17346e692563
+    - 32556b98f48ed45c9b313dda3218e6bb
+    - 15d41d989ee9d4fc3b655ce34399296f
+    - d798fe9ada8364241a21977d0ee73091
+    - 8e694db41a46043668f23fc3e43d6657
+    - e6df9c56f6bae4fbb92680450c96833c
+    - 9d8a1244341544e18aef64092e9b370e
+    - 7b0a90fedddce41c3aa5dc4391910aef
+    - 768dbdbc272b94f1e9635ddb217b10ef
+    - a9a99bdce68284ed9b7f3ca87b4328ea
+    spriteTextureTimeStamps:
+    - 1344590614
+    - 1344590614
+    - 1344590612
+    - 1344590614
+    - 1344590612
+    - 1344590612
+    - 1344590612
+    - 1344590614
+    - 1344590614
+    - 1344590614
+    - 1344590614
+    - 1344590612
+    - 1344590612
     managedSpriteCollection: 0
     version: 3

@@ -10,12 +10,19 @@ public abstract class Tower : MonoBehaviour {
 	public bool firing = true;
 	public bool placed = false;
 	public LayerMask targetLayer;
+	public LayerMask noTowerMask;
+	public HashSet<Collider> collisions = new HashSet<Collider>();
 	public Enemy target;
+	public Enemy foundTarget {
+		get {
+			if (target == null) target = FindTarget();
+			return target;
+		}
+	}
 	public Level[] levels;
 	public Level currentLevel;
 	float lastFired = 0;
 	public tk2dSprite radiusSprite;
-	
 	[System.Serializable]
 	public class Level {
 		public float rateOfFire;
@@ -71,8 +78,8 @@ public abstract class Tower : MonoBehaviour {
 		}
 	}
 	
-	public void Launch(tk2dAnimatedSprite sprite, tk2dSpriteAnimationClip clip, tk2dSpriteAnimationFrame frame, int frameNum) {
-		currentAmmo.LaunchAt(target);
+	public virtual void Launch(tk2dAnimatedSprite sprite, tk2dSpriteAnimationClip clip, tk2dSpriteAnimationFrame frame, int frameNum) {
+		currentAmmo.LaunchAt(foundTarget);
 		currentAmmo = null;
 	}
 	
@@ -108,7 +115,6 @@ public abstract class Tower : MonoBehaviour {
 		Vector3 center = Camera.main.WorldToScreenPoint(transform.position);
 		GUI.skin = Info.mouseSkin;
 		if (curIdx > 0) {
-			Debug.Log ("here "+ curIdx);
 			string plus = (curIdx == 1) ? "+" : "++";
 			GUI.Label(new Rect(center.x, Screen.height - center.y, 20, 40), plus);
 		}
@@ -122,6 +128,26 @@ public abstract class Tower : MonoBehaviour {
 				currentLevel = next;
 				Score.instance.money -= currentLevel.cost; 
 			}
+		}
+	}
+	public void OnCollisionEnter(Collision collision) {
+		collisions.Add (collision.collider);
+		anim.color = Color.red;
+	}
+	public void OnTriggerEnter(Collider collider) {
+		collisions.Add (collider);
+		if (!collider.CompareTag("Dock")) {
+			anim.color = Color.red;
+		}
+	}
+	public void OnCollisionExit(Collision collision) {
+		collisions.Add (collision.collider);
+		anim.color = Color.red;
+	}
+	public void OnTriggerExit(Collider collider) {
+		collisions.Remove (collider);
+		if (collisions.Count == 0) {
+			anim.color = Color.white;
 		}
 	}
 	public virtual void OnDrawGizmos() {

@@ -1,0 +1,580 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &100000
+GameObject:
+  m_ObjectHideFlags: 0
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  serializedVersion: 3
+  m_Component:
+  - 4: {fileID: 400000}
+  - 114: {fileID: 11400000}
+  m_Layer: 0
+  m_Name: SprayerSpriteCollection
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 0
+--- !u!4 &400000
+Transform:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 1
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 100100000}
+  m_GameObject: {fileID: 100000}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d546f34a90531a14eaba82a43b05b86b, type: 1}
+  m_Name: 
+  version: 3
+  materialIdsValid: 1
+  needMaterialInstance: 0
+  spriteDefinitions:
+  - name: SprayerMov0012
+    boundsData:
+    - {x: -2.62500381, y: 29.6249943, z: 0}
+    - {x: 101.249992, y: 113.25, z: 0}
+    untrimmedBoundsData:
+    - {x: -12.75, y: 25.5, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -53.25, y: -27.0000038, z: 0}
+    - {x: 47.9999924, y: -27.0000038, z: 0}
+    - {x: -53.25, y: 86.2499924, z: 0}
+    - {x: 47.9999924, y: 86.2499924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .312501967, y: .137696296}
+    - {x: .312501967, y: .269530267}
+    - {x: .607419908, y: .137696296}
+    - {x: .607419908, y: .269530267}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 14ea9dac993fb4d389edbe06a5304c15
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -2.25, y: -6.375, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: SprayerMov0013
+    boundsData:
+    - {x: -1.87500381, y: 25.8749943, z: 0}
+    - {x: 101.249992, y: 98.25, z: 0}
+    untrimmedBoundsData:
+    - {x: -12, y: 29.25, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -52.5, y: -23.2500038, z: 0}
+    - {x: 48.7499924, y: -23.2500038, z: 0}
+    - {x: -52.5, y: 74.9999924, z: 0}
+    - {x: 48.7499924, y: 74.9999924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .273438483}
+    - {x: .267576158, y: .273438483}
+    - {x: .00390820298, y: .401366204}
+    - {x: .267576158, y: .401366204}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 0b6486342824c42fcb04783c67666760
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -1.5, y: -2.625, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: SprayerMov0001
+    boundsData:
+    - {x: -2.62500381, y: 22.1249943, z: 0}
+    - {x: 101.249992, y: 98.25, z: 0}
+    untrimmedBoundsData:
+    - {x: -12.75, y: 25.5, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -53.25, y: -27.0000038, z: 0}
+    - {x: 47.9999924, y: -27.0000038, z: 0}
+    - {x: -53.25, y: 71.2499924, z: 0}
+    - {x: 47.9999924, y: 71.2499924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .275392592, y: .273438483}
+    - {x: .539060533, y: .273438483}
+    - {x: .275392592, y: .401366204}
+    - {x: .539060533, y: .401366204}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7d380ebed0ae74df489068b247968f83
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -2.25, y: -6.375, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: SprayerMov0008
+    boundsData:
+    - {x: -2.62500381, y: 30.7499943, z: 0}
+    - {x: 101.249992, y: 115.5, z: 0}
+    untrimmedBoundsData:
+    - {x: -12.75, y: 25.5, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -53.25, y: -27.0000038, z: 0}
+    - {x: 47.9999924, y: -27.0000038, z: 0}
+    - {x: -53.25, y: 88.4999924, z: 0}
+    - {x: 47.9999924, y: 88.4999924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .00195410149}
+    - {x: .00390820298, y: .133788079}
+    - {x: .304685533, y: .00195410149}
+    - {x: .304685533, y: .133788079}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8c7b92571357d4dc7b7e17346e692563
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -2.25, y: -6.375, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: SprayerMov0002
+    boundsData:
+    - {x: -2.62500381, y: 22.1249943, z: 0}
+    - {x: 101.249992, y: 98.25, z: 0}
+    untrimmedBoundsData:
+    - {x: -12.75, y: 25.5, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -53.25, y: -27.0000038, z: 0}
+    - {x: 47.9999924, y: -27.0000038, z: 0}
+    - {x: -53.25, y: 71.2499924, z: 0}
+    - {x: 47.9999924, y: 71.2499924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .546876967, y: .273438483}
+    - {x: .810544908, y: .273438483}
+    - {x: .546876967, y: .401366204}
+    - {x: .810544908, y: .401366204}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 32556b98f48ed45c9b313dda3218e6bb
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -2.25, y: -6.375, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: SprayerMov0004
+    boundsData:
+    - {x: -2.62500381, y: 22.1249943, z: 0}
+    - {x: 101.249992, y: 98.25, z: 0}
+    untrimmedBoundsData:
+    - {x: -12.75, y: 25.5, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -53.25, y: -27.0000038, z: 0}
+    - {x: 47.9999924, y: -27.0000038, z: 0}
+    - {x: -53.25, y: 71.2499924, z: 0}
+    - {x: 47.9999924, y: 71.2499924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .405274421}
+    - {x: .267576158, y: .405274421}
+    - {x: .00390820298, y: .533202171}
+    - {x: .267576158, y: .533202171}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 15d41d989ee9d4fc3b655ce34399296f
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -2.25, y: -6.375, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: SprayerMov0006
+    boundsData:
+    - {x: -2.62500381, y: 22.1249943, z: 0}
+    - {x: 101.249992, y: 98.25, z: 0}
+    untrimmedBoundsData:
+    - {x: -12.75, y: 25.5, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -53.25, y: -27.0000038, z: 0}
+    - {x: 47.9999924, y: -27.0000038, z: 0}
+    - {x: -53.25, y: 71.2499924, z: 0}
+    - {x: 47.9999924, y: 71.2499924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .275392592, y: .405274421}
+    - {x: .539060533, y: .405274421}
+    - {x: .275392592, y: .533202171}
+    - {x: .539060533, y: .533202171}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: d798fe9ada8364241a21977d0ee73091
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -2.25, y: -6.375, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: SprayerMov0011
+    boundsData:
+    - {x: -2.62500381, y: 29.6249943, z: 0}
+    - {x: 101.249992, y: 113.25, z: 0}
+    untrimmedBoundsData:
+    - {x: -12.75, y: 25.5, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -53.25, y: -27.0000038, z: 0}
+    - {x: 47.9999924, y: -27.0000038, z: 0}
+    - {x: -53.25, y: 86.2499924, z: 0}
+    - {x: 47.9999924, y: 86.2499924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .615236342, y: .137696296}
+    - {x: .615236342, y: .269530267}
+    - {x: .910154283, y: .137696296}
+    - {x: .910154283, y: .269530267}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 8e694db41a46043668f23fc3e43d6657
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -2.25, y: -6.375, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: SprayerMov0010
+    boundsData:
+    - {x: -2.62500381, y: 30.7499943, z: 0}
+    - {x: 101.249992, y: 115.5, z: 0}
+    untrimmedBoundsData:
+    - {x: -12.75, y: 25.5, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -53.25, y: -27.0000038, z: 0}
+    - {x: 47.9999924, y: -27.0000038, z: 0}
+    - {x: -53.25, y: 88.4999924, z: 0}
+    - {x: 47.9999924, y: 88.4999924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .312501967, y: .00195410149}
+    - {x: .312501967, y: .133788079}
+    - {x: .613279283, y: .00195410149}
+    - {x: .613279283, y: .133788079}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: e6df9c56f6bae4fbb92680450c96833c
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -2.25, y: -6.375, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: SprayerMov0007
+    boundsData:
+    - {x: -2.62500381, y: 30.7499943, z: 0}
+    - {x: 101.249992, y: 115.5, z: 0}
+    untrimmedBoundsData:
+    - {x: -12.75, y: 25.5, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -53.25, y: -27.0000038, z: 0}
+    - {x: 47.9999924, y: -27.0000038, z: 0}
+    - {x: -53.25, y: 88.4999924, z: 0}
+    - {x: 47.9999924, y: 88.4999924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .621095717, y: .00195410149}
+    - {x: .621095717, y: .133788079}
+    - {x: .921873033, y: .00195410149}
+    - {x: .921873033, y: .133788079}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 9d8a1244341544e18aef64092e9b370e
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -2.25, y: -6.375, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: SprayerMov0009
+    boundsData:
+    - {x: -2.62500381, y: 30.7499943, z: 0}
+    - {x: 101.249992, y: 115.5, z: 0}
+    untrimmedBoundsData:
+    - {x: -12.75, y: 25.5, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -53.25, y: -27.0000038, z: 0}
+    - {x: 47.9999924, y: -27.0000038, z: 0}
+    - {x: -53.25, y: 88.4999924, z: 0}
+    - {x: 47.9999924, y: 88.4999924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .137696296}
+    - {x: .00390820298, y: .269530267}
+    - {x: .304685533, y: .137696296}
+    - {x: .304685533, y: .269530267}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 7b0a90fedddce41c3aa5dc4391910aef
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -2.25, y: -6.375, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: SprayerMov0003
+    boundsData:
+    - {x: -2.62500381, y: 22.1249943, z: 0}
+    - {x: 101.249992, y: 98.25, z: 0}
+    untrimmedBoundsData:
+    - {x: -12.75, y: 25.5, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -53.25, y: -27.0000038, z: 0}
+    - {x: 47.9999924, y: -27.0000038, z: 0}
+    - {x: -53.25, y: 71.2499924, z: 0}
+    - {x: 47.9999924, y: 71.2499924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .546876967, y: .405274421}
+    - {x: .810544908, y: .405274421}
+    - {x: .546876967, y: .533202171}
+    - {x: .810544908, y: .533202171}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: 768dbdbc272b94f1e9635ddb217b10ef
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 0
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -2.25, y: -6.375, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  - name: SprayerMov0005
+    boundsData:
+    - {x: -2.62500381, y: 22.1249943, z: 0}
+    - {x: 101.249992, y: 98.25, z: 0}
+    untrimmedBoundsData:
+    - {x: -12.75, y: 25.5, z: 0}
+    - {x: 412.5, y: 300, z: 0}
+    texelSize: {x: .75, y: .75}
+    positions:
+    - {x: -53.25, y: -27.0000038, z: 0}
+    - {x: 47.9999924, y: -27.0000038, z: 0}
+    - {x: -53.25, y: 71.2499924, z: 0}
+    - {x: 47.9999924, y: 71.2499924, z: 0}
+    normals: []
+    tangents: []
+    uvs:
+    - {x: .00390820298, y: .537110329}
+    - {x: .00390820298, y: .668944359}
+    - {x: .259763658, y: .537110329}
+    - {x: .259763658, y: .668944359}
+    indices: 000000000300000001000000020000000300000000000000
+    material: {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+    materialId: 0
+    sourceTextureGUID: a9a99bdce68284ed9b7f3ca87b4328ea
+    extractRegion: 0
+    regionX: 0
+    regionY: 0
+    regionW: 0
+    regionH: 0
+    flipped: 1
+    complexGeometry: 0
+    colliderType: 2
+    colliderVertices:
+    - {x: -2.25, y: -6.375, z: 0}
+    - {x: 52.5, y: 24.375, z: 100}
+    colliderIndicesFwd: 
+    colliderIndicesBack: 
+    colliderConvex: 0
+    colliderSmoothSphereCollisions: 0
+  premultipliedAlpha: 0
+  material: {fileID: 0}
+  materials:
+  - {fileID: 2100000, guid: dacb4afa866ac4fa8bf473b3cc0998b8, type: 2}
+  textures:
+  - {fileID: 2800000, guid: 02316a92780f64b6cac0f063d79539e7, type: 1}
+  allowMultipleAtlases: 0
+  spriteCollectionGUID: 00439f41c143c45b0afe1f600bedff21
+  spriteCollectionName: SprayerSpriteCollection
+  assetName: 
+  invOrthoSize: .00185185182
+  halfTargetHeight: 540
+  buildKey: 1488070496
+  dataGuid: cdd50f75b96264bb28d466f29dfc2df2
+  managedSpriteCollection: 0
+  hasPlatformData: 0
+  spriteCollectionPlatforms: []
+  spriteCollectionPlatformGUIDs: []
+--- !u!1001 &100100000
+Prefab:
+  m_ObjectHideFlags: 1
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 0}
+    m_Modifications: []
+    m_RemovedComponents: []
+  m_ParentPrefab: {fileID: 0}
+  m_RootGameObject: {fileID: 100000}
+  m_IsPrefabParent: 1
+  m_IsExploded: 1

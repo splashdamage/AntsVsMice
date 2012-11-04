@@ -43,17 +43,17 @@ MonoBehaviour:
   spriteDefinitions:
   - name: Arrow
     boundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: .75, y: -41.25, z: 0}
     - {x: 16.5, y: 126, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 0, z: 0}
+    - {x: .75, y: -41.25, z: 0}
     - {x: 16.5, y: 126, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -8.25, y: -63, z: 0}
-    - {x: 8.25, y: -63, z: 0}
-    - {x: -8.25, y: 63, z: 0}
-    - {x: 8.25, y: 63, z: 0}
+    - {x: -7.5, y: -104.25, z: 0}
+    - {x: 9, y: -104.25, z: 0}
+    - {x: -7.5, y: 21.75, z: 0}
+    - {x: 9, y: 21.75, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -80,17 +80,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: Spray
     boundsData:
-    - {x: -3.37500381, y: 150.75, z: 0}
-    - {x: 150.75, y: 189, z: 0}
+    - {x: -2.70000076, y: 40.1999969, z: 0}
+    - {x: 120.599998, y: 151.200012, z: 0}
     untrimmedBoundsData:
-    - {x: 0, y: 122.625, z: 0}
-    - {x: 180, y: 245.25, z: 0}
-    texelSize: {x: .75, y: .75}
+    - {x: 0, y: 17.6999969, z: 0}
+    - {x: 144, y: 196.200012, z: 0}
+    texelSize: {x: .600000024, y: .600000024}
     positions:
-    - {x: -78.75, y: 56.25, z: 0}
-    - {x: 71.9999924, y: 56.25, z: 0}
-    - {x: -78.75, y: 245.25, z: 0}
-    - {x: 71.9999924, y: 245.25, z: 0}
+    - {x: -63, y: -35.4000053, z: 0}
+    - {x: 57.5999985, y: -35.4000053, z: 0}
+    - {x: -63, y: 115.800003, z: 0}
+    - {x: 57.5999985, y: 115.800003, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -117,17 +117,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: CannonBall
     boundsData:
-    - {x: -1.125, y: 1.875, z: 0}
-    - {x: 123.75, y: 126.75, z: 0}
+    - {x: -1.04999924, y: 1.75, z: 0}
+    - {x: 115.5, y: 118.299995, z: 0}
     untrimmedBoundsData:
-    - {x: -1.125, y: 1.875, z: 0}
-    - {x: 123.75, y: 126.75, z: 0}
-    texelSize: {x: .75, y: .75}
+    - {x: -1.04999924, y: 1.75, z: 0}
+    - {x: 115.5, y: 118.299995, z: 0}
+    texelSize: {x: .699999988, y: .699999988}
     positions:
-    - {x: -63, y: -61.5, z: 0}
-    - {x: 60.75, y: -61.5, z: 0}
-    - {x: -63, y: 65.25, z: 0}
-    - {x: 60.75, y: 65.25, z: 0}
+    - {x: -58.7999992, y: -57.3999977, z: 0}
+    - {x: 56.7000008, y: -57.3999977, z: 0}
+    - {x: -58.7999992, y: 60.8999977, z: 0}
+    - {x: 56.7000008, y: 60.8999977, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   assetName: 
   invOrthoSize: .00185185182
   halfTargetHeight: 540
-  buildKey: 2077386980
+  buildKey: 1412858170
   dataGuid: d9eddd294d8f24839b7e007ec270c0d5
   managedSpriteCollection: 0
   hasPlatformData: 0

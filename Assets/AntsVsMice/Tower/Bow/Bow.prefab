@@ -14,7 +14,7 @@ GameObject:
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400002}
   - 65: {fileID: 6500000}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Bow
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: 1697.15991, y: 1, z: 63.5181122}
+  m_LocalPosition: {x: 1840.89331, y: 1.00000095, z: 54.8680878}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400002}
@@ -91,7 +91,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100002}
   m_LocalRotation: {x: -.707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: -1.56262207, y: 104.2006, z: -1.52827033e-05}
+  m_LocalPosition: {x: -1.56262207, y: 216.140564, z: .200000003}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 400000}
@@ -192,8 +192,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 142.5, y: 142.5, z: .200000003}
-  m_Center: {x: 3.75, y: 7.5, z: 0}
+  m_Size: {x: 124.5, y: 56.25, z: .200000003}
+  m_Center: {x: 3.75, y: -1.875, z: 0}
 --- !u!65 &6500002
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -224,17 +224,20 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 256
+  noTowerMask:
+    serializedVersion: 2
+    m_Bits: 2560
   target: {fileID: 0}
   levels:
-  - rateOfFire: .600000024
+  - rateOfFire: .400000006
     ammoPrefab: {fileID: 100000, guid: 8b2a7376deb4d476f8bdb6e69db24d9b, type: 2}
     cost: 5
     range: 256
-  - rateOfFire: .5
+  - rateOfFire: .300000012
     ammoPrefab: {fileID: 100000, guid: fab1b6f2f220f4fbdb127426ccfd3ddd, type: 2}
     cost: 10
     range: 256
-  - rateOfFire: .300000012
+  - rateOfFire: .200000003
     ammoPrefab: {fileID: 100000, guid: dd684e5ee3e6b49eebd6434355b61ae0, type: 2}
     cost: 20
     range: 256
@@ -259,12 +262,12 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 2
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000}
+  boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}
   anim: {fileID: 11400000, guid: 3463fc24b67f849f1b4ef9d266cd35e3, type: 2}
-  clipId: 1
+  clipId: 0
   playAutomatically: 0
   createCollider: 1
 --- !u!114 &11400004

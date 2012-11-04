@@ -43,17 +43,17 @@ MonoBehaviour:
   spriteDefinitions:
   - name: BowTowerMov0015
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -74,25 +74,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0012
     boundsData:
-    - {x: 7.125, y: 87, z: 0}
+    - {x: 7.125, y: 102, z: 0}
     - {x: 123.75, y: 256.5, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 215.25, z: 0}
-    - {x: 69, y: 215.25, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 230.25, z: 0}
+    - {x: 69, y: 230.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -113,25 +113,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0013
     boundsData:
-    - {x: 7.125, y: 87, z: 0}
+    - {x: 7.125, y: 102, z: 0}
     - {x: 123.75, y: 256.5, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 215.25, z: 0}
-    - {x: 69, y: 215.25, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 230.25, z: 0}
+    - {x: 69, y: 230.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -152,25 +152,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0027
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -191,25 +191,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0020
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -230,25 +230,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0021
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -269,25 +269,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0024
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -308,25 +308,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0006
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -347,25 +347,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0007
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -386,25 +386,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0009
     boundsData:
-    - {x: 7.125, y: 86.625, z: 0}
+    - {x: 7.125, y: 101.625, z: 0}
     - {x: 123.75, y: 255.75, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 214.5, z: 0}
-    - {x: 69, y: 214.5, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 229.5, z: 0}
+    - {x: 69, y: 229.5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -425,25 +425,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0008
     boundsData:
-    - {x: 7.125, y: 86.625, z: 0}
+    - {x: 7.125, y: 101.625, z: 0}
     - {x: 123.75, y: 255.75, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 214.5, z: 0}
-    - {x: 69, y: 214.5, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 229.5, z: 0}
+    - {x: 69, y: 229.5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -464,25 +464,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0001
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -503,25 +503,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0004
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -542,25 +542,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0005
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -581,25 +581,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0010
     boundsData:
-    - {x: 7.125, y: 86.625, z: 0}
+    - {x: 7.125, y: 101.625, z: 0}
     - {x: 123.75, y: 255.75, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 214.5, z: 0}
-    - {x: 69, y: 214.5, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 229.5, z: 0}
+    - {x: 69, y: 229.5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -620,25 +620,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0011
     boundsData:
-    - {x: 7.125, y: 87, z: 0}
+    - {x: 7.125, y: 102, z: 0}
     - {x: 123.75, y: 256.5, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 215.25, z: 0}
-    - {x: 69, y: 215.25, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 230.25, z: 0}
+    - {x: 69, y: 230.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -659,25 +659,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0014
     boundsData:
-    - {x: 7.125, y: 87, z: 0}
+    - {x: 7.125, y: 102, z: 0}
     - {x: 123.75, y: 256.5, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 215.25, z: 0}
-    - {x: 69, y: 215.25, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 230.25, z: 0}
+    - {x: 69, y: 230.25, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -698,25 +698,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0025
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -737,25 +737,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0022
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -776,25 +776,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0023
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -815,25 +815,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0028
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -854,25 +854,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0026
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -893,25 +893,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0002
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -932,25 +932,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0003
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -971,25 +971,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0018
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1010,25 +1010,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0019
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1049,25 +1049,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0016
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1088,25 +1088,25 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
     colliderSmoothSphereCollisions: 0
   - name: BowTowerMov0017
     boundsData:
-    - {x: 7.125, y: 87.375, z: 0}
+    - {x: 7.125, y: 102.375, z: 0}
     - {x: 123.75, y: 257.25, z: 0}
     untrimmedBoundsData:
-    - {x: 15, y: 84.75, z: 0}
+    - {x: 15, y: 99.75, z: 0}
     - {x: 450, y: 303, z: 0}
     texelSize: {x: .75, y: .75}
     positions:
-    - {x: -54.75, y: -41.25, z: 0}
-    - {x: 69, y: -41.25, z: 0}
-    - {x: -54.75, y: 216, z: 0}
-    - {x: 69, y: 216, z: 0}
+    - {x: -54.75, y: -26.25, z: 0}
+    - {x: 69, y: -26.25, z: 0}
+    - {x: -54.75, y: 231, z: 0}
+    - {x: 69, y: 231, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1127,8 +1127,8 @@ MonoBehaviour:
     complexGeometry: 0
     colliderType: 2
     colliderVertices:
-    - {x: 3.75, y: 7.5, z: 0}
-    - {x: 71.25, y: 71.25, z: .100000001}
+    - {x: 3.75, y: -1.875, z: 0}
+    - {x: 62.25, y: 28.125, z: 100}
     colliderIndicesFwd: 
     colliderIndicesBack: 
     colliderConvex: 0
@@ -1145,7 +1145,7 @@ MonoBehaviour:
   assetName: 
   invOrthoSize: .00185185182
   halfTargetHeight: 540
-  buildKey: 1478116313
+  buildKey: 1248039359
   dataGuid: 2405c4812489a4a84ae423c79c4427f6
   managedSpriteCollection: 0
   hasPlatformData: 0

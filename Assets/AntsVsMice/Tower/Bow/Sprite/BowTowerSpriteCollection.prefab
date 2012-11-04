@@ -70,7 +70,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -92,8 +92,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -107,7 +107,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -129,8 +129,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -144,7 +144,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -166,8 +166,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -181,7 +181,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -203,8 +203,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -218,7 +218,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -240,8 +240,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -255,7 +255,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -277,8 +277,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -292,7 +292,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -314,8 +314,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -329,7 +329,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -351,8 +351,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -366,7 +366,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -388,8 +388,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -403,7 +403,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -425,8 +425,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -440,7 +440,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -462,8 +462,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -477,7 +477,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -499,8 +499,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -514,7 +514,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -536,8 +536,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -551,7 +551,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -573,8 +573,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -588,7 +588,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -610,8 +610,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -625,7 +625,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -647,8 +647,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -662,7 +662,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -684,8 +684,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -699,7 +699,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -721,8 +721,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -736,7 +736,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -758,8 +758,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -773,7 +773,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -795,8 +795,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -810,7 +810,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -832,8 +832,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -847,7 +847,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -869,8 +869,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -884,7 +884,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -906,8 +906,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -921,7 +921,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -943,8 +943,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -958,7 +958,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -980,8 +980,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -995,7 +995,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -1017,8 +1017,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -1032,7 +1032,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -1054,8 +1054,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -1069,7 +1069,7 @@ MonoBehaviour:
     materialId: 0
     anchor: 9
     anchorX: 280
-    anchorY: 315
+    anchorY: 335
     overrideMesh: {fileID: 0}
     customSpriteGeometry: 0
     geometryIslands: []
@@ -1091,8 +1091,8 @@ MonoBehaviour:
     regionH: 0
     regionId: 0
     colliderType: 3
-    boxColliderMin: {x: 190, y: 210}
-    boxColliderMax: {x: 380, y: 400}
+    boxColliderMin: {x: 202, y: 300}
+    boxColliderMax: {x: 368, y: 375}
     polyColliderIslands: []
     polyColliderCap: 0
     colliderConvex: 0
@@ -1116,7 +1116,7 @@ MonoBehaviour:
   userDefinedTextureSettings: 1
   mipmapEnabled: 0
   anisoLevel: 1
-  physicsDepth: .100000001
+  physicsDepth: 100
   disableTrimming: 0
   normalGenerationMode: 0
   padAmount: -1

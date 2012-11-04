@@ -8,7 +8,9 @@ public class Ammo : MonoBehaviour {
 	public Damage damage;
 	public Transform launchFrom;
 	protected Vector3 _launchPosAtFiring;
-	protected float altitude = 1000;
+	protected virtual float altitude {
+		get {return 100;}
+	}
 	protected Enemy _target;
 	protected Vector3 _targetPosAtFiring;
 	protected Vector3 _targetLastPos;
@@ -35,12 +37,14 @@ public class Ammo : MonoBehaviour {
 			return _launchPosAtFiring;
 		}
 	}
-
 	
 	protected virtual void Fly(float t) {
 		transform.position = GetPositionAt(t);
 	}
 	public virtual void LaunchAt(Enemy target) {
+		if (target == null) {
+			Debug.Log ("target is null");
+		}
 		this.target = target;
 		_launchPosAtFiring = launchFrom.transform.position;
 		transform.parent = null;

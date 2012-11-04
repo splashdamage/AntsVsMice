@@ -14,7 +14,7 @@ GameObject:
   - 54: {fileID: 5400000}
   - 114: {fileID: 11400004}
   - 65: {fileID: 6500000}
-  m_Layer: 0
+  m_Layer: 11
   m_Name: Cannon
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -77,7 +77,7 @@ Transform:
   m_PrefabInternal: {fileID: 100100000}
   m_GameObject: {fileID: 100000}
   m_LocalRotation: {x: .707106829, y: 0, z: 0, w: .707106709}
-  m_LocalPosition: {x: 1850.09326, y: 1, z: 52.5617981}
+  m_LocalPosition: {x: 1578.70251, y: 1.00000012, z: 51.4805603}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 400004}
@@ -192,8 +192,8 @@ BoxCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 142.5, y: 142.5, z: .200000003}
-  m_Center: {x: -3, y: 19.5, z: 0}
+  m_Size: {x: 105, y: 60, z: .200000003}
+  m_Center: {x: -1.5, y: -.75, z: 0}
 --- !u!65 &6500002
 BoxCollider:
   m_ObjectHideFlags: 1
@@ -243,6 +243,9 @@ MonoBehaviour:
   targetLayer:
     serializedVersion: 2
     m_Bits: 256
+  noTowerMask:
+    serializedVersion: 2
+    m_Bits: 2560
   target: {fileID: 0}
   levels:
   - rateOfFire: 1
@@ -278,7 +281,7 @@ MonoBehaviour:
   _scale: {x: 1, y: 1, z: 1}
   _spriteId: 19
   pixelPerfect: 0
-  boxCollider: {fileID: 6500000}
+  boxCollider: {fileID: 0}
   meshCollider: {fileID: 0}
   meshColliderPositions: []
   meshColliderMesh: {fileID: 0}

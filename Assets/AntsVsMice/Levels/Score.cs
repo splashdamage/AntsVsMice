@@ -15,7 +15,6 @@ public class Score : MonoBehaviour {
 		int left = cheese - howMany;
 		if (left <= 0) {
 			cheese = 0;
-			GameOver();
 			return;
 		}
 		cheese = left;
@@ -27,7 +26,22 @@ public class Score : MonoBehaviour {
 	void OnDisable() {
 		instance = null;
 	}
-	public void GameOver() {
-		Debug.Log ("GameOver");
+	public void OnGUI() {
+		if (cheese > 0 && !Waves.over) return;
+		GUI.skin = Info.mouseSkin;
+		Time.timeScale = 0;
+		GUILayout.BeginArea(new Rect(Screen.width *0.25f, Screen.height * 0.15f, Screen.width * 0.5f, Screen.height * 0.7f));
+		GUILayout.BeginVertical ();
+		if (cheese == 0) {
+			GUILayout.Label ("The Cheese Is",GUI.skin.GetStyle("CenteredHeader"));
+			GUILayout.Label ("GONE.",GUI.skin.GetStyle("CenteredHeader"));
+		} else if (Waves.over) {
+			GUILayout.Label ("You Win",GUI.skin.GetStyle("CenteredHeader"));
+		}
+		if (GUILayout.Button("Play Again?")) {
+			Application.LoadLevel (Application.loadedLevel);
+		}
+		GUILayout.EndVertical();
+		GUILayout.EndArea();
 	}
 }

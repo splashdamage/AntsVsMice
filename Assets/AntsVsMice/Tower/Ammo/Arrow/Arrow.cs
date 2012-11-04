@@ -4,8 +4,11 @@ using System.Collections;
 public class Arrow : Ammo {
 	public float fadeTime = 0;
 	float fadeLeft;
-
-
+	protected override float altitude {
+		get {
+			return 300;
+		}
+	}
 	protected override void Fly(float t) {
 		float t1 = (flightLeft + Time.deltaTime) / flightTime;
 		base.Fly(t);
