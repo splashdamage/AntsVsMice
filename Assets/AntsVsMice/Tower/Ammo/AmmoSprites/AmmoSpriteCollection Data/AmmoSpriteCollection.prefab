@@ -117,17 +117,17 @@ MonoBehaviour:
     colliderSmoothSphereCollisions: 0
   - name: CannonBall
     boundsData:
-    - {x: -1.04999924, y: 1.75, z: 0}
-    - {x: 115.5, y: 118.299995, z: 0}
+    - {x: -.75, y: 1.25, z: 0}
+    - {x: 82.5, y: 84.5, z: 0}
     untrimmedBoundsData:
-    - {x: -1.04999924, y: 1.75, z: 0}
-    - {x: 115.5, y: 118.299995, z: 0}
-    texelSize: {x: .699999988, y: .699999988}
+    - {x: -.75, y: 1.25, z: 0}
+    - {x: 82.5, y: 84.5, z: 0}
+    texelSize: {x: .5, y: .5}
     positions:
-    - {x: -58.7999992, y: -57.3999977, z: 0}
-    - {x: 56.7000008, y: -57.3999977, z: 0}
-    - {x: -58.7999992, y: 60.8999977, z: 0}
-    - {x: 56.7000008, y: 60.8999977, z: 0}
+    - {x: -42, y: -41, z: 0}
+    - {x: 40.5, y: -41, z: 0}
+    - {x: -42, y: 43.5, z: 0}
+    - {x: 40.5, y: 43.5, z: 0}
     normals: []
     tangents: []
     uvs:
@@ -1052,7 +1052,7 @@ MonoBehaviour:
   assetName: 
   invOrthoSize: .00185185182
   halfTargetHeight: 540
-  buildKey: 1412858170
+  buildKey: 1004033043
   dataGuid: d9eddd294d8f24839b7e007ec270c0d5
   managedSpriteCollection: 0
   hasPlatformData: 0

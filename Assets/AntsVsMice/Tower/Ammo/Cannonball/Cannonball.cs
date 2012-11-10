@@ -21,7 +21,7 @@ public class Cannonball : Ammo {
 		Collider[] inRange=Physics.OverlapSphere(transform.position,range);
 		List<Enemy> enemies = new List<Enemy>();
 		foreach(Collider c in inRange){
-			Enemy e = c.GetComponent<Enemy>();
+			Enemy e = c.transform.root.GetComponent<Enemy>();
 			if (e !=null && e.health > 0){
 				enemies.Add (e);
 			}

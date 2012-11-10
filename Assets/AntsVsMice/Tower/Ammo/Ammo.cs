@@ -43,7 +43,7 @@ public class Ammo : MonoBehaviour {
 	}
 	public virtual void LaunchAt(Enemy target) {
 		if (target == null) {
-			Debug.Log ("target is null");
+			return;
 		}
 		this.target = target;
 		_launchPosAtFiring = launchFrom.transform.position;

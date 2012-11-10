@@ -152,7 +152,7 @@ MonoBehaviour:
     amount: 70
     duration: -1
   launchFrom: {fileID: 0}
-  range: 250
+  range: 128
 --- !u!1001 &100100000
 Prefab:
   m_ObjectHideFlags: 1
